@@ -73,7 +73,7 @@ export const getEvents = (params: GetEventsData["query"] = {}) => {
  *     ))}
  *   </div>
  * );
-  * ```
+ * ```
  */
 export const getEvent = (params: Omit<GetEventData["path"], "siteKey">) => {
   return sdk.getEvent({

@@ -11,6 +11,9 @@ importers:
       '@hey-api/client-fetch':
         specifier: ^0.4.4
         version: 0.4.4
+      typedoc-github-wiki-theme:
+        specifier: ^2.1.0
+        version: 2.1.0(typedoc-plugin-markdown@4.3.3(typedoc@0.27.6(typescript@5.7.2)))
       zod:
         specifier: ^3.23.8
         version: 3.24.1
@@ -817,6 +820,11 @@ packages:
       typescript:
         optional: true
 
+  typedoc-github-wiki-theme@2.1.0:
+    resolution: {integrity: sha512-5j4vuoGwLn8PM1HeXocbwUF0Ra2qTFLeqsQwBQsLBPIx7Tl/lxkas1qIPFg/InOYwy9Y3Pn4xSjh+c/KM+jh6Q==}
+    peerDependencies:
+      typedoc-plugin-markdown: '>=4.3.0'
+
   typedoc-plugin-markdown@4.3.3:
     resolution: {integrity: sha512-kESCcNRzOcFJATLML2FoCfaTF9c0ujmbZ+UXsJvmNlFLS3v8tDKfDifreJXvXWa9d8gUcetZqOqFcZ/7+Ba34Q==}
     engines: {node: '>= 18'}
@@ -1565,6 +1573,10 @@ snapshots:
       - supports-color
       - tsx
       - yaml
+
+  typedoc-github-wiki-theme@2.1.0(typedoc-plugin-markdown@4.3.3(typedoc@0.27.6(typescript@5.7.2))):
+    dependencies:
+      typedoc-plugin-markdown: 4.3.3(typedoc@0.27.6(typescript@5.7.2))
 
   typedoc-plugin-markdown@4.3.3(typedoc@0.27.6(typescript@5.7.2)):
     dependencies:

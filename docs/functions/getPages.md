@@ -1,8 +1,8 @@
-[**@venuecms/sdk**](../README.md)
+[**@venuecms/sdk**](../Index.md)
 
 ***
 
-[@venuecms/sdk](../README.md) / getPages
+[@venuecms/sdk](../Index.md) / getPages
 
 # Function: getPages()
 
@@ -56,4 +56,4 @@ function getPages(params): Promise<
 
 ## Defined in
 
-[src/createClient.ts:92](https://github.com/venuecms/sdk/blob/f129a52a8dada040e7d47cae058990c6423a868d/src/createClient.ts#L92)
+[src/createClient.ts:92](https://github.com/venuecms/sdk/blob/9ae98ad19cd49271fbec864143c1fdaa80d0b742/src/createClient.ts#L92)

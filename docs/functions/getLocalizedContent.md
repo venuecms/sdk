@@ -1,8 +1,8 @@
-[**@venuecms/sdk**](../README.md)
+[**@venuecms/sdk**](../Index.md)
 
 ***
 
-[@venuecms/sdk](../README.md) / getLocalizedContent
+[@venuecms/sdk](../Index.md) / getLocalizedContent
 
 # Function: getLocalizedContent()
 
@@ -108,4 +108,4 @@ currentLocale: string;
 
 ## Defined in
 
-[src/utils/content.ts:6](https://github.com/venuecms/sdk/blob/f129a52a8dada040e7d47cae058990c6423a868d/src/utils/content.ts#L6)
+[src/utils/content.ts:6](https://github.com/venuecms/sdk/blob/9ae98ad19cd49271fbec864143c1fdaa80d0b742/src/utils/content.ts#L6)

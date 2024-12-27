@@ -47,9 +47,10 @@ export const getEvents = (params: GetEventsData["query"] = {}) => {
 };
 
 /**
+ * Retrieve data for a single event
+ *
  * @category Content
  * @example
- * Retrieving data for a single event using the slug
  * ```typescript
  * import { getEvent } from "@venuecms/sdk";
  * import { ContentRender, type RenderNode } from "@/lib/utils/renderer";

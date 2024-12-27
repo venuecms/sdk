@@ -8,7 +8,7 @@
 
 | Function | Description |
 | ------ | ------ |
-| [getEvent](functions/getEvent.md) | - |
+| [getEvent](functions/getEvent.md) | Retrieve data for a single event |
 | [getEvents](functions/getEvents.md) | - |
 | [getPage](functions/getPage.md) | - |
 | [getPages](functions/getPages.md) | - |

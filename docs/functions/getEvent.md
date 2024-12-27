@@ -18,6 +18,8 @@ function getEvent(params): Promise<
 } & object>
 ```
 
+Retrieve data for a single event
+
 ## Parameters
 
 ### params
@@ -41,7 +43,6 @@ function getEvent(params): Promise<
 
 ## Example
 
-Retrieving data for a single event using the slug
 ```typescript
 import { getEvent } from "@venuecms/sdk";
 import { ContentRender, type RenderNode } from "@/lib/utils/renderer";
@@ -69,4 +70,4 @@ return (
 
 ## Defined in
 
-[src/createClient.ts:78](https://github.com/venuecms/sdk/blob/823b04c9ee84b4d1baaafd2d6fb4c862f759e4e8/src/createClient.ts#L78)
+[src/createClient.ts:79](https://github.com/venuecms/sdk/blob/f129a52a8dada040e7d47cae058990c6423a868d/src/createClient.ts#L79)

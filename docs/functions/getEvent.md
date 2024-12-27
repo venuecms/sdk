@@ -23,11 +23,24 @@
 Retrieving data for a single event using the slug
 ```typescript
 import { getEvent } from "@venuecms/sdk";
+import { ContentRender, type RenderNode } from "@/lib/utils/renderer";
 
 const { data: event } = await getEvent({ slug });
 const { localizedContent, location, artists } = event;
-```
+
+// Get the content in a localized form (usually locale is pulled from somewhere like your url params)
+const { content } = getLocalizedContent(event?.localizedContent, locale);
+
+// Render content for the event
+return (
+  <div>
+   {(content.contentJSON?.content as Array<RenderNode>).map((node) => (
+      <ContentRender classes={renderedStyles} node={node} />
+    ))}
+  </div>
+);
+ * ```
 
 ## Defined in
 
-[src/createClient.ts:60](https://github.com/venuecms/sdk/blob/7823693df03580df710c62ba3b43e869f9979148/src/createClient.ts#L60)
+[src/createClient.ts:73](https://github.com/venuecms/sdk/blob/8a6c84653ba60be7399cb6d469978abeb0f847f0/src/createClient.ts#L73)

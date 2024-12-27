@@ -52,10 +52,23 @@ export const getEvents = (params: GetEventsData["query"] = {}) => {
  * Retrieving data for a single event using the slug
  * ```typescript
  * import { getEvent } from "@venuecms/sdk";
+ * import { ContentRender, type RenderNode } from "@/lib/utils/renderer";
  *
  * const { data: event } = await getEvent({ slug });
  * const { localizedContent, location, artists } = event;
- * ```
+ *
+ * // Get the content in a localized form (usually locale is pulled from somewhere like your url params)
+ * const { content } = getLocalizedContent(event?.localizedContent, locale);
+ *
+ * // Render content for the event
+ * return (
+ *   <div>
+ *    {(content.contentJSON?.content as Array<RenderNode>).map((node) => (
+ *       <ContentRender classes={renderedStyles} node={node} />
+ *     ))}
+ *   </div>
+ * );
+  * ```
  */
 export const getEvent = (params: Omit<GetEventData["path"], "siteKey">) => {
   return sdk.getEvent({

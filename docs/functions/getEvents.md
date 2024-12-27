@@ -54,4 +54,4 @@
 
 ## Defined in
 
-[src/createClient.ts:40](https://github.com/venuecms/sdk/blob/8a6c84653ba60be7399cb6d469978abeb0f847f0/src/createClient.ts#L40)
+[src/createClient.ts:40](https://github.com/venuecms/sdk/blob/a3bf0842ec96c76796c1e38dad50663c7f41ebc3/src/createClient.ts#L40)

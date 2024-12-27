@@ -26,10 +26,15 @@ import { getEvent } from "@venuecms/sdk";
 import { ContentRender, type RenderNode } from "@/lib/utils/renderer";
 
 const { data: event } = await getEvent({ slug });
+
+// If the event is not found, you should do something like a 404
+if (!event) {
+  notFound();
+}
 const { localizedContent, location, artists } = event;
 
 // Get the content in a localized form (usually locale is pulled from somewhere like your url params)
-const { content } = getLocalizedContent(event?.localizedContent, locale);
+const { content } = getLocalizedContent(event.localizedContent, locale);
 
 // Render content for the event
 return (
@@ -43,4 +48,4 @@ return (
 
 ## Defined in
 
-[src/createClient.ts:73](https://github.com/venuecms/sdk/blob/8a6c84653ba60be7399cb6d469978abeb0f847f0/src/createClient.ts#L73)
+[src/createClient.ts:78](https://github.com/venuecms/sdk/blob/a3bf0842ec96c76796c1e38dad50663c7f41ebc3/src/createClient.ts#L78)

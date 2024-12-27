@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "includes": ["./src/index.ts"],
+    "entryPoints": ["src/index.ts"],
+    "groupReferencesByType": true,
+    "plugin": ["typedoc-plugin-markdown"],
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "target": "es5",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": false,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitAny": false,
+      "noEmit": true,
+      "noEmitOnError": false,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "bundler",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "incremental": true,
+      "plugins": [
+        {
+          "name": "next"
+        }
+      ],
+      "paths": {
+        "@/*": ["./*"]
+      }
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules"]
+  }
+}

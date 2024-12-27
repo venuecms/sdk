@@ -24,4 +24,4 @@
 
 ## Defined in
 
-[src/client/types.gen.ts:252](https://github.com/venuecms/sdk/blob/250a68fd5effa2aabc6cc0b2d7bf38c50df6024f/src/client/types.gen.ts#L252)
+[src/client/types.gen.ts:252](https://github.com/venuecms/sdk/blob/a67bd36579ec58f05616b697172009f8707ee8a7/src/client/types.gen.ts#L252)

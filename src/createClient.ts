@@ -50,11 +50,11 @@ export const getEvents = (params: GetEventsData["query"] = {}) => {
  * @category Content
   *  @example
   *  ```
-  *  import { getEvent } from "@venuecms/sdk";
-  *
-  * const { data: event } = await getEvent({ slug });
-  * const { location, artists, localizedContent } = event;
-  * ```
+  import { getEvent } from "@venuecms/sdk";
+
+  const { data: event } = await getEvent({ slug });
+  const { location, artists, localizedContent } = event;
+  ```
  */
 export const getEvent = (params: Omit<GetEventData["path"], "siteKey">) => {
   return sdk.getEvent({

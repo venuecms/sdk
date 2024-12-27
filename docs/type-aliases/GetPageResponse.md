@@ -6,13 +6,17 @@
 
 # Type Alias: GetPageResponse
 
-> **GetPageResponse**: [`Page`](Page.md) & `object`
+```ts
+type GetPageResponse = Page & object;
+```
 
 ## Type declaration
 
 ### parent?
 
-> `optional` **parent**: `object`
+```ts
+optional parent: object;
+```
 
 #### Index Signature
 
@@ -20,4 +24,4 @@
 
 ## Defined in
 
-[src/client/types.gen.ts:224](https://github.com/venuecms/sdk/blob/e958d083f7fea3b380d25d326581eddc4f974d05/src/client/types.gen.ts#L224)
+[src/client/types.gen.ts:224](https://github.com/venuecms/sdk/blob/823b04c9ee84b4d1baaafd2d6fb4c862f759e4e8/src/client/types.gen.ts#L224)

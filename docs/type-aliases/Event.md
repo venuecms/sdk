@@ -6,58 +6,84 @@
 
 # Type Alias: Event
 
-> **Event**: `object`
+```ts
+type Event = object;
+```
 
 ## Type declaration
 
 ### artists
 
-> **artists**: `object`[]
+```ts
+artists: object[];
+```
 
 ### description?
 
-> `optional` **description**: `string` \| `null`
+```ts
+optional description: string | null;
+```
 
 ### endDate
 
-> **endDate**: `string` \| `null`
+```ts
+endDate: string | null;
+```
 
 ### id
 
-> **id**: `string`
+```ts
+id: string;
+```
 
 ### image?
 
-> `optional` **image**: [`MediaItem`](MediaItem.md)
+```ts
+optional image: MediaItem;
+```
 
 ### localizedContent
 
-> **localizedContent**: [`LocalizedContent`](LocalizedContent.md)[]
+```ts
+localizedContent: LocalizedContent[];
+```
 
 ### location?
 
-> `optional` **location**: [`Location`](Location.md)
+```ts
+optional location: Location;
+```
 
 ### publishState
 
-> **publishState**: `"DRAFT"` \| `"REQUEST"` \| `"PUBLISHED"` \| `"CANCELLED"`
+```ts
+publishState: "DRAFT" | "REQUEST" | "PUBLISHED" | "CANCELLED";
+```
 
 ### site
 
-> **site**: [`Site`](Site.md)
+```ts
+site: Site;
+```
 
 ### slug
 
-> **slug**: `string`
+```ts
+slug: string;
+```
 
 ### startDate
 
-> **startDate**: `string`
+```ts
+startDate: string;
+```
 
 ### tickets?
 
-> `optional` **tickets**: [`TicketOnEvent`](TicketOnEvent.md)[]
+```ts
+optional tickets: TicketOnEvent[];
+```
 
 ## Defined in
 
-[src/client/types.gen.ts:3](https://github.com/venuecms/sdk/blob/e958d083f7fea3b380d25d326581eddc4f974d05/src/client/types.gen.ts#L3)
+[src/client/types.gen.ts:3](https://github.com/venuecms/sdk/blob/823b04c9ee84b4d1baaafd2d6fb4c862f759e4e8/src/client/types.gen.ts#L3)

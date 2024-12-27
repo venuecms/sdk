@@ -6,22 +6,30 @@
 
 # Type Alias: Location
 
-> **Location**: `object`
+```ts
+type Location = object;
+```
 
 ## Type declaration
 
 ### image?
 
-> `optional` **image**: [`MediaItem`](MediaItem.md)
+```ts
+optional image: MediaItem;
+```
 
 ### localizedContent
 
-> **localizedContent**: [`LocalizedContent`](LocalizedContent.md)[]
+```ts
+localizedContent: LocalizedContent[];
+```
 
 ### site
 
-> **site**: [`Site`](Site.md)
+```ts
+site: Site;
+```
 
 ## Defined in
 
-[src/client/types.gen.ts:38](https://github.com/venuecms/sdk/blob/e958d083f7fea3b380d25d326581eddc4f974d05/src/client/types.gen.ts#L38)
+[src/client/types.gen.ts:38](https://github.com/venuecms/sdk/blob/823b04c9ee84b4d1baaafd2d6fb4c862f759e4e8/src/client/types.gen.ts#L38)

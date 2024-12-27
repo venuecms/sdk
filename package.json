@@ -6,7 +6,7 @@
     "generate": "openapi-ts -i http://app.venuecms.com/api/v2/openapi.json -o src/client -c @hey-api/client-fetch",
     "build:lib": "tsup --config ./tsup.config.ts",
     "build:sdk": "pnpm run generate && pnpm run build:lib",
-    "build:docs": "typedoc --entryPoints src/index.ts --groupReferencesByType --plugin typedoc-plugin-markdown --options ./typedoc.json",
+    "build:docs": "typedoc --options ./typedoc.json",
     "build:all": "pnpm build:sdk && pnpm build:docs"
   },
   "keywords": [

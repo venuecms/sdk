@@ -6,58 +6,84 @@
 
 # Type Alias: GetEventsData
 
-> **GetEventsData**: `object`
+```ts
+type GetEventsData = object;
+```
 
 ## Type declaration
 
 ### path
 
-> **path**: `object`
+```ts
+path: object;
+```
 
 #### path.siteKey
 
-> **siteKey**: `string`
+```ts
+siteKey: string;
+```
 
 ### query?
 
-> `optional` **query**: `object`
+```ts
+optional query: object;
+```
 
 #### query.dir?
 
-> `optional` **dir**: `"asc"` \| `"desc"`
+```ts
+optional dir: "asc" | "desc";
+```
 
 #### query.featured?
 
-> `optional` **featured**: `boolean` \| `null`
+```ts
+optional featured: boolean | null;
+```
 
 #### query.gt?
 
-> `optional` **gt**: `number` \| `null`
+```ts
+optional gt: number | null;
+```
 
 #### query.legacyId?
 
-> `optional` **legacyId**: `string`
+```ts
+optional legacyId: string;
+```
 
 #### query.limit?
 
-> `optional` **limit**: `number` \| `null`
+```ts
+optional limit: number | null;
+```
 
 #### query.lt?
 
-> `optional` **lt**: `number` \| `null`
+```ts
+optional lt: number | null;
+```
 
 #### query.orderBy?
 
-> `optional` **orderBy**: `string`
+```ts
+optional orderBy: string;
+```
 
 #### query.page?
 
-> `optional` **page**: `number` \| `null`
+```ts
+optional page: number | null;
+```
 
 #### query.upcoming?
 
-> `optional` **upcoming**: `boolean` \| `null`
+```ts
+optional upcoming: boolean | null;
+```
 
 ## Defined in
 
-[src/client/types.gen.ts:160](https://github.com/venuecms/sdk/blob/e958d083f7fea3b380d25d326581eddc4f974d05/src/client/types.gen.ts#L160)
+[src/client/types.gen.ts:160](https://github.com/venuecms/sdk/blob/823b04c9ee84b4d1baaafd2d6fb4c862f759e4e8/src/client/types.gen.ts#L160)

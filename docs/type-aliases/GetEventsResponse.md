@@ -6,14 +6,18 @@
 
 # Type Alias: GetEventsResponse
 
-> **GetEventsResponse**: `object`
+```ts
+type GetEventsResponse = object;
+```
 
 ## Type declaration
 
 ### records
 
-> **records**: [`Event`](Event.md)[]
+```ts
+records: Event[];
+```
 
 ## Defined in
 
-[src/client/types.gen.ts:177](https://github.com/venuecms/sdk/blob/e958d083f7fea3b380d25d326581eddc4f974d05/src/client/types.gen.ts#L177)
+[src/client/types.gen.ts:177](https://github.com/venuecms/sdk/blob/823b04c9ee84b4d1baaafd2d6fb4c862f759e4e8/src/client/types.gen.ts#L177)

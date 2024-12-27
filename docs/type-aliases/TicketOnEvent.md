@@ -6,34 +6,48 @@
 
 # Type Alias: TicketOnEvent
 
-> **TicketOnEvent**: `object`
+```ts
+type TicketOnEvent = object;
+```
 
 ## Type declaration
 
 ### currency?
 
-> `optional` **currency**: `string` \| `null`
+```ts
+optional currency: string | null;
+```
 
 ### externalLink?
 
-> `optional` **externalLink**: `string` \| `null`
+```ts
+optional externalLink: string | null;
+```
 
 ### localizedContent?
 
-> `optional` **localizedContent**: [`LocalizedContent`](LocalizedContent.md)[]
+```ts
+optional localizedContent: LocalizedContent[];
+```
 
 ### name
 
-> **name**: `string`
+```ts
+name: string;
+```
 
 ### price
 
-> **price**: `number`
+```ts
+price: number;
+```
 
 ### roles
 
-> **roles**: `unknown`[]
+```ts
+roles: unknown[];
+```
 
 ## Defined in
 
-[src/client/types.gen.ts:141](https://github.com/venuecms/sdk/blob/e958d083f7fea3b380d25d326581eddc4f974d05/src/client/types.gen.ts#L141)
+[src/client/types.gen.ts:141](https://github.com/venuecms/sdk/blob/823b04c9ee84b4d1baaafd2d6fb4c862f759e4e8/src/client/types.gen.ts#L141)

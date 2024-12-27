@@ -6,18 +6,24 @@
 
 # Type Alias: GetProfilesResponse
 
-> **GetProfilesResponse**: `object`
+```ts
+type GetProfilesResponse = object;
+```
 
 ## Type declaration
 
 ### count
 
-> **count**: `number`
+```ts
+count: number;
+```
 
 ### records
 
-> **records**: [`Profile`](Profile.md)[]
+```ts
+records: Profile[];
+```
 
 ## Defined in
 
-[src/client/types.gen.ts:245](https://github.com/venuecms/sdk/blob/e958d083f7fea3b380d25d326581eddc4f974d05/src/client/types.gen.ts#L245)
+[src/client/types.gen.ts:245](https://github.com/venuecms/sdk/blob/823b04c9ee84b4d1baaafd2d6fb4c862f759e4e8/src/client/types.gen.ts#L245)

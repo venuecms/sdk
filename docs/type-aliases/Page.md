@@ -6,138 +6,204 @@
 
 # Type Alias: Page
 
-> **Page**: `object`
+```ts
+type Page = object;
+```
 
 ## Type declaration
 
 ### date?
 
-> `optional` **date**: `string` \| `null`
+```ts
+optional date: string | null;
+```
 
 ### featured
 
-> **featured**: `boolean`
+```ts
+featured: boolean;
+```
 
 ### featuredExpiration?
 
-> `optional` **featuredExpiration**: `string` \| `null`
+```ts
+optional featuredExpiration: string | null;
+```
 
 ### fullPath?
 
-> `optional` **fullPath**: `string` \| `null`
+```ts
+optional fullPath: string | null;
+```
 
 ### id
 
-> **id**: `string`
+```ts
+id: string;
+```
 
 ### image?
 
-> `optional` **image**: [`MediaItem`](MediaItem.md)
+```ts
+optional image: MediaItem;
+```
 
 ### localizedContent
 
-> **localizedContent**: [`LocalizedContent`](LocalizedContent.md)[]
+```ts
+localizedContent: LocalizedContent[];
+```
 
 ### order
 
-> **order**: `number`
+```ts
+order: number;
+```
 
 ### parent?
 
-> `optional` **parent**: `object`
+```ts
+optional parent: object;
+```
 
 #### parent.createdAt
 
-> **createdAt**: `string`
+```ts
+createdAt: string;
+```
 
 #### parent.date?
 
-> `optional` **date**: `string` \| `null`
+```ts
+optional date: string | null;
+```
 
 #### parent.dirty
 
-> **dirty**: `boolean`
+```ts
+dirty: boolean;
+```
 
 #### parent.featured
 
-> **featured**: `boolean`
+```ts
+featured: boolean;
+```
 
 #### parent.featuredExpiration?
 
-> `optional` **featuredExpiration**: `string` \| `null`
+```ts
+optional featuredExpiration: string | null;
+```
 
 #### parent.id
 
-> **id**: `string`
+```ts
+id: string;
+```
 
 #### parent.imageId?
 
-> `optional` **imageId**: `string` \| `null`
+```ts
+optional imageId: string | null;
+```
 
 #### parent.order
 
-> **order**: `number`
+```ts
+order: number;
+```
 
 #### parent.parentId?
 
-> `optional` **parentId**: `string` \| `null`
+```ts
+optional parentId: string | null;
+```
 
 #### parent.publishedId?
 
-> `optional` **publishedId**: `string` \| `null`
+```ts
+optional publishedId: string | null;
+```
 
 #### parent.publishState
 
-> **publishState**: `"DRAFT"` \| `"REQUEST"` \| `"PUBLISHED"` \| `"CANCELLED"`
+```ts
+publishState: "DRAFT" | "REQUEST" | "PUBLISHED" | "CANCELLED";
+```
 
 #### parent.recordType
 
-> **recordType**: `"SOURCE"` \| `"PUBLISHED"` \| `"REVISION"`
+```ts
+recordType: "SOURCE" | "PUBLISHED" | "REVISION";
+```
 
 #### parent.revisionId?
 
-> `optional` **revisionId**: `number` \| `null`
+```ts
+optional revisionId: number | null;
+```
 
 #### parent.siteId
 
-> **siteId**: `string`
+```ts
+siteId: string;
+```
 
 #### parent.slug
 
-> **slug**: `string`
+```ts
+slug: string;
+```
 
 #### parent.source?
 
-> `optional` **source**: `string` \| `null`
+```ts
+optional source: string | null;
+```
 
 #### parent.updatedAt
 
-> **updatedAt**: `string`
+```ts
+updatedAt: string;
+```
 
 #### parent.userId?
 
-> `optional` **userId**: `string` \| `null`
+```ts
+optional userId: string | null;
+```
 
 #### parent.visible
 
-> **visible**: `boolean`
+```ts
+visible: boolean;
+```
 
 ### parentId?
 
-> `optional` **parentId**: `string` \| `null`
+```ts
+optional parentId: string | null;
+```
 
 ### roles
 
-> **roles**: `object`[]
+```ts
+roles: object[];
+```
 
 ### site
 
-> **site**: [`Site`](Site.md)
+```ts
+site: Site;
+```
 
 ### slug
 
-> **slug**: `string`
+```ts
+slug: string;
+```
 
 ## Defined in
 
-[src/client/types.gen.ts:60](https://github.com/venuecms/sdk/blob/e958d083f7fea3b380d25d326581eddc4f974d05/src/client/types.gen.ts#L60)
+[src/client/types.gen.ts:60](https://github.com/venuecms/sdk/blob/823b04c9ee84b4d1baaafd2d6fb4c862f759e4e8/src/client/types.gen.ts#L60)

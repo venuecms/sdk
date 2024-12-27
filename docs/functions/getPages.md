@@ -38,4 +38,4 @@
 
 ## Defined in
 
-[src/createClient.ts:65](https://github.com/venuecms/sdk/blob/9f424838248e075a67e07d707346eff5c77f61ea/src/createClient.ts#L65)
+[src/createClient.ts:72](https://github.com/venuecms/sdk/blob/250a68fd5effa2aabc6cc0b2d7bf38c50df6024f/src/createClient.ts#L72)

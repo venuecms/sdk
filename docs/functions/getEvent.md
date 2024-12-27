@@ -18,6 +18,15 @@
 
 `Promise`\<\{ `data`: `undefined`; `error`: `unknown`; \} \| \{ `data`: [`Event`](../type-aliases/Event.md); `error`: `undefined`; \} & `object`\>
 
+## Example
+
+*  ```
+ *  import { getEvent } from "@venuecms/sdk";
+ *
+ * const { data: event } = await getEvent({ slug });
+ * const { location, artists, localizedContent } = event;
+ * ```
+
 ## Defined in
 
-[src/createClient.ts:52](https://github.com/venuecms/sdk/blob/9f424838248e075a67e07d707346eff5c77f61ea/src/createClient.ts#L52)
+[src/createClient.ts:59](https://github.com/venuecms/sdk/blob/250a68fd5effa2aabc6cc0b2d7bf38c50df6024f/src/createClient.ts#L59)

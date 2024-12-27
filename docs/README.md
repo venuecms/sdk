@@ -6,13 +6,17 @@
 
 ## Content
 
-- [getEvent](functions/getEvent.md)
 - [getEvents](functions/getEvents.md)
 - [getPage](functions/getPage.md)
 - [getPages](functions/getPages.md)
 - [getProfile](functions/getProfile.md)
 - [getProfiles](functions/getProfiles.md)
 - [getSite](functions/getSite.md)
+
+## Content
+ *
+
+- [getEvent](functions/getEvent.md)
 
 ## Other
 

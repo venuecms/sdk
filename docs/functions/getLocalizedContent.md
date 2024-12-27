@@ -80,4 +80,4 @@
 
 ## Defined in
 
-[src/utils/content.ts:6](https://github.com/venuecms/sdk/blob/9f424838248e075a67e07d707346eff5c77f61ea/src/utils/content.ts#L6)
+[src/utils/content.ts:6](https://github.com/venuecms/sdk/blob/250a68fd5effa2aabc6cc0b2d7bf38c50df6024f/src/utils/content.ts#L6)

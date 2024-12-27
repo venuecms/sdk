@@ -4,6 +4,11 @@
     "entryPoints": ["src/index.ts"],
     "groupReferencesByType": true,
     "plugin": ["typedoc-plugin-markdown"],
+    "categoryOrder": [
+      "Content",
+      "Utilities",
+      "Other"
+    ],
     "compilerOptions": {
       "baseUrl": "./src",
       "target": "es5",

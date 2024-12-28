@@ -33,7 +33,7 @@
     "dist/"
   ],
   "devDependencies": {
-    "@hey-api/openapi-ts": "^0.57.0",
+    "@hey-api/openapi-ts": "^0.60.1",
     "@types/node": "^20.10.4",
     "tsup": "^8.3.5",
     "typedoc": "^0.27.1",
@@ -41,7 +41,7 @@
     "typescript": "^5.5.0"
   },
   "dependencies": {
-    "@hey-api/client-fetch": "^0.4.4",
+    "@hey-api/client-fetch": "^0.5.7",
     "zod": "^3.23.8"
   }
 }

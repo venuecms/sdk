@@ -32,4 +32,4 @@ function getSite(): Promise<
 
 ## Defined in
 
-[src/createClient.ts:28](https://github.com/venuecms/sdk/blob/2faabdda7b7d9b2854d4c3073cb04e69d28f92c8/src/createClient.ts#L28)
+[src/createClient.ts:28](https://github.com/venuecms/sdk/blob/f338eea324f851f70433ff3fb95078fc3e71e02a/src/createClient.ts#L28)

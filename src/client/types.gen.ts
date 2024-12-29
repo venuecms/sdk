@@ -6,8 +6,8 @@ export type Event = {
     description?: (string) | null;
     slug: string;
     image?: MediaItem;
-    startDate: string;
-    endDate: (string) | null;
+    startDate: (string);
+    endDate: (string);
     publishState: 'DRAFT' | 'REQUEST' | 'PUBLISHED' | 'CANCELLED';
     location?: Location;
     artists: Array<{

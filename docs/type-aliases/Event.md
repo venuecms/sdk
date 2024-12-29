@@ -27,7 +27,7 @@ optional description: string | null;
 ### endDate
 
 ```ts
-endDate: string | null;
+endDate: string;
 ```
 
 ### id
@@ -86,4 +86,4 @@ optional tickets: TicketOnEvent[];
 
 ## Defined in
 
-[src/client/types.gen.ts:3](https://github.com/venuecms/sdk/blob/2faabdda7b7d9b2854d4c3073cb04e69d28f92c8/src/client/types.gen.ts#L3)
+[src/client/types.gen.ts:3](https://github.com/venuecms/sdk/blob/f338eea324f851f70433ff3fb95078fc3e71e02a/src/client/types.gen.ts#L3)

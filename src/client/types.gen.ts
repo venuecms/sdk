@@ -30,10 +30,10 @@ export type LocalizedContent = {
     metaTitle?: (string) | null;
     metaDescription?: (string) | null;
     keywords?: (string) | null;
-    contentJSON: {
+    contentJSON?: {
         [key: string]: unknown;
     } | null;
-} | null;
+};
 
 export type Location = {
     site: Site;
@@ -48,14 +48,14 @@ export type MediaItem = {
     url?: (string) | null;
     mimeType?: (string) | null;
     size: number;
-    metadata: {
+    metadata?: {
         [key: string]: unknown;
     } | null;
     title?: (string) | null;
     caption?: (string) | null;
     credit?: (string) | null;
     altText?: (string) | null;
-} | null;
+};
 
 export type Page = {
     id: string;
@@ -118,6 +118,12 @@ export type Site = {
     description?: (string) | null;
     defaultLocale?: (string) | null;
     timeZone?: (string) | null;
+    settings: {
+        locale?: {
+            default: string;
+            supported: Array<(string)>;
+        };
+    };
     image?: {
         id: string;
         siteId: string;
@@ -128,14 +134,14 @@ export type Site = {
         url?: (string) | null;
         mimeType?: (string) | null;
         size: number;
-        metadata: {
+        metadata?: {
             [key: string]: unknown;
         } | null;
         title?: (string) | null;
         caption?: (string) | null;
         credit?: (string) | null;
         altText?: (string) | null;
-    } | null;
+    };
 };
 
 export type TicketOnEvent = {
@@ -155,7 +161,7 @@ export type GetSiteData = {
 
 export type GetSiteResponse = (Site);
 
-export type GetSiteError = unknown;
+export type GetSiteError = (unknown);
 
 export type GetEventsData = {
     path: {
@@ -189,7 +195,7 @@ export type GetEventData = {
 
 export type GetEventResponse = (Event);
 
-export type GetEventError = unknown;
+export type GetEventError = (unknown);
 
 export type GetPagesData = {
     path: {
@@ -227,7 +233,7 @@ export type GetPageResponse = ((Page & {
     };
 }));
 
-export type GetPageError = unknown;
+export type GetPageError = (unknown);
 
 export type GetProfilesData = {
     path: {
@@ -258,4 +264,4 @@ export type GetProfileData = {
 
 export type GetProfileResponse = (Profile);
 
-export type GetProfileError = unknown;
+export type GetProfileError = (unknown);

@@ -7,23 +7,77 @@
 # Type Alias: MediaItem
 
 ```ts
-type MediaItem = 
-  | {
-  altText: string | null;
-  caption: string | null;
-  credit: string | null;
-  inline: boolean;
-  metadata: {} | null;
-  mimeType: string | null;
-  siteId: string;
-  size: number;
-  title: string | null;
-  uploaded: boolean;
-  url: string | null;
- }
-  | null;
+type MediaItem = object;
+```
+
+## Type declaration
+
+### altText?
+
+```ts
+optional altText: string | null;
+```
+
+### caption?
+
+```ts
+optional caption: string | null;
+```
+
+### credit?
+
+```ts
+optional credit: string | null;
+```
+
+### inline
+
+```ts
+inline: boolean;
+```
+
+### metadata?
+
+```ts
+optional metadata: {} | null;
+```
+
+### mimeType?
+
+```ts
+optional mimeType: string | null;
+```
+
+### siteId
+
+```ts
+siteId: string;
+```
+
+### size
+
+```ts
+size: number;
+```
+
+### title?
+
+```ts
+optional title: string | null;
+```
+
+### uploaded
+
+```ts
+uploaded: boolean;
+```
+
+### url?
+
+```ts
+optional url: string | null;
 ```
 
 ## Defined in
 
-[src/client/types.gen.ts:44](https://github.com/venuecms/sdk/blob/7543b83415eb4130a2d88204751cb0c3e7f6d4ab/src/client/types.gen.ts#L44)
+[src/client/types.gen.ts:44](https://github.com/venuecms/sdk/blob/2faabdda7b7d9b2854d4c3073cb04e69d28f92c8/src/client/types.gen.ts#L44)

@@ -27,30 +27,121 @@ optional description: string | null;
 ### image?
 
 ```ts
-optional image: 
-  | {
-  altText: string | null;
-  caption: string | null;
-  createdAt: string;
-  credit: string | null;
-  id: string;
-  inline: boolean;
-  metadata: {} | null;
-  mimeType: string | null;
-  siteId: string;
-  size: number;
-  title: string | null;
-  updatedAt: string;
-  uploaded: boolean;
-  url: string | null;
- }
-  | null;
+optional image: object;
+```
+
+#### image.altText?
+
+```ts
+optional altText: string | null;
+```
+
+#### image.caption?
+
+```ts
+optional caption: string | null;
+```
+
+#### image.createdAt
+
+```ts
+createdAt: string;
+```
+
+#### image.credit?
+
+```ts
+optional credit: string | null;
+```
+
+#### image.id
+
+```ts
+id: string;
+```
+
+#### image.inline
+
+```ts
+inline: boolean;
+```
+
+#### image.metadata?
+
+```ts
+optional metadata: {} | null;
+```
+
+#### image.mimeType?
+
+```ts
+optional mimeType: string | null;
+```
+
+#### image.siteId
+
+```ts
+siteId: string;
+```
+
+#### image.size
+
+```ts
+size: number;
+```
+
+#### image.title?
+
+```ts
+optional title: string | null;
+```
+
+#### image.updatedAt
+
+```ts
+updatedAt: string;
+```
+
+#### image.uploaded
+
+```ts
+uploaded: boolean;
+```
+
+#### image.url?
+
+```ts
+optional url: string | null;
 ```
 
 ### name?
 
 ```ts
 optional name: string | null;
+```
+
+### settings
+
+```ts
+settings: object;
+```
+
+#### settings.locale?
+
+```ts
+optional locale: object;
+```
+
+#### settings.locale.default
+
+```ts
+default: string;
+```
+
+#### settings.locale.supported
+
+```ts
+supported: string[];
 ```
 
 ### timeZone?
@@ -61,4 +152,4 @@ optional timeZone: string | null;
 
 ## Defined in
 
-[src/client/types.gen.ts:116](https://github.com/venuecms/sdk/blob/7543b83415eb4130a2d88204751cb0c3e7f6d4ab/src/client/types.gen.ts#L116)
+[src/client/types.gen.ts:116](https://github.com/venuecms/sdk/blob/2faabdda7b7d9b2854d4c3073cb04e69d28f92c8/src/client/types.gen.ts#L116)

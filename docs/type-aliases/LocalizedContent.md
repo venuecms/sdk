@@ -7,23 +7,77 @@
 # Type Alias: LocalizedContent
 
 ```ts
-type LocalizedContent = 
-  | {
-  content: string | null;
-  contentJSON: {} | null;
-  excerpt: string | null;
-  extraContent: string | null;
-  keywords: string | null;
-  locale: string;
-  metaDescription: string | null;
-  metaTitle: string | null;
-  shortContent: string | null;
-  siteId: string;
-  title: string | null;
- }
-  | null;
+type LocalizedContent = object;
+```
+
+## Type declaration
+
+### content?
+
+```ts
+optional content: string | null;
+```
+
+### contentJSON?
+
+```ts
+optional contentJSON: {} | null;
+```
+
+### excerpt?
+
+```ts
+optional excerpt: string | null;
+```
+
+### extraContent?
+
+```ts
+optional extraContent: string | null;
+```
+
+### keywords?
+
+```ts
+optional keywords: string | null;
+```
+
+### locale
+
+```ts
+locale: string;
+```
+
+### metaDescription?
+
+```ts
+optional metaDescription: string | null;
+```
+
+### metaTitle?
+
+```ts
+optional metaTitle: string | null;
+```
+
+### shortContent?
+
+```ts
+optional shortContent: string | null;
+```
+
+### siteId
+
+```ts
+siteId: string;
+```
+
+### title?
+
+```ts
+optional title: string | null;
 ```
 
 ## Defined in
 
-[src/client/types.gen.ts:22](https://github.com/venuecms/sdk/blob/7543b83415eb4130a2d88204751cb0c3e7f6d4ab/src/client/types.gen.ts#L22)
+[src/client/types.gen.ts:22](https://github.com/venuecms/sdk/blob/2faabdda7b7d9b2854d4c3073cb04e69d28f92c8/src/client/types.gen.ts#L22)

@@ -14,7 +14,7 @@ function getLocalizedContent(localizedContent, locale): object
 
 ### localizedContent
 
-`object`[]
+[`LocalizedContent`](../type-aliases/LocalizedContent.md)[]
 
 ### locale
 
@@ -27,77 +27,7 @@ function getLocalizedContent(localizedContent, locale): object
 ### content
 
 ```ts
-content: object;
-```
-
-#### content.content?
-
-```ts
-optional content: string;
-```
-
-#### content.contentJSON
-
-```ts
-contentJSON: object;
-```
-
-##### Index Signature
-
- \[`key`: `string`\]: `unknown`
-
-#### content.excerpt?
-
-```ts
-optional excerpt: string;
-```
-
-#### content.extraContent?
-
-```ts
-optional extraContent: string;
-```
-
-#### content.keywords?
-
-```ts
-optional keywords: string;
-```
-
-#### content.locale
-
-```ts
-locale: string;
-```
-
-#### content.metaDescription?
-
-```ts
-optional metaDescription: string;
-```
-
-#### content.metaTitle?
-
-```ts
-optional metaTitle: string;
-```
-
-#### content.shortContent?
-
-```ts
-optional shortContent: string;
-```
-
-#### content.siteId
-
-```ts
-siteId: string;
-```
-
-#### content.title?
-
-```ts
-optional title: string;
+content: LocalizedContent;
 ```
 
 ### currentLocale
@@ -108,4 +38,4 @@ currentLocale: string;
 
 ## Defined in
 
-[src/utils/content.ts:6](https://github.com/venuecms/sdk/blob/7543b83415eb4130a2d88204751cb0c3e7f6d4ab/src/utils/content.ts#L6)
+[src/utils/content.ts:6](https://github.com/venuecms/sdk/blob/2faabdda7b7d9b2854d4c3073cb04e69d28f92c8/src/utils/content.ts#L6)

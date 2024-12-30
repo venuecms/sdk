@@ -56,4 +56,4 @@ function getPages(params): Promise<
 
 ## Defined in
 
-[src/createClient.ts:92](https://github.com/venuecms/sdk/blob/f338eea324f851f70433ff3fb95078fc3e71e02a/src/createClient.ts#L92)
+src/main.ts:90

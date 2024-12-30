@@ -61,13 +61,11 @@ const { content } = getLocalizedContent(event.localizedContent, locale);
 // Render content for the event
 return (
   <div>
-   {(content.contentJSON?.content as Array<RenderNode>).map((node) => (
-      <ContentRender classes={renderedStyles} node={node} />
-    ))}
+    <VenueContent classes={renderedStyles} content={content} />
   </div>
 );
 ```
 
 ## Defined in
 
-[src/createClient.ts:79](https://github.com/venuecms/sdk/blob/f338eea324f851f70433ff3fb95078fc3e71e02a/src/createClient.ts#L79)
+src/main.ts:77

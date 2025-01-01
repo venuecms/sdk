@@ -56,4 +56,4 @@ function getProfiles(params): Promise<
 
 ## Defined in
 
-src/main.ts:115
+[src/main.ts:125](https://github.com/venuecms/sdk/blob/2edfd13c06baf443bbea491be2ef200d66919dd4/src/main.ts#L125)

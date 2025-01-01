@@ -8,8 +8,9 @@ import {
   GetProfilesData,
 } from "./client/types.gen";
 
-const siteKey: string = process.env.VENUE_SITE_KEY;
-const apiKey: string = process.env.VENUE_API_KEY;
+let siteKey: string = process.env.VENUE_SITE_KEY;
+let apiKey: string = process.env.VENUE_API_KEY;
+
 const headers = {
   Authorization: `Bearer ${apiKey}`,
 };
@@ -21,6 +22,15 @@ const defaultOptions = {
 };
 
 sdk.client.setConfig(defaultOptions);
+
+/**
+ * Allows you to pass in the siteKey and API key manually in case you want it to be dynamically set. If you don't use this function, the SDK will default to using process.env.VENUE_SITE_KEY and process.env.VENUE_API_KEY instead.
+ * @category Configuration
+ */
+export const setConfig = (params: { siteKey: string }) => {
+  siteKey = params.siteKey;
+  sdk.client.setConfig(defaultOptions);
+}
 
 /**
  * @category Content

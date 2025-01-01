@@ -38,4 +38,4 @@ currentLocale: string;
 
 ## Defined in
 
-[src/utils/content.ts:6](https://github.com/venuecms/sdk/blob/3c845491d484a7b7f31c76433be6bced0b04671f/src/utils/content.ts#L6)
+[src/utils/content.ts:6](https://github.com/venuecms/sdk/blob/2edfd13c06baf443bbea491be2ef200d66919dd4/src/utils/content.ts#L6)

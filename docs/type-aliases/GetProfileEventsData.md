@@ -2,12 +2,12 @@
 
 ***
 
-[@venuecms/sdk](../Index.md) / GetProfilesData
+[@venuecms/sdk](../Index.md) / GetProfileEventsData
 
-# Type Alias: GetProfilesData
+# Type Alias: GetProfileEventsData
 
 ```ts
-type GetProfilesData = object;
+type GetProfileEventsData = object;
 ```
 
 ## Type declaration
@@ -22,6 +22,12 @@ path: object;
 
 ```ts
 siteKey: string;
+```
+
+#### path.slug
+
+```ts
+slug: string;
 ```
 
 ### query?
@@ -54,12 +60,6 @@ optional orderBy: string;
 optional page: number | null;
 ```
 
-#### query.type?
-
-```ts
-optional type: "member";
-```
-
 ## Defined in
 
-[src/client/types.gen.ts:238](https://github.com/venuecms/sdk/blob/df9684e4c8d8b9ec64f5682904234454e23baf21/src/client/types.gen.ts#L238)
+[src/client/types.gen.ts:269](https://github.com/venuecms/sdk/blob/df9684e4c8d8b9ec64f5682904234454e23baf21/src/client/types.gen.ts#L269)

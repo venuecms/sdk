@@ -68,4 +68,4 @@ return (
 
 ## Defined in
 
-[src/main.ts:87](https://github.com/venuecms/sdk/blob/2edfd13c06baf443bbea491be2ef200d66919dd4/src/main.ts#L87)
+[src/main.ts:89](https://github.com/venuecms/sdk/blob/df9684e4c8d8b9ec64f5682904234454e23baf21/src/main.ts#L89)

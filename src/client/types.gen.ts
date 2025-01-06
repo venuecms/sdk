@@ -265,3 +265,23 @@ export type GetProfileData = {
 export type GetProfileResponse = (Profile);
 
 export type GetProfileError = (unknown);
+
+export type GetProfileEventsData = {
+    path: {
+        siteKey: string;
+        slug: string;
+    };
+    query?: {
+        dir?: 'asc' | 'desc';
+        limit?: (number) | null;
+        orderBy?: string;
+        page?: (number) | null;
+    };
+};
+
+export type GetProfileEventsResponse = ({
+    records: Array<Event>;
+    count: number;
+});
+
+export type GetProfileEventsError = (unknown);

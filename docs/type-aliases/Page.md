@@ -206,4 +206,4 @@ slug: string;
 
 ## Defined in
 
-[src/client/types.gen.ts:60](https://github.com/venuecms/sdk/blob/2edfd13c06baf443bbea491be2ef200d66919dd4/src/client/types.gen.ts#L60)
+[src/client/types.gen.ts:60](https://github.com/venuecms/sdk/blob/df9684e4c8d8b9ec64f5682904234454e23baf21/src/client/types.gen.ts#L60)

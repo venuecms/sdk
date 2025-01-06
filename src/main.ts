@@ -1,3 +1,4 @@
+import { RequestOptions } from "@hey-api/client-fetch";
 import * as sdk from "./client/sdk.gen";
 import {
   GetEventData,
@@ -5,6 +6,7 @@ import {
   GetPageData,
   GetPagesData,
   GetProfileData,
+  GetProfileEventsData,
   GetProfilesData,
 } from "./client/types.gen";
 
@@ -27,13 +29,13 @@ sdk.client.setConfig(defaultOptions);
  * Allows you to pass in the siteKey and API key manually in case you want it to be dynamically set. If you don't use this function, the SDK will default to using process.env.VENUE_SITE_KEY and process.env.VENUE_API_KEY instead.
  * @category Configuration
  */
-export const setConfig = (params: { siteKey: string }) => {
+export const setConfig = (params: { siteKey: string; options?: Partial<RequestOptions> }, ) => {
   siteKey = params.siteKey;
-  sdk.client.setConfig(defaultOptions);
+  sdk.client.setConfig({...defaultOptions, ...params.options});
 }
 
 /**
- * @category Content
+ * @category Sites
  */
 export const getSite = () => {
   return sdk.getSite({
@@ -45,7 +47,7 @@ export const getSite = () => {
 };
 
 /**
- * @category Content
+ * @category Events
  */
 export const getEvents = (params: GetEventsData["query"] = {}) => {
   return sdk.getEvents({
@@ -59,7 +61,7 @@ export const getEvents = (params: GetEventsData["query"] = {}) => {
 /**
  * Retrieve data for a single event
  *
- * @category Content
+ * @category Events
  * @example
  * ```typescript
  * import { getEvent } from "@venuecms/sdk";
@@ -95,7 +97,7 @@ export const getEvent = (params: Omit<GetEventData["path"], "siteKey">) => {
 
 // PAGES
 /**
- * @category Content
+ * @category Pages
  */
 export const getPages = (params: GetPagesData["query"] = {}) => {
   return sdk.getPages({
@@ -107,7 +109,7 @@ export const getPages = (params: GetPagesData["query"] = {}) => {
 };
 
 /**
- * @category Content
+ * @category Pages
  */
 export const getPage = (params: Omit<GetPageData["path"], "siteKey">) => {
   return sdk.getPage({
@@ -120,7 +122,7 @@ export const getPage = (params: Omit<GetPageData["path"], "siteKey">) => {
 
 // PROFILES
 /**
- * @category Content
+ * @category Profiles
  */
 export const getProfiles = (params: GetProfilesData["query"] = {}) => {
   return sdk.getProfiles({
@@ -132,13 +134,16 @@ export const getProfiles = (params: GetProfilesData["query"] = {}) => {
 };
 
 /**
- * @category Content
+ * Get a listing of events for a profile
+ * @category Profiles
  */
-export const getProfile = (params: Omit<GetProfileData["path"], "siteKey">) => {
-  return sdk.getProfile({
+export const getProfileEvents = (params: Omit<GetProfileEventsData["path"], "siteKey"> & GetProfileEventsData["query"])  => {
+  const {slug, ...query} = params;
+  return sdk.getProfileEvents({
     path: {
-      ...params,
+      slug,
       siteKey,
     },
+    query,
   });
 };

@@ -4,18 +4,6 @@
 
 # @venuecms/sdk
 
-## Content
-
-| Function | Description |
-| ------ | ------ |
-| [getEvent](functions/getEvent.md) | Retrieve data for a single event |
-| [getEvents](functions/getEvents.md) | - |
-| [getPage](functions/getPage.md) | - |
-| [getPages](functions/getPages.md) | - |
-| [getProfile](functions/getProfile.md) | - |
-| [getProfiles](functions/getProfiles.md) | - |
-| [getSite](functions/getSite.md) | - |
-
 ## Utilities
 
 | Function | Description |
@@ -41,6 +29,9 @@
 | [GetPagesResponse](type-aliases/GetPagesResponse.md) | - |
 | [GetProfileData](type-aliases/GetProfileData.md) | - |
 | [GetProfileError](type-aliases/GetProfileError.md) | - |
+| [GetProfileEventsData](type-aliases/GetProfileEventsData.md) | - |
+| [GetProfileEventsError](type-aliases/GetProfileEventsError.md) | - |
+| [GetProfileEventsResponse](type-aliases/GetProfileEventsResponse.md) | - |
 | [GetProfileResponse](type-aliases/GetProfileResponse.md) | - |
 | [GetProfilesData](type-aliases/GetProfilesData.md) | - |
 | [GetProfilesError](type-aliases/GetProfilesError.md) | - |
@@ -63,3 +54,30 @@
 | Function | Description |
 | ------ | ------ |
 | [setConfig](functions/setConfig.md) | Allows you to pass in the siteKey and API key manually in case you want it to be dynamically set. If you don't use this function, the SDK will default to using process.env.VENUE_SITE_KEY and process.env.VENUE_API_KEY instead. |
+
+## Events
+
+| Function | Description |
+| ------ | ------ |
+| [getEvent](functions/getEvent.md) | Retrieve data for a single event |
+| [getEvents](functions/getEvents.md) | - |
+
+## Pages
+
+| Function | Description |
+| ------ | ------ |
+| [getPage](functions/getPage.md) | - |
+| [getPages](functions/getPages.md) | - |
+
+## Profiles
+
+| Function | Description |
+| ------ | ------ |
+| [getProfileEvents](functions/getProfileEvents.md) | Get a listing of events for a profile |
+| [getProfiles](functions/getProfiles.md) | - |
+
+## Sites
+
+| Function | Description |
+| ------ | ------ |
+| [getSite](functions/getSite.md) | - |

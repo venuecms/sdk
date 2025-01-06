@@ -12,4 +12,4 @@ type GetProfilesError = unknown;
 
 ## Defined in
 
-[src/client/types.gen.ts:256](https://github.com/venuecms/sdk/blob/2ca50bf1921627009457658807ac341d342a13a9/src/client/types.gen.ts#L256)
+[src/client/types.gen.ts:250](https://github.com/venuecms/sdk/blob/32df3b17009bdabf1585f0511b8fa69e1587fc03/src/client/types.gen.ts#L250)

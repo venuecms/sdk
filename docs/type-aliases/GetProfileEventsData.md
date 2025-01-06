@@ -42,10 +42,34 @@ optional query: object;
 optional dir: "asc" | "desc";
 ```
 
+#### query.featured?
+
+```ts
+optional featured: boolean | null;
+```
+
+#### query.gt?
+
+```ts
+optional gt: number | null;
+```
+
+#### query.legacyId?
+
+```ts
+optional legacyId: string;
+```
+
 #### query.limit?
 
 ```ts
 optional limit: number | null;
+```
+
+#### query.lt?
+
+```ts
+optional lt: number | null;
 ```
 
 #### query.orderBy?
@@ -60,6 +84,12 @@ optional orderBy: string;
 optional page: number | null;
 ```
 
+#### query.upcoming?
+
+```ts
+optional upcoming: boolean | null;
+```
+
 ## Defined in
 
-[src/client/types.gen.ts:269](https://github.com/venuecms/sdk/blob/2ca50bf1921627009457658807ac341d342a13a9/src/client/types.gen.ts#L269)
+[src/client/types.gen.ts:263](https://github.com/venuecms/sdk/blob/32df3b17009bdabf1585f0511b8fa69e1587fc03/src/client/types.gen.ts#L263)

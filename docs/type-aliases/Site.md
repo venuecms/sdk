@@ -27,91 +27,7 @@ optional description: string | null;
 ### image?
 
 ```ts
-optional image: object;
-```
-
-#### image.altText?
-
-```ts
-optional altText: string | null;
-```
-
-#### image.caption?
-
-```ts
-optional caption: string | null;
-```
-
-#### image.createdAt
-
-```ts
-createdAt: string;
-```
-
-#### image.credit?
-
-```ts
-optional credit: string | null;
-```
-
-#### image.id
-
-```ts
-id: string;
-```
-
-#### image.inline
-
-```ts
-inline: boolean;
-```
-
-#### image.metadata?
-
-```ts
-optional metadata: {} | null;
-```
-
-#### image.mimeType?
-
-```ts
-optional mimeType: string | null;
-```
-
-#### image.siteId
-
-```ts
-siteId: string;
-```
-
-#### image.size
-
-```ts
-size: number;
-```
-
-#### image.title?
-
-```ts
-optional title: string | null;
-```
-
-#### image.updatedAt
-
-```ts
-updatedAt: string;
-```
-
-#### image.uploaded
-
-```ts
-uploaded: boolean;
-```
-
-#### image.url?
-
-```ts
-optional url: string | null;
+optional image: MediaItem;
 ```
 
 ### name?
@@ -152,4 +68,4 @@ optional timeZone: string | null;
 
 ## Defined in
 
-[src/client/types.gen.ts:116](https://github.com/venuecms/sdk/blob/2ca50bf1921627009457658807ac341d342a13a9/src/client/types.gen.ts#L116)
+[src/client/types.gen.ts:127](https://github.com/venuecms/sdk/blob/32df3b17009bdabf1585f0511b8fa69e1587fc03/src/client/types.gen.ts#L127)

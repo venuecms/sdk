@@ -12,4 +12,4 @@ type GetPagesError = unknown;
 
 ## Defined in
 
-[src/client/types.gen.ts:221](https://github.com/venuecms/sdk/blob/2ca50bf1921627009457658807ac341d342a13a9/src/client/types.gen.ts#L221)
+[src/client/types.gen.ts:215](https://github.com/venuecms/sdk/blob/32df3b17009bdabf1585f0511b8fa69e1587fc03/src/client/types.gen.ts#L215)

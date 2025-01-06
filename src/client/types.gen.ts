@@ -38,6 +38,17 @@ export type LocalizedContent = {
 export type Location = {
     site: Site;
     image?: MediaItem;
+    address?: (string) | null;
+    address2?: (string) | null;
+    state?: (string) | null;
+    region?: (string) | null;
+    city?: (string) | null;
+    zipCode?: (string) | null;
+    country?: (string) | null;
+    externalLink?: (string) | null;
+    mapLink?: (string) | null;
+    lat?: (number) | null;
+    lng?: (number) | null;
     localizedContent: Array<LocalizedContent>;
 };
 
@@ -124,24 +135,7 @@ export type Site = {
             supported: Array<(string)>;
         };
     };
-    image?: {
-        id: string;
-        siteId: string;
-        createdAt: string;
-        updatedAt: string;
-        uploaded: boolean;
-        inline: boolean;
-        url?: (string) | null;
-        mimeType?: (string) | null;
-        size: number;
-        metadata?: {
-            [key: string]: unknown;
-        } | null;
-        title?: (string) | null;
-        caption?: (string) | null;
-        credit?: (string) | null;
-        altText?: (string) | null;
-    };
+    image?: MediaItem;
 };
 
 export type TicketOnEvent = {
@@ -273,9 +267,14 @@ export type GetProfileEventsData = {
     };
     query?: {
         dir?: 'asc' | 'desc';
+        featured?: (boolean) | null;
+        gt?: (number) | null;
+        legacyId?: string;
         limit?: (number) | null;
+        lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        upcoming?: (boolean) | null;
     };
 };
 

@@ -35,6 +35,8 @@ export const setConfig = (params: { siteKey: string; options?: Partial<RequestOp
 }
 
 /**
+ * Get the site configured via the siteKey
+ *
  * @category Sites
  */
 export const getSite = () => {
@@ -97,6 +99,8 @@ export const getEvent = (params: Omit<GetEventData["path"], "siteKey">) => {
 
 // PAGES
 /**
+ * Get a list of all pages
+ *
  * @category Pages
  */
 export const getPages = (params: GetPagesData["query"] = {}) => {
@@ -109,6 +113,8 @@ export const getPages = (params: GetPagesData["query"] = {}) => {
 };
 
 /**
+ * Get a single page using the slug
+ *
  * @category Pages
  */
 export const getPage = (params: Omit<GetPageData["path"], "siteKey">) => {
@@ -122,6 +128,8 @@ export const getPage = (params: Omit<GetPageData["path"], "siteKey">) => {
 
 // PROFILES
 /**
+ * Get a list of profiles
+ *
  * @category Profiles
  */
 export const getProfiles = (params: GetProfilesData["query"] = {}) => {
@@ -130,6 +138,20 @@ export const getProfiles = (params: GetProfilesData["query"] = {}) => {
       siteKey,
     },
     query: params,
+  });
+};
+
+/**
+ * Get a profile
+ *
+ * @category Profiles
+ */
+export const getProfile = (params: Omit<GetProfileData["path"], "siteKey">) => {
+  return sdk.getProfile({
+    path: {
+      ...params,
+      siteKey,
+    },
   });
 };
 

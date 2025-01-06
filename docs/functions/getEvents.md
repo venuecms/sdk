@@ -72,4 +72,4 @@ function getEvents(params): Promise<
 
 ## Defined in
 
-[src/main.ts:52](https://github.com/venuecms/sdk/blob/df9684e4c8d8b9ec64f5682904234454e23baf21/src/main.ts#L52)
+[src/main.ts:54](https://github.com/venuecms/sdk/blob/2ca50bf1921627009457658807ac341d342a13a9/src/main.ts#L54)

@@ -66,18 +66,19 @@
 
 | Function | Description |
 | ------ | ------ |
-| [getPage](functions/getPage.md) | - |
-| [getPages](functions/getPages.md) | - |
+| [getPage](functions/getPage.md) | Get a single page using the slug |
+| [getPages](functions/getPages.md) | Get a list of all pages |
 
 ## Profiles
 
 | Function | Description |
 | ------ | ------ |
+| [getProfile](functions/getProfile.md) | Get a profile |
 | [getProfileEvents](functions/getProfileEvents.md) | Get a listing of events for a profile |
-| [getProfiles](functions/getProfiles.md) | - |
+| [getProfiles](functions/getProfiles.md) | Get a list of profiles |
 
 ## Sites
 
 | Function | Description |
 | ------ | ------ |
-| [getSite](functions/getSite.md) | - |
+| [getSite](functions/getSite.md) | Get the site configured via the siteKey |

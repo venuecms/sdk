@@ -2,23 +2,23 @@
 
 ***
 
-[@venuecms/sdk](../Index.md) / getPage
+[@venuecms/sdk](../Index.md) / getProfile
 
-# Function: getPage()
+# Function: getProfile()
 
 ```ts
-function getPage(params): Promise<
+function getProfile(params): Promise<
   | {
   data: undefined;
   error: unknown;
  }
   | {
-  data: GetPageResponse;
+  data: Profile;
   error: undefined;
 } & object>
 ```
 
-Get a single page using the slug
+Get a profile
 
 ## Parameters
 
@@ -37,10 +37,10 @@ Get a single page using the slug
   `error`: `unknown`;
  \}
   \| \{
-  `data`: [`GetPageResponse`](../type-aliases/GetPageResponse.md);
+  `data`: [`Profile`](../type-aliases/Profile.md);
   `error`: `undefined`;
  \} & `object`\>
 
 ## Defined in
 
-[src/main.ts:120](https://github.com/venuecms/sdk/blob/2ca50bf1921627009457658807ac341d342a13a9/src/main.ts#L120)
+[src/main.ts:149](https://github.com/venuecms/sdk/blob/2ca50bf1921627009457658807ac341d342a13a9/src/main.ts#L149)

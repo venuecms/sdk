@@ -134,6 +134,9 @@ export type Site = {
             default: string;
             supported: Array<(string)>;
         };
+        publicSite?: {
+            baseUrl?: string;
+        };
     };
     image?: MediaItem;
 };

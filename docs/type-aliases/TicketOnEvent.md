@@ -50,4 +50,4 @@ roles: unknown[];
 
 ## Defined in
 
-[src/client/types.gen.ts:141](https://github.com/venuecms/sdk/blob/32df3b17009bdabf1585f0511b8fa69e1587fc03/src/client/types.gen.ts#L141)
+[src/client/types.gen.ts:144](https://github.com/venuecms/sdk/blob/655afdbbb73b0333dc2f8ae63a5e6dccc97fd3b5/src/client/types.gen.ts#L144)

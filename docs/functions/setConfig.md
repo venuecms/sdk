@@ -30,4 +30,4 @@ Allows you to pass in the siteKey and API key manually in case you want it to be
 
 ## Defined in
 
-[src/main.ts:32](https://github.com/venuecms/sdk/blob/32df3b17009bdabf1585f0511b8fa69e1587fc03/src/main.ts#L32)
+[src/main.ts:32](https://github.com/venuecms/sdk/blob/655afdbbb73b0333dc2f8ae63a5e6dccc97fd3b5/src/main.ts#L32)

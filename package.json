@@ -1,6 +1,6 @@
 {
   "name": "@venuecms/sdk",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "",
   "scripts": {
     "generate": "openapi-ts -i http://app.venuecms.com/api/v2/openapi.json -o src/client -c @hey-api/client-fetch",

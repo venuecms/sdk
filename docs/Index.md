@@ -4,6 +4,40 @@
 
 # @venuecms/sdk
 
+## Configuration
+
+| Function | Description |
+| ------ | ------ |
+| [setConfig](functions/setConfig.md) | Allows you to pass in the siteKey and API key manually in case you want it to be dynamically set. If you don't use this function, the SDK will default to using process.env.VENUE_SITE_KEY and process.env.VENUE_API_KEY instead. |
+
+## Sites
+
+| Function | Description |
+| ------ | ------ |
+| [getSite](functions/getSite.md) | Get the site configured via the siteKey |
+
+## Events
+
+| Function | Description |
+| ------ | ------ |
+| [getEvent](functions/getEvent.md) | Retrieve data for a single event |
+| [getEvents](functions/getEvents.md) | - |
+
+## Pages
+
+| Function | Description |
+| ------ | ------ |
+| [getPage](functions/getPage.md) | Get a single page using the slug |
+| [getPages](functions/getPages.md) | Get a list of all pages |
+
+## Profiles
+
+| Function | Description |
+| ------ | ------ |
+| [getProfile](functions/getProfile.md) | Get a profile |
+| [getProfileEvents](functions/getProfileEvents.md) | Get a listing of events for a profile |
+| [getProfiles](functions/getProfiles.md) | Get a list of profiles |
+
 ## Utilities
 
 | Function | Description |
@@ -48,37 +82,3 @@
 | [recordType](type-aliases/recordType.md) | - |
 | [Site](type-aliases/Site.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |
-
-## Configuration
-
-| Function | Description |
-| ------ | ------ |
-| [setConfig](functions/setConfig.md) | Allows you to pass in the siteKey and API key manually in case you want it to be dynamically set. If you don't use this function, the SDK will default to using process.env.VENUE_SITE_KEY and process.env.VENUE_API_KEY instead. |
-
-## Events
-
-| Function | Description |
-| ------ | ------ |
-| [getEvent](functions/getEvent.md) | Retrieve data for a single event |
-| [getEvents](functions/getEvents.md) | - |
-
-## Pages
-
-| Function | Description |
-| ------ | ------ |
-| [getPage](functions/getPage.md) | Get a single page using the slug |
-| [getPages](functions/getPages.md) | Get a list of all pages |
-
-## Profiles
-
-| Function | Description |
-| ------ | ------ |
-| [getProfile](functions/getProfile.md) | Get a profile |
-| [getProfileEvents](functions/getProfileEvents.md) | Get a listing of events for a profile |
-| [getProfiles](functions/getProfiles.md) | Get a list of profiles |
-
-## Sites
-
-| Function | Description |
-| ------ | ------ |
-| [getSite](functions/getSite.md) | Get the site configured via the siteKey |

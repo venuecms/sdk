@@ -6,8 +6,12 @@
   "indexFormat": "table",
   "useCodeBlocks": true,
   "categoryOrder": [
-    "Content",
+    "Configuration",
+    "Sites",
+    "Events",
+    "Pages",
+    "Profiles",
     "Utilities",
-    "Other"
+    "Other",
   ],
 }

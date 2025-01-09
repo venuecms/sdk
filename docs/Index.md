@@ -8,7 +8,7 @@
 
 | Function | Description |
 | ------ | ------ |
-| [getLocalizedContent](functions/getLocalizedContent.md) | - |
+| [getLocalizedContent](functions/getLocalizedContent.md) | This function will properly resolve content blocks that are localized. It takes in the array of localized content and returns the proper content to be used in your page. |
 
 ## Other
 

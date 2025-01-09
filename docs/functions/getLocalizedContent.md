@@ -10,6 +10,10 @@
 function getLocalizedContent(localizedContent, locale): object
 ```
 
+This function will properly resolve content blocks that are localized.
+It takes in the array of localized content and returns the proper content
+to be used in your page.
+
 ## Parameters
 
 ### localizedContent
@@ -36,6 +40,28 @@ content: LocalizedContent;
 currentLocale: string;
 ```
 
+## Example
+
+```typescript
+import { getEvent, getLocalizedContent } from "@venuecms/sdk";
+import { ContentRender, type RenderNode } from "@/lib/utils/renderer";
+
+// let's assume we are looking at an event and want to show the locale-specific title of that event in english
+const { data: event } = await getEvent({ slug });
+
+// Use getLocalizedContent to retrieve all localized content in the correct locale
+// typically you will pass a locale from your app (such as from a i18n library) but
+// for clarity I am passing "en" explicitly to retrieve the english version
+const { content } = getLocalizedContent(event.localizedContent, "en");
+
+// Render the content in english using the renderer
+return (
+  <div>
+    <VenueContent classes={renderedStyles} content={content} />
+  </div>
+);
+```
+
 ## Defined in
 
-[src/utils/content.ts:6](https://github.com/venuecms/sdk/blob/655afdbbb73b0333dc2f8ae63a5e6dccc97fd3b5/src/utils/content.ts#L6)
+[src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/84b0e6bf235b3e7fa1a5f5c7d0aee6ec6b574dd0/src/utils/content.ts#L31)

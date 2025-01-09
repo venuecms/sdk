@@ -31,7 +31,7 @@ import { LocalizedContent } from "../client";
 export const getLocalizedContent = (
   localizedContent: Array<LocalizedContent> | undefined,
   locale: string,
-) => {
+): { content: LocalizedContent; currentLocale: string } => {
   const currentLocale = locale;
 
   const content = (localizedContent?.find(

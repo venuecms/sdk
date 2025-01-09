@@ -98,4 +98,4 @@ optional zipCode: string | null;
 
 ## Defined in
 
-[src/client/types.gen.ts:38](https://github.com/venuecms/sdk/blob/84b0e6bf235b3e7fa1a5f5c7d0aee6ec6b574dd0/src/client/types.gen.ts#L38)
+[src/client/types.gen.ts:38](https://github.com/venuecms/sdk/blob/7d93df2eefed457c19a4c5aaa8f3aab0d6372cf0/src/client/types.gen.ts#L38)

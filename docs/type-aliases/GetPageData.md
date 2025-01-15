@@ -32,4 +32,4 @@ slug: string;
 
 ## Defined in
 
-[src/client/types.gen.ts:220](https://github.com/venuecms/sdk/blob/7553f2f1dfb552861476dc6bc82e87fac13c2999/src/client/types.gen.ts#L220)
+[src/client/types.gen.ts:220](https://github.com/venuecms/sdk/blob/915971a29eb95acc8223db796957e1d217a65139/src/client/types.gen.ts#L220)

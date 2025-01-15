@@ -12,54 +12,17 @@ type GetProfilesData = object;
 
 ## Type declaration
 
-### path
-
-```ts
-path: object;
-```
-
-#### path.siteKey
-
-```ts
-siteKey: string;
-```
-
-### query?
-
-```ts
-optional query: object;
-```
-
-#### query.dir?
-
-```ts
-optional dir: "asc" | "desc";
-```
-
-#### query.limit?
-
-```ts
-optional limit: number | null;
-```
-
-#### query.orderBy?
-
-```ts
-optional orderBy: string;
-```
-
-#### query.page?
-
-```ts
-optional page: number | null;
-```
-
-#### query.type?
-
-```ts
-optional type: "member";
-```
+| Name | Type | Defined in |
+| ------ | ------ | ------ |
+| `path` | `object` | [src/client/types.gen.ts:236](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L236) |
+| `path.siteKey` | `string` | [src/client/types.gen.ts:237](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L237) |
+| `query`? | `object` | [src/client/types.gen.ts:239](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L239) |
+| `query.dir`? | `"asc"` \| `"desc"` | [src/client/types.gen.ts:240](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L240) |
+| `query.limit`? | `number` \| `null` | [src/client/types.gen.ts:241](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L241) |
+| `query.orderBy`? | `string` | [src/client/types.gen.ts:242](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L242) |
+| `query.page`? | `number` \| `null` | [src/client/types.gen.ts:243](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L243) |
+| `query.type`? | `"member"` | [src/client/types.gen.ts:244](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L244) |
 
 ## Defined in
 
-[src/client/types.gen.ts:235](https://github.com/venuecms/sdk/blob/b5a1c75896c488e0559678cc7e28425c90f79b9e/src/client/types.gen.ts#L235)
+[src/client/types.gen.ts:235](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L235)

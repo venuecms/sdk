@@ -12,42 +12,15 @@ type TicketOnEvent = object;
 
 ## Type declaration
 
-### currency?
-
-```ts
-optional currency: string | null;
-```
-
-### externalLink?
-
-```ts
-optional externalLink: string | null;
-```
-
-### localizedContent?
-
-```ts
-optional localizedContent: LocalizedContent[];
-```
-
-### name
-
-```ts
-name: string;
-```
-
-### price
-
-```ts
-price: number;
-```
-
-### roles
-
-```ts
-roles: unknown[];
-```
+| Name | Type | Defined in |
+| ------ | ------ | ------ |
+| `currency`? | `string` \| `null` | [src/client/types.gen.ts:148](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L148) |
+| `externalLink`? | `string` \| `null` | [src/client/types.gen.ts:147](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L147) |
+| `localizedContent`? | [`LocalizedContent`](LocalizedContent.md)[] | [src/client/types.gen.ts:150](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L150) |
+| `name` | `string` | [src/client/types.gen.ts:145](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L145) |
+| `price` | `number` | [src/client/types.gen.ts:146](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L146) |
+| `roles` | `unknown`[] | [src/client/types.gen.ts:149](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L149) |
 
 ## Defined in
 
-[src/client/types.gen.ts:144](https://github.com/venuecms/sdk/blob/b5a1c75896c488e0559678cc7e28425c90f79b9e/src/client/types.gen.ts#L144)
+[src/client/types.gen.ts:144](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L144)

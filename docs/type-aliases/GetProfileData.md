@@ -12,24 +12,12 @@ type GetProfileData = object;
 
 ## Type declaration
 
-### path
-
-```ts
-path: object;
-```
-
-#### path.siteKey
-
-```ts
-siteKey: string;
-```
-
-#### path.slug
-
-```ts
-slug: string;
-```
+| Name | Type | Defined in |
+| ------ | ------ | ------ |
+| `path` | `object` | [src/client/types.gen.ts:256](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L256) |
+| `path.siteKey` | `string` | [src/client/types.gen.ts:257](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L257) |
+| `path.slug` | `string` | [src/client/types.gen.ts:258](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L258) |
 
 ## Defined in
 
-[src/client/types.gen.ts:255](https://github.com/venuecms/sdk/blob/b5a1c75896c488e0559678cc7e28425c90f79b9e/src/client/types.gen.ts#L255)
+[src/client/types.gen.ts:255](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L255)

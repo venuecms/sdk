@@ -25,17 +25,10 @@ to be used in your page.
 
 `object`
 
-### content
-
-```ts
-content: LocalizedContent;
-```
-
-### currentLocale
-
-```ts
-currentLocale: string;
-```
+| Name | Type | Defined in |
+| ------ | ------ | ------ |
+| `content` | [`LocalizedContent`](../type-aliases/LocalizedContent.md) | [src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/utils/content.ts#L34) |
+| `currentLocale` | `string` | [src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/utils/content.ts#L34) |
 
 ## Example
 
@@ -61,4 +54,4 @@ return (
 
 ## Defined in
 
-[src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/b5a1c75896c488e0559678cc7e28425c90f79b9e/src/utils/content.ts#L31)
+[src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/utils/content.ts#L31)

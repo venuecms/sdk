@@ -12,72 +12,20 @@ type LocalizedContent = object;
 
 ## Type declaration
 
-### content?
-
-```ts
-optional content: string | null;
-```
-
-### contentJSON?
-
-```ts
-optional contentJSON: {} | null;
-```
-
-### excerpt?
-
-```ts
-optional excerpt: string | null;
-```
-
-### extraContent?
-
-```ts
-optional extraContent: string | null;
-```
-
-### keywords?
-
-```ts
-optional keywords: string | null;
-```
-
-### locale
-
-```ts
-locale: string;
-```
-
-### metaDescription?
-
-```ts
-optional metaDescription: string | null;
-```
-
-### metaTitle?
-
-```ts
-optional metaTitle: string | null;
-```
-
-### shortContent?
-
-```ts
-optional shortContent: string | null;
-```
-
-### siteId
-
-```ts
-siteId: string;
-```
-
-### title?
-
-```ts
-optional title: string | null;
-```
+| Name | Type | Defined in |
+| ------ | ------ | ------ |
+| `content`? | `string` \| `null` | [src/client/types.gen.ts:26](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L26) |
+| `contentJSON`? | \{\} \| `null` | [src/client/types.gen.ts:33](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L33) |
+| `excerpt`? | `string` \| `null` | [src/client/types.gen.ts:29](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L29) |
+| `extraContent`? | `string` \| `null` | [src/client/types.gen.ts:28](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L28) |
+| `keywords`? | `string` \| `null` | [src/client/types.gen.ts:32](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L32) |
+| `locale` | `string` | [src/client/types.gen.ts:24](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L24) |
+| `metaDescription`? | `string` \| `null` | [src/client/types.gen.ts:31](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L31) |
+| `metaTitle`? | `string` \| `null` | [src/client/types.gen.ts:30](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L30) |
+| `shortContent`? | `string` \| `null` | [src/client/types.gen.ts:27](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L27) |
+| `siteId` | `string` | [src/client/types.gen.ts:23](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L23) |
+| `title`? | `string` \| `null` | [src/client/types.gen.ts:25](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L25) |
 
 ## Defined in
 
-[src/client/types.gen.ts:22](https://github.com/venuecms/sdk/blob/b5a1c75896c488e0559678cc7e28425c90f79b9e/src/client/types.gen.ts#L22)
+[src/client/types.gen.ts:22](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/client/types.gen.ts#L22)

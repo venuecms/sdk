@@ -5,8 +5,12 @@
   "readme": "none",
   "indexFormat": "table",
   "useCodeBlocks": true,
+  "propertyMembersFormat": "table",
   "parametersFormat": "table",
   "interfacePropertiesFormat": "table",
+  "classPropertiesFormat": "table",
+  "enumMembersFormat": "table",
+  "typeDeclarationFormat": "table",
   "categoryOrder": [
     "Configuration",
     "Sites",

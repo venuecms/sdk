@@ -1,3 +1,7 @@
+[**@venuecms/sdk**](../Index.md)
+
+***
+
 # Function: setConfig()
 
 ```ts
@@ -20,4 +24,4 @@ Allows you to pass in the siteKey and API key manually in case you want it to be
 
 ## Defined in
 
-[src/main.ts:32](https://github.com/venuecms/sdk/blob/8aca1c9889978c21426c872f7a909a183677d750/src/main.ts#L32)
+[src/main.ts:32](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/main.ts#L32)

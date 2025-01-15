@@ -12,7 +12,7 @@
   "enumMembersFormat": "table",
   "typeDeclarationFormat": "table",
   "hideBreadcrumbs": true,
-  "hidePageHeader": true,
+  "hidePageHeader": false,
   "categoryOrder": [
     "Configuration",
     "Sites",

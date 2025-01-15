@@ -1,3 +1,7 @@
+[**@venuecms/sdk**](../Index.md)
+
+***
+
 # Function: getProfileEvents()
 
 ```ts
@@ -34,4 +38,4 @@ Get a listing of events for a profile
 
 ## Defined in
 
-[src/main.ts:162](https://github.com/venuecms/sdk/blob/8aca1c9889978c21426c872f7a909a183677d750/src/main.ts#L162)
+[src/main.ts:162](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/main.ts#L162)

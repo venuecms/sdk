@@ -1,3 +1,7 @@
+[**@venuecms/sdk**](../Index.md)
+
+***
+
 # Function: getLocalizedContent()
 
 ```ts
@@ -21,8 +25,8 @@ to be used in your page.
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `content` | [`LocalizedContent`](../type-aliases/LocalizedContent.md) | [src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/8aca1c9889978c21426c872f7a909a183677d750/src/utils/content.ts#L34) |
-| `currentLocale` | `string` | [src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/8aca1c9889978c21426c872f7a909a183677d750/src/utils/content.ts#L34) |
+| `content` | [`LocalizedContent`](../type-aliases/LocalizedContent.md) | [src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/utils/content.ts#L34) |
+| `currentLocale` | `string` | [src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/utils/content.ts#L34) |
 
 ## Example
 
@@ -48,4 +52,4 @@ return (
 
 ## Defined in
 
-[src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/8aca1c9889978c21426c872f7a909a183677d750/src/utils/content.ts#L31)
+[src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/utils/content.ts#L31)

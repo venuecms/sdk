@@ -16,13 +16,10 @@ to be used in your page.
 
 ## Parameters
 
-### localizedContent
-
-[`LocalizedContent`](../type-aliases/LocalizedContent.md)[]
-
-### locale
-
-`string`
+| Parameter | Type |
+| ------ | ------ |
+| `localizedContent` | [`LocalizedContent`](../type-aliases/LocalizedContent.md)[] |
+| `locale` | `string` |
 
 ## Returns
 
@@ -64,4 +61,4 @@ return (
 
 ## Defined in
 
-[src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/915971a29eb95acc8223db796957e1d217a65139/src/utils/content.ts#L31)
+[src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/b5a1c75896c488e0559678cc7e28425c90f79b9e/src/utils/content.ts#L31)

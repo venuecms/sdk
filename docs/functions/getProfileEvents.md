@@ -22,12 +22,9 @@ Get a listing of events for a profile
 
 ## Parameters
 
-### params
-
-`Omit`\<\{
-  `siteKey`: `string`;
-  `slug`: `string`;
- \}, `"siteKey"`\> & `object`
+| Parameter | Type |
+| ------ | ------ |
+| `params` | `Omit`\<\{ `siteKey`: `string`; `slug`: `string`; \}, `"siteKey"`\> & `object` |
 
 ## Returns
 
@@ -43,4 +40,4 @@ Get a listing of events for a profile
 
 ## Defined in
 
-[src/main.ts:162](https://github.com/venuecms/sdk/blob/915971a29eb95acc8223db796957e1d217a65139/src/main.ts#L162)
+[src/main.ts:162](https://github.com/venuecms/sdk/blob/b5a1c75896c488e0559678cc7e28425c90f79b9e/src/main.ts#L162)

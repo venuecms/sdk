@@ -22,27 +22,14 @@ Get a list of profiles
 
 ## Parameters
 
-### params
-
-#### dir
-
-`"asc"` \| `"desc"`
-
-#### limit
-
-`number`
-
-#### orderBy
-
-`string`
-
-#### page
-
-`number`
-
-#### type
-
-`"member"`
+| Parameter | Type |
+| ------ | ------ |
+| `params` | \{ `dir`: `"asc"` \| `"desc"`; `limit`: `number`; `orderBy`: `string`; `page`: `number`; `type`: `"member"`; \} |
+| `params.dir`? | `"asc"` \| `"desc"` |
+| `params.limit`? | `number` |
+| `params.orderBy`? | `string` |
+| `params.page`? | `number` |
+| `params.type`? | `"member"` |
 
 ## Returns
 
@@ -58,4 +45,4 @@ Get a list of profiles
 
 ## Defined in
 
-[src/main.ts:135](https://github.com/venuecms/sdk/blob/915971a29eb95acc8223db796957e1d217a65139/src/main.ts#L135)
+[src/main.ts:135](https://github.com/venuecms/sdk/blob/b5a1c75896c488e0559678cc7e28425c90f79b9e/src/main.ts#L135)

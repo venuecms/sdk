@@ -5,7 +5,8 @@
   "readme": "none",
   "indexFormat": "table",
   "useCodeBlocks": true,
-  "propertyMembersFormat": "table",
+  "parametersFormat": "table",
+  "interfacePropertiesFormat": "table",
   "categoryOrder": [
     "Configuration",
     "Sites",

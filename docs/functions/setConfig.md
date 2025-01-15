@@ -14,15 +14,11 @@ Allows you to pass in the siteKey and API key manually in case you want it to be
 
 ## Parameters
 
-### params
-
-#### options
-
-`Partial`\<`RequestOptions`\>
-
-#### siteKey
-
-`string`
+| Parameter | Type |
+| ------ | ------ |
+| `params` | \{ `options`: `Partial`\<`RequestOptions`\>; `siteKey`: `string`; \} |
+| `params.options`? | `Partial`\<`RequestOptions`\> |
+| `params.siteKey` | `string` |
 
 ## Returns
 
@@ -30,4 +26,4 @@ Allows you to pass in the siteKey and API key manually in case you want it to be
 
 ## Defined in
 
-[src/main.ts:32](https://github.com/venuecms/sdk/blob/915971a29eb95acc8223db796957e1d217a65139/src/main.ts#L32)
+[src/main.ts:32](https://github.com/venuecms/sdk/blob/b5a1c75896c488e0559678cc7e28425c90f79b9e/src/main.ts#L32)

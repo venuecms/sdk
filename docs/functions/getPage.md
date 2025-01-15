@@ -1,9 +1,3 @@
-[**@venuecms/sdk**](../Index.md)
-
-***
-
-[@venuecms/sdk](../Index.md) / getPage
-
 # Function: getPage()
 
 ```ts
@@ -40,4 +34,4 @@ Get a single page using the slug
 
 ## Defined in
 
-[src/main.ts:120](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/main.ts#L120)
+[src/main.ts:120](https://github.com/venuecms/sdk/blob/8aca1c9889978c21426c872f7a909a183677d750/src/main.ts#L120)

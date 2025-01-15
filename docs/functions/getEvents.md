@@ -1,9 +1,3 @@
-[**@venuecms/sdk**](../Index.md)
-
-***
-
-[@venuecms/sdk](../Index.md) / getEvents
-
 # Function: getEvents()
 
 ```ts
@@ -47,4 +41,4 @@ function getEvents(params): Promise<
 
 ## Defined in
 
-[src/main.ts:54](https://github.com/venuecms/sdk/blob/535f6cc6bb8e343eb77f7a779e895c729df808ed/src/main.ts#L54)
+[src/main.ts:54](https://github.com/venuecms/sdk/blob/8aca1c9889978c21426c872f7a909a183677d750/src/main.ts#L54)

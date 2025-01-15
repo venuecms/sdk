@@ -1,7 +1,3 @@
-**@venuecms/sdk**
-
-***
-
 # @venuecms/sdk
 
 ## Configuration

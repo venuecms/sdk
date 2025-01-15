@@ -11,6 +11,8 @@
   "classPropertiesFormat": "table",
   "enumMembersFormat": "table",
   "typeDeclarationFormat": "table",
+  "hideBreadcrumbs": true,
+  "hidePageHeader": true,
   "categoryOrder": [
     "Configuration",
     "Sites",

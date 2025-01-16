@@ -10,4 +10,4 @@ type GetSiteError = unknown;
 
 ## Defined in
 
-[src/client/types.gen.ts:161](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L161)
+[src/client/types.gen.ts:170](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L170)

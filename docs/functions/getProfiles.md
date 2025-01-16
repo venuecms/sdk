@@ -43,4 +43,4 @@ Get a list of profiles
 
 ## Defined in
 
-[src/main.ts:135](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/main.ts#L135)
+[src/main.ts:135](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/main.ts#L135)

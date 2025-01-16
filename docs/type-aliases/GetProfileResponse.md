@@ -10,4 +10,4 @@ type GetProfileResponse = Profile;
 
 ## Defined in
 
-[src/client/types.gen.ts:262](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L262)
+[src/client/types.gen.ts:271](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L271)

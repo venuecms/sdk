@@ -12,13 +12,13 @@ type TicketOnEvent = object;
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `currency`? | `string` \| `null` | [src/client/types.gen.ts:148](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L148) |
-| `externalLink`? | `string` \| `null` | [src/client/types.gen.ts:147](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L147) |
-| `localizedContent`? | [`LocalizedContent`](LocalizedContent.md)[] | [src/client/types.gen.ts:150](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L150) |
-| `name` | `string` | [src/client/types.gen.ts:145](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L145) |
-| `price` | `number` | [src/client/types.gen.ts:146](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L146) |
-| `roles` | `unknown`[] | [src/client/types.gen.ts:149](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L149) |
+| `currency`? | `string` \| `null` | [src/client/types.gen.ts:157](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L157) |
+| `externalLink`? | `string` \| `null` | [src/client/types.gen.ts:156](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L156) |
+| `localizedContent`? | [`LocalizedContent`](LocalizedContent.md)[] | [src/client/types.gen.ts:159](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L159) |
+| `name` | `string` | [src/client/types.gen.ts:154](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L154) |
+| `price` | `number` | [src/client/types.gen.ts:155](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L155) |
+| `roles` | `unknown`[] | [src/client/types.gen.ts:158](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L158) |
 
 ## Defined in
 
-[src/client/types.gen.ts:144](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L144)
+[src/client/types.gen.ts:153](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L153)

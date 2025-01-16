@@ -12,9 +12,9 @@ type GetSiteData = object;
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `path` | `object` | [src/client/types.gen.ts:154](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L154) |
-| `path.siteKey` | `string` | [src/client/types.gen.ts:155](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L155) |
+| `path` | `object` | [src/client/types.gen.ts:163](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L163) |
+| `path.siteKey` | `string` | [src/client/types.gen.ts:164](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L164) |
 
 ## Defined in
 
-[src/client/types.gen.ts:153](https://github.com/venuecms/sdk/blob/f00451b8a27a69349a724b38e003e82c432884fc/src/client/types.gen.ts#L153)
+[src/client/types.gen.ts:162](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L162)

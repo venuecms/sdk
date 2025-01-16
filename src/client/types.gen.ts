@@ -129,16 +129,25 @@ export type Site = {
     description?: (string) | null;
     defaultLocale?: (string) | null;
     timeZone?: (string) | null;
-    settings: {
-        locale?: {
-            default: string;
-            supported: Array<(string)>;
-        };
-        publicSite?: {
-            baseUrl?: string;
+    image?: MediaItem;
+    settings: SiteSettings;
+};
+
+export type SiteSettings = {
+    locale?: {
+        default: string;
+        supported: Array<(string)>;
+    };
+    publicSite?: {
+        baseUrl?: string;
+        template?: {
+            id?: string;
+            config?: {
+                themeId?: string;
+                fontName?: string;
+            };
         };
     };
-    image?: MediaItem;
 };
 
 export type TicketOnEvent = {

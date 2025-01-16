@@ -81,4 +81,5 @@
 | [publishState](type-aliases/publishState.md) | - |
 | [recordType](type-aliases/recordType.md) | - |
 | [Site](type-aliases/Site.md) | - |
+| [SiteSettings](type-aliases/SiteSettings.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |

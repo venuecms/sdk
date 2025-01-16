@@ -1,9 +1,9 @@
 {
   "name": "@venuecms/sdk",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "",
   "scripts": {
-    "generate": "openapi-ts -i http://app.venuecms.com/api/v2/openapi.json -o src/client -c @hey-api/client-fetch",
+    "generate": "openapi-ts -i https://app.venuecms.com/api/v2/openapi.json -o src/client -c @hey-api/client-fetch",
     "build:lib": "tsup --config ./tsup.config.ts",
     "build:sdk": "pnpm run generate && pnpm run build:lib",
     "build:docs": "typedoc --options ./typedoc.json",

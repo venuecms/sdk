@@ -12,11 +12,11 @@ type Profile = object;
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `image`? | [`MediaItem`](MediaItem.md) | [src/client/types.gen.ts:123](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L123) |
-| `localizedContent` | [`LocalizedContent`](LocalizedContent.md)[] | [src/client/types.gen.ts:124](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L124) |
-| `site` | [`Site`](Site.md) | [src/client/types.gen.ts:122](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L122) |
-| `slug` | `string` | [src/client/types.gen.ts:121](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L121) |
+| `image`? | [`MediaItem`](MediaItem.md) | [src/client/types.gen.ts:126](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L126) |
+| `localizedContent` | [`LocalizedContent`](LocalizedContent.md)[] | [src/client/types.gen.ts:127](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L127) |
+| `site` | [`Site`](Site.md) | [src/client/types.gen.ts:125](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L125) |
+| `slug` | `string` | [src/client/types.gen.ts:124](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L124) |
 
 ## Defined in
 
-[src/client/types.gen.ts:120](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L120)
+[src/client/types.gen.ts:123](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L123)

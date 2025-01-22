@@ -113,6 +113,9 @@ export type Page = {
         };
     }>;
     localizedContent: Array<LocalizedContent>;
+    artists: Array<{
+        profile: Profile;
+    }>;
 };
 
 export type recordType = 'SOURCE' | 'PUBLISHED' | 'REVISION';

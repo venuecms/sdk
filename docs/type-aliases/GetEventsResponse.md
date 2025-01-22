@@ -12,8 +12,8 @@ type GetEventsResponse = object;
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `records` | [`Event`](Event.md)[] | [src/client/types.gen.ts:190](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L190) |
+| `records` | [`Event`](Event.md)[] | [src/client/types.gen.ts:193](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L193) |
 
 ## Defined in
 
-[src/client/types.gen.ts:189](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L189)
+[src/client/types.gen.ts:192](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L192)

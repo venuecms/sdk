@@ -12,10 +12,10 @@ type GetEventData = object;
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `path` | `object` | [src/client/types.gen.ts:196](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L196) |
-| `path.siteKey` | `string` | [src/client/types.gen.ts:197](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L197) |
-| `path.slug` | `string` | [src/client/types.gen.ts:198](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L198) |
+| `path` | `object` | [src/client/types.gen.ts:199](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L199) |
+| `path.siteKey` | `string` | [src/client/types.gen.ts:200](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L200) |
+| `path.slug` | `string` | [src/client/types.gen.ts:201](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L201) |
 
 ## Defined in
 
-[src/client/types.gen.ts:195](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/client/types.gen.ts#L195)
+[src/client/types.gen.ts:198](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L198)

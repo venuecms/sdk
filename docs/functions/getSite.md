@@ -32,4 +32,4 @@ Get the site configured via the siteKey
 
 ## Defined in
 
-[src/main.ts:42](https://github.com/venuecms/sdk/blob/97b5dd87028768348fc162149733841fcbf81c7e/src/main.ts#L42)
+[src/main.ts:42](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/main.ts#L42)

@@ -12,13 +12,13 @@ type Site = object;
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `defaultLocale`? | `string` \| `null` | [src/client/types.gen.ts:133](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L133) |
-| `description`? | `string` \| `null` | [src/client/types.gen.ts:132](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L132) |
-| `image`? | [`MediaItem`](MediaItem.md) | [src/client/types.gen.ts:135](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L135) |
-| `name`? | `string` \| `null` | [src/client/types.gen.ts:131](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L131) |
-| `settings` | [`SiteSettings`](SiteSettings.md) | [src/client/types.gen.ts:136](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L136) |
-| `timeZone`? | `string` \| `null` | [src/client/types.gen.ts:134](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L134) |
+| `defaultLocale`? | `string` \| `null` | [src/client/types.gen.ts:163](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L163) |
+| `description`? | `string` \| `null` | [src/client/types.gen.ts:162](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L162) |
+| `image`? | [`MediaItem`](MediaItem.md) | [src/client/types.gen.ts:165](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L165) |
+| `name`? | `string` \| `null` | [src/client/types.gen.ts:161](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L161) |
+| `settings` | [`SiteSettings`](SiteSettings.md) | [src/client/types.gen.ts:166](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L166) |
+| `timeZone`? | `string` \| `null` | [src/client/types.gen.ts:164](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L164) |
 
 ## Defined in
 
-[src/client/types.gen.ts:130](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L130)
+[src/client/types.gen.ts:160](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L160)

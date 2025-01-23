@@ -12,18 +12,18 @@ type MediaItem = object;
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `altText`? | `string` \| `null` | [src/client/types.gen.ts:68](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L68) |
-| `caption`? | `string` \| `null` | [src/client/types.gen.ts:66](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L66) |
-| `credit`? | `string` \| `null` | [src/client/types.gen.ts:67](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L67) |
-| `inline` | `boolean` | [src/client/types.gen.ts:58](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L58) |
-| `metadata`? | \{\} \| `null` | [src/client/types.gen.ts:62](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L62) |
-| `mimeType`? | `string` \| `null` | [src/client/types.gen.ts:60](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L60) |
-| `siteId` | `string` | [src/client/types.gen.ts:56](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L56) |
-| `size` | `number` | [src/client/types.gen.ts:61](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L61) |
-| `title`? | `string` \| `null` | [src/client/types.gen.ts:65](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L65) |
-| `uploaded` | `boolean` | [src/client/types.gen.ts:57](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L57) |
-| `url`? | `string` \| `null` | [src/client/types.gen.ts:59](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L59) |
+| `altText`? | `string` \| `null` | [src/client/types.gen.ts:68](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L68) |
+| `caption`? | `string` \| `null` | [src/client/types.gen.ts:66](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L66) |
+| `credit`? | `string` \| `null` | [src/client/types.gen.ts:67](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L67) |
+| `inline` | `boolean` | [src/client/types.gen.ts:58](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L58) |
+| `metadata`? | \{\} \| `null` | [src/client/types.gen.ts:62](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L62) |
+| `mimeType`? | `string` \| `null` | [src/client/types.gen.ts:60](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L60) |
+| `siteId` | `string` | [src/client/types.gen.ts:56](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L56) |
+| `size` | `number` | [src/client/types.gen.ts:61](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L61) |
+| `title`? | `string` \| `null` | [src/client/types.gen.ts:65](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L65) |
+| `uploaded` | `boolean` | [src/client/types.gen.ts:57](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L57) |
+| `url`? | `string` \| `null` | [src/client/types.gen.ts:59](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L59) |
 
 ## Defined in
 
-[src/client/types.gen.ts:55](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/client/types.gen.ts#L55)
+[src/client/types.gen.ts:55](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/client/types.gen.ts#L55)

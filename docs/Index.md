@@ -61,6 +61,12 @@
 | [GetPagesData](type-aliases/GetPagesData.md) | - |
 | [GetPagesError](type-aliases/GetPagesError.md) | - |
 | [GetPagesResponse](type-aliases/GetPagesResponse.md) | - |
+| [GetProductData](type-aliases/GetProductData.md) | - |
+| [GetProductError](type-aliases/GetProductError.md) | - |
+| [GetProductResponse](type-aliases/GetProductResponse.md) | - |
+| [GetProductsData](type-aliases/GetProductsData.md) | - |
+| [GetProductsError](type-aliases/GetProductsError.md) | - |
+| [GetProductsResponse](type-aliases/GetProductsResponse.md) | - |
 | [GetProfileData](type-aliases/GetProfileData.md) | - |
 | [GetProfileError](type-aliases/GetProfileError.md) | - |
 | [GetProfileEventsData](type-aliases/GetProfileEventsData.md) | - |
@@ -77,6 +83,8 @@
 | [Location](type-aliases/Location.md) | - |
 | [MediaItem](type-aliases/MediaItem.md) | - |
 | [Page](type-aliases/Page.md) | - |
+| [Product](type-aliases/Product.md) | - |
+| [ProductVariant](type-aliases/ProductVariant.md) | - |
 | [Profile](type-aliases/Profile.md) | - |
 | [publishState](type-aliases/publishState.md) | - |
 | [recordType](type-aliases/recordType.md) | - |

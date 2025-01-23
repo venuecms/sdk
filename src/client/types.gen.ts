@@ -113,12 +113,42 @@ export type Page = {
         };
     }>;
     localizedContent: Array<LocalizedContent>;
-    artists: Array<{
+    artists?: Array<{
         profile: Profile;
     }>;
 };
 
 export type recordType = 'SOURCE' | 'PUBLISHED' | 'REVISION';
+
+export type Product = {
+    siteId: string;
+    slug: string;
+    image?: MediaItem;
+    localizedContent: Array<LocalizedContent>;
+    artists: Array<{
+        profile: {
+            slug: string;
+            image?: MediaItem;
+            localizedContent: Array<LocalizedContent>;
+        };
+    }>;
+    variants?: Array<ProductVariant>;
+};
+
+export type ProductVariant = {
+    id: string;
+    siteId: string;
+    order: number;
+    price: number;
+    currency?: (string) | null;
+    quantity: number;
+    externalLink?: (string) | null;
+    catalogID?: (string) | null;
+    publicationDate?: (string) | null;
+    productTypeId?: (string) | null;
+    productId?: (string) | null;
+    image?: (MediaItem & unknown);
+};
 
 export type Profile = {
     slug: string;
@@ -299,3 +329,33 @@ export type GetProfileEventsResponse = ({
 });
 
 export type GetProfileEventsError = (unknown);
+
+export type GetProductsData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        dir?: 'asc' | 'desc';
+        limit?: (number) | null;
+        orderBy?: string;
+        page?: (number) | null;
+    };
+};
+
+export type GetProductsResponse = ({
+    records: Array<Product>;
+    count: number;
+});
+
+export type GetProductsError = unknown;
+
+export type GetProductData = {
+    path: {
+        siteKey: string;
+        slug: string;
+    };
+};
+
+export type GetProductResponse = (Product);
+
+export type GetProductError = (unknown);

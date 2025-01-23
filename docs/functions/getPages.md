@@ -43,4 +43,4 @@ Get a list of all pages
 
 ## Defined in
 
-[src/main.ts:106](https://github.com/venuecms/sdk/blob/e006ed15657b6995aa87e1eb9272ec151fbf86f1/src/main.ts#L106)
+[src/main.ts:106](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/main.ts#L106)

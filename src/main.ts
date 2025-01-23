@@ -5,6 +5,8 @@ import {
   GetEventsData,
   GetPageData,
   GetPagesData,
+  GetProductData,
+  GetProductsData,
   GetProfileData,
   GetProfileEventsData,
   GetProfilesData,
@@ -169,3 +171,31 @@ export const getProfileEvents = (params: Omit<GetProfileEventsData["path"], "sit
     query,
   });
 };
+
+/**
+ * Get a listing of products
+ * @category Products
+ */
+export const getProducts = (params: GetProductsData["query"])  => {
+  return sdk.getProducts({
+    path: {
+      siteKey,
+    },
+    query: params,
+  });
+};
+
+/**
+ * Get a product
+ *
+ * @category Products
+ */
+export const getProduct = (params: Omit<GetProductData["path"], "siteKey">) => {
+  return sdk.getProduct({
+    path: {
+      ...params,
+      siteKey,
+    },
+  });
+};
+

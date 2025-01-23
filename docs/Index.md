@@ -38,6 +38,13 @@
 | [getProfileEvents](functions/getProfileEvents.md) | Get a listing of events for a profile |
 | [getProfiles](functions/getProfiles.md) | Get a list of profiles |
 
+## Products
+
+| Function | Description |
+| ------ | ------ |
+| [getProduct](functions/getProduct.md) | Get a product |
+| [getProducts](functions/getProducts.md) | Get a listing of products |
+
 ## Utilities
 
 | Function | Description |

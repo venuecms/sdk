@@ -38,4 +38,4 @@ Get a profile
 
 ## Defined in
 
-[src/main.ts:149](https://github.com/venuecms/sdk/blob/5ae39368afca7845a7db783bc57e3aef70f1be64/src/main.ts#L149)
+[src/main.ts:151](https://github.com/venuecms/sdk/blob/5b8937f1771d31bef01a3652bf48054570abcbdb/src/main.ts#L151)

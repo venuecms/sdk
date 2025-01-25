@@ -123,6 +123,10 @@ export type recordType = 'SOURCE' | 'PUBLISHED' | 'REVISION';
 export type Product = {
     siteId: string;
     slug: string;
+    order: number;
+    featured: boolean;
+    featuredExpiration?: (string) | null;
+    author?: (string) | null;
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
     artists: Array<{
@@ -148,6 +152,10 @@ export type ProductVariant = {
     productTypeId?: (string) | null;
     productId?: (string) | null;
     image?: (MediaItem & unknown);
+    productType?: {
+        id: string;
+        type: string;
+    } | null;
 };
 
 export type Profile = {

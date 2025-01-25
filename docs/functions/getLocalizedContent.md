@@ -25,8 +25,8 @@ to be used in your page.
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `content` | [`LocalizedContent`](../type-aliases/LocalizedContent.md) | [src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/5b8937f1771d31bef01a3652bf48054570abcbdb/src/utils/content.ts#L34) |
-| `currentLocale` | `string` | [src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/5b8937f1771d31bef01a3652bf48054570abcbdb/src/utils/content.ts#L34) |
+| `content` | [`LocalizedContent`](../type-aliases/LocalizedContent.md) | [src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/c07c18831cf33fafb3b37826410f2b30773eb6c2/src/utils/content.ts#L34) |
+| `currentLocale` | `string` | [src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/c07c18831cf33fafb3b37826410f2b30773eb6c2/src/utils/content.ts#L34) |
 
 ## Example
 
@@ -52,4 +52,4 @@ return (
 
 ## Defined in
 
-[src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/5b8937f1771d31bef01a3652bf48054570abcbdb/src/utils/content.ts#L31)
+[src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/c07c18831cf33fafb3b37826410f2b30773eb6c2/src/utils/content.ts#L31)

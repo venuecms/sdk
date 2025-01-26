@@ -12,9 +12,9 @@ type GetProfilesResponse = object;
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `count` | `number` | [src/client/types.gen.ts:300](https://github.com/venuecms/sdk/blob/c07c18831cf33fafb3b37826410f2b30773eb6c2/src/client/types.gen.ts#L300) |
-| `records` | [`Profile`](Profile.md)[] | [src/client/types.gen.ts:299](https://github.com/venuecms/sdk/blob/c07c18831cf33fafb3b37826410f2b30773eb6c2/src/client/types.gen.ts#L299) |
+| `count` | `number` | [src/client/types.gen.ts:303](https://github.com/venuecms/sdk/blob/5ffcc8d3f9c61b78cab459f936084b3f631fac13/src/client/types.gen.ts#L303) |
+| `records` | [`Profile`](Profile.md)[] | [src/client/types.gen.ts:302](https://github.com/venuecms/sdk/blob/5ffcc8d3f9c61b78cab459f936084b3f631fac13/src/client/types.gen.ts#L302) |
 
 ## Defined in
 
-[src/client/types.gen.ts:298](https://github.com/venuecms/sdk/blob/c07c18831cf33fafb3b37826410f2b30773eb6c2/src/client/types.gen.ts#L298)
+[src/client/types.gen.ts:301](https://github.com/venuecms/sdk/blob/5ffcc8d3f9c61b78cab459f936084b3f631fac13/src/client/types.gen.ts#L301)

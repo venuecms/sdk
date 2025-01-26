@@ -148,7 +148,7 @@ export type ProductVariant = {
     quantity: number;
     externalLink?: (string) | null;
     catalogID?: (string) | null;
-    publicationDate?: (string) | null;
+    publicationDate?: (string | unknown);
     productTypeId?: (string) | null;
     productId?: (string) | null;
     image?: (MediaItem & unknown);
@@ -178,6 +178,9 @@ export type SiteSettings = {
     locale?: {
         default: string;
         supported: Array<(string)>;
+    };
+    defaults?: {
+        currency?: string;
     };
     publicSite?: {
         baseUrl?: string;

@@ -12,8 +12,8 @@ type GetPagesResponse = object;
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `records` | [`Page`](Page.md) & `object`[] | [src/client/types.gen.ts:261](https://github.com/venuecms/sdk/blob/c07c18831cf33fafb3b37826410f2b30773eb6c2/src/client/types.gen.ts#L261) |
+| `records` | [`Page`](Page.md) & `object`[] | [src/client/types.gen.ts:264](https://github.com/venuecms/sdk/blob/5ffcc8d3f9c61b78cab459f936084b3f631fac13/src/client/types.gen.ts#L264) |
 
 ## Defined in
 
-[src/client/types.gen.ts:260](https://github.com/venuecms/sdk/blob/c07c18831cf33fafb3b37826410f2b30773eb6c2/src/client/types.gen.ts#L260)
+[src/client/types.gen.ts:263](https://github.com/venuecms/sdk/blob/5ffcc8d3f9c61b78cab459f936084b3f631fac13/src/client/types.gen.ts#L263)

@@ -3,7 +3,5 @@
     packages/
        sdk/
           .gitbook.yaml
-          README.md
        sdk-next/
           .gitbook.yaml
-          README.md

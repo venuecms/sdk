@@ -1,8 +1,9 @@
-package.json
-  packages/
-     sdk/
-        .gitbook.yaml
-        README.md
-     sdk-next/
-        .gitbook.yaml
-        README.md
+/
+  package.json
+    packages/
+       sdk/
+          .gitbook.yaml
+          README.md
+       sdk-next/
+          .gitbook.yaml
+          README.md

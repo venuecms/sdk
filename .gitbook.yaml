@@ -1,4 +1,8 @@
-root: ./docs/
-
-structure:
-  Index: ./docs/Index.md
+package.json
+  packages/
+     sdk/
+        .gitbook.yaml
+        README.md
+     sdk-next/
+        .gitbook.yaml
+        README.md

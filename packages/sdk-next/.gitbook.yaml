@@ -1,0 +1,4 @@
+root: ./packages/sdk/docs/
+
+structure:
+  Index: ./packages/sdk/docs/Index.md

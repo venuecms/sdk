@@ -8,7 +8,7 @@
 function getLocalizedContent(localizedContent, locale): object
 ```
 
-Defined in: [packages/sdk-next/src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/827e1eaa472dae7093291e9dcf3855760c75d0d4/packages/sdk-next/src/utils/content.ts#L31)
+Defined in: [packages/sdk-next/src/utils/content.ts:31](https://github.com/venuecms/sdk/blob/93f6bf3ae5c71ab7e4dd72baca4ddff927ddbc9f/packages/sdk-next/src/utils/content.ts#L31)
 
 This function will properly resolve content blocks that are localized.
 It takes in the array of localized content and returns the proper content
@@ -27,8 +27,8 @@ to be used in your page.
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="content"></a> `content` | [`LocalizedContent`](../type-aliases/LocalizedContent.md) | [packages/sdk-next/src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/827e1eaa472dae7093291e9dcf3855760c75d0d4/packages/sdk-next/src/utils/content.ts#L34) |
-| <a id="currentlocale"></a> `currentLocale` | `string` | [packages/sdk-next/src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/827e1eaa472dae7093291e9dcf3855760c75d0d4/packages/sdk-next/src/utils/content.ts#L34) |
+| <a id="content"></a> `content` | [`LocalizedContent`](../type-aliases/LocalizedContent.md) | [packages/sdk-next/src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/93f6bf3ae5c71ab7e4dd72baca4ddff927ddbc9f/packages/sdk-next/src/utils/content.ts#L34) |
+| <a id="currentlocale"></a> `currentLocale` | `string` | [packages/sdk-next/src/utils/content.ts:34](https://github.com/venuecms/sdk/blob/93f6bf3ae5c71ab7e4dd72baca4ddff927ddbc9f/packages/sdk-next/src/utils/content.ts#L34) |
 
 ## Example
 

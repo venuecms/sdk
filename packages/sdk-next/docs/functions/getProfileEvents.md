@@ -19,7 +19,7 @@ function getProfileEvents(params): Promise<
 } & object>
 ```
 
-Defined in: packages/sdk-next/src/main.ts:165
+Defined in: [packages/sdk-next/src/main.ts:166](https://github.com/venuecms/sdk/blob/827e1eaa472dae7093291e9dcf3855760c75d0d4/packages/sdk-next/src/main.ts#L166)
 
 Get a listing of events for a profile
 

@@ -242,11 +242,11 @@ const getMarkdownHandlers = (classes: ElementClasses = {}) => {
   };
 };
 
-type ContentStyles = Partial<
+export type ContentStyles = Partial<
   Record<keyof ReturnType<typeof getDefaultHandlers>, string>
 >;
 
-export const ContentRender = (props: {
+const ContentRender = (props: {
   node: RenderNode;
   handlers?: NodeHandlers;
   classes?: ContentStyles;
@@ -279,6 +279,31 @@ export const ContentRender = (props: {
   const Handler = handlers[node.type];
   return <Handler node={node}>{children}</Handler>;
 };
+
+
+
+interface Attrs {
+  readonly [attr: string]: any;
+}
+
+export interface RenderNode {
+  type: string;
+  attrs?: Attrs;
+  marks?: Attrs[];
+  content?: RenderNode[];
+  readonly [attr: string]: any;
+}
+
+export interface NodeProps {
+  children?: React.ReactNode;
+  node: RenderNode;
+}
+
+export type NodeHandler = (props: NodeProps) => JSX.Element;
+
+export interface NodeHandlers {
+  readonly [attr: string]: NodeHandler;
+}
 
 export const VenueContent = ({
   content,
@@ -325,26 +350,3 @@ export const VenueContent = ({
 
   return null;
 };
-
-interface Attrs {
-  readonly [attr: string]: any;
-}
-
-export interface RenderNode {
-  type: string;
-  attrs?: Attrs;
-  marks?: Attrs[];
-  content?: RenderNode[];
-  readonly [attr: string]: any;
-}
-
-export interface NodeProps {
-  children?: React.ReactNode;
-  node: RenderNode;
-}
-
-export type NodeHandler = (props: NodeProps) => JSX.Element;
-
-export interface NodeHandlers {
-  readonly [attr: string]: NodeHandler;
-}

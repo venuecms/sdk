@@ -19,7 +19,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "build:docs": "typedoc"
   },
   "keywords": [
     "venue",
@@ -46,9 +47,9 @@
     "tailwind-merge": "^3.0.1",
     "tailwindcss": "^4.0.3",
     "tsup": "^8.3.5",
-    "typescript": "^5.5.0"
-  },
-  "dependencies": {
+    "typedoc": "^0.27.1",
+    "typedoc-plugin-markdown": "^4.3.3",
+    "typescript": "^5.5.0",
     "@types/react": "^19.0.8"
   }
 }

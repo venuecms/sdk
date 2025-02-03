@@ -1,16 +1,13 @@
-import { defineConfig } from 'tsup';
+import { defineConfig } from "tsup";
 
-export default defineConfig({
-  entry: ['src/index.ts'],
-  format: ['cjs', 'esm'],
+export default defineConfig((options) => ({
+  entry: ["src/index.ts", "src/**/*.ts", "src/**/*.tsx"],
+  format: ["cjs", "esm"],
+  dts: true,
   clean: true,
-  dts: {
-    resolve: true,
-    entry: [
-      "./src/index.ts"
-    ],
-    compilerOptions: {
-      moduleResolution: "node"
-    }
-  },
-});
+  sourcemap: true,
+  target: "es2022",
+  external: ["react", "react/jsx-runtime"],
+  minify: !options.watch,
+  banner: { js: '"use client";' },
+}));

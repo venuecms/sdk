@@ -1,47 +1,54 @@
 {
   "name": "@venuecms/sdk-next",
   "version": "0.0.0",
+  "author": "Scott Cazan",
   "description": "",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./*": {
+      "import": "./dist/components/*/index.mjs",
+      "require": "./dist/components/*/index.js",
+      "types": "./dist/components/*/index.d.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "generate": "openapi-ts",
-    "build:lib": "tsup --config ./tsup.config.ts",
-    "build:sdk": "pnpm run generate && pnpm run build:lib",
-    "build:docs": "typedoc --options ./typedoc.json",
-    "build:all": "pnpm build:sdk && pnpm build:docs"
+    "build": "tsup"
   },
   "keywords": [
     "venue",
     "cms",
     "sdk"
   ],
-  "author": "Scott Cazan",
   "license": "ISC",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    "import": {
-      "types": "./dist/index.d.mts",
-      "import": "./dist/index.mjs"
-    },
-    "require": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.js"
-    }
-  },
   "files": [
     "dist/"
   ],
+  "peerDependencies": {
+    "next": ">=14",
+    "react": ">=19"
+  },
   "devDependencies": {
-    "@hey-api/openapi-ts": "^0.64.0",
-    "@types/node": "^20.10.4",
+    "@venuecms/sdk": "workspace:^",
+    "clsx": "^2.1.1",
+    "markdown-to-jsx": "^7.7.3",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "remove-markdown": "^0.6.0",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss": "^4.0.3",
     "tsup": "^8.3.5",
-    "typedoc": "^0.27.1",
-    "typedoc-plugin-markdown": "^4.3.3",
     "typescript": "^5.5.0"
   },
   "dependencies": {
-    "@hey-api/client-next": "^0.2.0",
-    "zod": "^3.23.8"
+    "@types/react": "^19.0.8"
   }
 }

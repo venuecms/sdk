@@ -15,5 +15,4 @@ npm install @venuecms/sdk-next
 ```
 
 ### SDK Documentation
-See more documentation here: [https://venue.gitbook.io/docs/sdk](https://venue.gitbook.io/docs/sdk)
-and here: [https://venue.gitbook.io/docs/sdk](https://venue.gitbook.io/docs/sdk-next)
+See more documentation here: [https://docs.venuecms.com](https://docs.venuecms.com)

@@ -2,7 +2,7 @@
 
 export type Event = {
     id: string;
-    site: Site;
+    siteId: string;
     description?: (string) | null;
     slug: string;
     image?: MediaItem;
@@ -37,7 +37,7 @@ export type LocalizedContent = {
 };
 
 export type Location = {
-    site: Site;
+    siteId: string;
     image?: MediaItem;
     address?: (string) | null;
     address2?: (string) | null;
@@ -51,6 +51,7 @@ export type Location = {
     lat?: (number) | null;
     lng?: (number) | null;
     localizedContent: Array<LocalizedContent>;
+    isDefault?: boolean;
 };
 
 export type MediaItem = {
@@ -77,7 +78,7 @@ export type Page = {
     featuredExpiration?: (string) | null;
     date?: (string) | null;
     parentId?: (string) | null;
-    site: Site;
+    siteId: string;
     image?: MediaItem;
     parent?: {
         id: string;
@@ -131,11 +132,7 @@ export type Product = {
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
     artists: Array<{
-        profile: {
-            slug: string;
-            image?: MediaItem;
-            localizedContent: Array<LocalizedContent>;
-        };
+        profile: Profile;
     }>;
     variants?: Array<ProductVariant>;
 };
@@ -160,8 +157,8 @@ export type ProductVariant = {
 };
 
 export type Profile = {
+    siteId: string;
     slug: string;
-    site: Site;
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
 };
@@ -182,6 +179,9 @@ export type SiteSettings = {
     };
     defaults?: {
         currency?: string;
+        event?: {
+            location?: string;
+        };
     };
     publicSite?: {
         baseUrl?: string;

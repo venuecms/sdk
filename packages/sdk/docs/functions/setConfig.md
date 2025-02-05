@@ -8,7 +8,7 @@
 function setConfig(params): void
 ```
 
-Defined in: packages/sdk/src/main.ts:34
+Defined in: [packages/sdk/src/main.ts:34](https://github.com/venuecms/sdk/blob/00916d9de8c08ea7e3c8bf71381675389f602827/packages/sdk/src/main.ts#L34)
 
 Allows you to pass in the siteKey and API key manually in case you want it to be dynamically set. If you don't use this function, the SDK will default to using process.env.VENUE_SITE_KEY and process.env.VENUE_API_KEY instead.
 

@@ -2,7 +2,7 @@ import { RequestOptions } from '@hey-api/client-fetch';
 
 type Event = {
     id: string;
-    site: Site;
+    siteId: string;
     description?: (string) | null;
     slug: string;
     image?: MediaItem;
@@ -34,7 +34,7 @@ type LocalizedContent = {
     } | null;
 };
 type Location = {
-    site: Site;
+    siteId: string;
     image?: MediaItem;
     address?: (string) | null;
     address2?: (string) | null;
@@ -48,6 +48,7 @@ type Location = {
     lat?: (number) | null;
     lng?: (number) | null;
     localizedContent: Array<LocalizedContent>;
+    isDefault?: boolean;
 };
 type MediaItem = {
     siteId: string;
@@ -72,7 +73,7 @@ type Page = {
     featuredExpiration?: (string) | null;
     date?: (string) | null;
     parentId?: (string) | null;
-    site: Site;
+    siteId: string;
     image?: MediaItem;
     parent?: {
         id: string;
@@ -124,11 +125,7 @@ type Product = {
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
     artists: Array<{
-        profile: {
-            slug: string;
-            image?: MediaItem;
-            localizedContent: Array<LocalizedContent>;
-        };
+        profile: Profile;
     }>;
     variants?: Array<ProductVariant>;
 };
@@ -151,8 +148,8 @@ type ProductVariant = {
     } | null;
 };
 type Profile = {
+    siteId: string;
     slug: string;
-    site: Site;
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
 };
@@ -171,6 +168,9 @@ type SiteSettings = {
     };
     defaults?: {
         currency?: string;
+        event?: {
+            location?: string;
+        };
     };
     publicSite?: {
         baseUrl?: string;

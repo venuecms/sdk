@@ -1,5 +1,6 @@
 ## The Venue CMS TypeScript SDK
-@venuecms/sdk
+
+[@venuecms/sdk](https://www.npmjs.com/package/@venuecms/sdk)
 
 This package is the core of the Venue CMS TypeScript SDK.
 

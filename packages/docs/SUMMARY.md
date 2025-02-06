@@ -1,7 +1,7 @@
 # Table of contents
 
 * [The Venue Developer Documentation](README.md)
-* [The Venue CMS Next.js SDK](sdk-next/README.md)
+* [Next.js SDK](sdk-next/README.md)
   * [React Components](sdk-next/react-components/README.md)
     * [VenueContent](<sdk-next/React Components/VenueContent.md>)
     * [VenueImage](<sdk-next/React Components/VenueImage.md>)
@@ -72,7 +72,7 @@
       * [TicketOnEvent](sdk-next/reference/type-aliases/TicketOnEvent.md)
       * [publishState](sdk-next/reference/type-aliases/publishState.md)
       * [recordType](sdk-next/reference/type-aliases/recordType.md)
-* [The Venue CMS TypeScript SDK](sdk/README.md)
+* [TypeScript SDK](sdk/README.md)
   * [reference](sdk/reference/README.md)
     * [Index](sdk/reference/Index.md)
     * [functions](sdk/reference/functions/README.md)

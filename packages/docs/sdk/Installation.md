@@ -1,4 +1,6 @@
-# The Venue CMS TypeScript SDK
+# Installation
+
+## The Venue CMS TypeScript SDK
 
 This package is the core of the Venue CMS TypeScript SDK.
 

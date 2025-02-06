@@ -1,4 +1,4 @@
-# <VenueContent />
+## <VenueContent />
 Allows you render content returned from Venue CMS in a headless way. All styles will need to be defined by you in a separate object as the renderer won't add styles by default.
 
 Example:

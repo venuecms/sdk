@@ -58,6 +58,7 @@
 | [NodeHandlers](interfaces/NodeHandlers.md) | - |
 | [NodeProps](interfaces/NodeProps.md) | - |
 | [RenderNode](interfaces/RenderNode.md) | - |
+| [ContentStyles](type-aliases/ContentStyles.md) | - |
 | [Event](type-aliases/Event.md) | - |
 | [GetEventData](type-aliases/GetEventData.md) | - |
 | [GetEventError](type-aliases/GetEventError.md) | - |
@@ -102,6 +103,5 @@
 | [Site](type-aliases/Site.md) | - |
 | [SiteSettings](type-aliases/SiteSettings.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |
-| [ContentRender](functions/ContentRender.md) | - |
 | [VenueContent](functions/VenueContent.md) | - |
 | [VenueImage](functions/VenueImage.md) | - |

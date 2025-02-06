@@ -4,11 +4,11 @@
 
 # Interface: NodeProps
 
-Defined in: [sdk-next/src/components/VenueContent/index.tsx:341](https://github.com/venuecms/sdk/blob/1c1bdce3c89568d47e3eb3ec42df293b4e3a3a09/packages/sdk-next/src/components/VenueContent/index.tsx#L341)
+Defined in: [sdk-next/src/components/VenueContent/index.tsx:297](https://github.com/venuecms/sdk/blob/da35bc89025fb85e596c6443c84da7b9eb9593b5/packages/sdk-next/src/components/VenueContent/index.tsx#L297)
 
 ## Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="children"></a> `children?` | `ReactNode` | [sdk-next/src/components/VenueContent/index.tsx:342](https://github.com/venuecms/sdk/blob/1c1bdce3c89568d47e3eb3ec42df293b4e3a3a09/packages/sdk-next/src/components/VenueContent/index.tsx#L342) |
-| <a id="node"></a> `node` | [`RenderNode`](RenderNode.md) | [sdk-next/src/components/VenueContent/index.tsx:343](https://github.com/venuecms/sdk/blob/1c1bdce3c89568d47e3eb3ec42df293b4e3a3a09/packages/sdk-next/src/components/VenueContent/index.tsx#L343) |
+| <a id="children"></a> `children?` | `ReactNode` | [sdk-next/src/components/VenueContent/index.tsx:298](https://github.com/venuecms/sdk/blob/da35bc89025fb85e596c6443c84da7b9eb9593b5/packages/sdk-next/src/components/VenueContent/index.tsx#L298) |
+| <a id="node"></a> `node` | [`RenderNode`](RenderNode.md) | [sdk-next/src/components/VenueContent/index.tsx:299](https://github.com/venuecms/sdk/blob/da35bc89025fb85e596c6443c84da7b9eb9593b5/packages/sdk-next/src/components/VenueContent/index.tsx#L299) |

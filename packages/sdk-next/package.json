@@ -20,7 +20,8 @@
   },
   "scripts": {
     "build": "tsup",
-    "build:docs": "typedoc"
+    "build:docs": "typedoc",
+    "build:all": "pnpm build && pnpm build:docs"
   },
   "keywords": [
     "venue",

@@ -1,7 +1,5 @@
 /
   package.json
     packages/
-       sdk/
-          .gitbook.yaml
-       sdk-next/
+       docs/
           .gitbook.yaml

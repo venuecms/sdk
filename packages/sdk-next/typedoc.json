@@ -2,7 +2,7 @@
   "entryPoints": ["src/index.ts"],
   "entryFileName": "Index",
   "plugin": ["typedoc-plugin-markdown"],
-  "out": "../docs/sdk-next/reference",
+  "out": "../docs/sdk-next/Reference",
   "readme": "none",
   "indexFormat": "table",
   "useCodeBlocks": true,

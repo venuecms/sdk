@@ -1,4 +1,3 @@
-# <VenueImage />
 When rendering images returned from Venue you can use this component to render a Next Image that will utilize metadata attached to the image as well as handling sizing parameter. This also includes any Image center positioning that might be set from the backend.
 Example:
 ```tsx
@@ -20,5 +19,5 @@ export const Event = ({ event }: { event: VenueEvent }) => {
 | --- | --- | --- |
 | className? | string | Classes that wil be passed to the underlying element |
 | image? | Partial<MediaItem> | A MediaItem that is returned from Venue CMS |
-| aspect? | 'square'|'video' | Aspect for constraining the image |
-| props? | (NextImage)[https://nextjs.org/docs/pages/api-reference/components/image] props | Next Image props that will be passed to the underlying Next Image component |
+| aspect? | 'square'\|'video' | Aspect for constraining the image |
+| props? | [NextImage](https://nextjs.org/docs/pages/api-reference/components/image) props | Next Image props that will be passed to the underlying Next Image component |

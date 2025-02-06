@@ -4,7 +4,7 @@ icon: js
 
 # TypeScript SDK
 
-[@venuecms/sdk](https://www.npmjs.com/package/@venuecms/sdk)
+![Static Badge](https://img.shields.io/badge/%40venuecms%2Fsdk-v0-passing?style=flat&logo=npm&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40venuecms%2Fsdk)
 
 This package is the core of the Venue CMS TypeScript SDK.
 

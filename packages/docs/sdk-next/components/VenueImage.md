@@ -18,6 +18,6 @@ export const Event = ({ event }: { event: VenueEvent }) => {
 | Name | Type |  Description |
 | --- | --- | --- |
 | className? | string | Classes that wil be passed to the underlying element |
-| image? | Partial<MediaItem> | A MediaItem that is returned from Venue CMS |
+| image? | Partial\<[MediaItem](/developers/reference/type-aliases/mediaitem)\> | A MediaItem that is returned from Venue CMS |
 | aspect? | 'square'\|'video' | Aspect for constraining the image |
 | props? | [NextImage](https://nextjs.org/docs/pages/api-reference/components/image) props | Next Image props that will be passed to the underlying Next Image component |

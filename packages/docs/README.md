@@ -1,4 +1,4 @@
-# The Venue Developer Documentation
+# Overview
 
 Welcome to the Venue Developer Documentation.
 

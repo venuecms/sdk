@@ -1,6 +1,6 @@
 # Table of contents
 
-* [The Venue Developer Documentation](README.md)
+* [Overview](README.md)
 * [Next.js SDK](sdk-next/README.md)
   * [React Components](sdk-next/react-components/README.md)
     * [VenueContent](<sdk-next/React Components/VenueContent.md>)

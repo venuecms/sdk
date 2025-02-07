@@ -8,6 +8,7 @@ icon: js
 This package is the core of the Venue CMS TypeScript SDK.
 
 [![@venuecms/sdk](https://img.shields.io/badge/@venuecms/sdk-v0-passing?style=flat&color=%23bfb8ef&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40venuecms%2Fsdk)](https://www.npmjs.com/package/@venuecms/sdk)
+
 To get started, you can install the SDK by running:
 
 ```bash

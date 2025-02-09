@@ -8,10 +8,10 @@
 type GetPagesResponse = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:241](https://github.com/venuecms/sdk/blob/e839f07e66419aaf9ace81d080584d6bd1f8de14/packages/sdk/dist/index.d.mts#L241)
+Defined in: [sdk/dist/index.d.mts:244](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/dist/index.d.mts#L244)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="records"></a> `records` | [`Page`](Page.md) & `object`[] | [sdk/dist/index.d.mts:242](https://github.com/venuecms/sdk/blob/e839f07e66419aaf9ace81d080584d6bd1f8de14/packages/sdk/dist/index.d.mts#L242) |
+| <a id="records"></a> `records` | [`Page`](Page.md) & `object`[] | [sdk/dist/index.d.mts:245](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/dist/index.d.mts#L245) |

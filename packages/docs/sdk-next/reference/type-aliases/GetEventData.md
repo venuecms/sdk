@@ -8,12 +8,12 @@
 type GetEventData = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:221](https://github.com/venuecms/sdk/blob/e839f07e66419aaf9ace81d080584d6bd1f8de14/packages/sdk/dist/index.d.mts#L221)
+Defined in: [sdk/dist/index.d.mts:224](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/dist/index.d.mts#L224)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:222](https://github.com/venuecms/sdk/blob/e839f07e66419aaf9ace81d080584d6bd1f8de14/packages/sdk/dist/index.d.mts#L222) |
-| `path.siteKey` | `string` | [sdk/dist/index.d.mts:223](https://github.com/venuecms/sdk/blob/e839f07e66419aaf9ace81d080584d6bd1f8de14/packages/sdk/dist/index.d.mts#L223) |
-| `path.slug` | `string` | [sdk/dist/index.d.mts:224](https://github.com/venuecms/sdk/blob/e839f07e66419aaf9ace81d080584d6bd1f8de14/packages/sdk/dist/index.d.mts#L224) |
+| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:225](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/dist/index.d.mts#L225) |
+| `path.siteKey` | `string` | [sdk/dist/index.d.mts:226](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/dist/index.d.mts#L226) |
+| `path.slug` | `string` | [sdk/dist/index.d.mts:227](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/dist/index.d.mts#L227) |

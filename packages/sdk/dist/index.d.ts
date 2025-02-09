@@ -154,6 +154,7 @@ type Profile = {
     localizedContent: Array<LocalizedContent>;
 };
 type Site = {
+    id: string;
     name?: (string) | null;
     description?: (string) | null;
     defaultLocale?: (string) | null;
@@ -177,8 +178,10 @@ type SiteSettings = {
         template?: {
             id?: string;
             config?: {
-                themeId?: string;
-                fontName?: string;
+                [key: string]: unknown;
+            };
+            schema?: {
+                [key: string]: unknown;
             };
         };
     };

@@ -8,4 +8,4 @@
 type GetProfileResponse = Profile;
 ```
 
-Defined in: [sdk/dist/index.d.mts:284](https://github.com/venuecms/sdk/blob/e839f07e66419aaf9ace81d080584d6bd1f8de14/packages/sdk/dist/index.d.mts#L284)
+Defined in: [sdk/dist/index.d.mts:287](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/dist/index.d.mts#L287)

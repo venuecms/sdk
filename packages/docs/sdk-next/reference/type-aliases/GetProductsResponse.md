@@ -8,11 +8,11 @@
 type GetProductsResponse = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:319](https://github.com/venuecms/sdk/blob/e839f07e66419aaf9ace81d080584d6bd1f8de14/packages/sdk/dist/index.d.mts#L319)
+Defined in: [sdk/dist/index.d.mts:322](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/dist/index.d.mts#L322)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count` | `number` | [sdk/dist/index.d.mts:321](https://github.com/venuecms/sdk/blob/e839f07e66419aaf9ace81d080584d6bd1f8de14/packages/sdk/dist/index.d.mts#L321) |
-| <a id="records"></a> `records` | [`Product`](Product.md)[] | [sdk/dist/index.d.mts:320](https://github.com/venuecms/sdk/blob/e839f07e66419aaf9ace81d080584d6bd1f8de14/packages/sdk/dist/index.d.mts#L320) |
+| <a id="count"></a> `count` | `number` | [sdk/dist/index.d.mts:324](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/dist/index.d.mts#L324) |
+| <a id="records"></a> `records` | [`Product`](Product.md)[] | [sdk/dist/index.d.mts:323](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/dist/index.d.mts#L323) |

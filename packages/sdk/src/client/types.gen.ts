@@ -171,6 +171,7 @@ export type Site = {
     timeZone?: (string) | null;
     image?: MediaItem;
     settings: SiteSettings;
+    webSites?: Array<WebSite>;
 };
 
 export type SiteSettings = {
@@ -205,6 +206,17 @@ export type TicketOnEvent = {
     currency?: (string) | null;
     roles: Array<unknown>;
     localizedContent?: Array<LocalizedContent>;
+};
+
+export type WebSite = {
+    id: string;
+    siteId: string;
+    customDomain?: (string) | null;
+    customSchemaId?: (string) | null;
+    config?: {
+        [key: string]: unknown;
+    } | null;
+    image?: MediaItem;
 };
 
 export type GetSiteData = {

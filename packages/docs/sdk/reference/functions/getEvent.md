@@ -16,7 +16,7 @@ function getEvent(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:93](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/src/main.ts#L93)
+Defined in: [packages/sdk/src/main.ts:93](https://github.com/venuecms/sdk/blob/aa6bf5e2569259dec55e399babe648ca7df4042f/packages/sdk/src/main.ts#L93)
 
 Retrieve data for a single event
 

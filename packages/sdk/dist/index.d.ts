@@ -161,6 +161,7 @@ type Site = {
     timeZone?: (string) | null;
     image?: MediaItem;
     settings: SiteSettings;
+    webSites?: Array<WebSite>;
 };
 type SiteSettings = {
     locale?: {
@@ -193,6 +194,16 @@ type TicketOnEvent = {
     currency?: (string) | null;
     roles: Array<unknown>;
     localizedContent?: Array<LocalizedContent>;
+};
+type WebSite = {
+    id: string;
+    siteId: string;
+    customDomain?: (string) | null;
+    customSchemaId?: (string) | null;
+    config?: {
+        [key: string]: unknown;
+    } | null;
+    image?: MediaItem;
 };
 type GetSiteData = {
     path: {
@@ -544,4 +555,4 @@ declare const getProduct: (params: Omit<GetProductData["path"], "siteKey">) => P
     response: Response;
 }>;
 
-export { type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type Site, type SiteSettings, type TicketOnEvent, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, type publishState, type recordType, setConfig };
+export { type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type Site, type SiteSettings, type TicketOnEvent, type WebSite, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, type publishState, type recordType, setConfig };

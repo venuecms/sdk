@@ -8,4 +8,4 @@
 type GetProfilesError = unknown;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:310](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/src/client/types.gen.ts#L310)
+Defined in: [packages/sdk/src/client/types.gen.ts:322](https://github.com/venuecms/sdk/blob/aa6bf5e2569259dec55e399babe648ca7df4042f/packages/sdk/src/client/types.gen.ts#L322)

@@ -103,5 +103,6 @@
 | [Site](type-aliases/Site.md) | - |
 | [SiteSettings](type-aliases/SiteSettings.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |
+| [WebSite](type-aliases/WebSite.md) | - |
 | [VenueContent](functions/VenueContent.md) | - |
 | [VenueImage](functions/VenueImage.md) | - |

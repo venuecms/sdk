@@ -8,10 +8,10 @@
 type GetPageResponse = Page & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:284](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/src/client/types.gen.ts#L284)
+Defined in: [packages/sdk/src/client/types.gen.ts:296](https://github.com/venuecms/sdk/blob/aa6bf5e2569259dec55e399babe648ca7df4042f/packages/sdk/src/client/types.gen.ts#L296)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `parent`? | `object` | [packages/sdk/src/client/types.gen.ts:285](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/src/client/types.gen.ts#L285) |
+| `parent`? | `object` | [packages/sdk/src/client/types.gen.ts:297](https://github.com/venuecms/sdk/blob/aa6bf5e2569259dec55e399babe648ca7df4042f/packages/sdk/src/client/types.gen.ts#L297) |

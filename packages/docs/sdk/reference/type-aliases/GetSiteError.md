@@ -8,4 +8,4 @@
 type GetSiteError = unknown;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:218](https://github.com/venuecms/sdk/blob/6283acc845335a99eac7e210bd07dad1da30061f/packages/sdk/src/client/types.gen.ts#L218)
+Defined in: [packages/sdk/src/client/types.gen.ts:230](https://github.com/venuecms/sdk/blob/aa6bf5e2569259dec55e399babe648ca7df4042f/packages/sdk/src/client/types.gen.ts#L230)

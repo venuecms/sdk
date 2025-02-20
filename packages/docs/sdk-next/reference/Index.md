@@ -15,6 +15,7 @@
 | Function | Description |
 | ------ | ------ |
 | [getSite](functions/getSite.md) | Get the site configured via the siteKey |
+| [getSiteKeyByDomain](functions/getSiteKeyByDomain.md) | Get the siteKey and site id from a domain name. |
 
 ## Events
 
@@ -87,6 +88,9 @@
 | [GetProfilesData](type-aliases/GetProfilesData.md) | - |
 | [GetProfilesError](type-aliases/GetProfilesError.md) | - |
 | [GetProfilesResponse](type-aliases/GetProfilesResponse.md) | - |
+| [GetSiteByDomainData](type-aliases/GetSiteByDomainData.md) | - |
+| [GetSiteByDomainError](type-aliases/GetSiteByDomainError.md) | - |
+| [GetSiteByDomainResponse](type-aliases/GetSiteByDomainResponse.md) | - |
 | [GetSiteData](type-aliases/GetSiteData.md) | - |
 | [GetSiteError](type-aliases/GetSiteError.md) | - |
 | [GetSiteResponse](type-aliases/GetSiteResponse.md) | - |

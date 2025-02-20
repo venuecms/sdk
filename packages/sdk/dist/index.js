@@ -30,6 +30,7 @@ __export(index_exports, {
   getProfileEvents: () => getProfileEvents2,
   getProfiles: () => getProfiles2,
   getSite: () => getSite2,
+  getSiteKeyByDomain: () => getSiteKeyByDomain,
   setConfig: () => setConfig
 });
 module.exports = __toCommonJS(index_exports);
@@ -106,6 +107,12 @@ var getProduct = (options) => {
     url: "/api/v2/{siteKey}/public/products/{slug}"
   });
 };
+var getSiteByDomain = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/domain/{domain}"
+  });
+};
 
 // src/main.ts
 var siteKey = process.env.VENUE_SITE_KEY;
@@ -127,6 +134,16 @@ var getSite2 = () => {
   return getSite({
     path: {
       siteKey
+    },
+    headers
+  });
+};
+var getSiteKeyByDomain = ({ domain }) => {
+  return getSiteByDomain({
+    path: {
+      siteKey: "-",
+      // this is arbitrary and may be fixed later
+      domain
     },
     headers
   });
@@ -218,5 +235,6 @@ var getProduct2 = (params) => {
   getProfileEvents,
   getProfiles,
   getSite,
+  getSiteKeyByDomain,
   setConfig
 });

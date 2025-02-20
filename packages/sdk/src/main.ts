@@ -51,6 +51,30 @@ export const getSite = () => {
 };
 
 /**
+ * Get the siteKey and site id from a domain name.
+ *
+ * @category Sites
+ * @example
+ * ```typescript
+ * // It should not include the 'https://' component.
+ * import { getSiteKeyByDomain } from "@venuecms/sdk";
+ * const { data: { siteKey, id } = await getSiteKeyByDomain({ domain: 'mywebsite.com' });
+ * ```
+ *
+ */
+export const getSiteKeyByDomain = ({ domain }: { domain: string }) => {
+  return sdk.getSiteByDomain({
+    path: {
+      siteKey: '-', // this is arbitrary and may be fixed later
+      domain,
+    },
+    headers,
+  });
+};
+
+
+
+/**
  * @category Events
  */
 export const getEvents = (params: GetEventsData["query"] = {}) => {

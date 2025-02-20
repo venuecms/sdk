@@ -216,7 +216,7 @@ export type WebSite = {
     config?: {
         [key: string]: unknown;
     } | null;
-    image?: MediaItem;
+    image?: (MediaItem & unknown);
 };
 
 export type GetSiteData = {
@@ -386,3 +386,17 @@ export type GetProductData = {
 export type GetProductResponse = (Product);
 
 export type GetProductError = (unknown);
+
+export type GetSiteByDomainData = {
+    path: {
+        domain: string;
+        siteKey: string;
+    };
+};
+
+export type GetSiteByDomainResponse = ({
+    id: string;
+    siteKey: string;
+});
+
+export type GetSiteByDomainError = (unknown);

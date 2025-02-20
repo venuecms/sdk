@@ -70,6 +70,12 @@ var getProduct = (options) => {
     url: "/api/v2/{siteKey}/public/products/{slug}"
   });
 };
+var getSiteByDomain = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/domain/{domain}"
+  });
+};
 
 // src/main.ts
 var siteKey = process.env.VENUE_SITE_KEY;
@@ -91,6 +97,16 @@ var getSite2 = () => {
   return getSite({
     path: {
       siteKey
+    },
+    headers
+  });
+};
+var getSiteKeyByDomain = ({ domain }) => {
+  return getSiteByDomain({
+    path: {
+      siteKey: "-",
+      // this is arbitrary and may be fixed later
+      domain
     },
     headers
   });
@@ -181,5 +197,6 @@ export {
   getProfileEvents2 as getProfileEvents,
   getProfiles2 as getProfiles,
   getSite2 as getSite,
+  getSiteKeyByDomain,
   setConfig
 };

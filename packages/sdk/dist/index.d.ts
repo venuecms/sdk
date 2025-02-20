@@ -203,7 +203,7 @@ type WebSite = {
     config?: {
         [key: string]: unknown;
     } | null;
-    image?: MediaItem;
+    image?: (MediaItem & unknown);
 };
 type GetSiteData = {
     path: {
@@ -343,6 +343,17 @@ type GetProductData = {
 };
 type GetProductResponse = (Product);
 type GetProductError = (unknown);
+type GetSiteByDomainData = {
+    path: {
+        domain: string;
+        siteKey: string;
+    };
+};
+type GetSiteByDomainResponse = ({
+    id: string;
+    siteKey: string;
+});
+type GetSiteByDomainError = (unknown);
 
 /**
  * This function will properly resolve content blocks that are localized.
@@ -396,6 +407,30 @@ declare const getSite: () => Promise<({
 } | {
     data: undefined;
     error: unknown;
+}) & {
+    request: Request;
+    response: Response;
+}>;
+/**
+ * Get the siteKey and site id from a domain name.
+ *
+ * @category Sites
+ * @example
+ * ```typescript
+ * // It should not include the 'https://' component.
+ * import { getSiteKeyByDomain } from "@venuecms/sdk";
+ * const { data: { siteKey, id } = await getSiteKeyByDomain({ domain: 'mywebsite.com' });
+ * ```
+ *
+ */
+declare const getSiteKeyByDomain: ({ domain }: {
+    domain: string;
+}) => Promise<({
+    data: undefined;
+    error: unknown;
+} | {
+    data: GetSiteByDomainResponse;
+    error: undefined;
 }) & {
     request: Request;
     response: Response;
@@ -555,4 +590,4 @@ declare const getProduct: (params: Omit<GetProductData["path"], "siteKey">) => P
     response: Response;
 }>;
 
-export { type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type Site, type SiteSettings, type TicketOnEvent, type WebSite, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, type publishState, type recordType, setConfig };
+export { type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type Site, type SiteSettings, type TicketOnEvent, type WebSite, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, setConfig };

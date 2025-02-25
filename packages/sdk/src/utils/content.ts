@@ -34,9 +34,11 @@ export const getLocalizedContent = (
 ): { content: LocalizedContent; currentLocale: string } => {
   const currentLocale = locale;
 
-  const content = (localizedContent?.find(
+  const foundLocalizedContent = localizedContent?.find(
     (content) => content.locale === currentLocale,
-  ) ?? {}) as LocalizedContent;
+  );
+
+  const content = foundLocalizedContent ?? localizedContent?.[0] ?? ({}) as LocalizedContent;
 
   return { content, currentLocale };
 };

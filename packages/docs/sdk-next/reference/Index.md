@@ -16,6 +16,7 @@
 | ------ | ------ |
 | [getSite](functions/getSite.md) | Get the site configured via the siteKey |
 | [getSiteKeyByDomain](functions/getSiteKeyByDomain.md) | Get the siteKey and site id from a domain name. |
+| [searchSite](functions/searchSite.md) | Search a site for all content types |
 
 ## Events
 
@@ -104,6 +105,9 @@
 | [Profile](type-aliases/Profile.md) | - |
 | [publishState](type-aliases/publishState.md) | - |
 | [recordType](type-aliases/recordType.md) | - |
+| [SearchSiteData](type-aliases/SearchSiteData.md) | - |
+| [SearchSiteError](type-aliases/SearchSiteError.md) | - |
+| [SearchSiteResponse](type-aliases/SearchSiteResponse.md) | - |
 | [Site](type-aliases/Site.md) | - |
 | [SiteSettings](type-aliases/SiteSettings.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |

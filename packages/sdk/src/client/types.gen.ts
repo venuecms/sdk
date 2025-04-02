@@ -387,6 +387,96 @@ export type GetProductResponse = (Product);
 
 export type GetProductError = (unknown);
 
+export type SearchSiteData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        dir?: 'asc' | 'desc';
+        limit?: (number) | null;
+        orderBy?: string;
+        page?: (number) | null;
+        query?: (string) | null;
+    };
+};
+
+export type SearchSiteResponse = ((Site & {
+    events: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+    pages: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+    profiles: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+    products: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+}));
+
+export type SearchSiteError = (unknown);
+
 export type GetSiteByDomainData = {
     path: {
         domain: string;

@@ -1,9 +1,10 @@
 // src/utils/content.ts
 var getLocalizedContent = (localizedContent, locale) => {
   const currentLocale = locale;
-  const content = localizedContent?.find(
+  const foundLocalizedContent = localizedContent?.find(
     (content2) => content2.locale === currentLocale
-  ) ?? {};
+  );
+  const content = foundLocalizedContent ?? localizedContent?.[0] ?? {};
   return { content, currentLocale };
 };
 
@@ -68,6 +69,12 @@ var getProduct = (options) => {
   return (options?.client ?? client).get({
     ...options,
     url: "/api/v2/{siteKey}/public/products/{slug}"
+  });
+};
+var searchSite = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/search"
   });
 };
 var getSiteByDomain = (options) => {
@@ -185,6 +192,14 @@ var getProduct2 = (params) => {
     }
   });
 };
+var searchSite2 = (params) => {
+  return searchSite({
+    path: {
+      siteKey
+    },
+    query: params
+  });
+};
 export {
   getEvent2 as getEvent,
   getEvents2 as getEvents,
@@ -198,5 +213,6 @@ export {
   getProfiles2 as getProfiles,
   getSite2 as getSite,
   getSiteKeyByDomain,
+  searchSite2 as searchSite,
   setConfig
 };

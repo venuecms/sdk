@@ -8,11 +8,11 @@
 type GetSiteByDomainResponse = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:352](https://github.com/venuecms/sdk/blob/fbf02bcc9fd4a34da75d81536c54bdc995edf6c4/packages/sdk/dist/index.d.mts#L352)
+Defined in: [sdk/dist/index.d.mts:439](https://github.com/venuecms/sdk/blob/856f3c21fe737a18a698a4045f39e91f8662f370/packages/sdk/dist/index.d.mts#L439)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | [sdk/dist/index.d.mts:353](https://github.com/venuecms/sdk/blob/fbf02bcc9fd4a34da75d81536c54bdc995edf6c4/packages/sdk/dist/index.d.mts#L353) |
-| <a id="sitekey"></a> `siteKey` | `string` | [sdk/dist/index.d.mts:354](https://github.com/venuecms/sdk/blob/fbf02bcc9fd4a34da75d81536c54bdc995edf6c4/packages/sdk/dist/index.d.mts#L354) |
+| <a id="id"></a> `id` | `string` | [sdk/dist/index.d.mts:440](https://github.com/venuecms/sdk/blob/856f3c21fe737a18a698a4045f39e91f8662f370/packages/sdk/dist/index.d.mts#L440) |
+| <a id="sitekey"></a> `siteKey` | `string` | [sdk/dist/index.d.mts:441](https://github.com/venuecms/sdk/blob/856f3c21fe737a18a698a4045f39e91f8662f370/packages/sdk/dist/index.d.mts#L441) |

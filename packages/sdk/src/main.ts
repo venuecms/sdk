@@ -10,6 +10,7 @@ import {
   GetProfileData,
   GetProfileEventsData,
   GetProfilesData,
+  SearchSiteData,
 } from "./client/types.gen";
 
 let siteKey: string = process.env.VENUE_SITE_KEY;
@@ -220,6 +221,20 @@ export const getProduct = (params: Omit<GetProductData["path"], "siteKey">) => {
       ...params,
       siteKey,
     },
+  });
+};
+
+/**
+ * Search a site for all content types
+ *
+ * @category Sites
+ */
+export const searchSite = (params: SearchSiteData["query"]) => {
+  return sdk.searchSite({
+    path: {
+      siteKey,
+    },
+    query: params,
   });
 };
 

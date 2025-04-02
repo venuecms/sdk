@@ -31,6 +31,7 @@ __export(index_exports, {
   getProfiles: () => getProfiles2,
   getSite: () => getSite2,
   getSiteKeyByDomain: () => getSiteKeyByDomain,
+  searchSite: () => searchSite2,
   setConfig: () => setConfig
 });
 module.exports = __toCommonJS(index_exports);
@@ -38,9 +39,10 @@ module.exports = __toCommonJS(index_exports);
 // src/utils/content.ts
 var getLocalizedContent = (localizedContent, locale) => {
   const currentLocale = locale;
-  const content = localizedContent?.find(
+  const foundLocalizedContent = localizedContent?.find(
     (content2) => content2.locale === currentLocale
-  ) ?? {};
+  );
+  const content = foundLocalizedContent ?? localizedContent?.[0] ?? {};
   return { content, currentLocale };
 };
 
@@ -105,6 +107,12 @@ var getProduct = (options) => {
   return (options?.client ?? client).get({
     ...options,
     url: "/api/v2/{siteKey}/public/products/{slug}"
+  });
+};
+var searchSite = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/search"
   });
 };
 var getSiteByDomain = (options) => {
@@ -222,6 +230,14 @@ var getProduct2 = (params) => {
     }
   });
 };
+var searchSite2 = (params) => {
+  return searchSite({
+    path: {
+      siteKey
+    },
+    query: params
+  });
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   getEvent,
@@ -236,5 +252,6 @@ var getProduct2 = (params) => {
   getProfiles,
   getSite,
   getSiteKeyByDomain,
+  searchSite,
   setConfig
 });

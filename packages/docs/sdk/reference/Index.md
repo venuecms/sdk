@@ -103,6 +103,7 @@
 | [SearchSiteData](type-aliases/SearchSiteData.md) | - |
 | [SearchSiteError](type-aliases/SearchSiteError.md) | - |
 | [SearchSiteResponse](type-aliases/SearchSiteResponse.md) | - |
+| [SearchSiteResults](type-aliases/SearchSiteResults.md) | - |
 | [Site](type-aliases/Site.md) | - |
 | [SiteSettings](type-aliases/SiteSettings.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |

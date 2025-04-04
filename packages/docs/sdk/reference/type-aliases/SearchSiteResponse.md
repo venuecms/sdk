@@ -5,16 +5,7 @@
 # Type Alias: SearchSiteResponse
 
 ```ts
-type SearchSiteResponse = Site & object;
+type SearchSiteResponse = SearchSiteResults;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:403](https://github.com/venuecms/sdk/blob/856f3c21fe737a18a698a4045f39e91f8662f370/packages/sdk/src/client/types.gen.ts#L403)
-
-## Type declaration
-
-| Name | Type | Defined in |
-| ------ | ------ | ------ |
-| `events` | `object`[] | [packages/sdk/src/client/types.gen.ts:404](https://github.com/venuecms/sdk/blob/856f3c21fe737a18a698a4045f39e91f8662f370/packages/sdk/src/client/types.gen.ts#L404) |
-| `pages` | `object`[] | [packages/sdk/src/client/types.gen.ts:422](https://github.com/venuecms/sdk/blob/856f3c21fe737a18a698a4045f39e91f8662f370/packages/sdk/src/client/types.gen.ts#L422) |
-| `products` | `object`[] | [packages/sdk/src/client/types.gen.ts:458](https://github.com/venuecms/sdk/blob/856f3c21fe737a18a698a4045f39e91f8662f370/packages/sdk/src/client/types.gen.ts#L458) |
-| `profiles` | `object`[] | [packages/sdk/src/client/types.gen.ts:440](https://github.com/venuecms/sdk/blob/856f3c21fe737a18a698a4045f39e91f8662f370/packages/sdk/src/client/types.gen.ts#L440) |
+Defined in: [packages/sdk/src/client/types.gen.ts:478](https://github.com/venuecms/sdk/blob/9b35c3f75ba3cd0722f50bc82d98f2f4dd56e037/packages/sdk/src/client/types.gen.ts#L478)

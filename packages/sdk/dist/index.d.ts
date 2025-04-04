@@ -153,6 +153,80 @@ type Profile = {
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
 };
+type SearchSiteResults = {
+    events: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+    pages: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+    profiles: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+    products: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+};
 type Site = {
     id: string;
     name?: (string) | null;
@@ -355,80 +429,7 @@ type SearchSiteData = {
         query?: (string) | null;
     };
 };
-type SearchSiteResponse = ((Site & {
-    events: Array<{
-        id: string;
-        image?: (MediaItem & unknown);
-        localizedContent: Array<{
-            locale: string;
-            title?: (string) | null;
-            shortContent?: (string) | null;
-            content?: (string) | null;
-        }>;
-        siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
-        slug: string;
-    }>;
-    pages: Array<{
-        id: string;
-        image?: (MediaItem & unknown);
-        localizedContent: Array<{
-            locale: string;
-            title?: (string) | null;
-            shortContent?: (string) | null;
-            content?: (string) | null;
-        }>;
-        siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
-        slug: string;
-    }>;
-    profiles: Array<{
-        id: string;
-        image?: (MediaItem & unknown);
-        localizedContent: Array<{
-            locale: string;
-            title?: (string) | null;
-            shortContent?: (string) | null;
-            content?: (string) | null;
-        }>;
-        siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
-        slug: string;
-    }>;
-    products: Array<{
-        id: string;
-        image?: (MediaItem & unknown);
-        localizedContent: Array<{
-            locale: string;
-            title?: (string) | null;
-            shortContent?: (string) | null;
-            content?: (string) | null;
-        }>;
-        siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
-        slug: string;
-    }>;
-}));
+type SearchSiteResponse = (SearchSiteResults);
 type SearchSiteError = (unknown);
 type GetSiteByDomainData = {
     path: {
@@ -685,11 +686,11 @@ declare const searchSite: (params: SearchSiteData["query"]) => Promise<({
     data: undefined;
     error: unknown;
 } | {
-    data: SearchSiteResponse;
+    data: SearchSiteResults;
     error: undefined;
 }) & {
     request: Request;
     response: Response;
 }>;
 
-export { type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type Site, type SiteSettings, type TicketOnEvent, type WebSite, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, searchSite, setConfig };
+export { type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type Site, type SiteSettings, type TicketOnEvent, type WebSite, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, searchSite, setConfig };

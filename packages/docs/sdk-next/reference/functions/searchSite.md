@@ -11,12 +11,12 @@ function searchSite(params): Promise<
   error: unknown;
  }
   | {
-  data: SearchSiteResponse;
+  data: SearchSiteResults;
   error: undefined;
 } & object>
 ```
 
-Defined in: [sdk/dist/index.d.mts:684](https://github.com/venuecms/sdk/blob/856f3c21fe737a18a698a4045f39e91f8662f370/packages/sdk/dist/index.d.mts#L684)
+Defined in: [sdk/dist/index.d.mts:685](https://github.com/venuecms/sdk/blob/9b35c3f75ba3cd0722f50bc82d98f2f4dd56e037/packages/sdk/dist/index.d.mts#L685)
 
 Search a site for all content types
 
@@ -34,6 +34,6 @@ Search a site for all content types
   `error`: `unknown`;
  \}
   \| \{
-  `data`: [`SearchSiteResponse`](../type-aliases/SearchSiteResponse.md);
+  `data`: [`SearchSiteResults`](../type-aliases/SearchSiteResults.md);
   `error`: `undefined`;
  \} & `object`\>

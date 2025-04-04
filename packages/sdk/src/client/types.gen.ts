@@ -163,6 +163,81 @@ export type Profile = {
     localizedContent: Array<LocalizedContent>;
 };
 
+export type SearchSiteResults = {
+    events: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+    pages: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+    profiles: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+    products: Array<{
+        id: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        siteId: string;
+        site: {
+            defaultLocale?: (string) | null;
+            settings?: {
+                [key: string]: unknown;
+            } | null;
+        };
+        slug: string;
+    }>;
+};
+
 export type Site = {
     id: string;
     name?: (string) | null;
@@ -400,80 +475,7 @@ export type SearchSiteData = {
     };
 };
 
-export type SearchSiteResponse = ((Site & {
-    events: Array<{
-        id: string;
-        image?: (MediaItem & unknown);
-        localizedContent: Array<{
-            locale: string;
-            title?: (string) | null;
-            shortContent?: (string) | null;
-            content?: (string) | null;
-        }>;
-        siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
-        slug: string;
-    }>;
-    pages: Array<{
-        id: string;
-        image?: (MediaItem & unknown);
-        localizedContent: Array<{
-            locale: string;
-            title?: (string) | null;
-            shortContent?: (string) | null;
-            content?: (string) | null;
-        }>;
-        siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
-        slug: string;
-    }>;
-    profiles: Array<{
-        id: string;
-        image?: (MediaItem & unknown);
-        localizedContent: Array<{
-            locale: string;
-            title?: (string) | null;
-            shortContent?: (string) | null;
-            content?: (string) | null;
-        }>;
-        siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
-        slug: string;
-    }>;
-    products: Array<{
-        id: string;
-        image?: (MediaItem & unknown);
-        localizedContent: Array<{
-            locale: string;
-            title?: (string) | null;
-            shortContent?: (string) | null;
-            content?: (string) | null;
-        }>;
-        siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
-        slug: string;
-    }>;
-}));
+export type SearchSiteResponse = (SearchSiteResults);
 
 export type SearchSiteError = (unknown);
 

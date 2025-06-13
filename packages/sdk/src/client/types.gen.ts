@@ -17,6 +17,11 @@ export type Event = {
     tickets?: Array<TicketOnEvent>;
     tags: Array<{
         tagId: string;
+        tag: {
+            id: string;
+            siteId: string;
+            title: string;
+        };
     }>;
     localizedContent: Array<LocalizedContent>;
 };

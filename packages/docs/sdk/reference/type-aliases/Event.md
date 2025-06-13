@@ -8,23 +8,23 @@
 type Event = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L3)
+Defined in: [packages/sdk/src/client/types.gen.ts:3](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L3)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="artists"></a> `artists` | `object`[] | [packages/sdk/src/client/types.gen.ts:14](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L14) |
-| <a id="description"></a> `description`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:6](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L6) |
-| <a id="enddate"></a> `endDate` | `string` | [packages/sdk/src/client/types.gen.ts:10](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L10) |
-| <a id="hastime"></a> `hasTime` | `boolean` | [packages/sdk/src/client/types.gen.ts:11](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L11) |
-| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:4](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L4) |
-| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) | [packages/sdk/src/client/types.gen.ts:8](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L8) |
-| <a id="localizedcontent"></a> `localizedContent` | [`LocalizedContent`](LocalizedContent.md)[] | [packages/sdk/src/client/types.gen.ts:21](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L21) |
-| <a id="location"></a> `location`? | [`Location`](Location.md) | [packages/sdk/src/client/types.gen.ts:13](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L13) |
-| <a id="publishstate"></a> `publishState` | `"DRAFT"` \| `"REQUEST"` \| `"PUBLISHED"` \| `"CANCELLED"` | [packages/sdk/src/client/types.gen.ts:12](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L12) |
-| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:5](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L5) |
-| <a id="slug"></a> `slug` | `string` | [packages/sdk/src/client/types.gen.ts:7](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L7) |
-| <a id="startdate"></a> `startDate` | `string` | [packages/sdk/src/client/types.gen.ts:9](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L9) |
-| <a id="tags"></a> `tags` | `object`[] | [packages/sdk/src/client/types.gen.ts:18](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L18) |
-| <a id="tickets"></a> `tickets`? | [`TicketOnEvent`](TicketOnEvent.md)[] | [packages/sdk/src/client/types.gen.ts:17](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/client/types.gen.ts#L17) |
+| <a id="artists"></a> `artists` | `object`[] | [packages/sdk/src/client/types.gen.ts:14](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L14) |
+| <a id="description"></a> `description`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:6](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L6) |
+| <a id="enddate"></a> `endDate` | `string` | [packages/sdk/src/client/types.gen.ts:10](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L10) |
+| <a id="hastime"></a> `hasTime` | `boolean` | [packages/sdk/src/client/types.gen.ts:11](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L11) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:4](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L4) |
+| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) | [packages/sdk/src/client/types.gen.ts:8](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L8) |
+| <a id="localizedcontent"></a> `localizedContent` | [`LocalizedContent`](LocalizedContent.md)[] | [packages/sdk/src/client/types.gen.ts:26](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L26) |
+| <a id="location"></a> `location`? | [`Location`](Location.md) | [packages/sdk/src/client/types.gen.ts:13](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L13) |
+| <a id="publishstate"></a> `publishState` | `"DRAFT"` \| `"REQUEST"` \| `"PUBLISHED"` \| `"CANCELLED"` | [packages/sdk/src/client/types.gen.ts:12](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L12) |
+| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:5](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L5) |
+| <a id="slug"></a> `slug` | `string` | [packages/sdk/src/client/types.gen.ts:7](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L7) |
+| <a id="startdate"></a> `startDate` | `string` | [packages/sdk/src/client/types.gen.ts:9](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L9) |
+| <a id="tags"></a> `tags` | `object`[] | [packages/sdk/src/client/types.gen.ts:18](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L18) |
+| <a id="tickets"></a> `tickets`? | [`TicketOnEvent`](TicketOnEvent.md)[] | [packages/sdk/src/client/types.gen.ts:17](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L17) |

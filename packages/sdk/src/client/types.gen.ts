@@ -15,6 +15,9 @@ export type Event = {
         profile: Profile;
     }>;
     tickets?: Array<TicketOnEvent>;
+    tags: Array<{
+        tagId: string;
+    }>;
     localizedContent: Array<LocalizedContent>;
 };
 
@@ -292,6 +295,7 @@ export type WebSite = {
         [key: string]: unknown;
     } | null;
     image?: (MediaItem & unknown);
+    localizedContent?: Array<LocalizedContent> | null;
 };
 
 export type GetSiteData = {

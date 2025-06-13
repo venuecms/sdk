@@ -15,6 +15,9 @@ type Event = {
         profile: Profile;
     }>;
     tickets?: Array<TicketOnEvent>;
+    tags: Array<{
+        tagId: string;
+    }>;
     localizedContent: Array<LocalizedContent>;
 };
 type publishState = 'DRAFT' | 'REQUEST' | 'PUBLISHED' | 'CANCELLED';
@@ -278,6 +281,7 @@ type WebSite = {
         [key: string]: unknown;
     } | null;
     image?: (MediaItem & unknown);
+    localizedContent?: Array<LocalizedContent> | null;
 };
 type GetSiteData = {
     path: {

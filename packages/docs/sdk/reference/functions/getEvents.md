@@ -16,7 +16,7 @@ function getEvents(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:81](https://github.com/venuecms/sdk/blob/9b35c3f75ba3cd0722f50bc82d98f2f4dd56e037/packages/sdk/src/main.ts#L81)
+Defined in: [packages/sdk/src/main.ts:81](https://github.com/venuecms/sdk/blob/0048e875fedcd11f329f993e4088b84401af4036/packages/sdk/src/main.ts#L81)
 
 ## Parameters
 

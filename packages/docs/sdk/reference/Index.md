@@ -57,6 +57,7 @@
 
 | Type alias | Description |
 | ------ | ------ |
+| [CustomSchemaData](type-aliases/CustomSchemaData.md) | - |
 | [Event](type-aliases/Event.md) | - |
 | [GetEventData](type-aliases/GetEventData.md) | - |
 | [GetEventError](type-aliases/GetEventError.md) | - |

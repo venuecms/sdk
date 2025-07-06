@@ -1,5 +1,11 @@
 import { RequestOptions } from '@hey-api/client-fetch';
 
+type CustomSchemaData = {
+    data?: {
+        [key: string]: unknown;
+    } | null;
+    customSchemaId?: (string) | null;
+};
 type Event = {
     id: string;
     siteId: string;
@@ -23,6 +29,7 @@ type Event = {
             title: string;
         };
     }>;
+    custom?: Array<CustomSchemaData>;
     localizedContent: Array<LocalizedContent>;
 };
 type publishState = 'DRAFT' | 'REQUEST' | 'PUBLISHED' | 'CANCELLED';
@@ -117,6 +124,7 @@ type Page = {
             description?: (string) | null;
         };
     }>;
+    custom?: Array<CustomSchemaData>;
     localizedContent: Array<LocalizedContent>;
     artists?: Array<{
         profile: Profile;
@@ -136,6 +144,7 @@ type Product = {
         profile: Profile;
     }>;
     variants?: Array<ProductVariant>;
+    custom?: Array<CustomSchemaData>;
 };
 type ProductVariant = {
     id: string;
@@ -160,6 +169,7 @@ type Profile = {
     slug: string;
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
+    custom?: Array<CustomSchemaData>;
 };
 type SearchSiteResults = {
     events: Array<{
@@ -702,4 +712,4 @@ declare const searchSite: (params: SearchSiteData["query"]) => Promise<({
     response: Response;
 }>;
 
-export { type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type Site, type SiteSettings, type TicketOnEvent, type WebSite, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, searchSite, setConfig };
+export { type CustomSchemaData, type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type Site, type SiteSettings, type TicketOnEvent, type WebSite, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, searchSite, setConfig };

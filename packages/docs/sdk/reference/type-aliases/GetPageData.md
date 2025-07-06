@@ -8,12 +8,12 @@
 type GetPageData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:373](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L373)
+Defined in: [packages/sdk/src/client/types.gen.ts:384](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/src/client/types.gen.ts#L384)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:374](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L374) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:375](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L375) |
-| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:376](https://github.com/venuecms/sdk/blob/9df621babf2d64de41bd45733e16986e94017e8a/packages/sdk/src/client/types.gen.ts#L376) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:385](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/src/client/types.gen.ts#L385) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:386](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/src/client/types.gen.ts#L386) |
+| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:387](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/src/client/types.gen.ts#L387) |

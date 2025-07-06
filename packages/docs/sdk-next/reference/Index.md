@@ -61,6 +61,7 @@
 | [NodeProps](interfaces/NodeProps.md) | - |
 | [RenderNode](interfaces/RenderNode.md) | - |
 | [ContentStyles](type-aliases/ContentStyles.md) | - |
+| [CustomSchemaData](type-aliases/CustomSchemaData.md) | - |
 | [Event](type-aliases/Event.md) | - |
 | [GetEventData](type-aliases/GetEventData.md) | - |
 | [GetEventError](type-aliases/GetEventError.md) | - |

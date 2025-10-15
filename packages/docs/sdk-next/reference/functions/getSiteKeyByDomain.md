@@ -5,18 +5,10 @@
 # Function: getSiteKeyByDomain()
 
 ```ts
-function getSiteKeyByDomain(__namedParameters): Promise<
-  | {
-  data: undefined;
-  error: unknown;
- }
-  | {
-  data: GetSiteByDomainResponse;
-  error: undefined;
-} & object>
+function getSiteKeyByDomain(__namedParameters): Promise<any>
 ```
 
-Defined in: [sdk/dist/index.d.mts:542](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L542)
+Defined in: [sdk/dist/index.d.mts:555](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L555)
 
 Get the siteKey and site id from a domain name.
 
@@ -29,15 +21,7 @@ Get the siteKey and site id from a domain name.
 
 ## Returns
 
-`Promise`\<
-  \| \{
-  `data`: `undefined`;
-  `error`: `unknown`;
- \}
-  \| \{
-  `data`: [`GetSiteByDomainResponse`](../type-aliases/GetSiteByDomainResponse.md);
-  `error`: `undefined`;
- \} & `object`\>
+`Promise`\<`any`\>
 
 ## Example
 

@@ -19,6 +19,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
+  cache: () => cache,
   getEvent: () => getEvent2,
   getEvents: () => getEvents2,
   getLocalizedContent: () => getLocalizedContent,
@@ -44,6 +45,43 @@ var getLocalizedContent = (localizedContent, locale) => {
   );
   const content = foundLocalizedContent ?? localizedContent?.[0] ?? {};
   return { content, currentLocale };
+};
+
+// src/utils/cache.ts
+var memCache = /* @__PURE__ */ new Map();
+var MEMCACHE_EXPIRE = 2 * 60 * 1e3;
+var TypeMap = {
+  site: "site",
+  customDomain: "customDomain"
+};
+var getCacheKey = (type, siteKey2 = "global", params) => {
+  const key = TypeMap[type];
+  const [fullSlug, ...otherParams] = params;
+  const slug = fullSlug?.split("/").slice(-1)[0] ?? "";
+  return `${siteKey2}/${key}/${slug}${otherParams?.length ? `:${otherParams.join(":")}` : ""}`;
+};
+var cache = async ({
+  type,
+  siteKey: siteKey2,
+  params = [],
+  fetch,
+  disable,
+  ttl = MEMCACHE_EXPIRE
+}) => {
+  const cacheKey = getCacheKey(type, siteKey2, params);
+  if (!disable) {
+    if (memCache.has(cacheKey)) {
+      const cachedVal = memCache.get(cacheKey);
+      if (Date.now() - cachedVal.createdAt < ttl) {
+        return cachedVal.data;
+      }
+    }
+  }
+  const newData = await fetch();
+  if (newData) {
+    memCache.set(cacheKey, { createdAt: Date.now(), data: newData });
+  }
+  return newData;
 };
 
 // src/client/sdk.gen.ts
@@ -147,13 +185,19 @@ var getSite2 = () => {
   });
 };
 var getSiteKeyByDomain = ({ domain }) => {
-  return getSiteByDomain({
-    path: {
-      siteKey: "-",
-      // this is arbitrary and may be fixed later
-      domain
-    },
-    headers
+  return cache({
+    type: "site",
+    params: [domain],
+    ttl: 24 * 60 * 60 * 1e3,
+    // 24 hour
+    fetch: () => getSiteByDomain({
+      path: {
+        siteKey: "-",
+        // this is arbitrary and may be fixed later
+        domain
+      },
+      headers
+    })
   });
 };
 var getEvents2 = (params = {}) => {
@@ -240,6 +284,7 @@ var searchSite2 = (params) => {
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  cache,
   getEvent,
   getEvents,
   getLocalizedContent,

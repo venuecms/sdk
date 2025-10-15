@@ -55,7 +55,7 @@
 
 ## Other
 
-| Type alias | Description |
+| Name | Description |
 | ------ | ------ |
 | [CustomSchemaData](type-aliases/CustomSchemaData.md) | - |
 | [Event](type-aliases/Event.md) | - |
@@ -110,3 +110,4 @@
 | [Tag](type-aliases/Tag.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |
 | [WebSite](type-aliases/WebSite.md) | - |
+| [cache](functions/cache.md) | - |

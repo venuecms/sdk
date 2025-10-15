@@ -504,6 +504,19 @@ declare const getLocalizedContent: (localizedContent: Array<LocalizedContent> | 
     currentLocale: string;
 };
 
+declare const TypeMap: {
+    site: string;
+    customDomain: string;
+};
+declare const cache: <T = any>({ type, siteKey, params, fetch, disable, ttl, }: {
+    type: keyof typeof TypeMap;
+    siteKey?: string;
+    params?: any[];
+    fetch: () => Promise<any>;
+    disable?: boolean;
+    ttl?: number;
+}) => Promise<T>;
+
 /**
  * Allows you to pass in the siteKey and API key manually in case you want it to be dynamically set. If you don't use this function, the SDK will default to using process.env.VENUE_SITE_KEY and process.env.VENUE_API_KEY instead.
  * @category Configuration
@@ -541,16 +554,7 @@ declare const getSite: () => Promise<({
  */
 declare const getSiteKeyByDomain: ({ domain }: {
     domain: string;
-}) => Promise<({
-    data: undefined;
-    error: unknown;
-} | {
-    data: GetSiteByDomainResponse;
-    error: undefined;
-}) & {
-    request: Request;
-    response: Response;
-}>;
+}) => Promise<any>;
 /**
  * @category Events
  */
@@ -721,4 +725,4 @@ declare const searchSite: (params: SearchSiteData["query"]) => Promise<({
     response: Response;
 }>;
 
-export { type CustomSchemaData, type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type Site, type SiteSettings, type Tag, type TicketOnEvent, type WebSite, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, searchSite, setConfig };
+export { type CustomSchemaData, type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type Site, type SiteSettings, type Tag, type TicketOnEvent, type WebSite, cache, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, searchSite, setConfig };

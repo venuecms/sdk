@@ -8,10 +8,10 @@
 type GetEventsResponse = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:328](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L328)
+Defined in: [sdk/dist/index.d.mts:328](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L328)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="records"></a> `records` | [`Event`](Event.md)[] | [sdk/dist/index.d.mts:329](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L329) |
+| <a id="records"></a> `records` | [`Event`](Event.md)[] | [sdk/dist/index.d.mts:329](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L329) |

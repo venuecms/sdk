@@ -8,6 +8,43 @@ var getLocalizedContent = (localizedContent, locale) => {
   return { content, currentLocale };
 };
 
+// src/utils/cache.ts
+var memCache = /* @__PURE__ */ new Map();
+var MEMCACHE_EXPIRE = 2 * 60 * 1e3;
+var TypeMap = {
+  site: "site",
+  customDomain: "customDomain"
+};
+var getCacheKey = (type, siteKey2 = "global", params) => {
+  const key = TypeMap[type];
+  const [fullSlug, ...otherParams] = params;
+  const slug = fullSlug?.split("/").slice(-1)[0] ?? "";
+  return `${siteKey2}/${key}/${slug}${otherParams?.length ? `:${otherParams.join(":")}` : ""}`;
+};
+var cache = async ({
+  type,
+  siteKey: siteKey2,
+  params = [],
+  fetch,
+  disable,
+  ttl = MEMCACHE_EXPIRE
+}) => {
+  const cacheKey = getCacheKey(type, siteKey2, params);
+  if (!disable) {
+    if (memCache.has(cacheKey)) {
+      const cachedVal = memCache.get(cacheKey);
+      if (Date.now() - cachedVal.createdAt < ttl) {
+        return cachedVal.data;
+      }
+    }
+  }
+  const newData = await fetch();
+  if (newData) {
+    memCache.set(cacheKey, { createdAt: Date.now(), data: newData });
+  }
+  return newData;
+};
+
 // src/client/sdk.gen.ts
 import { createClient, createConfig } from "@hey-api/client-fetch";
 var client = createClient(createConfig());
@@ -109,13 +146,19 @@ var getSite2 = () => {
   });
 };
 var getSiteKeyByDomain = ({ domain }) => {
-  return getSiteByDomain({
-    path: {
-      siteKey: "-",
-      // this is arbitrary and may be fixed later
-      domain
-    },
-    headers
+  return cache({
+    type: "site",
+    params: [domain],
+    ttl: 24 * 60 * 60 * 1e3,
+    // 24 hour
+    fetch: () => getSiteByDomain({
+      path: {
+        siteKey: "-",
+        // this is arbitrary and may be fixed later
+        domain
+      },
+      headers
+    })
   });
 };
 var getEvents2 = (params = {}) => {
@@ -201,6 +244,7 @@ var searchSite2 = (params) => {
   });
 };
 export {
+  cache,
   getEvent2 as getEvent,
   getEvents2 as getEvents,
   getLocalizedContent,

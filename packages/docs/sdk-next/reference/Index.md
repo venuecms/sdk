@@ -115,5 +115,6 @@
 | [Tag](type-aliases/Tag.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |
 | [WebSite](type-aliases/WebSite.md) | - |
+| [cache](functions/cache.md) | - |
 | [VenueContent](functions/VenueContent.md) | - |
 | [VenueImage](functions/VenueImage.md) | - |

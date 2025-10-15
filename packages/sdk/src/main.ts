@@ -1,5 +1,6 @@
 import { RequestOptions } from "@hey-api/client-fetch";
 import * as sdk from "./client/sdk.gen";
+import { cache } from './utils';
 import {
   GetEventData,
   GetEventsData,
@@ -63,15 +64,20 @@ export const getSite = () => {
  * ```
  *
  */
-export const getSiteKeyByDomain = ({ domain }: { domain: string }) => {
-  return sdk.getSiteByDomain({
-    path: {
-      siteKey: '-', // this is arbitrary and may be fixed later
-      domain,
-    },
-    headers,
-  });
-};
+   export const getSiteKeyByDomain = ({ domain }: { domain: string }) => {
+     return cache({
+       type: 'site',
+       params: [domain],
+       ttl: 24 * 60 * 60 * 1000, // 24 hour
+       fetch: () => sdk.getSiteByDomain({
+         path: {
+           siteKey: '-', // this is arbitrary and may be fixed later
+           domain,
+         },
+         headers,
+       })
+     });
+   };
 
 
 

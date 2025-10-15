@@ -8,13 +8,13 @@
 type SearchSiteResults = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:174](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L174)
+Defined in: [sdk/dist/index.d.mts:169](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L169)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="events"></a> `events` | `object`[] | [sdk/dist/index.d.mts:175](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L175) |
-| <a id="pages"></a> `pages` | `object`[] | [sdk/dist/index.d.mts:193](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L193) |
-| <a id="products"></a> `products` | `object`[] | [sdk/dist/index.d.mts:229](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L229) |
-| <a id="profiles"></a> `profiles` | `object`[] | [sdk/dist/index.d.mts:211](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L211) |
+| <a id="events"></a> `events` | `object`[] | [sdk/dist/index.d.mts:170](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L170) |
+| <a id="pages"></a> `pages` | `object`[] | [sdk/dist/index.d.mts:188](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L188) |
+| <a id="products"></a> `products` | `object`[] | [sdk/dist/index.d.mts:224](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L224) |
+| <a id="profiles"></a> `profiles` | `object`[] | [sdk/dist/index.d.mts:206](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L206) |

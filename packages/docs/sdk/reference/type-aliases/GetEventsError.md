@@ -8,4 +8,4 @@
 type GetEventsError = unknown;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:348](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/src/client/types.gen.ts#L348)
+Defined in: [packages/sdk/src/client/types.gen.ts:353](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/src/client/types.gen.ts#L353)

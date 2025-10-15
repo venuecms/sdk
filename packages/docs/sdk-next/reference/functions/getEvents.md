@@ -16,13 +16,13 @@ function getEvents(params?): Promise<
 } & object>
 ```
 
-Defined in: [sdk/dist/index.d.mts:548](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L548)
+Defined in: [sdk/dist/index.d.mts:557](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L557)
 
 ## Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `params`? | \{ `dir`: `"asc"` \| `"desc"`; `featured`: `null` \| `boolean`; `gt`: `null` \| `number`; `legacyId`: `string`; `limit`: `null` \| `number`; `lt`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `upcoming`: `null` \| `boolean`; \} |
+| `params`? | \{ `dir`: `"asc"` \| `"desc"`; `featured`: `null` \| `boolean`; `gt`: `null` \| `number`; `legacyId`: `string`; `limit`: `null` \| `number`; `lt`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `tags`: `string` \| `string`[]; `upcoming`: `null` \| `boolean`; \} |
 | `params.dir`? | `"asc"` \| `"desc"` |
 | `params.featured`? | `null` \| `boolean` |
 | `params.gt`? | `null` \| `number` |
@@ -31,6 +31,7 @@ Defined in: [sdk/dist/index.d.mts:548](https://github.com/venuecms/sdk/blob/bc8b
 | `params.lt`? | `null` \| `number` |
 | `params.orderBy`? | `string` |
 | `params.page`? | `null` \| `number` |
+| `params.tags`? | `string` \| `string`[] |
 | `params.upcoming`? | `null` \| `boolean` |
 
 ## Returns

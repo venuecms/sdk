@@ -8,17 +8,18 @@
 type GetPagesData = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:336](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L336)
+Defined in: [sdk/dist/index.d.mts:340](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L340)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:337](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L337) |
-| `path.siteKey` | `string` | [sdk/dist/index.d.mts:338](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L338) |
-| <a id="query"></a> `query`? | `object` | [sdk/dist/index.d.mts:340](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L340) |
-| `query.dir`? | `"asc"` \| `"desc"` | [sdk/dist/index.d.mts:341](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L341) |
-| `query.featured`? | `boolean` \| `null` | [sdk/dist/index.d.mts:342](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L342) |
-| `query.limit`? | `number` \| `null` | [sdk/dist/index.d.mts:343](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L343) |
-| `query.orderBy`? | `string` | [sdk/dist/index.d.mts:344](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L344) |
-| `query.page`? | `number` \| `null` | [sdk/dist/index.d.mts:345](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L345) |
+| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:341](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L341) |
+| `path.siteKey` | `string` | [sdk/dist/index.d.mts:342](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L342) |
+| <a id="query"></a> `query`? | `object` | [sdk/dist/index.d.mts:344](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L344) |
+| `query.dir`? | `"asc"` \| `"desc"` | [sdk/dist/index.d.mts:345](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L345) |
+| `query.featured`? | `boolean` \| `null` | [sdk/dist/index.d.mts:346](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L346) |
+| `query.limit`? | `number` \| `null` | [sdk/dist/index.d.mts:347](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L347) |
+| `query.orderBy`? | `string` | [sdk/dist/index.d.mts:348](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L348) |
+| `query.page`? | `number` \| `null` | [sdk/dist/index.d.mts:349](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L349) |
+| `query.tags`? | `string` \| `string`[] | [sdk/dist/index.d.mts:350](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L350) |

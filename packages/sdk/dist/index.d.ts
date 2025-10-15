@@ -1,9 +1,7 @@
 import { RequestOptions } from '@hey-api/client-fetch';
 
 type CustomSchemaData = {
-    data?: {
-        [key: string]: unknown;
-    } | null;
+    data?: unknown;
     customSchemaId?: (string) | null;
 };
 type Event = {
@@ -21,14 +19,7 @@ type Event = {
         profile: Profile;
     }>;
     tickets?: Array<TicketOnEvent>;
-    tags: Array<{
-        tagId: string;
-        tag: {
-            id: string;
-            siteId: string;
-            title: string;
-        };
-    }>;
+    tags?: Array<Tag>;
     custom?: Array<CustomSchemaData>;
     localizedContent: Array<LocalizedContent>;
 };
@@ -62,6 +53,7 @@ type Location = {
     mapLink?: (string) | null;
     lat?: (number) | null;
     lng?: (number) | null;
+    tags?: Array<Tag>;
     localizedContent: Array<LocalizedContent>;
     isDefault?: boolean;
 };
@@ -125,6 +117,7 @@ type Page = {
         };
     }>;
     custom?: Array<CustomSchemaData>;
+    tags?: Array<Tag>;
     localizedContent: Array<LocalizedContent>;
     artists?: Array<{
         profile: Profile;
@@ -138,6 +131,7 @@ type Product = {
     featured: boolean;
     featuredExpiration?: (string) | null;
     author?: (string) | null;
+    tags?: Array<Tag>;
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
     artists: Array<{
@@ -167,6 +161,7 @@ type ProductVariant = {
 type Profile = {
     siteId: string;
     slug: string;
+    tags?: Array<Tag>;
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
     custom?: Array<CustomSchemaData>;
@@ -279,6 +274,14 @@ type SiteSettings = {
         };
     };
 };
+type Tag = {
+    tagId: string;
+    tag: {
+        id: string;
+        siteId: string;
+        title: string;
+    };
+};
 type TicketOnEvent = {
     name: string;
     price: number;
@@ -318,6 +321,7 @@ type GetEventsData = {
         lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        tags?: (string | Array<(string)>);
         upcoming?: (boolean) | null;
     };
 };
@@ -343,6 +347,7 @@ type GetPagesData = {
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        tags?: (string | Array<(string)>);
     };
 };
 type GetPagesResponse = ({
@@ -374,6 +379,7 @@ type GetProfilesData = {
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        tags?: (string | Array<(string)>);
         type?: 'member';
     };
 };
@@ -404,6 +410,7 @@ type GetProfileEventsData = {
         lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        tags?: (string | Array<(string)>);
         upcoming?: (boolean) | null;
     };
 };
@@ -421,6 +428,8 @@ type GetProductsData = {
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        tags?: (string | Array<(string)>);
+        type?: 'member';
     };
 };
 type GetProductsResponse = ({
@@ -712,4 +721,4 @@ declare const searchSite: (params: SearchSiteData["query"]) => Promise<({
     response: Response;
 }>;
 
-export { type CustomSchemaData, type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type Site, type SiteSettings, type TicketOnEvent, type WebSite, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, searchSite, setConfig };
+export { type CustomSchemaData, type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type Site, type SiteSettings, type Tag, type TicketOnEvent, type WebSite, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, searchSite, setConfig };

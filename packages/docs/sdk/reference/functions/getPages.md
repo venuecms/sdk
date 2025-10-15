@@ -16,7 +16,7 @@ function getPages(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:133](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/src/main.ts#L133)
+Defined in: [packages/sdk/src/main.ts:133](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/src/main.ts#L133)
 
 Get a list of all pages
 
@@ -24,12 +24,13 @@ Get a list of all pages
 
 | Parameter | Type |
 | ------ | ------ |
-| `params` | \{ `dir`: `"asc"` \| `"desc"`; `featured`: `boolean`; `limit`: `number`; `orderBy`: `string`; `page`: `number`; \} |
+| `params` | \{ `dir`: `"asc"` \| `"desc"`; `featured`: `boolean`; `limit`: `number`; `orderBy`: `string`; `page`: `number`; `tags`: `string` \| `string`[]; \} |
 | `params.dir`? | `"asc"` \| `"desc"` |
 | `params.featured`? | `boolean` |
 | `params.limit`? | `number` |
 | `params.orderBy`? | `string` |
 | `params.page`? | `number` |
+| `params.tags`? | `string` \| `string`[] |
 
 ## Returns
 

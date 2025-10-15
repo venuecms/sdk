@@ -8,11 +8,11 @@
 type CustomSchemaData = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:3](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L3)
+Defined in: [sdk/dist/index.d.mts:3](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L3)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="customschemaid"></a> `customSchemaId`? | `string` \| `null` | [sdk/dist/index.d.mts:7](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L7) |
-| <a id="data"></a> `data`? | \{\} \| `null` | [sdk/dist/index.d.mts:4](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/dist/index.d.mts#L4) |
+| <a id="customschemaid"></a> `customSchemaId`? | `string` \| `null` | [sdk/dist/index.d.mts:5](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L5) |
+| <a id="data"></a> `data`? | `unknown` | [sdk/dist/index.d.mts:4](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/dist/index.d.mts#L4) |

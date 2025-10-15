@@ -107,5 +107,6 @@
 | [SearchSiteResults](type-aliases/SearchSiteResults.md) | - |
 | [Site](type-aliases/Site.md) | - |
 | [SiteSettings](type-aliases/SiteSettings.md) | - |
+| [Tag](type-aliases/Tag.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |
 | [WebSite](type-aliases/WebSite.md) | - |

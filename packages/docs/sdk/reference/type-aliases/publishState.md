@@ -8,4 +8,4 @@
 type publishState = "DRAFT" | "REQUEST" | "PUBLISHED" | "CANCELLED";
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:37](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/src/client/types.gen.ts#L37)
+Defined in: [packages/sdk/src/client/types.gen.ts:28](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/src/client/types.gen.ts#L28)

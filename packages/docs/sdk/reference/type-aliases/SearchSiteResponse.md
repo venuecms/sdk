@@ -8,4 +8,4 @@
 type SearchSiteResponse = SearchSiteResults;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:498](https://github.com/venuecms/sdk/blob/bc8b8c4174423a3d8d92fe0cce4d46883acf7584/packages/sdk/src/client/types.gen.ts#L498)
+Defined in: [packages/sdk/src/client/types.gen.ts:508](https://github.com/venuecms/sdk/blob/c6cec40cde126501ec4bb978346ee3aecb0217b6/packages/sdk/src/client/types.gen.ts#L508)

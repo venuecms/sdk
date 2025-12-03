@@ -8,25 +8,25 @@
 type Location = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:42](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L42)
+Defined in: [sdk/dist/index.d.mts:176](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L176)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="address"></a> `address`? | `string` \| `null` | [sdk/dist/index.d.mts:45](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L45) |
-| <a id="address2"></a> `address2`? | `string` \| `null` | [sdk/dist/index.d.mts:46](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L46) |
-| <a id="city"></a> `city`? | `string` \| `null` | [sdk/dist/index.d.mts:49](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L49) |
-| <a id="country"></a> `country`? | `string` \| `null` | [sdk/dist/index.d.mts:51](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L51) |
-| <a id="externallink"></a> `externalLink`? | `string` \| `null` | [sdk/dist/index.d.mts:52](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L52) |
-| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) | [sdk/dist/index.d.mts:44](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L44) |
-| <a id="isdefault"></a> `isDefault`? | `boolean` | [sdk/dist/index.d.mts:58](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L58) |
-| <a id="lat"></a> `lat`? | `number` \| `null` | [sdk/dist/index.d.mts:54](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L54) |
-| <a id="lng"></a> `lng`? | `number` \| `null` | [sdk/dist/index.d.mts:55](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L55) |
-| <a id="localizedcontent"></a> `localizedContent` | [`LocalizedContent`](LocalizedContent.md)[] | [sdk/dist/index.d.mts:57](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L57) |
-| <a id="maplink"></a> `mapLink`? | `string` \| `null` | [sdk/dist/index.d.mts:53](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L53) |
-| <a id="region"></a> `region`? | `string` \| `null` | [sdk/dist/index.d.mts:48](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L48) |
-| <a id="siteid"></a> `siteId` | `string` | [sdk/dist/index.d.mts:43](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L43) |
-| <a id="state"></a> `state`? | `string` \| `null` | [sdk/dist/index.d.mts:47](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L47) |
-| <a id="tags"></a> `tags`? | [`Tag`](Tag.md)[] | [sdk/dist/index.d.mts:56](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L56) |
-| <a id="zipcode"></a> `zipCode`? | `string` \| `null` | [sdk/dist/index.d.mts:50](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L50) |
+| <a id="address"></a> `address`? | `string` \| `null` | [sdk/dist/index.d.mts:179](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L179) |
+| <a id="address2"></a> `address2`? | `string` \| `null` | [sdk/dist/index.d.mts:180](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L180) |
+| <a id="city"></a> `city`? | `string` \| `null` | [sdk/dist/index.d.mts:183](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L183) |
+| <a id="country"></a> `country`? | `string` \| `null` | [sdk/dist/index.d.mts:185](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L185) |
+| <a id="externallink"></a> `externalLink`? | `string` \| `null` | [sdk/dist/index.d.mts:186](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L186) |
+| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) | [sdk/dist/index.d.mts:178](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L178) |
+| <a id="isdefault"></a> `isDefault`? | `boolean` | [sdk/dist/index.d.mts:192](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L192) |
+| <a id="lat"></a> `lat`? | `number` \| `null` | [sdk/dist/index.d.mts:188](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L188) |
+| <a id="lng"></a> `lng`? | `number` \| `null` | [sdk/dist/index.d.mts:189](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L189) |
+| <a id="localizedcontent"></a> `localizedContent` | [`LocalizedContent`](LocalizedContent.md)[] | [sdk/dist/index.d.mts:191](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L191) |
+| <a id="maplink"></a> `mapLink`? | `string` \| `null` | [sdk/dist/index.d.mts:187](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L187) |
+| <a id="region"></a> `region`? | `string` \| `null` | [sdk/dist/index.d.mts:182](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L182) |
+| <a id="siteid"></a> `siteId` | `string` | [sdk/dist/index.d.mts:177](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L177) |
+| <a id="state"></a> `state`? | `string` \| `null` | [sdk/dist/index.d.mts:181](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L181) |
+| <a id="tags"></a> `tags`? | [`Tag`](Tag.md)[] | [sdk/dist/index.d.mts:190](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L190) |
+| <a id="zipcode"></a> `zipCode`? | `string` \| `null` | [sdk/dist/index.d.mts:184](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L184) |

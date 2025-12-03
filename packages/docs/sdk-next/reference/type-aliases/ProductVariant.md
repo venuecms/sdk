@@ -8,22 +8,22 @@
 type ProductVariant = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:143](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L143)
+Defined in: [sdk/dist/index.d.mts:283](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L283)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="catalogid"></a> `catalogID`? | `string` \| `null` | [sdk/dist/index.d.mts:151](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L151) |
-| <a id="currency"></a> `currency`? | `string` \| `null` | [sdk/dist/index.d.mts:148](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L148) |
-| <a id="externallink"></a> `externalLink`? | `string` \| `null` | [sdk/dist/index.d.mts:150](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L150) |
-| <a id="id"></a> `id` | `string` | [sdk/dist/index.d.mts:144](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L144) |
-| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) & `unknown` | [sdk/dist/index.d.mts:155](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L155) |
-| <a id="order"></a> `order` | `number` | [sdk/dist/index.d.mts:146](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L146) |
-| <a id="price"></a> `price` | `number` | [sdk/dist/index.d.mts:147](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L147) |
-| <a id="productid"></a> `productId`? | `string` \| `null` | [sdk/dist/index.d.mts:154](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L154) |
-| <a id="producttype"></a> `productType`? | \| \{ `id`: `string`; `type`: `string`; \} \| `null` | [sdk/dist/index.d.mts:156](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L156) |
-| <a id="producttypeid"></a> `productTypeId`? | `string` \| `null` | [sdk/dist/index.d.mts:153](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L153) |
-| <a id="publicationdate"></a> `publicationDate`? | `string` \| `unknown` | [sdk/dist/index.d.mts:152](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L152) |
-| <a id="quantity"></a> `quantity` | `number` | [sdk/dist/index.d.mts:149](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L149) |
-| <a id="siteid"></a> `siteId` | `string` | [sdk/dist/index.d.mts:145](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L145) |
+| <a id="catalogid"></a> `catalogID`? | `string` \| `null` | [sdk/dist/index.d.mts:291](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L291) |
+| <a id="currency"></a> `currency`? | `string` \| `null` | [sdk/dist/index.d.mts:288](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L288) |
+| <a id="externallink"></a> `externalLink`? | `string` \| `null` | [sdk/dist/index.d.mts:290](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L290) |
+| <a id="id"></a> `id` | `string` | [sdk/dist/index.d.mts:284](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L284) |
+| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) & `unknown` | [sdk/dist/index.d.mts:295](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L295) |
+| <a id="order"></a> `order` | `number` | [sdk/dist/index.d.mts:286](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L286) |
+| <a id="price"></a> `price` | `number` | [sdk/dist/index.d.mts:287](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L287) |
+| <a id="productid"></a> `productId`? | `string` \| `null` | [sdk/dist/index.d.mts:294](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L294) |
+| <a id="producttype"></a> `productType`? | \| \{ `id`: `string`; `type`: `string`; \} \| `null` | [sdk/dist/index.d.mts:296](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L296) |
+| <a id="producttypeid"></a> `productTypeId`? | `string` \| `null` | [sdk/dist/index.d.mts:293](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L293) |
+| <a id="publicationdate"></a> `publicationDate`? | `string` \| `unknown` | [sdk/dist/index.d.mts:292](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L292) |
+| <a id="quantity"></a> `quantity` | `number` | [sdk/dist/index.d.mts:289](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L289) |
+| <a id="siteid"></a> `siteId` | `string` | [sdk/dist/index.d.mts:285](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L285) |

@@ -8,11 +8,11 @@
 type GetProfilesResponse = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:386](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L386)
+Defined in: [sdk/dist/index.d.mts:552](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L552)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count` | `number` | [sdk/dist/index.d.mts:388](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L388) |
-| <a id="records"></a> `records` | [`Profile`](Profile.md)[] | [sdk/dist/index.d.mts:387](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L387) |
+| <a id="count"></a> `count` | `number` | [sdk/dist/index.d.mts:554](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L554) |
+| <a id="records"></a> `records` | [`Profile`](Profile.md)[] | [sdk/dist/index.d.mts:553](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L553) |

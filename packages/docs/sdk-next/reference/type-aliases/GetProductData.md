@@ -8,12 +8,12 @@
 type GetProductData = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:440](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L440)
+Defined in: [sdk/dist/index.d.mts:606](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L606)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:441](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L441) |
-| `path.siteKey` | `string` | [sdk/dist/index.d.mts:442](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L442) |
-| `path.slug` | `string` | [sdk/dist/index.d.mts:443](https://github.com/venuecms/sdk/blob/439d59d1d7fe9370b9001a4a50fb3715778714a4/packages/sdk/dist/index.d.mts#L443) |
+| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:607](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L607) |
+| `path.siteKey` | `string` | [sdk/dist/index.d.mts:608](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L608) |
+| `path.slug` | `string` | [sdk/dist/index.d.mts:609](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L609) |

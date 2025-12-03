@@ -1,8 +1,142 @@
 import { RequestOptions } from '@hey-api/client-fetch';
 
+type AddDomainInput = {
+    domain: string;
+};
+type AddDomainResponse = {
+    domain: string;
+    records: Array<DnsRecord>;
+};
+type BatchEmail = {
+    id: string;
+    to: string;
+    subject: (string) | null;
+    status: 'PENDING' | 'SENT' | 'DELIVERED' | 'BOUNCED' | 'FAILED';
+    createdAt: string;
+    sentAt: (string) | null;
+    errorMsg: (string) | null;
+};
+type status = 'PENDING' | 'SENT' | 'DELIVERED' | 'BOUNCED' | 'FAILED';
+type BatchPagination = {
+    page: number;
+    limit: number;
+    total: number;
+    totalPages: number;
+};
+type BatchSendResult = {
+    batchId: string;
+    status: 'COMPLETED';
+    totalCount: number;
+    sentCount: number;
+    failedCount: number;
+    results: Array<{
+        emailId: string;
+        to: string;
+        status: 'PENDING' | 'SENT' | 'DELIVERED' | 'BOUNCED' | 'FAILED';
+        resendId?: string;
+        error?: string;
+    }>;
+};
+type status2 = 'COMPLETED';
+type CreateDraftBatchInput = {
+    name?: string;
+    templateKey?: string;
+    subject?: string;
+    recipients: Array<Recipient>;
+};
 type CustomSchemaData = {
     data?: unknown;
     customSchemaId?: (string) | null;
+};
+type DnsRecord = {
+    type: string;
+    name: string;
+    value: string;
+    ttl?: string;
+    priority?: number;
+    status?: string;
+};
+type DomainStatus = {
+    verified: boolean;
+    status?: string;
+    records?: Array<DnsRecord>;
+} | null;
+type DraftBatchResult = {
+    batchId: string;
+    status: 'DRAFT';
+    recipientCount: number;
+};
+type status3 = 'DRAFT';
+type Email = {
+    id: string;
+    siteId: string;
+    batchId: string;
+    createdAt: string;
+    to: string;
+    from: (string) | null;
+    subject: (string) | null;
+    templateKey: (string) | null;
+    status: 'PENDING' | 'SENT' | 'DELIVERED' | 'BOUNCED' | 'FAILED';
+    sentAt: (string) | null;
+    resendId: (string) | null;
+    errorMsg: (string) | null;
+    batch: {
+        id: string;
+        name: (string) | null;
+    } | null;
+};
+type EmailBatch = {
+    id: string;
+    siteId: string;
+    createdAt: string;
+    name: (string) | null;
+    templateKey: (string) | null;
+    subject: (string) | null;
+    status: 'DRAFT' | 'SENDING' | 'COMPLETED';
+    totalCount: number;
+    sentCount: number;
+    failedCount: number;
+    sentAt: (string) | null;
+    completedAt: (string) | null;
+};
+type status4 = 'DRAFT' | 'SENDING' | 'COMPLETED';
+type EmailBatchDetail = EmailBatch & {
+    recipients?: Array<Recipient>;
+    emails?: Array<BatchEmail>;
+};
+type EmailBatchesResponse = {
+    batches: Array<EmailBatch>;
+    pagination: BatchPagination;
+};
+type EmailConfig = {
+    id: string;
+    siteId: string;
+    fromEmail: (string) | null;
+    fromName: (string) | null;
+    replyToEmail: (string) | null;
+    customDomain: (string) | null;
+    domainVerified: boolean;
+    createdAt: string;
+    updatedAt: string;
+} | null;
+type EmailConfigInput = {
+    fromEmail?: (string) | null;
+    fromName?: (string) | null;
+    replyToEmail?: (string) | null;
+};
+type EmailsResponse = {
+    emails: Array<Email>;
+    pagination: Pagination;
+};
+type EmailStats = {
+    total: number;
+    byStatus: {
+        [key: string]: (number);
+    };
+    period: {
+        days: number;
+        since: string;
+    };
 };
 type Event = {
     id: string;
@@ -124,6 +258,12 @@ type Page = {
     }>;
 };
 type recordType = 'SOURCE' | 'PUBLISHED' | 'REVISION';
+type Pagination = {
+    page: number;
+    limit: number;
+    total: number;
+    totalPages: number;
+};
 type Product = {
     siteId: string;
     slug: string;
@@ -165,6 +305,16 @@ type Profile = {
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
     custom?: Array<CustomSchemaData>;
+};
+type Recipient = {
+    email: string;
+    subject?: string;
+    variables?: {
+        [key: string]: unknown;
+    };
+    metadata?: {
+        [key: string]: unknown;
+    };
 };
 type SearchSiteResults = {
     events: Array<{
@@ -280,6 +430,16 @@ type Tag = {
         id: string;
         siteId: string;
         title: string;
+        parentTags?: Array<{
+            tagId: string;
+            parentTagId: string;
+            createdAt: string;
+            parentTag: {
+                id: string;
+                siteId: string;
+                title: string;
+            };
+        }>;
     };
 };
 type TicketOnEvent = {
@@ -289,6 +449,12 @@ type TicketOnEvent = {
     currency?: (string) | null;
     roles: Array<unknown>;
     localizedContent?: Array<LocalizedContent>;
+};
+type UpdateDraftBatchInput = {
+    name?: string;
+    templateKey?: string;
+    subject?: string;
+    recipients?: Array<Recipient>;
 };
 type WebSite = {
     id: string;
@@ -470,6 +636,154 @@ type GetSiteByDomainResponse = ({
     siteKey: string;
 });
 type GetSiteByDomainError = (unknown);
+type GetEmailConfigData = {
+    path: {
+        siteKey: string;
+    };
+};
+type GetEmailConfigResponse = (EmailConfig);
+type GetEmailConfigError = (unknown);
+type UpdateEmailConfigData = {
+    body?: EmailConfigInput;
+    path: {
+        siteKey: string;
+    };
+};
+type UpdateEmailConfigResponse = (EmailConfig);
+type UpdateEmailConfigError = (unknown);
+type GetDomainStatusData = {
+    path: {
+        siteKey: string;
+    };
+};
+type GetDomainStatusResponse = (DomainStatus);
+type GetDomainStatusError = (unknown);
+type AddCustomDomainData = {
+    body?: AddDomainInput;
+    path: {
+        siteKey: string;
+    };
+};
+type AddCustomDomainResponse = (AddDomainResponse);
+type AddCustomDomainError = (unknown);
+type RemoveCustomDomainData = {
+    path: {
+        siteKey: string;
+    };
+};
+type RemoveCustomDomainResponse = ({
+    success: boolean;
+});
+type RemoveCustomDomainError = (unknown);
+type VerifyDomainData = {
+    path: {
+        siteKey: string;
+    };
+};
+type VerifyDomainResponse = (DomainStatus);
+type VerifyDomainError = (unknown);
+type GetEmailsData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        batchId?: string;
+        endDate?: string;
+        limit?: string;
+        page?: string;
+        startDate?: string;
+        status?: 'PENDING' | 'SENT' | 'DELIVERED' | 'BOUNCED' | 'FAILED';
+        templateKey?: string;
+    };
+};
+type GetEmailsResponse = (EmailsResponse);
+type GetEmailsError = (unknown);
+type GetEmailStatsData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        days?: string;
+    };
+};
+type GetEmailStatsResponse = (EmailStats);
+type GetEmailStatsError = (unknown);
+type GetEmailByIdData = {
+    path: {
+        emailId: string;
+        siteKey: string;
+    };
+};
+type GetEmailByIdResponse = (Email);
+type GetEmailByIdError = (unknown);
+type GetEmailBatchesData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        endDate?: string;
+        limit?: string;
+        page?: string;
+        startDate?: string;
+        status?: 'DRAFT' | 'SENDING' | 'COMPLETED';
+        templateKey?: string;
+    };
+};
+type GetEmailBatchesResponse = (EmailBatchesResponse);
+type GetEmailBatchesError = (unknown);
+type CreateDraftBatchData = {
+    body?: CreateDraftBatchInput;
+    path: {
+        siteKey: string;
+    };
+};
+type CreateDraftBatchResponse = (DraftBatchResult);
+type CreateDraftBatchError = (unknown);
+type GetEmailBatchData = {
+    path: {
+        batchId: string;
+        siteKey: string;
+    };
+};
+type GetEmailBatchResponse = (EmailBatchDetail);
+type GetEmailBatchError = (unknown);
+type UpdateDraftBatchData = {
+    body?: UpdateDraftBatchInput;
+    path: {
+        batchId: string;
+        siteKey: string;
+    };
+};
+type UpdateDraftBatchResponse = ({
+    updated: boolean;
+});
+type UpdateDraftBatchError = (unknown);
+type DeleteBatchData = {
+    path: {
+        batchId: string;
+        siteKey: string;
+    };
+};
+type DeleteBatchResponse = ({
+    deleted: boolean;
+});
+type DeleteBatchError = (unknown);
+type CreateAndSendBatchData = {
+    body?: CreateDraftBatchInput;
+    path: {
+        siteKey: string;
+    };
+};
+type CreateAndSendBatchResponse = (BatchSendResult);
+type CreateAndSendBatchError = (unknown);
+type SendBatchData = {
+    path: {
+        batchId: string;
+        siteKey: string;
+    };
+};
+type SendBatchResponse = (BatchSendResult);
+type SendBatchError = (unknown);
 
 /**
  * This function will properly resolve content blocks that are localized.
@@ -725,4 +1039,4 @@ declare const searchSite: (params: SearchSiteData["query"]) => Promise<({
     response: Response;
 }>;
 
-export { type CustomSchemaData, type Event, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Product, type ProductVariant, type Profile, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type Site, type SiteSettings, type Tag, type TicketOnEvent, type WebSite, cache, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, searchSite, setConfig };
+export { type AddCustomDomainData, type AddCustomDomainError, type AddCustomDomainResponse, type AddDomainInput, type AddDomainResponse, type BatchEmail, type BatchPagination, type BatchSendResult, type CreateAndSendBatchData, type CreateAndSendBatchError, type CreateAndSendBatchResponse, type CreateDraftBatchData, type CreateDraftBatchError, type CreateDraftBatchInput, type CreateDraftBatchResponse, type CustomSchemaData, type DeleteBatchData, type DeleteBatchError, type DeleteBatchResponse, type DnsRecord, type DomainStatus, type DraftBatchResult, type Email, type EmailBatch, type EmailBatchDetail, type EmailBatchesResponse, type EmailConfig, type EmailConfigInput, type EmailStats, type EmailsResponse, type Event, type GetDomainStatusData, type GetDomainStatusError, type GetDomainStatusResponse, type GetEmailBatchData, type GetEmailBatchError, type GetEmailBatchResponse, type GetEmailBatchesData, type GetEmailBatchesError, type GetEmailBatchesResponse, type GetEmailByIdData, type GetEmailByIdError, type GetEmailByIdResponse, type GetEmailConfigData, type GetEmailConfigError, type GetEmailConfigResponse, type GetEmailStatsData, type GetEmailStatsError, type GetEmailStatsResponse, type GetEmailsData, type GetEmailsError, type GetEmailsResponse, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type LocalizedContent, type Location, type MediaItem, type Page, type Pagination, type Product, type ProductVariant, type Profile, type Recipient, type RemoveCustomDomainData, type RemoveCustomDomainError, type RemoveCustomDomainResponse, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type SendBatchData, type SendBatchError, type SendBatchResponse, type Site, type SiteSettings, type Tag, type TicketOnEvent, type UpdateDraftBatchData, type UpdateDraftBatchError, type UpdateDraftBatchInput, type UpdateDraftBatchResponse, type UpdateEmailConfigData, type UpdateEmailConfigError, type UpdateEmailConfigResponse, type VerifyDomainData, type VerifyDomainError, type VerifyDomainResponse, type WebSite, cache, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, type publishState, type recordType, searchSite, setConfig, type status, type status2, type status3, type status4 };

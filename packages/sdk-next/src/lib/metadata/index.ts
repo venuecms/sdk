@@ -3,9 +3,9 @@ import {
   MediaItem,
   type Site,
   getLocalizedContent,
-  getSite,
   setConfig,
 } from "@venuecms/sdk";
+import { getSite } from "../api";
 import removeMarkdown from "remove-markdown";
 import { getPublicImage } from "../../components/utils";
 

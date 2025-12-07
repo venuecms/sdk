@@ -16,9 +16,9 @@ function getEvent(params): Promise<
 } & object>
 ```
 
-Defined in: [sdk/dist/index.d.mts:913](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L913)
+Defined in: [sdk-next/src/lib/api/index.ts:45](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk-next/src/lib/api/index.ts#L45)
 
-Retrieve data for a single event
+Retrieve data for a single event (cached)
 
 ## Parameters
 
@@ -37,28 +37,3 @@ Retrieve data for a single event
   `data`: [`Event`](../type-aliases/Event.md);
   `error`: `undefined`;
  \} & `object`\>
-
-## Example
-
-```typescript
-import { getEvent } from "@venuecms/sdk";
-import { ContentRender, type RenderNode } from "@/lib/utils/renderer";
-
-const { data: event } = await getEvent({ slug });
-
-// If the event is not found, you should do something like a 404
-if (!event) {
-  notFound();
-}
-const { localizedContent, location, artists } = event;
-
-// Get the content in a localized form (usually locale is pulled from somewhere like your url params)
-const { content } = getLocalizedContent(event.localizedContent, locale);
-
-// Render content for the event
-return (
-  <div>
-    <VenueContent classes={renderedStyles} content={content} />
-  </div>
-);
-```

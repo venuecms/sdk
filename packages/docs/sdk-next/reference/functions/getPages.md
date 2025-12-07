@@ -5,7 +5,7 @@
 # Function: getPages()
 
 ```ts
-function getPages(params?): Promise<
+function getPages(params): Promise<
   | {
   data: undefined;
   error: unknown;
@@ -16,21 +16,15 @@ function getPages(params?): Promise<
 } & object>
 ```
 
-Defined in: [sdk/dist/index.d.mts:928](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L928)
+Defined in: [sdk-next/src/lib/api/index.ts:53](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk-next/src/lib/api/index.ts#L53)
 
-Get a list of all pages
+Get a list of all pages (cached)
 
 ## Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `params`? | \{ `dir`: `"asc"` \| `"desc"`; `featured`: `null` \| `boolean`; `limit`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `tags`: `string` \| `string`[]; \} |
-| `params.dir`? | `"asc"` \| `"desc"` |
-| `params.featured`? | `null` \| `boolean` |
-| `params.limit`? | `null` \| `number` |
-| `params.orderBy`? | `string` |
-| `params.page`? | `null` \| `number` |
-| `params.tags`? | `string` \| `string`[] |
+| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `featured`: `null` \| `boolean`; `limit`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `tags`: `string` \| `string`[]; \} |
 
 ## Returns
 

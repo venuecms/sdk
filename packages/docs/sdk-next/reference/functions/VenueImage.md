@@ -8,7 +8,7 @@
 function VenueImage(__namedParameters): null | Element
 ```
 
-Defined in: [sdk-next/src/components/VenueImage/index.tsx:14](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk-next/src/components/VenueImage/index.tsx#L14)
+Defined in: [sdk-next/src/components/VenueImage/index.tsx:14](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk-next/src/components/VenueImage/index.tsx#L14)
 
 ## Parameters
 

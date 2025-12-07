@@ -14,38 +14,38 @@
 
 | Function | Description |
 | ------ | ------ |
-| [getSite](functions/getSite.md) | Get the site configured via the siteKey |
+| [getSite](functions/getSite.md) | Get the site configured via the siteKey (cached) |
 | [getSiteKeyByDomain](functions/getSiteKeyByDomain.md) | Get the siteKey and site id from a domain name. |
-| [searchSite](functions/searchSite.md) | Search a site for all content types |
+| [searchSite](functions/searchSite.md) | Search a site for all content types (cached) |
 
 ## Events
 
 | Function | Description |
 | ------ | ------ |
-| [getEvent](functions/getEvent.md) | Retrieve data for a single event |
-| [getEvents](functions/getEvents.md) | - |
+| [getEvent](functions/getEvent.md) | Retrieve data for a single event (cached) |
+| [getEvents](functions/getEvents.md) | Get a list of events (cached) |
 
 ## Pages
 
 | Function | Description |
 | ------ | ------ |
-| [getPage](functions/getPage.md) | Get a single page using the slug |
-| [getPages](functions/getPages.md) | Get a list of all pages |
+| [getPage](functions/getPage.md) | Get a single page using the slug (cached) |
+| [getPages](functions/getPages.md) | Get a list of all pages (cached) |
 
 ## Profiles
 
 | Function | Description |
 | ------ | ------ |
-| [getProfile](functions/getProfile.md) | Get a profile |
-| [getProfileEvents](functions/getProfileEvents.md) | Get a listing of events for a profile |
-| [getProfiles](functions/getProfiles.md) | Get a list of profiles |
+| [getProfile](functions/getProfile.md) | Get a profile (cached) |
+| [getProfileEvents](functions/getProfileEvents.md) | Get a listing of events for a profile (cached) |
+| [getProfiles](functions/getProfiles.md) | Get a list of profiles (cached) |
 
 ## Products
 
 | Function | Description |
 | ------ | ------ |
-| [getProduct](functions/getProduct.md) | Get a product |
-| [getProducts](functions/getProducts.md) | Get a listing of products |
+| [getProduct](functions/getProduct.md) | Get a product (cached) |
+| [getProducts](functions/getProducts.md) | Get a listing of products (cached) |
 
 ## Utilities
 

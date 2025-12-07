@@ -5,7 +5,7 @@
 # Function: getEvents()
 
 ```ts
-function getEvents(params?): Promise<
+function getEvents(params): Promise<
   | {
   data: undefined;
   error: unknown;
@@ -16,23 +16,15 @@ function getEvents(params?): Promise<
 } & object>
 ```
 
-Defined in: [sdk/dist/index.d.mts:875](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L875)
+Defined in: [sdk-next/src/lib/api/index.ts:37](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk-next/src/lib/api/index.ts#L37)
+
+Get a list of events (cached)
 
 ## Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `params`? | \{ `dir`: `"asc"` \| `"desc"`; `featured`: `null` \| `boolean`; `gt`: `null` \| `number`; `legacyId`: `string`; `limit`: `null` \| `number`; `lt`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `tags`: `string` \| `string`[]; `upcoming`: `null` \| `boolean`; \} |
-| `params.dir`? | `"asc"` \| `"desc"` |
-| `params.featured`? | `null` \| `boolean` |
-| `params.gt`? | `null` \| `number` |
-| `params.legacyId`? | `string` |
-| `params.limit`? | `null` \| `number` |
-| `params.lt`? | `null` \| `number` |
-| `params.orderBy`? | `string` |
-| `params.page`? | `null` \| `number` |
-| `params.tags`? | `string` \| `string`[] |
-| `params.upcoming`? | `null` \| `boolean` |
+| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `featured`: `null` \| `boolean`; `gt`: `null` \| `number`; `legacyId`: `string`; `limit`: `null` \| `number`; `lt`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `tags`: `string` \| `string`[]; `upcoming`: `null` \| `boolean`; \} |
 
 ## Returns
 

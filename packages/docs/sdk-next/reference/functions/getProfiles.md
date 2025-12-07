@@ -5,7 +5,7 @@
 # Function: getProfiles()
 
 ```ts
-function getProfiles(params?): Promise<
+function getProfiles(params): Promise<
   | {
   data: undefined;
   error: unknown;
@@ -16,21 +16,15 @@ function getProfiles(params?): Promise<
 } & object>
 ```
 
-Defined in: [sdk/dist/index.d.mts:958](https://github.com/venuecms/sdk/blob/679843f03ad94db45890904235728c199874457d/packages/sdk/dist/index.d.mts#L958)
+Defined in: [sdk-next/src/lib/api/index.ts:69](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk-next/src/lib/api/index.ts#L69)
 
-Get a list of profiles
+Get a list of profiles (cached)
 
 ## Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `params`? | \{ `dir`: `"asc"` \| `"desc"`; `limit`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `tags`: `string` \| `string`[]; `type`: `"member"`; \} |
-| `params.dir`? | `"asc"` \| `"desc"` |
-| `params.limit`? | `null` \| `number` |
-| `params.orderBy`? | `string` |
-| `params.page`? | `null` \| `number` |
-| `params.tags`? | `string` \| `string`[] |
-| `params.type`? | `"member"` |
+| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `limit`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `tags`: `string` \| `string`[]; `type`: `"member"`; \} |
 
 ## Returns
 

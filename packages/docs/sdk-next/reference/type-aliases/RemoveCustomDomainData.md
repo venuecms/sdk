@@ -8,11 +8,11 @@
 type RemoveCustomDomainData = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:669](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/dist/index.d.mts#L669)
+Defined in: [sdk/dist/index.d.mts:681](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L681)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:670](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/dist/index.d.mts#L670) |
-| `path.siteKey` | `string` | [sdk/dist/index.d.mts:671](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/dist/index.d.mts#L671) |
+| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:682](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L682) |
+| `path.siteKey` | `string` | [sdk/dist/index.d.mts:683](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L683) |

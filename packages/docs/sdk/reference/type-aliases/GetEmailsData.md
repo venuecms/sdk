@@ -8,19 +8,19 @@
 type GetEmailsData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:780](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L780)
+Defined in: [packages/sdk/src/client/types.gen.ts:832](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L832)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:781](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L781) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:782](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L782) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:784](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L784) |
-| `query.batchId`? | `string` | [packages/sdk/src/client/types.gen.ts:785](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L785) |
-| `query.endDate`? | `string` | [packages/sdk/src/client/types.gen.ts:786](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L786) |
-| `query.limit`? | `string` | [packages/sdk/src/client/types.gen.ts:787](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L787) |
-| `query.page`? | `string` | [packages/sdk/src/client/types.gen.ts:788](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L788) |
-| `query.startDate`? | `string` | [packages/sdk/src/client/types.gen.ts:789](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L789) |
-| `query.status`? | `"PENDING"` \| `"SENT"` \| `"DELIVERED"` \| `"BOUNCED"` \| `"FAILED"` | [packages/sdk/src/client/types.gen.ts:790](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L790) |
-| `query.templateKey`? | `string` | [packages/sdk/src/client/types.gen.ts:791](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L791) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:833](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L833) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:834](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L834) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:836](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L836) |
+| `query.batchId`? | `string` | [packages/sdk/src/client/types.gen.ts:837](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L837) |
+| `query.endDate`? | `string` | [packages/sdk/src/client/types.gen.ts:838](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L838) |
+| `query.limit`? | `string` | [packages/sdk/src/client/types.gen.ts:839](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L839) |
+| `query.page`? | `string` | [packages/sdk/src/client/types.gen.ts:840](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L840) |
+| `query.startDate`? | `string` | [packages/sdk/src/client/types.gen.ts:841](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L841) |
+| `query.status`? | `"PENDING"` \| `"SENT"` \| `"DELIVERED"` \| `"BOUNCED"` \| `"FAILED"` | [packages/sdk/src/client/types.gen.ts:842](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L842) |
+| `query.templateKey`? | `string` | [packages/sdk/src/client/types.gen.ts:843](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L843) |

@@ -1,6 +1,6 @@
 {
   "name": "@venuecms/sdk-next",
-  "version": "0.0.32",
+  "version": "0.0.35",
   "author": "Scott Cazan",
   "description": "",
   "types": "dist/index.d.ts",
@@ -38,12 +38,11 @@
     "next": ">=14",
     "react": ">=19"
   },
-  "devDependencies": {
-    "@venuecms/sdk": "workspace:^",
+  "dependencies": {
+    "@venuecms/sdk": "0.0.31",
     "clsx": "^2.1.1",
     "markdown-to-jsx": "^7.7.3",
     "next": "^15.1.6",
-    "react": "^19.0.0",
     "remove-markdown": "^0.6.0",
     "tailwind-merge": "^3.0.1",
     "tailwindcss": "^4.0.3",

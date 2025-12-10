@@ -16,6 +16,7 @@
 | ------ | ------ |
 | [getSite](functions/getSite.md) | Get the site configured via the siteKey (cached) |
 | [getSiteKeyByDomain](functions/getSiteKeyByDomain.md) | Get the siteKey and site id from a domain name. |
+| [listSiteDomains](functions/listSiteDomains.md) | - |
 | [searchSite](functions/searchSite.md) | Search a site for all content types (cached) |
 
 ## Events
@@ -146,6 +147,9 @@
 | [GetSiteData](type-aliases/GetSiteData.md) | - |
 | [GetSiteError](type-aliases/GetSiteError.md) | - |
 | [GetSiteResponse](type-aliases/GetSiteResponse.md) | - |
+| [ListSiteDomainsData](type-aliases/ListSiteDomainsData.md) | - |
+| [ListSiteDomainsError](type-aliases/ListSiteDomainsError.md) | - |
+| [ListSiteDomainsResponse](type-aliases/ListSiteDomainsResponse.md) | - |
 | [LocalizedContent](type-aliases/LocalizedContent.md) | - |
 | [Location](type-aliases/Location.md) | - |
 | [MediaItem](type-aliases/MediaItem.md) | - |

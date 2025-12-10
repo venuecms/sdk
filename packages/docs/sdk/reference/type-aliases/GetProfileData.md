@@ -8,12 +8,12 @@
 type GetProfileData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:616](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L616)
+Defined in: [packages/sdk/src/client/types.gen.ts:632](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L632)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:617](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L617) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:618](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L618) |
-| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:619](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L619) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:633](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L633) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:634](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L634) |
+| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:635](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L635) |

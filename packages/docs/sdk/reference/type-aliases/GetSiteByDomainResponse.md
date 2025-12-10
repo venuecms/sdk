@@ -8,11 +8,11 @@
 type GetSiteByDomainResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:709](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L709)
+Defined in: [packages/sdk/src/client/types.gen.ts:761](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L761)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:710](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L710) |
-| <a id="sitekey"></a> `siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:711](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L711) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:762](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L762) |
+| <a id="sitekey"></a> `siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:763](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L763) |

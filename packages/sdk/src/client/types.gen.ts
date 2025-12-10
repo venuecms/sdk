@@ -480,6 +480,22 @@ export type Tag = {
     };
 };
 
+export type TagListItem = {
+    id: string;
+    siteId: string;
+    title: string;
+    parentTags?: Array<{
+        tagId: string;
+        parentTagId: string;
+        createdAt: string;
+        parentTag: {
+            id: string;
+            siteId: string;
+            title: string;
+        };
+    }>;
+};
+
 export type TicketOnEvent = {
     name: string;
     price: number;
@@ -698,6 +714,42 @@ export type SearchSiteData = {
 export type SearchSiteResponse = (SearchSiteResults);
 
 export type SearchSiteError = (unknown);
+
+export type GetTagsData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        dir?: 'asc' | 'desc';
+        limit?: (number) | null;
+        orderBy?: string;
+        page?: (number) | null;
+        parentId?: string;
+        query?: string;
+    };
+};
+
+export type GetTagsResponse = ({
+    records: Array<TagListItem>;
+    count: number;
+});
+
+export type GetTagsError = unknown;
+
+export type ListSiteDomainsData = {
+    path: {
+        siteKey: string;
+    };
+};
+
+export type ListSiteDomainsResponse = ({
+    records: Array<{
+        siteKey: string;
+        customDomain: string;
+    }>;
+});
+
+export type ListSiteDomainsError = unknown;
 
 export type GetSiteByDomainData = {
     path: {

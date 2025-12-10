@@ -8,11 +8,11 @@
 type GetSiteData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:511](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L511)
+Defined in: [packages/sdk/src/client/types.gen.ts:527](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L527)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:512](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L512) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:513](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L513) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:528](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L528) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:529](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L529) |

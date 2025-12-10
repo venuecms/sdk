@@ -8,18 +8,18 @@
 type GetPagesData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:556](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L556)
+Defined in: [packages/sdk/src/client/types.gen.ts:572](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L572)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:557](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L557) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:558](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L558) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:560](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L560) |
-| `query.dir`? | `"asc"` \| `"desc"` | [packages/sdk/src/client/types.gen.ts:561](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L561) |
-| `query.featured`? | `boolean` \| `null` | [packages/sdk/src/client/types.gen.ts:562](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L562) |
-| `query.limit`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:563](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L563) |
-| `query.orderBy`? | `string` | [packages/sdk/src/client/types.gen.ts:564](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L564) |
-| `query.page`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:565](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L565) |
-| `query.tags`? | `string` \| `string`[] | [packages/sdk/src/client/types.gen.ts:566](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/src/client/types.gen.ts#L566) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:573](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L573) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:574](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L574) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:576](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L576) |
+| `query.dir`? | `"asc"` \| `"desc"` | [packages/sdk/src/client/types.gen.ts:577](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L577) |
+| `query.featured`? | `boolean` \| `null` | [packages/sdk/src/client/types.gen.ts:578](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L578) |
+| `query.limit`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:579](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L579) |
+| `query.orderBy`? | `string` | [packages/sdk/src/client/types.gen.ts:580](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L580) |
+| `query.page`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:581](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L581) |
+| `query.tags`? | `string` \| `string`[] | [packages/sdk/src/client/types.gen.ts:582](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L582) |

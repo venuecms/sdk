@@ -16,6 +16,7 @@
 | ------ | ------ |
 | [getSite](functions/getSite.md) | Get the site configured via the siteKey |
 | [getSiteKeyByDomain](functions/getSiteKeyByDomain.md) | Get the siteKey and site id from a domain name. |
+| [listSiteDomains](functions/listSiteDomains.md) | - |
 | [searchSite](functions/searchSite.md) | Search a site for all content types |
 
 ## Events
@@ -142,6 +143,12 @@
 | [GetSiteData](type-aliases/GetSiteData.md) | - |
 | [GetSiteError](type-aliases/GetSiteError.md) | - |
 | [GetSiteResponse](type-aliases/GetSiteResponse.md) | - |
+| [GetTagsData](type-aliases/GetTagsData.md) | - |
+| [GetTagsError](type-aliases/GetTagsError.md) | - |
+| [GetTagsResponse](type-aliases/GetTagsResponse.md) | - |
+| [ListSiteDomainsData](type-aliases/ListSiteDomainsData.md) | - |
+| [ListSiteDomainsError](type-aliases/ListSiteDomainsError.md) | - |
+| [ListSiteDomainsResponse](type-aliases/ListSiteDomainsResponse.md) | - |
 | [LocalizedContent](type-aliases/LocalizedContent.md) | - |
 | [Location](type-aliases/Location.md) | - |
 | [MediaItem](type-aliases/MediaItem.md) | - |
@@ -170,6 +177,7 @@
 | [status3](type-aliases/status3.md) | - |
 | [status4](type-aliases/status4.md) | - |
 | [Tag](type-aliases/Tag.md) | - |
+| [TagListItem](type-aliases/TagListItem.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |
 | [UpdateDraftBatchData](type-aliases/UpdateDraftBatchData.md) | - |
 | [UpdateDraftBatchError](type-aliases/UpdateDraftBatchError.md) | - |
@@ -183,3 +191,9 @@
 | [VerifyDomainResponse](type-aliases/VerifyDomainResponse.md) | - |
 | [WebSite](type-aliases/WebSite.md) | - |
 | [cache](functions/cache.md) | - |
+
+## Tags
+
+| Function | Description |
+| ------ | ------ |
+| [getTags](functions/getTags.md) | Get a listing of tags in use |

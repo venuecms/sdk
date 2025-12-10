@@ -11,6 +11,7 @@ import {
   GetProfileData,
   GetProfileEventsData,
   GetProfilesData,
+  GetTagsData,
   SearchSiteData,
 } from "./client/types.gen";
 
@@ -79,7 +80,10 @@ export const getSite = () => {
      });
    };
 
-
+/**
+ * @category Sites
+ */
+export const listSiteDomains = () => sdk.listSiteDomains({ path: { siteKey: 'noop' } });
 
 /**
  * @category Events
@@ -227,6 +231,19 @@ export const getProduct = (params: Omit<GetProductData["path"], "siteKey">) => {
       ...params,
       siteKey,
     },
+  });
+};
+
+/**
+ * Get a listing of tags in use
+ * @category Tags
+ */
+export const getTags = (params: GetTagsData["query"])  => {
+  return sdk.getTags({
+    path: {
+      siteKey,
+    },
+    query: params,
   });
 };
 

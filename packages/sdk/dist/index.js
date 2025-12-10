@@ -32,6 +32,8 @@ __export(index_exports, {
   getProfiles: () => getProfiles2,
   getSite: () => getSite2,
   getSiteKeyByDomain: () => getSiteKeyByDomain,
+  getTags: () => getTags2,
+  listSiteDomains: () => listSiteDomains2,
   searchSite: () => searchSite2,
   setConfig: () => setConfig
 });
@@ -153,6 +155,18 @@ var searchSite = (options) => {
     url: "/api/v2/{siteKey}/public/search"
   });
 };
+var getTags = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/tags"
+  });
+};
+var listSiteDomains = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/domains"
+  });
+};
 var getSiteByDomain = (options) => {
   return (options?.client ?? client).get({
     ...options,
@@ -200,6 +214,7 @@ var getSiteKeyByDomain = ({ domain }) => {
     })
   });
 };
+var listSiteDomains2 = () => listSiteDomains({ path: { siteKey: "noop" } });
 var getEvents2 = (params = {}) => {
   return getEvents({
     path: {
@@ -274,6 +289,14 @@ var getProduct2 = (params) => {
     }
   });
 };
+var getTags2 = (params) => {
+  return getTags({
+    path: {
+      siteKey
+    },
+    query: params
+  });
+};
 var searchSite2 = (params) => {
   return searchSite({
     path: {
@@ -297,6 +320,8 @@ var searchSite2 = (params) => {
   getProfiles,
   getSite,
   getSiteKeyByDomain,
+  getTags,
+  listSiteDomains,
   searchSite,
   setConfig
 });

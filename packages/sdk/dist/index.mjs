@@ -114,6 +114,18 @@ var searchSite = (options) => {
     url: "/api/v2/{siteKey}/public/search"
   });
 };
+var getTags = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/tags"
+  });
+};
+var listSiteDomains = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/domains"
+  });
+};
 var getSiteByDomain = (options) => {
   return (options?.client ?? client).get({
     ...options,
@@ -161,6 +173,7 @@ var getSiteKeyByDomain = ({ domain }) => {
     })
   });
 };
+var listSiteDomains2 = () => listSiteDomains({ path: { siteKey: "noop" } });
 var getEvents2 = (params = {}) => {
   return getEvents({
     path: {
@@ -235,6 +248,14 @@ var getProduct2 = (params) => {
     }
   });
 };
+var getTags2 = (params) => {
+  return getTags({
+    path: {
+      siteKey
+    },
+    query: params
+  });
+};
 var searchSite2 = (params) => {
   return searchSite({
     path: {
@@ -257,6 +278,8 @@ export {
   getProfiles2 as getProfiles,
   getSite2 as getSite,
   getSiteKeyByDomain,
+  getTags2 as getTags,
+  listSiteDomains2 as listSiteDomains,
   searchSite2 as searchSite,
   setConfig
 };

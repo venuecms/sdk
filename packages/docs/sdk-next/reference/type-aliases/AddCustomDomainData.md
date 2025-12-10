@@ -8,12 +8,12 @@
 type AddCustomDomainData = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:661](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/dist/index.d.mts#L661)
+Defined in: [sdk/dist/index.d.mts:673](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L673)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`AddDomainInput`](AddDomainInput.md) | [sdk/dist/index.d.mts:662](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/dist/index.d.mts#L662) |
-| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:663](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/dist/index.d.mts#L663) |
-| `path.siteKey` | `string` | [sdk/dist/index.d.mts:664](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/dist/index.d.mts#L664) |
+| <a id="body"></a> `body`? | [`AddDomainInput`](AddDomainInput.md) | [sdk/dist/index.d.mts:674](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L674) |
+| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:675](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L675) |
+| `path.siteKey` | `string` | [sdk/dist/index.d.mts:676](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L676) |

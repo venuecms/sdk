@@ -8,11 +8,11 @@
 type VerifyDomainData = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:678](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/dist/index.d.mts#L678)
+Defined in: [sdk/dist/index.d.mts:690](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L690)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:679](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/dist/index.d.mts#L679) |
-| `path.siteKey` | `string` | [sdk/dist/index.d.mts:680](https://github.com/venuecms/sdk/blob/d5d72c45d7b0513f04d62c7a6de8be79efa76035/packages/sdk/dist/index.d.mts#L680) |
+| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:691](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L691) |
+| `path.siteKey` | `string` | [sdk/dist/index.d.mts:692](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L692) |

@@ -8,15 +8,15 @@
 type BatchSendResult = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:31](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L31)
+Defined in: [packages/sdk/src/client/types.gen.ts:31](https://github.com/venuecms/sdk/blob/82995a80ff1f96ddd48a980b24e2a649cac0c1ff/packages/sdk/src/client/types.gen.ts#L31)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="batchid"></a> `batchId` | `string` | [packages/sdk/src/client/types.gen.ts:32](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L32) |
-| <a id="failedcount"></a> `failedCount` | `number` | [packages/sdk/src/client/types.gen.ts:36](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L36) |
-| <a id="results"></a> `results` | `object`[] | [packages/sdk/src/client/types.gen.ts:37](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L37) |
-| <a id="sentcount"></a> `sentCount` | `number` | [packages/sdk/src/client/types.gen.ts:35](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L35) |
-| <a id="status"></a> `status` | `"COMPLETED"` | [packages/sdk/src/client/types.gen.ts:33](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L33) |
-| <a id="totalcount"></a> `totalCount` | `number` | [packages/sdk/src/client/types.gen.ts:34](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/src/client/types.gen.ts#L34) |
+| <a id="batchid"></a> `batchId` | `string` | [packages/sdk/src/client/types.gen.ts:32](https://github.com/venuecms/sdk/blob/82995a80ff1f96ddd48a980b24e2a649cac0c1ff/packages/sdk/src/client/types.gen.ts#L32) |
+| <a id="failedcount"></a> `failedCount` | `number` | [packages/sdk/src/client/types.gen.ts:36](https://github.com/venuecms/sdk/blob/82995a80ff1f96ddd48a980b24e2a649cac0c1ff/packages/sdk/src/client/types.gen.ts#L36) |
+| <a id="results"></a> `results` | `object`[] | [packages/sdk/src/client/types.gen.ts:37](https://github.com/venuecms/sdk/blob/82995a80ff1f96ddd48a980b24e2a649cac0c1ff/packages/sdk/src/client/types.gen.ts#L37) |
+| <a id="sentcount"></a> `sentCount` | `number` | [packages/sdk/src/client/types.gen.ts:35](https://github.com/venuecms/sdk/blob/82995a80ff1f96ddd48a980b24e2a649cac0c1ff/packages/sdk/src/client/types.gen.ts#L35) |
+| <a id="status"></a> `status` | `"COMPLETED"` | [packages/sdk/src/client/types.gen.ts:33](https://github.com/venuecms/sdk/blob/82995a80ff1f96ddd48a980b24e2a649cac0c1ff/packages/sdk/src/client/types.gen.ts#L33) |
+| <a id="totalcount"></a> `totalCount` | `number` | [packages/sdk/src/client/types.gen.ts:34](https://github.com/venuecms/sdk/blob/82995a80ff1f96ddd48a980b24e2a649cac0c1ff/packages/sdk/src/client/types.gen.ts#L34) |

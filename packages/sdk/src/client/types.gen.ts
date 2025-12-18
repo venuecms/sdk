@@ -170,9 +170,9 @@ export type Event = {
     endDate: (string);
     hasTime: boolean;
     publishState: 'DRAFT' | 'REQUEST' | 'PUBLISHED' | 'CANCELLED';
-    location?: Location;
+    location?: LocationSlim;
     artists: Array<{
-        profile: Profile;
+        profile: ProfileSlim;
     }>;
     tickets?: Array<TicketOnEvent>;
     tags?: Array<Tag>;
@@ -198,9 +198,8 @@ export type LocalizedContent = {
     } | null;
 };
 
-export type Location = {
+export type LocationSlim = {
     siteId: string;
-    image?: MediaItem;
     address?: (string) | null;
     address2?: (string) | null;
     state?: (string) | null;
@@ -281,7 +280,7 @@ export type Page = {
     tags?: Array<Tag>;
     localizedContent: Array<LocalizedContent>;
     artists?: Array<{
-        profile: Profile;
+        profile: ProfileSlim;
     }>;
 };
 
@@ -305,7 +304,7 @@ export type Product = {
     image?: MediaItem;
     localizedContent: Array<LocalizedContent>;
     artists: Array<{
-        profile: Profile;
+        profile: ProfileSlim;
     }>;
     variants?: Array<ProductVariant>;
     custom?: Array<CustomSchemaData>;
@@ -339,6 +338,15 @@ export type Profile = {
     custom?: Array<CustomSchemaData>;
 };
 
+export type ProfileSlim = {
+    siteId: string;
+    slug: string;
+    tags?: Array<Tag>;
+    image?: MediaItem;
+    localizedContent: Array<LocalizedContent>;
+    custom?: Array<CustomSchemaData>;
+};
+
 export type Recipient = {
     email: string;
     subject?: string;
@@ -361,12 +369,6 @@ export type SearchSiteResults = {
             content?: (string) | null;
         }>;
         siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
         slug: string;
     }>;
     pages: Array<{
@@ -379,12 +381,6 @@ export type SearchSiteResults = {
             content?: (string) | null;
         }>;
         siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
         slug: string;
     }>;
     profiles: Array<{
@@ -397,12 +393,6 @@ export type SearchSiteResults = {
             content?: (string) | null;
         }>;
         siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
         slug: string;
     }>;
     products: Array<{
@@ -415,12 +405,6 @@ export type SearchSiteResults = {
             content?: (string) | null;
         }>;
         siteId: string;
-        site: {
-            defaultLocale?: (string) | null;
-            settings?: {
-                [key: string]: unknown;
-            } | null;
-        };
         slug: string;
     }>;
 };

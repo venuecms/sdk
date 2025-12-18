@@ -150,13 +150,14 @@
 | [ListSiteDomainsError](type-aliases/ListSiteDomainsError.md) | - |
 | [ListSiteDomainsResponse](type-aliases/ListSiteDomainsResponse.md) | - |
 | [LocalizedContent](type-aliases/LocalizedContent.md) | - |
-| [Location](type-aliases/Location.md) | - |
+| [LocationSlim](type-aliases/LocationSlim.md) | - |
 | [MediaItem](type-aliases/MediaItem.md) | - |
 | [Page](type-aliases/Page.md) | - |
 | [Pagination](type-aliases/Pagination.md) | - |
 | [Product](type-aliases/Product.md) | - |
 | [ProductVariant](type-aliases/ProductVariant.md) | - |
 | [Profile](type-aliases/Profile.md) | - |
+| [ProfileSlim](type-aliases/ProfileSlim.md) | - |
 | [publishState](type-aliases/publishState.md) | - |
 | [Recipient](type-aliases/Recipient.md) | - |
 | [recordType](type-aliases/recordType.md) | - |

@@ -8,13 +8,13 @@
 type BatchPagination = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:24](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L24)
+Defined in: [packages/sdk/src/client/types.gen.ts:24](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L24)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="limit"></a> `limit` | `number` | [packages/sdk/src/client/types.gen.ts:26](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L26) |
-| <a id="page"></a> `page` | `number` | [packages/sdk/src/client/types.gen.ts:25](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L25) |
-| <a id="total"></a> `total` | `number` | [packages/sdk/src/client/types.gen.ts:27](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L27) |
-| <a id="totalpages"></a> `totalPages` | `number` | [packages/sdk/src/client/types.gen.ts:28](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L28) |
+| <a id="limit"></a> `limit` | `number` | [packages/sdk/src/client/types.gen.ts:26](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L26) |
+| <a id="page"></a> `page` | `number` | [packages/sdk/src/client/types.gen.ts:25](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L25) |
+| <a id="total"></a> `total` | `number` | [packages/sdk/src/client/types.gen.ts:27](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L27) |
+| <a id="totalpages"></a> `totalPages` | `number` | [packages/sdk/src/client/types.gen.ts:28](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L28) |

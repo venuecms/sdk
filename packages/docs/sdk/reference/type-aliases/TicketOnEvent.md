@@ -8,15 +8,15 @@
 type TicketOnEvent = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:483](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L483)
+Defined in: [packages/sdk/src/client/types.gen.ts:499](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L499)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="currency"></a> `currency`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:487](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L487) |
-| <a id="externallink"></a> `externalLink`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:486](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L486) |
-| <a id="localizedcontent"></a> `localizedContent`? | [`LocalizedContent`](LocalizedContent.md)[] | [packages/sdk/src/client/types.gen.ts:489](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L489) |
-| <a id="name"></a> `name` | `string` | [packages/sdk/src/client/types.gen.ts:484](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L484) |
-| <a id="price"></a> `price` | `number` | [packages/sdk/src/client/types.gen.ts:485](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L485) |
-| <a id="roles"></a> `roles` | `unknown`[] | [packages/sdk/src/client/types.gen.ts:488](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L488) |
+| <a id="currency"></a> `currency`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:503](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L503) |
+| <a id="externallink"></a> `externalLink`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:502](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L502) |
+| <a id="localizedcontent"></a> `localizedContent`? | [`LocalizedContent`](LocalizedContent.md)[] | [packages/sdk/src/client/types.gen.ts:505](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L505) |
+| <a id="name"></a> `name` | `string` | [packages/sdk/src/client/types.gen.ts:500](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L500) |
+| <a id="price"></a> `price` | `number` | [packages/sdk/src/client/types.gen.ts:501](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L501) |
+| <a id="roles"></a> `roles` | `unknown`[] | [packages/sdk/src/client/types.gen.ts:504](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L504) |

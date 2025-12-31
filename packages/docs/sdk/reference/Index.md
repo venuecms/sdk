@@ -89,6 +89,8 @@
 | [EmailsResponse](type-aliases/EmailsResponse.md) | - |
 | [EmailStats](type-aliases/EmailStats.md) | - |
 | [Event](type-aliases/Event.md) | - |
+| [EventReference](type-aliases/EventReference.md) | - |
+| [EventRelations](type-aliases/EventRelations.md) | - |
 | [GetDomainStatusData](type-aliases/GetDomainStatusData.md) | - |
 | [GetDomainStatusError](type-aliases/GetDomainStatusError.md) | - |
 | [GetDomainStatusResponse](type-aliases/GetDomainStatusResponse.md) | - |

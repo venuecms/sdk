@@ -8,10 +8,10 @@
 type RemoveCustomDomainResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:800](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L800)
+Defined in: [packages/sdk/src/client/types.gen.ts:818](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L818)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="success"></a> `success` | `boolean` | [packages/sdk/src/client/types.gen.ts:801](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L801) |
+| <a id="success"></a> `success` | `boolean` | [packages/sdk/src/client/types.gen.ts:819](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L819) |

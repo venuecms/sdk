@@ -178,9 +178,25 @@ export type Event = {
     tags?: Array<Tag>;
     custom?: Array<CustomSchemaData>;
     localizedContent: Array<LocalizedContent>;
+    relations?: EventRelations;
 };
 
 export type publishState = 'DRAFT' | 'REQUEST' | 'PUBLISHED' | 'CANCELLED';
+
+export type EventReference = {
+    id: string;
+    slug: string;
+    publishState?: string;
+    startDate?: (string) | null;
+    endDate?: (string) | null;
+    localizedContent: Array<LocalizedContent>;
+    image?: (MediaItem & unknown);
+};
+
+export type EventRelations = {
+    parents?: Array<EventReference>;
+    children?: Array<EventReference>;
+};
 
 export type LocalizedContent = {
     siteId: string;
@@ -531,6 +547,7 @@ export type GetEventsData = {
         lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        rootOnly?: (boolean) | null;
         tags?: (string | Array<(string)>);
         upcoming?: (boolean) | null;
     };
@@ -638,6 +655,7 @@ export type GetProfileEventsData = {
         lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        rootOnly?: (boolean) | null;
         tags?: (string | Array<(string)>);
         upcoming?: (boolean) | null;
     };

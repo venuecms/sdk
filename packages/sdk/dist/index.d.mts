@@ -156,8 +156,22 @@ type Event = {
     tags?: Array<Tag>;
     custom?: Array<CustomSchemaData>;
     localizedContent: Array<LocalizedContent>;
+    relations?: EventRelations;
 };
 type publishState = 'DRAFT' | 'REQUEST' | 'PUBLISHED' | 'CANCELLED';
+type EventReference = {
+    id: string;
+    slug: string;
+    publishState?: string;
+    startDate?: (string) | null;
+    endDate?: (string) | null;
+    localizedContent: Array<LocalizedContent>;
+    image?: (MediaItem & unknown);
+};
+type EventRelations = {
+    parents?: Array<EventReference>;
+    children?: Array<EventReference>;
+};
 type LocalizedContent = {
     siteId: string;
     locale: string;
@@ -485,6 +499,7 @@ type GetEventsData = {
         lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        rootOnly?: (boolean) | null;
         tags?: (string | Array<(string)>);
         upcoming?: (boolean) | null;
     };
@@ -574,6 +589,7 @@ type GetProfileEventsData = {
         lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        rootOnly?: (boolean) | null;
         tags?: (string | Array<(string)>);
         upcoming?: (boolean) | null;
     };
@@ -1094,4 +1110,4 @@ declare const searchSite: (params: SearchSiteData["query"]) => Promise<({
     response: Response;
 }>;
 
-export { type AddCustomDomainData, type AddCustomDomainError, type AddCustomDomainResponse, type AddDomainInput, type AddDomainResponse, type BatchEmail, type BatchPagination, type BatchSendResult, type CreateAndSendBatchData, type CreateAndSendBatchError, type CreateAndSendBatchResponse, type CreateDraftBatchData, type CreateDraftBatchError, type CreateDraftBatchInput, type CreateDraftBatchResponse, type CustomSchemaData, type DeleteBatchData, type DeleteBatchError, type DeleteBatchResponse, type DnsRecord, type DomainStatus, type DraftBatchResult, type Email, type EmailBatch, type EmailBatchDetail, type EmailBatchesResponse, type EmailConfig, type EmailConfigInput, type EmailStats, type EmailsResponse, type Event, type GetDomainStatusData, type GetDomainStatusError, type GetDomainStatusResponse, type GetEmailBatchData, type GetEmailBatchError, type GetEmailBatchResponse, type GetEmailBatchesData, type GetEmailBatchesError, type GetEmailBatchesResponse, type GetEmailByIdData, type GetEmailByIdError, type GetEmailByIdResponse, type GetEmailConfigData, type GetEmailConfigError, type GetEmailConfigResponse, type GetEmailStatsData, type GetEmailStatsError, type GetEmailStatsResponse, type GetEmailsData, type GetEmailsError, type GetEmailsResponse, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type GetTagsData, type GetTagsError, type GetTagsResponse, type ListSiteDomainsData, type ListSiteDomainsError, type ListSiteDomainsResponse, type LocalizedContent, type LocationSlim, type MediaItem, type Page, type Pagination, type Product, type ProductVariant, type Profile, type ProfileSlim, type Recipient, type RemoveCustomDomainData, type RemoveCustomDomainError, type RemoveCustomDomainResponse, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type SendBatchData, type SendBatchError, type SendBatchResponse, type Site, type SiteSettings, type Tag, type TagListItem, type TicketOnEvent, type UpdateDraftBatchData, type UpdateDraftBatchError, type UpdateDraftBatchInput, type UpdateDraftBatchResponse, type UpdateEmailConfigData, type UpdateEmailConfigError, type UpdateEmailConfigResponse, type VerifyDomainData, type VerifyDomainError, type VerifyDomainResponse, type WebSite, cache, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, getTags, listSiteDomains, type publishState, type recordType, searchSite, setConfig, type status, type status2, type status3, type status4 };
+export { type AddCustomDomainData, type AddCustomDomainError, type AddCustomDomainResponse, type AddDomainInput, type AddDomainResponse, type BatchEmail, type BatchPagination, type BatchSendResult, type CreateAndSendBatchData, type CreateAndSendBatchError, type CreateAndSendBatchResponse, type CreateDraftBatchData, type CreateDraftBatchError, type CreateDraftBatchInput, type CreateDraftBatchResponse, type CustomSchemaData, type DeleteBatchData, type DeleteBatchError, type DeleteBatchResponse, type DnsRecord, type DomainStatus, type DraftBatchResult, type Email, type EmailBatch, type EmailBatchDetail, type EmailBatchesResponse, type EmailConfig, type EmailConfigInput, type EmailStats, type EmailsResponse, type Event, type EventReference, type EventRelations, type GetDomainStatusData, type GetDomainStatusError, type GetDomainStatusResponse, type GetEmailBatchData, type GetEmailBatchError, type GetEmailBatchResponse, type GetEmailBatchesData, type GetEmailBatchesError, type GetEmailBatchesResponse, type GetEmailByIdData, type GetEmailByIdError, type GetEmailByIdResponse, type GetEmailConfigData, type GetEmailConfigError, type GetEmailConfigResponse, type GetEmailStatsData, type GetEmailStatsError, type GetEmailStatsResponse, type GetEmailsData, type GetEmailsError, type GetEmailsResponse, type GetEventData, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type GetTagsData, type GetTagsError, type GetTagsResponse, type ListSiteDomainsData, type ListSiteDomainsError, type ListSiteDomainsResponse, type LocalizedContent, type LocationSlim, type MediaItem, type Page, type Pagination, type Product, type ProductVariant, type Profile, type ProfileSlim, type Recipient, type RemoveCustomDomainData, type RemoveCustomDomainError, type RemoveCustomDomainResponse, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type SendBatchData, type SendBatchError, type SendBatchResponse, type Site, type SiteSettings, type Tag, type TagListItem, type TicketOnEvent, type UpdateDraftBatchData, type UpdateDraftBatchError, type UpdateDraftBatchInput, type UpdateDraftBatchResponse, type UpdateEmailConfigData, type UpdateEmailConfigError, type UpdateEmailConfigResponse, type VerifyDomainData, type VerifyDomainError, type VerifyDomainResponse, type WebSite, cache, getEvent, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfiles, getSite, getSiteKeyByDomain, getTags, listSiteDomains, type publishState, type recordType, searchSite, setConfig, type status, type status2, type status3, type status4 };

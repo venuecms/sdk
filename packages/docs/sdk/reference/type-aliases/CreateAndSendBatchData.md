@@ -8,12 +8,12 @@
 type CreateAndSendBatchData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:926](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L926)
+Defined in: [packages/sdk/src/client/types.gen.ts:944](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L944)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`CreateDraftBatchInput`](CreateDraftBatchInput.md) | [packages/sdk/src/client/types.gen.ts:927](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L927) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:928](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L928) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:929](https://github.com/venuecms/sdk/blob/ca0ee42f464e30c974a2a2d876df8afd4a897264/packages/sdk/src/client/types.gen.ts#L929) |
+| <a id="body"></a> `body`? | [`CreateDraftBatchInput`](CreateDraftBatchInput.md) | [packages/sdk/src/client/types.gen.ts:945](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L945) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:946](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L946) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:947](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L947) |

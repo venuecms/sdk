@@ -21,6 +21,7 @@ var index_exports = {};
 __export(index_exports, {
   cache: () => cache,
   getEvent: () => getEvent2,
+  getEventDates: () => getEventDates2,
   getEvents: () => getEvents2,
   getLocalizedContent: () => getLocalizedContent,
   getPage: () => getPage2,
@@ -99,6 +100,12 @@ var getEvents = (options) => {
   return (options?.client ?? client).get({
     ...options,
     url: "/api/v2/{siteKey}/public/events"
+  });
+};
+var getEventDates = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/events/dates"
   });
 };
 var getEvent = (options) => {
@@ -231,6 +238,14 @@ var getEvent2 = (params) => {
     }
   });
 };
+var getEventDates2 = (params) => {
+  return getEventDates({
+    path: {
+      siteKey
+    },
+    query: params
+  });
+};
 var getPages2 = (params = {}) => {
   return getPages({
     path: {
@@ -309,6 +324,7 @@ var searchSite2 = (params) => {
 0 && (module.exports = {
   cache,
   getEvent,
+  getEventDates,
   getEvents,
   getLocalizedContent,
   getPage,

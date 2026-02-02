@@ -60,6 +60,12 @@ var getEvents = (options) => {
     url: "/api/v2/{siteKey}/public/events"
   });
 };
+var getEventDates = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/events/dates"
+  });
+};
 var getEvent = (options) => {
   return (options?.client ?? client).get({
     ...options,
@@ -190,6 +196,14 @@ var getEvent2 = (params) => {
     }
   });
 };
+var getEventDates2 = (params) => {
+  return getEventDates({
+    path: {
+      siteKey
+    },
+    query: params
+  });
+};
 var getPages2 = (params = {}) => {
   return getPages({
     path: {
@@ -267,6 +281,7 @@ var searchSite2 = (params) => {
 export {
   cache,
   getEvent2 as getEvent,
+  getEventDates2 as getEventDates,
   getEvents2 as getEvents,
   getLocalizedContent,
   getPage2 as getPage,

@@ -8,22 +8,22 @@
 type SiteSettings = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:439](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L439)
+Defined in: [packages/sdk/src/client/types.gen.ts:450](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L450)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="defaults"></a> `defaults`? | `object` | [packages/sdk/src/client/types.gen.ts:444](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L444) |
-| `defaults.currency`? | `string` | [packages/sdk/src/client/types.gen.ts:445](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L445) |
-| `defaults.event`? | `object` | [packages/sdk/src/client/types.gen.ts:446](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L446) |
-| `defaults.event.location`? | `string` | [packages/sdk/src/client/types.gen.ts:447](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L447) |
-| <a id="locale"></a> `locale`? | `object` | [packages/sdk/src/client/types.gen.ts:440](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L440) |
-| `locale.default` | `string` | [packages/sdk/src/client/types.gen.ts:441](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L441) |
-| `locale.supported` | `string`[] | [packages/sdk/src/client/types.gen.ts:442](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L442) |
-| <a id="publicsite"></a> `publicSite`? | `object` | [packages/sdk/src/client/types.gen.ts:450](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L450) |
-| `publicSite.baseUrl`? | `string` | [packages/sdk/src/client/types.gen.ts:451](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L451) |
-| `publicSite.template`? | `object` | [packages/sdk/src/client/types.gen.ts:452](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L452) |
-| `publicSite.template.config`? | `object` | [packages/sdk/src/client/types.gen.ts:454](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L454) |
-| `publicSite.template.id`? | `string` | [packages/sdk/src/client/types.gen.ts:453](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L453) |
-| `publicSite.template.schema`? | `object` | [packages/sdk/src/client/types.gen.ts:457](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L457) |
+| <a id="defaults"></a> `defaults`? | `object` | [packages/sdk/src/client/types.gen.ts:455](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L455) |
+| `defaults.currency`? | `string` | [packages/sdk/src/client/types.gen.ts:456](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L456) |
+| `defaults.event`? | `object` | [packages/sdk/src/client/types.gen.ts:457](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L457) |
+| `defaults.event.location`? | `string` | [packages/sdk/src/client/types.gen.ts:458](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L458) |
+| <a id="locale"></a> `locale`? | `object` | [packages/sdk/src/client/types.gen.ts:451](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L451) |
+| `locale.default` | `string` | [packages/sdk/src/client/types.gen.ts:452](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L452) |
+| `locale.supported` | `string`[] | [packages/sdk/src/client/types.gen.ts:453](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L453) |
+| <a id="publicsite"></a> `publicSite`? | `object` | [packages/sdk/src/client/types.gen.ts:461](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L461) |
+| `publicSite.baseUrl`? | `string` | [packages/sdk/src/client/types.gen.ts:462](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L462) |
+| `publicSite.template`? | `object` | [packages/sdk/src/client/types.gen.ts:463](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L463) |
+| `publicSite.template.config`? | `object` | [packages/sdk/src/client/types.gen.ts:465](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L465) |
+| `publicSite.template.id`? | `string` | [packages/sdk/src/client/types.gen.ts:464](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L464) |
+| `publicSite.template.schema`? | `object` | [packages/sdk/src/client/types.gen.ts:468](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L468) |

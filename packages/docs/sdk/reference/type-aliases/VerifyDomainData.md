@@ -8,11 +8,11 @@
 type VerifyDomainData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:824](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L824)
+Defined in: [packages/sdk/src/client/types.gen.ts:851](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L851)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:825](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L825) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:826](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L826) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:852](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L852) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:853](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L853) |

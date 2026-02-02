@@ -8,7 +8,7 @@
 function getSiteKeyByDomain(__namedParameters): Promise<any>
 ```
 
-Defined in: [packages/sdk/src/main.ts:68](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/main.ts#L68)
+Defined in: [packages/sdk/src/main.ts:69](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/main.ts#L69)
 
 Get the siteKey and site id from a domain name.
 

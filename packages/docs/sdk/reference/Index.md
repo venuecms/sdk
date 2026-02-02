@@ -89,6 +89,7 @@
 | [EmailsResponse](type-aliases/EmailsResponse.md) | - |
 | [EmailStats](type-aliases/EmailStats.md) | - |
 | [Event](type-aliases/Event.md) | - |
+| [EventDates](type-aliases/EventDates.md) | - |
 | [EventReference](type-aliases/EventReference.md) | - |
 | [EventRelations](type-aliases/EventRelations.md) | - |
 | [GetDomainStatusData](type-aliases/GetDomainStatusData.md) | - |
@@ -113,6 +114,9 @@
 | [GetEmailStatsError](type-aliases/GetEmailStatsError.md) | - |
 | [GetEmailStatsResponse](type-aliases/GetEmailStatsResponse.md) | - |
 | [GetEventData](type-aliases/GetEventData.md) | - |
+| [GetEventDatesData](type-aliases/GetEventDatesData.md) | - |
+| [GetEventDatesError](type-aliases/GetEventDatesError.md) | - |
+| [GetEventDatesResponse](type-aliases/GetEventDatesResponse.md) | - |
 | [GetEventError](type-aliases/GetEventError.md) | - |
 | [GetEventResponse](type-aliases/GetEventResponse.md) | - |
 | [GetEventsData](type-aliases/GetEventsData.md) | - |
@@ -194,6 +198,7 @@
 | [VerifyDomainResponse](type-aliases/VerifyDomainResponse.md) | - |
 | [WebSite](type-aliases/WebSite.md) | - |
 | [cache](functions/cache.md) | - |
+| [getEventDates](functions/getEventDates.md) | - |
 
 ## Tags
 

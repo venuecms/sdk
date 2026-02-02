@@ -183,6 +183,17 @@ export type Event = {
 
 export type publishState = 'DRAFT' | 'REQUEST' | 'PUBLISHED' | 'CANCELLED';
 
+export type EventDates = {
+    /**
+     * Array of unique event dates. Format depends on interval: day (YYYY-MM-DD), month (YYYY-MM), or year (YYYY)
+     */
+    dates: Array<(string)>;
+    /**
+     * Array of unique years that have events
+     */
+    years: Array<(number)>;
+};
+
 export type EventReference = {
     id: string;
     slug: string;
@@ -238,7 +249,7 @@ export type MediaItem = {
     inline: boolean;
     url?: (string) | null;
     mimeType?: (string) | null;
-    size: number;
+    size: string;
     metadata?: {
         [key: string]: unknown;
     } | null;
@@ -253,8 +264,8 @@ export type Page = {
     order: number;
     slug: string;
     featured: boolean;
-    featuredExpiration?: (string) | null;
-    date?: (string) | null;
+    featuredExpiration?: (string | unknown);
+    date?: (string | unknown);
     parentId?: (string) | null;
     siteId: string;
     image?: MediaItem;
@@ -314,7 +325,7 @@ export type Product = {
     slug: string;
     order: number;
     featured: boolean;
-    featuredExpiration?: (string) | null;
+    featuredExpiration?: (string | unknown);
     author?: (string) | null;
     tags?: Array<Tag>;
     image?: MediaItem;
@@ -470,7 +481,7 @@ export type Tag = {
         parentTags?: Array<{
             tagId: string;
             parentTagId: string;
-            createdAt: string;
+            createdAt: (string);
             parentTag: {
                 id: string;
                 siteId: string;
@@ -487,7 +498,7 @@ export type TagListItem = {
     parentTags?: Array<{
         tagId: string;
         parentTagId: string;
-        createdAt: string;
+        createdAt: (string);
         parentTag: {
             id: string;
             siteId: string;
@@ -558,6 +569,22 @@ export type GetEventsResponse = ({
 });
 
 export type GetEventsError = unknown;
+
+export type GetEventDatesData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        gt?: (number) | null;
+        interval?: 'day' | 'month' | 'year';
+        lt?: (number) | null;
+        upcoming?: (boolean) | null;
+    };
+};
+
+export type GetEventDatesResponse = (EventDates);
+
+export type GetEventDatesError = unknown;
 
 export type GetEventData = {
     path: {

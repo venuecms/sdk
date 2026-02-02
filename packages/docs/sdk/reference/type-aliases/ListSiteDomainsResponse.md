@@ -8,10 +8,10 @@
 type ListSiteDomainsResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:747](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L747)
+Defined in: [packages/sdk/src/client/types.gen.ts:774](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L774)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="records"></a> `records` | `object`[] | [packages/sdk/src/client/types.gen.ts:748](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/client/types.gen.ts#L748) |
+| <a id="records"></a> `records` | `object`[] | [packages/sdk/src/client/types.gen.ts:775](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L775) |

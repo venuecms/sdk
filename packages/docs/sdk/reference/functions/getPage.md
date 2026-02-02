@@ -16,7 +16,7 @@ function getPage(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:157](https://github.com/venuecms/sdk/blob/915dbe3b1ab4666bb8b6c860c00b0500d1556c80/packages/sdk/src/main.ts#L157)
+Defined in: [packages/sdk/src/main.ts:167](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/main.ts#L167)
 
 Get a single page using the slug
 

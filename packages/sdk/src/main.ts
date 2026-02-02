@@ -3,6 +3,7 @@ import * as sdk from "./client/sdk.gen";
 import { cache } from './utils';
 import {
   GetEventData,
+  GetEventDatesData,
   GetEventsData,
   GetPageData,
   GetPagesData,
@@ -131,6 +132,15 @@ export const getEvent = (params: Omit<GetEventData["path"], "siteKey">) => {
       ...params,
       siteKey,
     },
+  });
+};
+
+export const getEventDates = (params: GetEventDatesData["query"]) => {
+  return sdk.getEventDates({
+    path: {
+      siteKey,
+    },
+    query: params
   });
 };
 

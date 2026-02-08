@@ -16,7 +16,7 @@ function getPages(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:153](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/main.ts#L153)
+Defined in: [packages/sdk/src/main.ts:157](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/main.ts#L157)
 
 Get a list of all pages
 

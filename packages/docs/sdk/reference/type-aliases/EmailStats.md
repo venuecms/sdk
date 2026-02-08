@@ -8,14 +8,14 @@
 type EmailStats = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:152](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L152)
+Defined in: [packages/sdk/src/client/types.gen.ts:152](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L152)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="bystatus"></a> `byStatus` | `object` | [packages/sdk/src/client/types.gen.ts:154](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L154) |
-| <a id="period"></a> `period` | `object` | [packages/sdk/src/client/types.gen.ts:157](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L157) |
-| `period.days` | `number` | [packages/sdk/src/client/types.gen.ts:158](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L158) |
-| `period.since` | `string` | [packages/sdk/src/client/types.gen.ts:159](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L159) |
-| <a id="total"></a> `total` | `number` | [packages/sdk/src/client/types.gen.ts:153](https://github.com/venuecms/sdk/blob/70ad9934d35bf6956de529fe1a4e8c72c6b39e01/packages/sdk/src/client/types.gen.ts#L153) |
+| <a id="bystatus"></a> `byStatus` | `object` | [packages/sdk/src/client/types.gen.ts:154](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L154) |
+| <a id="period"></a> `period` | `object` | [packages/sdk/src/client/types.gen.ts:157](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L157) |
+| `period.days` | `number` | [packages/sdk/src/client/types.gen.ts:158](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L158) |
+| `period.since` | `string` | [packages/sdk/src/client/types.gen.ts:159](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L159) |
+| <a id="total"></a> `total` | `number` | [packages/sdk/src/client/types.gen.ts:153](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L153) |

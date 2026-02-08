@@ -24,9 +24,13 @@ const headers = {
 };
 const baseUrl = `https://app.venuecms.com`;
 
+const customFetch: typeof fetch = (url, options) =>
+  fetch(url, { ...options, next: { revalidate: 60 } } as RequestInit);
+
 const defaultOptions = {
   baseUrl,
   headers,
+  fetch: customFetch,
 };
 
 sdk.client.setConfig(defaultOptions);

@@ -25,7 +25,7 @@ var cache = async ({
   type,
   siteKey: siteKey2,
   params = [],
-  fetch,
+  fetch: fetch2,
   disable,
   ttl = MEMCACHE_EXPIRE
 }) => {
@@ -38,7 +38,7 @@ var cache = async ({
       }
     }
   }
-  const newData = await fetch();
+  const newData = await fetch2();
   if (newData) {
     memCache.set(cacheKey, { createdAt: Date.now(), data: newData });
   }
@@ -146,9 +146,11 @@ var headers = {
   Authorization: `Bearer ${apiKey}`
 };
 var baseUrl = `https://app.venuecms.com`;
+var customFetch = (url, options) => fetch(url, { ...options, next: { revalidate: 60 } });
 var defaultOptions = {
   baseUrl,
-  headers
+  headers,
+  fetch: customFetch
 };
 client.setConfig(defaultOptions);
 var setConfig = (params) => {

@@ -39,6 +39,7 @@
 | ------ | ------ |
 | [getProfile](functions/getProfile.md) | Get a profile |
 | [getProfileEvents](functions/getProfileEvents.md) | Get a listing of events for a profile |
+| [getProfileProducts](functions/getProfileProducts.md) | Get a listing of products for a profile |
 | [getProfiles](functions/getProfiles.md) | Get a list of profiles |
 
 ## Products
@@ -139,6 +140,9 @@
 | [GetProfileEventsData](type-aliases/GetProfileEventsData.md) | - |
 | [GetProfileEventsError](type-aliases/GetProfileEventsError.md) | - |
 | [GetProfileEventsResponse](type-aliases/GetProfileEventsResponse.md) | - |
+| [GetProfileProductsData](type-aliases/GetProfileProductsData.md) | - |
+| [GetProfileProductsError](type-aliases/GetProfileProductsError.md) | - |
+| [GetProfileProductsResponse](type-aliases/GetProfileProductsResponse.md) | - |
 | [GetProfileResponse](type-aliases/GetProfileResponse.md) | - |
 | [GetProfilesData](type-aliases/GetProfilesData.md) | - |
 | [GetProfilesError](type-aliases/GetProfilesError.md) | - |

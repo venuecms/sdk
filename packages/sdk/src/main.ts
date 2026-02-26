@@ -11,6 +11,7 @@ import {
   GetProductsData,
   GetProfileData,
   GetProfileEventsData,
+  GetProfileProductsData,
   GetProfilesData,
   GetTagsData,
   SearchSiteData,
@@ -213,6 +214,21 @@ export const getProfile = (params: Omit<GetProfileData["path"], "siteKey">) => {
 export const getProfileEvents = (params: Omit<GetProfileEventsData["path"], "siteKey"> & GetProfileEventsData["query"])  => {
   const {slug, ...query} = params;
   return sdk.getProfileEvents({
+    path: {
+      slug,
+      siteKey,
+    },
+    query,
+  });
+};
+
+/**
+ * Get a listing of products for a profile
+ * @category Profiles
+ */
+export const getProfileProducts = (params: Omit<GetProfileProductsData["path"], "siteKey"> & GetProfileProductsData["query"])  => {
+  const {slug, ...query} = params;
+  return sdk.getProfileProducts({
     path: {
       slug,
       siteKey,

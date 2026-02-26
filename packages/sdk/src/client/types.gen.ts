@@ -695,6 +695,26 @@ export type GetProfileEventsResponse = ({
 
 export type GetProfileEventsError = (unknown);
 
+export type GetProfileProductsData = {
+    path: {
+        siteKey: string;
+        slug: string;
+    };
+    query?: {
+        dir?: 'asc' | 'desc';
+        featured?: 'true' | 'false';
+        limit?: (number) | null;
+        orderBy?: string;
+        page?: (number) | null;
+    };
+};
+
+export type GetProfileProductsResponse = ({
+    records: Array<Product>;
+});
+
+export type GetProfileProductsError = (unknown);
+
 export type GetProductsData = {
     path: {
         siteKey: string;

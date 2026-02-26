@@ -8,11 +8,11 @@
 type GetSiteByDomainResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:790](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L790)
+Defined in: [packages/sdk/src/client/types.gen.ts:810](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L810)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:791](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L791) |
-| <a id="sitekey"></a> `siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:792](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L792) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:811](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L811) |
+| <a id="sitekey"></a> `siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:812](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L812) |

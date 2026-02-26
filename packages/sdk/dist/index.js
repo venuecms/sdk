@@ -30,6 +30,7 @@ __export(index_exports, {
   getProducts: () => getProducts2,
   getProfile: () => getProfile2,
   getProfileEvents: () => getProfileEvents2,
+  getProfileProducts: () => getProfileProducts2,
   getProfiles: () => getProfiles2,
   getSite: () => getSite2,
   getSiteKeyByDomain: () => getSiteKeyByDomain,
@@ -142,6 +143,12 @@ var getProfileEvents = (options) => {
   return (options?.client ?? client).get({
     ...options,
     url: "/api/v2/{siteKey}/public/profiles/{slug}/events"
+  });
+};
+var getProfileProducts = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/profiles/{slug}/products"
   });
 };
 var getProducts = (options) => {
@@ -290,6 +297,16 @@ var getProfileEvents2 = (params) => {
     query
   });
 };
+var getProfileProducts2 = (params) => {
+  const { slug, ...query } = params;
+  return getProfileProducts({
+    path: {
+      slug,
+      siteKey
+    },
+    query
+  });
+};
 var getProducts2 = (params) => {
   return getProducts({
     path: {
@@ -335,6 +352,7 @@ var searchSite2 = (params) => {
   getProducts,
   getProfile,
   getProfileEvents,
+  getProfileProducts,
   getProfiles,
   getSite,
   getSiteKeyByDomain,

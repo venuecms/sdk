@@ -8,11 +8,11 @@
 type GetEmailConfigData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:797](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L797)
+Defined in: [packages/sdk/src/client/types.gen.ts:817](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L817)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:798](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L798) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:799](https://github.com/venuecms/sdk/blob/64236d3fd2db2f6954151ffae2092310ae729518/packages/sdk/src/client/types.gen.ts#L799) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:818](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L818) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:819](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L819) |

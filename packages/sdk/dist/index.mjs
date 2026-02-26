@@ -102,6 +102,12 @@ var getProfileEvents = (options) => {
     url: "/api/v2/{siteKey}/public/profiles/{slug}/events"
   });
 };
+var getProfileProducts = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/profiles/{slug}/products"
+  });
+};
 var getProducts = (options) => {
   return (options?.client ?? client).get({
     ...options,
@@ -248,6 +254,16 @@ var getProfileEvents2 = (params) => {
     query
   });
 };
+var getProfileProducts2 = (params) => {
+  const { slug, ...query } = params;
+  return getProfileProducts({
+    path: {
+      slug,
+      siteKey
+    },
+    query
+  });
+};
 var getProducts2 = (params) => {
   return getProducts({
     path: {
@@ -292,6 +308,7 @@ export {
   getProducts2 as getProducts,
   getProfile2 as getProfile,
   getProfileEvents2 as getProfileEvents,
+  getProfileProducts2 as getProfileProducts,
   getProfiles2 as getProfiles,
   getSite2 as getSite,
   getSiteKeyByDomain,

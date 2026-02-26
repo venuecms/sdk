@@ -2,23 +2,23 @@
 
 ***
 
-# Function: getProfileEvents()
+# Function: getProfileProducts()
 
 ```ts
-function getProfileEvents(params): Promise<
+function getProfileProducts(params): Promise<
   | {
   data: undefined;
   error: unknown;
  }
   | {
-  data: GetProfileEventsResponse;
+  data: GetProfileProductsResponse;
   error: undefined;
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:214](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/main.ts#L214)
+Defined in: [packages/sdk/src/main.ts:229](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/main.ts#L229)
 
-Get a listing of events for a profile
+Get a listing of products for a profile
 
 ## Parameters
 
@@ -34,6 +34,6 @@ Get a listing of events for a profile
   `error`: `unknown`;
  \}
   \| \{
-  `data`: [`GetProfileEventsResponse`](../type-aliases/GetProfileEventsResponse.md);
+  `data`: [`GetProfileProductsResponse`](../type-aliases/GetProfileProductsResponse.md);
   `error`: `undefined`;
  \} & `object`\>

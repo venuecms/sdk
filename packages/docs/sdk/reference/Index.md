@@ -123,6 +123,15 @@
 | [GetEventsData](type-aliases/GetEventsData.md) | - |
 | [GetEventsError](type-aliases/GetEventsError.md) | - |
 | [GetEventsResponse](type-aliases/GetEventsResponse.md) | - |
+| [GetNewsArticleData](type-aliases/GetNewsArticleData.md) | - |
+| [GetNewsArticleError](type-aliases/GetNewsArticleError.md) | - |
+| [GetNewsArticleResponse](type-aliases/GetNewsArticleResponse.md) | - |
+| [GetNewsData](type-aliases/GetNewsData.md) | - |
+| [GetNewsDatesData](type-aliases/GetNewsDatesData.md) | - |
+| [GetNewsDatesError](type-aliases/GetNewsDatesError.md) | - |
+| [GetNewsDatesResponse](type-aliases/GetNewsDatesResponse.md) | - |
+| [GetNewsError](type-aliases/GetNewsError.md) | - |
+| [GetNewsResponse](type-aliases/GetNewsResponse.md) | - |
 | [GetPageData](type-aliases/GetPageData.md) | - |
 | [GetPageError](type-aliases/GetPageError.md) | - |
 | [GetPageResponse](type-aliases/GetPageResponse.md) | - |
@@ -162,6 +171,7 @@
 | [LocalizedContent](type-aliases/LocalizedContent.md) | - |
 | [LocationSlim](type-aliases/LocationSlim.md) | - |
 | [MediaItem](type-aliases/MediaItem.md) | - |
+| [NewsDates](type-aliases/NewsDates.md) | - |
 | [Page](type-aliases/Page.md) | - |
 | [Pagination](type-aliases/Pagination.md) | - |
 | [Product](type-aliases/Product.md) | - |
@@ -190,6 +200,7 @@
 | [Tag](type-aliases/Tag.md) | - |
 | [TagListItem](type-aliases/TagListItem.md) | - |
 | [TicketOnEvent](type-aliases/TicketOnEvent.md) | - |
+| [type](type-aliases/type.md) | - |
 | [UpdateDraftBatchData](type-aliases/UpdateDraftBatchData.md) | - |
 | [UpdateDraftBatchError](type-aliases/UpdateDraftBatchError.md) | - |
 | [UpdateDraftBatchInput](type-aliases/UpdateDraftBatchInput.md) | - |
@@ -203,6 +214,13 @@
 | [WebSite](type-aliases/WebSite.md) | - |
 | [cache](functions/cache.md) | - |
 | [getEventDates](functions/getEventDates.md) | - |
+
+## News
+
+| Function | Description |
+| ------ | ------ |
+| [getNews](functions/getNews.md) | Get a list of all news items |
+| [getNewsArticle](functions/getNewsArticle.md) | Get a single news item using the slug |
 
 ## Tags
 

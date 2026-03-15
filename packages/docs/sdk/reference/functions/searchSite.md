@@ -16,7 +16,7 @@ function searchSite(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:285](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/main.ts#L285)
+Defined in: [packages/sdk/src/main.ts:316](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/main.ts#L316)
 
 Search a site for all content types
 

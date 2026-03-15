@@ -229,6 +229,16 @@ type MediaItem = {
     credit?: (string) | null;
     altText?: (string) | null;
 };
+type NewsDates = {
+    /**
+     * Array of unique news dates. Format depends on interval: day (YYYY-MM-DD), month (YYYY-MM), or year (YYYY)
+     */
+    dates: Array<(string)>;
+    /**
+     * Array of unique years that have news articles
+     */
+    years: Array<(number)>;
+};
 type Page = {
     id: string;
     order: number;
@@ -236,6 +246,9 @@ type Page = {
     featured: boolean;
     featuredExpiration?: (string | unknown);
     date?: (string | unknown);
+    type: 'CONTENT' | 'NEWS' | 'LINK';
+    linkUrl?: (string) | null;
+    openInNewTab: boolean;
     parentId?: (string) | null;
     siteId: string;
     image?: MediaItem;
@@ -256,6 +269,9 @@ type Page = {
         featured: boolean;
         featuredExpiration?: (string) | null;
         date?: (string) | null;
+        type: 'CONTENT' | 'NEWS' | 'LINK';
+        linkUrl?: (string) | null;
+        openInNewTab: boolean;
         imageId?: (string) | null;
         userId?: (string) | null;
         parentId?: (string) | null;
@@ -280,6 +296,7 @@ type Page = {
         profile: ProfileSlim;
     }>;
 };
+type type = 'CONTENT' | 'NEWS' | 'LINK';
 type recordType = 'SOURCE' | 'PUBLISHED' | 'REVISION';
 type Pagination = {
     page: number;
@@ -509,6 +526,7 @@ type GetEventsData = {
         lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        query?: (string) | null;
         rootOnly?: (boolean) | null;
         tags?: (string | Array<(string)>);
         upcoming?: (boolean) | null;
@@ -516,6 +534,7 @@ type GetEventsData = {
 };
 type GetEventsResponse = ({
     records: Array<Event>;
+    count: number;
 });
 type GetEventsError = unknown;
 type GetEventDatesData = {
@@ -539,6 +558,56 @@ type GetEventData = {
 };
 type GetEventResponse = (Event);
 type GetEventError = (unknown);
+type GetNewsData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        dir?: 'asc' | 'desc';
+        featured?: (boolean) | null;
+        gt?: (number) | null;
+        limit?: (number) | null;
+        lt?: (number) | null;
+        orderBy?: string;
+        page?: (number) | null;
+        query?: (string) | null;
+        tags?: (string | Array<(string)>);
+        upcoming?: (boolean) | null;
+    };
+};
+type GetNewsResponse = ({
+    records: Array<(Page & {
+        parent?: {
+            [key: string]: unknown;
+        };
+    })>;
+    count: number;
+});
+type GetNewsError = unknown;
+type GetNewsDatesData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        gt?: (number) | null;
+        interval?: 'day' | 'month' | 'year';
+        lt?: (number) | null;
+    };
+};
+type GetNewsDatesResponse = (NewsDates);
+type GetNewsDatesError = unknown;
+type GetNewsArticleData = {
+    path: {
+        siteKey: string;
+        slug: string;
+    };
+};
+type GetNewsArticleResponse = ((Page & {
+    parent?: {
+        [key: string]: unknown;
+    };
+}));
+type GetNewsArticleError = (unknown);
 type GetPagesData = {
     path: {
         siteKey: string;
@@ -549,6 +618,7 @@ type GetPagesData = {
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        query?: (string) | null;
         tags?: (string | Array<(string)>);
     };
 };
@@ -558,6 +628,7 @@ type GetPagesResponse = ({
             [key: string]: unknown;
         };
     })>;
+    count: number;
 });
 type GetPagesError = unknown;
 type GetPageData = {
@@ -581,13 +652,14 @@ type GetProfilesData = {
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        query?: (string) | null;
         tags?: (string | Array<(string)>);
         type?: 'member';
     };
 };
 type GetProfilesResponse = ({
     records: Array<Profile>;
-    count: number;
+    count?: number;
 });
 type GetProfilesError = unknown;
 type GetProfileData = {
@@ -612,6 +684,7 @@ type GetProfileEventsData = {
         lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        query?: (string) | null;
         rootOnly?: (boolean) | null;
         tags?: (string | Array<(string)>);
         upcoming?: (boolean) | null;
@@ -619,7 +692,7 @@ type GetProfileEventsData = {
 };
 type GetProfileEventsResponse = ({
     records: Array<Event>;
-    count: number;
+    count?: number;
 });
 type GetProfileEventsError = (unknown);
 type GetProfileProductsData = {
@@ -637,6 +710,7 @@ type GetProfileProductsData = {
 };
 type GetProfileProductsResponse = ({
     records: Array<Product>;
+    count: number;
 });
 type GetProfileProductsError = (unknown);
 type GetProductsData = {
@@ -648,13 +722,14 @@ type GetProductsData = {
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        query?: (string) | null;
         tags?: (string | Array<(string)>);
         type?: 'member';
     };
 };
 type GetProductsResponse = ({
     records: Array<Product>;
-    count: number;
+    count?: number;
 });
 type GetProductsError = unknown;
 type GetProductData = {
@@ -694,7 +769,7 @@ type GetTagsData = {
 };
 type GetTagsResponse = ({
     records: Array<TagListItem>;
-    count: number;
+    count?: number;
 });
 type GetTagsError = unknown;
 type ListSiteDomainsData = {
@@ -1058,6 +1133,36 @@ declare const getPage: (params: Omit<GetPageData["path"], "siteKey">) => Promise
     response: Response;
 }>;
 /**
+ * Get a list of all news items
+ *
+ * @category News
+ */
+declare const getNews: (params?: GetNewsData["query"]) => Promise<({
+    data: undefined;
+    error: unknown;
+} | {
+    data: GetNewsResponse;
+    error: undefined;
+}) & {
+    request: Request;
+    response: Response;
+}>;
+/**
+ * Get a single news item using the slug
+ *
+ * @category News
+ */
+declare const getNewsArticle: (params: Omit<GetNewsArticleData["path"], "siteKey">) => Promise<({
+    data: undefined;
+    error: unknown;
+} | {
+    data: GetNewsArticleResponse;
+    error: undefined;
+}) & {
+    request: Request;
+    response: Response;
+}>;
+/**
  * Get a list of profiles
  *
  * @category Profiles
@@ -1174,4 +1279,4 @@ declare const searchSite: (params: SearchSiteData["query"]) => Promise<({
     response: Response;
 }>;
 
-export { type AddCustomDomainData, type AddCustomDomainError, type AddCustomDomainResponse, type AddDomainInput, type AddDomainResponse, type BatchEmail, type BatchPagination, type BatchSendResult, type CreateAndSendBatchData, type CreateAndSendBatchError, type CreateAndSendBatchResponse, type CreateDraftBatchData, type CreateDraftBatchError, type CreateDraftBatchInput, type CreateDraftBatchResponse, type CustomSchemaData, type DeleteBatchData, type DeleteBatchError, type DeleteBatchResponse, type DnsRecord, type DomainStatus, type DraftBatchResult, type Email, type EmailBatch, type EmailBatchDetail, type EmailBatchesResponse, type EmailConfig, type EmailConfigInput, type EmailStats, type EmailsResponse, type Event, type EventDates, type EventReference, type EventRelations, type GetDomainStatusData, type GetDomainStatusError, type GetDomainStatusResponse, type GetEmailBatchData, type GetEmailBatchError, type GetEmailBatchResponse, type GetEmailBatchesData, type GetEmailBatchesError, type GetEmailBatchesResponse, type GetEmailByIdData, type GetEmailByIdError, type GetEmailByIdResponse, type GetEmailConfigData, type GetEmailConfigError, type GetEmailConfigResponse, type GetEmailStatsData, type GetEmailStatsError, type GetEmailStatsResponse, type GetEmailsData, type GetEmailsError, type GetEmailsResponse, type GetEventData, type GetEventDatesData, type GetEventDatesError, type GetEventDatesResponse, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileProductsData, type GetProfileProductsError, type GetProfileProductsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type GetTagsData, type GetTagsError, type GetTagsResponse, type ListSiteDomainsData, type ListSiteDomainsError, type ListSiteDomainsResponse, type LocalizedContent, type LocationSlim, type MediaItem, type Page, type Pagination, type Product, type ProductVariant, type Profile, type ProfileSlim, type Recipient, type RemoveCustomDomainData, type RemoveCustomDomainError, type RemoveCustomDomainResponse, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type SendBatchData, type SendBatchError, type SendBatchResponse, type Site, type SiteSettings, type Tag, type TagListItem, type TicketOnEvent, type UpdateDraftBatchData, type UpdateDraftBatchError, type UpdateDraftBatchInput, type UpdateDraftBatchResponse, type UpdateEmailConfigData, type UpdateEmailConfigError, type UpdateEmailConfigResponse, type VerifyDomainData, type VerifyDomainError, type VerifyDomainResponse, type WebSite, cache, getEvent, getEventDates, getEvents, getLocalizedContent, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfileProducts, getProfiles, getSite, getSiteKeyByDomain, getTags, listSiteDomains, type publishState, type recordType, searchSite, setConfig, type status, type status2, type status3, type status4 };
+export { type AddCustomDomainData, type AddCustomDomainError, type AddCustomDomainResponse, type AddDomainInput, type AddDomainResponse, type BatchEmail, type BatchPagination, type BatchSendResult, type CreateAndSendBatchData, type CreateAndSendBatchError, type CreateAndSendBatchResponse, type CreateDraftBatchData, type CreateDraftBatchError, type CreateDraftBatchInput, type CreateDraftBatchResponse, type CustomSchemaData, type DeleteBatchData, type DeleteBatchError, type DeleteBatchResponse, type DnsRecord, type DomainStatus, type DraftBatchResult, type Email, type EmailBatch, type EmailBatchDetail, type EmailBatchesResponse, type EmailConfig, type EmailConfigInput, type EmailStats, type EmailsResponse, type Event, type EventDates, type EventReference, type EventRelations, type GetDomainStatusData, type GetDomainStatusError, type GetDomainStatusResponse, type GetEmailBatchData, type GetEmailBatchError, type GetEmailBatchResponse, type GetEmailBatchesData, type GetEmailBatchesError, type GetEmailBatchesResponse, type GetEmailByIdData, type GetEmailByIdError, type GetEmailByIdResponse, type GetEmailConfigData, type GetEmailConfigError, type GetEmailConfigResponse, type GetEmailStatsData, type GetEmailStatsError, type GetEmailStatsResponse, type GetEmailsData, type GetEmailsError, type GetEmailsResponse, type GetEventData, type GetEventDatesData, type GetEventDatesError, type GetEventDatesResponse, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetNewsArticleData, type GetNewsArticleError, type GetNewsArticleResponse, type GetNewsData, type GetNewsDatesData, type GetNewsDatesError, type GetNewsDatesResponse, type GetNewsError, type GetNewsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileProductsData, type GetProfileProductsError, type GetProfileProductsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type GetTagsData, type GetTagsError, type GetTagsResponse, type ListSiteDomainsData, type ListSiteDomainsError, type ListSiteDomainsResponse, type LocalizedContent, type LocationSlim, type MediaItem, type NewsDates, type Page, type Pagination, type Product, type ProductVariant, type Profile, type ProfileSlim, type Recipient, type RemoveCustomDomainData, type RemoveCustomDomainError, type RemoveCustomDomainResponse, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type SendBatchData, type SendBatchError, type SendBatchResponse, type Site, type SiteSettings, type Tag, type TagListItem, type TicketOnEvent, type UpdateDraftBatchData, type UpdateDraftBatchError, type UpdateDraftBatchInput, type UpdateDraftBatchResponse, type UpdateEmailConfigData, type UpdateEmailConfigError, type UpdateEmailConfigResponse, type VerifyDomainData, type VerifyDomainError, type VerifyDomainResponse, type WebSite, cache, getEvent, getEventDates, getEvents, getLocalizedContent, getNews, getNewsArticle, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfileProducts, getProfiles, getSite, getSiteKeyByDomain, getTags, listSiteDomains, type publishState, type recordType, searchSite, setConfig, type status, type status2, type status3, type status4, type type };

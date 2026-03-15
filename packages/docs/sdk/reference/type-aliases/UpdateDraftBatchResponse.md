@@ -8,10 +8,10 @@
 type UpdateDraftBatchResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:972](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L972)
+Defined in: [packages/sdk/src/client/types.gen.ts:1058](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L1058)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="updated"></a> `updated` | `boolean` | [packages/sdk/src/client/types.gen.ts:973](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L973) |
+| <a id="updated"></a> `updated` | `boolean` | [packages/sdk/src/client/types.gen.ts:1059](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L1059) |

@@ -259,6 +259,17 @@ export type MediaItem = {
     altText?: (string) | null;
 };
 
+export type NewsDates = {
+    /**
+     * Array of unique news dates. Format depends on interval: day (YYYY-MM-DD), month (YYYY-MM), or year (YYYY)
+     */
+    dates: Array<(string)>;
+    /**
+     * Array of unique years that have news articles
+     */
+    years: Array<(number)>;
+};
+
 export type Page = {
     id: string;
     order: number;
@@ -266,6 +277,9 @@ export type Page = {
     featured: boolean;
     featuredExpiration?: (string | unknown);
     date?: (string | unknown);
+    type: 'CONTENT' | 'NEWS' | 'LINK';
+    linkUrl?: (string) | null;
+    openInNewTab: boolean;
     parentId?: (string) | null;
     siteId: string;
     image?: MediaItem;
@@ -286,6 +300,9 @@ export type Page = {
         featured: boolean;
         featuredExpiration?: (string) | null;
         date?: (string) | null;
+        type: 'CONTENT' | 'NEWS' | 'LINK';
+        linkUrl?: (string) | null;
+        openInNewTab: boolean;
         imageId?: (string) | null;
         userId?: (string) | null;
         parentId?: (string) | null;
@@ -310,6 +327,8 @@ export type Page = {
         profile: ProfileSlim;
     }>;
 };
+
+export type type = 'CONTENT' | 'NEWS' | 'LINK';
 
 export type recordType = 'SOURCE' | 'PUBLISHED' | 'REVISION';
 
@@ -558,6 +577,7 @@ export type GetEventsData = {
         lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        query?: (string) | null;
         rootOnly?: (boolean) | null;
         tags?: (string | Array<(string)>);
         upcoming?: (boolean) | null;
@@ -566,6 +586,7 @@ export type GetEventsData = {
 
 export type GetEventsResponse = ({
     records: Array<Event>;
+    count: number;
 });
 
 export type GetEventsError = unknown;
@@ -597,6 +618,65 @@ export type GetEventResponse = (Event);
 
 export type GetEventError = (unknown);
 
+export type GetNewsData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        dir?: 'asc' | 'desc';
+        featured?: (boolean) | null;
+        gt?: (number) | null;
+        limit?: (number) | null;
+        lt?: (number) | null;
+        orderBy?: string;
+        page?: (number) | null;
+        query?: (string) | null;
+        tags?: (string | Array<(string)>);
+        upcoming?: (boolean) | null;
+    };
+};
+
+export type GetNewsResponse = ({
+    records: Array<(Page & {
+    parent?: {
+        [key: string]: unknown;
+    };
+})>;
+    count: number;
+});
+
+export type GetNewsError = unknown;
+
+export type GetNewsDatesData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        gt?: (number) | null;
+        interval?: 'day' | 'month' | 'year';
+        lt?: (number) | null;
+    };
+};
+
+export type GetNewsDatesResponse = (NewsDates);
+
+export type GetNewsDatesError = unknown;
+
+export type GetNewsArticleData = {
+    path: {
+        siteKey: string;
+        slug: string;
+    };
+};
+
+export type GetNewsArticleResponse = ((Page & {
+    parent?: {
+        [key: string]: unknown;
+    };
+}));
+
+export type GetNewsArticleError = (unknown);
+
 export type GetPagesData = {
     path: {
         siteKey: string;
@@ -607,6 +687,7 @@ export type GetPagesData = {
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        query?: (string) | null;
         tags?: (string | Array<(string)>);
     };
 };
@@ -617,6 +698,7 @@ export type GetPagesResponse = ({
         [key: string]: unknown;
     };
 })>;
+    count: number;
 });
 
 export type GetPagesError = unknown;
@@ -645,6 +727,7 @@ export type GetProfilesData = {
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        query?: (string) | null;
         tags?: (string | Array<(string)>);
         type?: 'member';
     };
@@ -652,7 +735,7 @@ export type GetProfilesData = {
 
 export type GetProfilesResponse = ({
     records: Array<Profile>;
-    count: number;
+    count?: number;
 });
 
 export type GetProfilesError = unknown;
@@ -682,6 +765,7 @@ export type GetProfileEventsData = {
         lt?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        query?: (string) | null;
         rootOnly?: (boolean) | null;
         tags?: (string | Array<(string)>);
         upcoming?: (boolean) | null;
@@ -690,7 +774,7 @@ export type GetProfileEventsData = {
 
 export type GetProfileEventsResponse = ({
     records: Array<Event>;
-    count: number;
+    count?: number;
 });
 
 export type GetProfileEventsError = (unknown);
@@ -711,6 +795,7 @@ export type GetProfileProductsData = {
 
 export type GetProfileProductsResponse = ({
     records: Array<Product>;
+    count: number;
 });
 
 export type GetProfileProductsError = (unknown);
@@ -724,6 +809,7 @@ export type GetProductsData = {
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
+        query?: (string) | null;
         tags?: (string | Array<(string)>);
         type?: 'member';
     };
@@ -731,7 +817,7 @@ export type GetProductsData = {
 
 export type GetProductsResponse = ({
     records: Array<Product>;
-    count: number;
+    count?: number;
 });
 
 export type GetProductsError = unknown;
@@ -780,7 +866,7 @@ export type GetTagsData = {
 
 export type GetTagsResponse = ({
     records: Array<TagListItem>;
-    count: number;
+    count?: number;
 });
 
 export type GetTagsError = unknown;

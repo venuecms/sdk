@@ -16,7 +16,7 @@ function getProfiles(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:187](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/main.ts#L187)
+Defined in: [packages/sdk/src/main.ts:218](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/main.ts#L218)
 
 Get a list of profiles
 
@@ -24,11 +24,12 @@ Get a list of profiles
 
 | Parameter | Type |
 | ------ | ------ |
-| `params` | \{ `dir`: `"asc"` \| `"desc"`; `limit`: `number`; `orderBy`: `string`; `page`: `number`; `tags`: `string` \| `string`[]; `type`: `"member"`; \} |
+| `params` | \{ `dir`: `"asc"` \| `"desc"`; `limit`: `number`; `orderBy`: `string`; `page`: `number`; `query`: `string`; `tags`: `string` \| `string`[]; `type`: `"member"`; \} |
 | `params.dir`? | `"asc"` \| `"desc"` |
 | `params.limit`? | `number` |
 | `params.orderBy`? | `string` |
 | `params.page`? | `number` |
+| `params.query`? | `string` |
 | `params.tags`? | `string` \| `string`[] |
 | `params.type`? | `"member"` |
 

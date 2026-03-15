@@ -8,11 +8,11 @@
 type GetProfileEventsResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:691](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L691)
+Defined in: [packages/sdk/src/client/types.gen.ts:775](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L775)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count` | `number` | [packages/sdk/src/client/types.gen.ts:693](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L693) |
-| <a id="records"></a> `records` | [`Event`](Event.md)[] | [packages/sdk/src/client/types.gen.ts:692](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L692) |
+| <a id="count"></a> `count`? | `number` | [packages/sdk/src/client/types.gen.ts:777](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L777) |
+| <a id="records"></a> `records` | [`Event`](Event.md)[] | [packages/sdk/src/client/types.gen.ts:776](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L776) |

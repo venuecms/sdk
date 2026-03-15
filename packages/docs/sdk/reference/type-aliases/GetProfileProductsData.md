@@ -8,18 +8,18 @@
 type GetProfileProductsData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:698](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L698)
+Defined in: [packages/sdk/src/client/types.gen.ts:782](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L782)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:699](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L699) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:700](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L700) |
-| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:701](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L701) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:703](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L703) |
-| `query.dir`? | `"asc"` \| `"desc"` | [packages/sdk/src/client/types.gen.ts:704](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L704) |
-| `query.featured`? | `"true"` \| `"false"` | [packages/sdk/src/client/types.gen.ts:705](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L705) |
-| `query.limit`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:706](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L706) |
-| `query.orderBy`? | `string` | [packages/sdk/src/client/types.gen.ts:707](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L707) |
-| `query.page`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:708](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L708) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:783](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L783) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:784](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L784) |
+| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:785](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L785) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:787](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L787) |
+| `query.dir`? | `"asc"` \| `"desc"` | [packages/sdk/src/client/types.gen.ts:788](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L788) |
+| `query.featured`? | `"true"` \| `"false"` | [packages/sdk/src/client/types.gen.ts:789](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L789) |
+| `query.limit`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:790](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L790) |
+| `query.orderBy`? | `string` | [packages/sdk/src/client/types.gen.ts:791](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L791) |
+| `query.page`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:792](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L792) |

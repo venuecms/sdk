@@ -24,6 +24,8 @@ __export(index_exports, {
   getEventDates: () => getEventDates2,
   getEvents: () => getEvents2,
   getLocalizedContent: () => getLocalizedContent,
+  getNews: () => getNews2,
+  getNewsArticle: () => getNewsArticle2,
   getPage: () => getPage2,
   getPages: () => getPages2,
   getProduct: () => getProduct2,
@@ -113,6 +115,18 @@ var getEvent = (options) => {
   return (options?.client ?? client).get({
     ...options,
     url: "/api/v2/{siteKey}/public/events/{slug}"
+  });
+};
+var getNews = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/news"
+  });
+};
+var getNewsArticle = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/news/{slug}"
   });
 };
 var getPages = (options) => {
@@ -271,6 +285,22 @@ var getPage2 = (params) => {
     }
   });
 };
+var getNews2 = (params = {}) => {
+  return getNews({
+    path: {
+      siteKey
+    },
+    query: params
+  });
+};
+var getNewsArticle2 = (params) => {
+  return getNewsArticle({
+    path: {
+      ...params,
+      siteKey
+    }
+  });
+};
 var getProfiles2 = (params = {}) => {
   return getProfiles({
     path: {
@@ -346,6 +376,8 @@ var searchSite2 = (params) => {
   getEventDates,
   getEvents,
   getLocalizedContent,
+  getNews,
+  getNewsArticle,
   getPage,
   getPages,
   getProduct,

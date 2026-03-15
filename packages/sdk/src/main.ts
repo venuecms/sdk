@@ -5,6 +5,8 @@ import {
   GetEventData,
   GetEventDatesData,
   GetEventsData,
+  GetNewsArticleData,
+  GetNewsData,
   GetPageData,
   GetPagesData,
   GetProductData,
@@ -171,6 +173,35 @@ export const getPages = (params: GetPagesData["query"] = {}) => {
  */
 export const getPage = (params: Omit<GetPageData["path"], "siteKey">) => {
   return sdk.getPage({
+    path: {
+      ...params,
+      siteKey,
+    },
+  });
+};
+
+// NEWS
+/**
+ * Get a list of all news items
+ *
+ * @category News
+ */
+export const getNews = (params: GetNewsData["query"] = {}) => {
+  return sdk.getNews({
+    path: {
+      siteKey,
+    },
+    query: params,
+  });
+};
+
+/**
+ * Get a single news item using the slug
+ *
+ * @category News
+ */
+export const getNewsArticle = (params: Omit<GetNewsArticleData["path"], "siteKey">) => {
+  return sdk.getNewsArticle({
     path: {
       ...params,
       siteKey,

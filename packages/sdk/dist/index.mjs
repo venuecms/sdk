@@ -72,6 +72,18 @@ var getEvent = (options) => {
     url: "/api/v2/{siteKey}/public/events/{slug}"
   });
 };
+var getNews = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/news"
+  });
+};
+var getNewsArticle = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/news/{slug}"
+  });
+};
 var getPages = (options) => {
   return (options?.client ?? client).get({
     ...options,
@@ -228,6 +240,22 @@ var getPage2 = (params) => {
     }
   });
 };
+var getNews2 = (params = {}) => {
+  return getNews({
+    path: {
+      siteKey
+    },
+    query: params
+  });
+};
+var getNewsArticle2 = (params) => {
+  return getNewsArticle({
+    path: {
+      ...params,
+      siteKey
+    }
+  });
+};
 var getProfiles2 = (params = {}) => {
   return getProfiles({
     path: {
@@ -302,6 +330,8 @@ export {
   getEventDates2 as getEventDates,
   getEvents2 as getEvents,
   getLocalizedContent,
+  getNews2 as getNews,
+  getNewsArticle2 as getNewsArticle,
   getPage2 as getPage,
   getPages2 as getPages,
   getProduct2 as getProduct,

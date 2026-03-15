@@ -8,12 +8,12 @@
 type DraftBatchResult = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:75](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L75)
+Defined in: [packages/sdk/src/client/types.gen.ts:75](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L75)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="batchid"></a> `batchId` | `string` | [packages/sdk/src/client/types.gen.ts:76](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L76) |
-| <a id="recipientcount"></a> `recipientCount` | `number` | [packages/sdk/src/client/types.gen.ts:78](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L78) |
-| <a id="status"></a> `status` | `"DRAFT"` | [packages/sdk/src/client/types.gen.ts:77](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/client/types.gen.ts#L77) |
+| <a id="batchid"></a> `batchId` | `string` | [packages/sdk/src/client/types.gen.ts:76](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L76) |
+| <a id="recipientcount"></a> `recipientCount` | `number` | [packages/sdk/src/client/types.gen.ts:78](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L78) |
+| <a id="status"></a> `status` | `"DRAFT"` | [packages/sdk/src/client/types.gen.ts:77](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L77) |

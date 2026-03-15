@@ -16,7 +16,7 @@ function getProducts(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:244](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/main.ts#L244)
+Defined in: [packages/sdk/src/main.ts:275](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/main.ts#L275)
 
 Get a listing of products
 
@@ -24,11 +24,12 @@ Get a listing of products
 
 | Parameter | Type |
 | ------ | ------ |
-| `params` | \{ `dir`: `"asc"` \| `"desc"`; `limit`: `number`; `orderBy`: `string`; `page`: `number`; `tags`: `string` \| `string`[]; `type`: `"member"`; \} |
+| `params` | \{ `dir`: `"asc"` \| `"desc"`; `limit`: `number`; `orderBy`: `string`; `page`: `number`; `query`: `string`; `tags`: `string` \| `string`[]; `type`: `"member"`; \} |
 | `params.dir`? | `"asc"` \| `"desc"` |
 | `params.limit`? | `number` |
 | `params.orderBy`? | `string` |
 | `params.page`? | `number` |
+| `params.query`? | `string` |
 | `params.tags`? | `string` \| `string`[] |
 | `params.type`? | `"member"` |
 

@@ -16,13 +16,13 @@ function getEvents(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:97](https://github.com/venuecms/sdk/blob/6f104eb2b15689b8e7db6a19e5768915c3f1825f/packages/sdk/src/main.ts#L97)
+Defined in: [packages/sdk/src/main.ts:99](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/main.ts#L99)
 
 ## Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `params` | \{ `dir`: `"asc"` \| `"desc"`; `featured`: `boolean`; `gt`: `number`; `legacyId`: `string`; `limit`: `number`; `lt`: `number`; `orderBy`: `string`; `page`: `number`; `rootOnly`: `boolean`; `tags`: `string` \| `string`[]; `upcoming`: `boolean`; \} |
+| `params` | \{ `dir`: `"asc"` \| `"desc"`; `featured`: `boolean`; `gt`: `number`; `legacyId`: `string`; `limit`: `number`; `lt`: `number`; `orderBy`: `string`; `page`: `number`; `query`: `string`; `rootOnly`: `boolean`; `tags`: `string` \| `string`[]; `upcoming`: `boolean`; \} |
 | `params.dir`? | `"asc"` \| `"desc"` |
 | `params.featured`? | `boolean` |
 | `params.gt`? | `number` |
@@ -31,6 +31,7 @@ Defined in: [packages/sdk/src/main.ts:97](https://github.com/venuecms/sdk/blob/6
 | `params.lt`? | `number` |
 | `params.orderBy`? | `string` |
 | `params.page`? | `number` |
+| `params.query`? | `string` |
 | `params.rootOnly`? | `boolean` |
 | `params.tags`? | `string` \| `string`[] |
 | `params.upcoming`? | `boolean` |

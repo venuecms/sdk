@@ -7,6 +7,7 @@ import {
   GetEventsData,
   GetNewsArticleData,
   GetNewsData,
+  GetNewsDatesData,
   GetPageData,
   GetPagesData,
   GetProductData,
@@ -206,6 +207,18 @@ export const getNewsArticle = (params: Omit<GetNewsArticleData["path"], "siteKey
       ...params,
       siteKey,
     },
+  });
+};
+
+/**
+ * @category News
+ */
+export const getNewsDates = (params: GetNewsDatesData["query"]) => {
+  return sdk.getNewsDates({
+    path: {
+      siteKey,
+    },
+    query: params
   });
 };
 

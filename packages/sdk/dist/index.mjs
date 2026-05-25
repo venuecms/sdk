@@ -78,6 +78,12 @@ var getNews = (options) => {
     url: "/api/v2/{siteKey}/public/news"
   });
 };
+var getNewsDates = (options) => {
+  return (options?.client ?? client).get({
+    ...options,
+    url: "/api/v2/{siteKey}/public/news/dates"
+  });
+};
 var getNewsArticle = (options) => {
   return (options?.client ?? client).get({
     ...options,
@@ -256,6 +262,14 @@ var getNewsArticle2 = (params) => {
     }
   });
 };
+var getNewsDates2 = (params) => {
+  return getNewsDates({
+    path: {
+      siteKey
+    },
+    query: params
+  });
+};
 var getProfiles2 = (params = {}) => {
   return getProfiles({
     path: {
@@ -332,6 +346,7 @@ export {
   getLocalizedContent,
   getNews2 as getNews,
   getNewsArticle2 as getNewsArticle,
+  getNewsDates2 as getNewsDates,
   getPage2 as getPage,
   getPages2 as getPages,
   getProduct2 as getProduct,

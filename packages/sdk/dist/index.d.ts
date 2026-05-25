@@ -7,6 +7,9 @@ type AddDomainResponse = {
     domain: string;
     records: Array<DnsRecord>;
 };
+type AddRoleToMediaItemInput = {
+    roleId: string;
+};
 type BatchEmail = {
     id: string;
     to: string;
@@ -199,6 +202,7 @@ type LocalizedContent = {
 };
 type LocationSlim = {
     siteId: string;
+    image?: MediaItem;
     address?: (string) | null;
     address2?: (string) | null;
     state?: (string) | null;
@@ -221,6 +225,9 @@ type MediaItem = {
     url?: (string) | null;
     mimeType?: (string) | null;
     size: string;
+    width?: (number) | null;
+    height?: (number) | null;
+    duration?: (number) | null;
     metadata?: {
         [key: string]: unknown;
     } | null;
@@ -228,6 +235,14 @@ type MediaItem = {
     caption?: (string) | null;
     credit?: (string) | null;
     altText?: (string) | null;
+};
+type MediaItemRole = {
+    mediaItemId: string;
+    accessRoleId: string;
+    accessRole: {
+        id: string;
+        name: (string) | null;
+    };
 };
 type NewsDates = {
     /**
@@ -364,6 +379,24 @@ type Recipient = {
         [key: string]: unknown;
     };
 };
+type SearchAllSiteResults = {
+    records: Array<{
+        id: string;
+        type: 'event' | 'page' | 'profile' | 'product';
+        slug: string;
+        siteId: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        startDate?: (string) | null;
+        endDate?: (string) | null;
+        similarity: number;
+    }>;
+};
 type SearchSiteResults = {
     events: Array<{
         id: string;
@@ -488,6 +521,7 @@ type TicketOnEvent = {
     currency?: (string) | null;
     roles: Array<unknown>;
     localizedContent?: Array<LocalizedContent>;
+    order?: number;
 };
 type UpdateDraftBatchInput = {
     name?: string;
@@ -506,6 +540,60 @@ type WebSite = {
     image?: (MediaItem & unknown);
     localizedContent?: Array<LocalizedContent> | null;
 };
+type PublicSignInData = {
+    body?: {
+        email: string;
+        password: string;
+        captchaToken?: string;
+    };
+    path: {
+        siteKey: string;
+    };
+};
+type PublicSignInResponse = ({
+    session: {
+        access_token: string;
+        refresh_token: string;
+        expires_in: number;
+        token_type: string;
+    };
+    user: {
+        id: string;
+        email?: string;
+    };
+});
+type PublicSignInError = ({
+    error: string;
+});
+type PublicSignOutData = {
+    path: {
+        siteKey: string;
+    };
+};
+type PublicSignOutResponse = ({
+    success: boolean;
+});
+type PublicSignOutError = unknown;
+type PublicSignUpData = {
+    body?: {
+        email: string;
+        password: string;
+        captchaToken?: string;
+    };
+    path: {
+        siteKey: string;
+    };
+};
+type PublicSignUpResponse = ({
+    user: {
+        id: string;
+        email?: string;
+    };
+    confirmEmail: boolean;
+});
+type PublicSignUpError = ({
+    error: string;
+});
 type GetSiteData = {
     path: {
         siteKey: string;
@@ -745,15 +833,43 @@ type SearchSiteData = {
         siteKey: string;
     };
     query?: {
+        debug?: 'true' | 'false' | '1' | '0';
         dir?: 'asc' | 'desc';
+        disableVector?: 'true' | 'false' | '1' | '0';
         limit?: (number) | null;
+        minResultSimilarity?: (number) | null;
+        noCache?: 'true' | 'false' | '1' | '0';
         orderBy?: string;
         page?: (number) | null;
         query?: (string) | null;
+        searchProvider?: ('algolia' | 'trigram' | 'hybrid') | null;
+        trigramThreshold?: (number) | null;
+        vectorThreshold?: (number) | null;
     };
 };
 type SearchSiteResponse = (SearchSiteResults);
 type SearchSiteError = (unknown);
+type SearchAllData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        debug?: 'true' | 'false' | '1' | '0';
+        dir?: 'asc' | 'desc';
+        disableVector?: 'true' | 'false' | '1' | '0';
+        limit?: (number) | null;
+        minResultSimilarity?: (number) | null;
+        noCache?: 'true' | 'false' | '1' | '0';
+        orderBy?: string;
+        page?: (number) | null;
+        query?: (string) | null;
+        searchProvider?: ('algolia' | 'trigram' | 'hybrid') | null;
+        trigramThreshold?: (number) | null;
+        vectorThreshold?: (number) | null;
+    };
+};
+type SearchAllResponse = (SearchAllSiteResults);
+type SearchAllError = (unknown);
 type GetTagsData = {
     path: {
         siteKey: string;
@@ -943,6 +1059,32 @@ type SendBatchData = {
 };
 type SendBatchResponse = (BatchSendResult);
 type SendBatchError = (unknown);
+type ListMediaItemRolesData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+type ListMediaItemRolesResponse = (Array<MediaItemRole>);
+type ListMediaItemRolesError = (unknown);
+type AddRoleToMediaItemData = {
+    body?: AddRoleToMediaItemInput;
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+type AddRoleToMediaItemResponse = (Array<MediaItemRole>);
+type AddRoleToMediaItemError = (unknown);
+type RemoveRoleFromMediaItemData = {
+    path: {
+        mediaItemId: string;
+        roleId: string;
+        siteKey: string;
+    };
+};
+type RemoveRoleFromMediaItemResponse = (Array<MediaItemRole>);
+type RemoveRoleFromMediaItemError = (unknown);
 
 /**
  * This function will properly resolve content blocks that are localized.
@@ -1163,6 +1305,19 @@ declare const getNewsArticle: (params: Omit<GetNewsArticleData["path"], "siteKey
     response: Response;
 }>;
 /**
+ * @category News
+ */
+declare const getNewsDates: (params: GetNewsDatesData["query"]) => Promise<({
+    data: undefined;
+    error: unknown;
+} | {
+    data: NewsDates;
+    error: undefined;
+}) & {
+    request: Request;
+    response: Response;
+}>;
+/**
  * Get a list of profiles
  *
  * @category Profiles
@@ -1279,4 +1434,4 @@ declare const searchSite: (params: SearchSiteData["query"]) => Promise<({
     response: Response;
 }>;
 
-export { type AddCustomDomainData, type AddCustomDomainError, type AddCustomDomainResponse, type AddDomainInput, type AddDomainResponse, type BatchEmail, type BatchPagination, type BatchSendResult, type CreateAndSendBatchData, type CreateAndSendBatchError, type CreateAndSendBatchResponse, type CreateDraftBatchData, type CreateDraftBatchError, type CreateDraftBatchInput, type CreateDraftBatchResponse, type CustomSchemaData, type DeleteBatchData, type DeleteBatchError, type DeleteBatchResponse, type DnsRecord, type DomainStatus, type DraftBatchResult, type Email, type EmailBatch, type EmailBatchDetail, type EmailBatchesResponse, type EmailConfig, type EmailConfigInput, type EmailStats, type EmailsResponse, type Event, type EventDates, type EventReference, type EventRelations, type GetDomainStatusData, type GetDomainStatusError, type GetDomainStatusResponse, type GetEmailBatchData, type GetEmailBatchError, type GetEmailBatchResponse, type GetEmailBatchesData, type GetEmailBatchesError, type GetEmailBatchesResponse, type GetEmailByIdData, type GetEmailByIdError, type GetEmailByIdResponse, type GetEmailConfigData, type GetEmailConfigError, type GetEmailConfigResponse, type GetEmailStatsData, type GetEmailStatsError, type GetEmailStatsResponse, type GetEmailsData, type GetEmailsError, type GetEmailsResponse, type GetEventData, type GetEventDatesData, type GetEventDatesError, type GetEventDatesResponse, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetNewsArticleData, type GetNewsArticleError, type GetNewsArticleResponse, type GetNewsData, type GetNewsDatesData, type GetNewsDatesError, type GetNewsDatesResponse, type GetNewsError, type GetNewsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileProductsData, type GetProfileProductsError, type GetProfileProductsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type GetTagsData, type GetTagsError, type GetTagsResponse, type ListSiteDomainsData, type ListSiteDomainsError, type ListSiteDomainsResponse, type LocalizedContent, type LocationSlim, type MediaItem, type NewsDates, type Page, type Pagination, type Product, type ProductVariant, type Profile, type ProfileSlim, type Recipient, type RemoveCustomDomainData, type RemoveCustomDomainError, type RemoveCustomDomainResponse, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type SendBatchData, type SendBatchError, type SendBatchResponse, type Site, type SiteSettings, type Tag, type TagListItem, type TicketOnEvent, type UpdateDraftBatchData, type UpdateDraftBatchError, type UpdateDraftBatchInput, type UpdateDraftBatchResponse, type UpdateEmailConfigData, type UpdateEmailConfigError, type UpdateEmailConfigResponse, type VerifyDomainData, type VerifyDomainError, type VerifyDomainResponse, type WebSite, cache, getEvent, getEventDates, getEvents, getLocalizedContent, getNews, getNewsArticle, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfileProducts, getProfiles, getSite, getSiteKeyByDomain, getTags, listSiteDomains, type publishState, type recordType, searchSite, setConfig, type status, type status2, type status3, type status4, type type };
+export { type AddCustomDomainData, type AddCustomDomainError, type AddCustomDomainResponse, type AddDomainInput, type AddDomainResponse, type AddRoleToMediaItemData, type AddRoleToMediaItemError, type AddRoleToMediaItemInput, type AddRoleToMediaItemResponse, type BatchEmail, type BatchPagination, type BatchSendResult, type CreateAndSendBatchData, type CreateAndSendBatchError, type CreateAndSendBatchResponse, type CreateDraftBatchData, type CreateDraftBatchError, type CreateDraftBatchInput, type CreateDraftBatchResponse, type CustomSchemaData, type DeleteBatchData, type DeleteBatchError, type DeleteBatchResponse, type DnsRecord, type DomainStatus, type DraftBatchResult, type Email, type EmailBatch, type EmailBatchDetail, type EmailBatchesResponse, type EmailConfig, type EmailConfigInput, type EmailStats, type EmailsResponse, type Event, type EventDates, type EventReference, type EventRelations, type GetDomainStatusData, type GetDomainStatusError, type GetDomainStatusResponse, type GetEmailBatchData, type GetEmailBatchError, type GetEmailBatchResponse, type GetEmailBatchesData, type GetEmailBatchesError, type GetEmailBatchesResponse, type GetEmailByIdData, type GetEmailByIdError, type GetEmailByIdResponse, type GetEmailConfigData, type GetEmailConfigError, type GetEmailConfigResponse, type GetEmailStatsData, type GetEmailStatsError, type GetEmailStatsResponse, type GetEmailsData, type GetEmailsError, type GetEmailsResponse, type GetEventData, type GetEventDatesData, type GetEventDatesError, type GetEventDatesResponse, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetNewsArticleData, type GetNewsArticleError, type GetNewsArticleResponse, type GetNewsData, type GetNewsDatesData, type GetNewsDatesError, type GetNewsDatesResponse, type GetNewsError, type GetNewsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileProductsData, type GetProfileProductsError, type GetProfileProductsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type GetTagsData, type GetTagsError, type GetTagsResponse, type ListMediaItemRolesData, type ListMediaItemRolesError, type ListMediaItemRolesResponse, type ListSiteDomainsData, type ListSiteDomainsError, type ListSiteDomainsResponse, type LocalizedContent, type LocationSlim, type MediaItem, type MediaItemRole, type NewsDates, type Page, type Pagination, type Product, type ProductVariant, type Profile, type ProfileSlim, type PublicSignInData, type PublicSignInError, type PublicSignInResponse, type PublicSignOutData, type PublicSignOutError, type PublicSignOutResponse, type PublicSignUpData, type PublicSignUpError, type PublicSignUpResponse, type Recipient, type RemoveCustomDomainData, type RemoveCustomDomainError, type RemoveCustomDomainResponse, type RemoveRoleFromMediaItemData, type RemoveRoleFromMediaItemError, type RemoveRoleFromMediaItemResponse, type SearchAllData, type SearchAllError, type SearchAllResponse, type SearchAllSiteResults, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type SendBatchData, type SendBatchError, type SendBatchResponse, type Site, type SiteSettings, type Tag, type TagListItem, type TicketOnEvent, type UpdateDraftBatchData, type UpdateDraftBatchError, type UpdateDraftBatchInput, type UpdateDraftBatchResponse, type UpdateEmailConfigData, type UpdateEmailConfigError, type UpdateEmailConfigResponse, type VerifyDomainData, type VerifyDomainError, type VerifyDomainResponse, type WebSite, cache, getEvent, getEventDates, getEvents, getLocalizedContent, getNews, getNewsArticle, getNewsDates, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfileProducts, getProfiles, getSite, getSiteKeyByDomain, getTags, listSiteDomains, type publishState, type recordType, searchSite, setConfig, type status, type status2, type status3, type status4, type type };

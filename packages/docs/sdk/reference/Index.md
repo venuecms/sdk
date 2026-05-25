@@ -64,6 +64,10 @@
 | [AddCustomDomainResponse](type-aliases/AddCustomDomainResponse.md) | - |
 | [AddDomainInput](type-aliases/AddDomainInput.md) | - |
 | [AddDomainResponse](type-aliases/AddDomainResponse.md) | - |
+| [AddRoleToMediaItemData](type-aliases/AddRoleToMediaItemData.md) | - |
+| [AddRoleToMediaItemError](type-aliases/AddRoleToMediaItemError.md) | - |
+| [AddRoleToMediaItemInput](type-aliases/AddRoleToMediaItemInput.md) | - |
+| [AddRoleToMediaItemResponse](type-aliases/AddRoleToMediaItemResponse.md) | - |
 | [BatchEmail](type-aliases/BatchEmail.md) | - |
 | [BatchPagination](type-aliases/BatchPagination.md) | - |
 | [BatchSendResult](type-aliases/BatchSendResult.md) | - |
@@ -165,12 +169,16 @@
 | [GetTagsData](type-aliases/GetTagsData.md) | - |
 | [GetTagsError](type-aliases/GetTagsError.md) | - |
 | [GetTagsResponse](type-aliases/GetTagsResponse.md) | - |
+| [ListMediaItemRolesData](type-aliases/ListMediaItemRolesData.md) | - |
+| [ListMediaItemRolesError](type-aliases/ListMediaItemRolesError.md) | - |
+| [ListMediaItemRolesResponse](type-aliases/ListMediaItemRolesResponse.md) | - |
 | [ListSiteDomainsData](type-aliases/ListSiteDomainsData.md) | - |
 | [ListSiteDomainsError](type-aliases/ListSiteDomainsError.md) | - |
 | [ListSiteDomainsResponse](type-aliases/ListSiteDomainsResponse.md) | - |
 | [LocalizedContent](type-aliases/LocalizedContent.md) | - |
 | [LocationSlim](type-aliases/LocationSlim.md) | - |
 | [MediaItem](type-aliases/MediaItem.md) | - |
+| [MediaItemRole](type-aliases/MediaItemRole.md) | - |
 | [NewsDates](type-aliases/NewsDates.md) | - |
 | [Page](type-aliases/Page.md) | - |
 | [Pagination](type-aliases/Pagination.md) | - |
@@ -178,12 +186,28 @@
 | [ProductVariant](type-aliases/ProductVariant.md) | - |
 | [Profile](type-aliases/Profile.md) | - |
 | [ProfileSlim](type-aliases/ProfileSlim.md) | - |
+| [PublicSignInData](type-aliases/PublicSignInData.md) | - |
+| [PublicSignInError](type-aliases/PublicSignInError.md) | - |
+| [PublicSignInResponse](type-aliases/PublicSignInResponse.md) | - |
+| [PublicSignOutData](type-aliases/PublicSignOutData.md) | - |
+| [PublicSignOutError](type-aliases/PublicSignOutError.md) | - |
+| [PublicSignOutResponse](type-aliases/PublicSignOutResponse.md) | - |
+| [PublicSignUpData](type-aliases/PublicSignUpData.md) | - |
+| [PublicSignUpError](type-aliases/PublicSignUpError.md) | - |
+| [PublicSignUpResponse](type-aliases/PublicSignUpResponse.md) | - |
 | [publishState](type-aliases/publishState.md) | - |
 | [Recipient](type-aliases/Recipient.md) | - |
 | [recordType](type-aliases/recordType.md) | - |
 | [RemoveCustomDomainData](type-aliases/RemoveCustomDomainData.md) | - |
 | [RemoveCustomDomainError](type-aliases/RemoveCustomDomainError.md) | - |
 | [RemoveCustomDomainResponse](type-aliases/RemoveCustomDomainResponse.md) | - |
+| [RemoveRoleFromMediaItemData](type-aliases/RemoveRoleFromMediaItemData.md) | - |
+| [RemoveRoleFromMediaItemError](type-aliases/RemoveRoleFromMediaItemError.md) | - |
+| [RemoveRoleFromMediaItemResponse](type-aliases/RemoveRoleFromMediaItemResponse.md) | - |
+| [SearchAllData](type-aliases/SearchAllData.md) | - |
+| [SearchAllError](type-aliases/SearchAllError.md) | - |
+| [SearchAllResponse](type-aliases/SearchAllResponse.md) | - |
+| [SearchAllSiteResults](type-aliases/SearchAllSiteResults.md) | - |
 | [SearchSiteData](type-aliases/SearchSiteData.md) | - |
 | [SearchSiteError](type-aliases/SearchSiteError.md) | - |
 | [SearchSiteResponse](type-aliases/SearchSiteResponse.md) | - |
@@ -221,6 +245,7 @@
 | ------ | ------ |
 | [getNews](functions/getNews.md) | Get a list of all news items |
 | [getNewsArticle](functions/getNewsArticle.md) | Get a single news item using the slug |
+| [getNewsDates](functions/getNewsDates.md) | - |
 
 ## Tags
 

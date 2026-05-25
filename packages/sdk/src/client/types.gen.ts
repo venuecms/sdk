@@ -9,6 +9,10 @@ export type AddDomainResponse = {
     records: Array<DnsRecord>;
 };
 
+export type AddRoleToMediaItemInput = {
+    roleId: string;
+};
+
 export type BatchEmail = {
     id: string;
     to: string;
@@ -227,6 +231,7 @@ export type LocalizedContent = {
 
 export type LocationSlim = {
     siteId: string;
+    image?: MediaItem;
     address?: (string) | null;
     address2?: (string) | null;
     state?: (string) | null;
@@ -250,6 +255,9 @@ export type MediaItem = {
     url?: (string) | null;
     mimeType?: (string) | null;
     size: string;
+    width?: (number) | null;
+    height?: (number) | null;
+    duration?: (number) | null;
     metadata?: {
         [key: string]: unknown;
     } | null;
@@ -257,6 +265,15 @@ export type MediaItem = {
     caption?: (string) | null;
     credit?: (string) | null;
     altText?: (string) | null;
+};
+
+export type MediaItemRole = {
+    mediaItemId: string;
+    accessRoleId: string;
+    accessRole: {
+        id: string;
+        name: (string) | null;
+    };
 };
 
 export type NewsDates = {
@@ -404,6 +421,25 @@ export type Recipient = {
     };
 };
 
+export type SearchAllSiteResults = {
+    records: Array<{
+        id: string;
+        type: 'event' | 'page' | 'profile' | 'product';
+        slug: string;
+        siteId: string;
+        image?: (MediaItem & unknown);
+        localizedContent: Array<{
+            locale: string;
+            title?: (string) | null;
+            shortContent?: (string) | null;
+            content?: (string) | null;
+        }>;
+        startDate?: (string) | null;
+        endDate?: (string) | null;
+        similarity: number;
+    }>;
+};
+
 export type SearchSiteResults = {
     events: Array<{
         id: string;
@@ -533,6 +569,7 @@ export type TicketOnEvent = {
     currency?: (string) | null;
     roles: Array<unknown>;
     localizedContent?: Array<LocalizedContent>;
+    order?: number;
 };
 
 export type UpdateDraftBatchInput = {
@@ -553,6 +590,69 @@ export type WebSite = {
     image?: (MediaItem & unknown);
     localizedContent?: Array<LocalizedContent> | null;
 };
+
+export type PublicSignInData = {
+    body?: {
+        email: string;
+        password: string;
+        captchaToken?: string;
+    };
+    path: {
+        siteKey: string;
+    };
+};
+
+export type PublicSignInResponse = ({
+    session: {
+        access_token: string;
+        refresh_token: string;
+        expires_in: number;
+        token_type: string;
+    };
+    user: {
+        id: string;
+        email?: string;
+    };
+});
+
+export type PublicSignInError = ({
+    error: string;
+});
+
+export type PublicSignOutData = {
+    path: {
+        siteKey: string;
+    };
+};
+
+export type PublicSignOutResponse = ({
+    success: boolean;
+});
+
+export type PublicSignOutError = unknown;
+
+export type PublicSignUpData = {
+    body?: {
+        email: string;
+        password: string;
+        captchaToken?: string;
+    };
+    path: {
+        siteKey: string;
+    };
+};
+
+export type PublicSignUpResponse = ({
+    user: {
+        id: string;
+        email?: string;
+    };
+    confirmEmail: boolean;
+});
+
+export type PublicSignUpError = ({
+    error: string;
+});
 
 export type GetSiteData = {
     path: {
@@ -838,17 +938,48 @@ export type SearchSiteData = {
         siteKey: string;
     };
     query?: {
+        debug?: 'true' | 'false' | '1' | '0';
         dir?: 'asc' | 'desc';
+        disableVector?: 'true' | 'false' | '1' | '0';
         limit?: (number) | null;
+        minResultSimilarity?: (number) | null;
+        noCache?: 'true' | 'false' | '1' | '0';
         orderBy?: string;
         page?: (number) | null;
         query?: (string) | null;
+        searchProvider?: ('algolia' | 'trigram' | 'hybrid') | null;
+        trigramThreshold?: (number) | null;
+        vectorThreshold?: (number) | null;
     };
 };
 
 export type SearchSiteResponse = (SearchSiteResults);
 
 export type SearchSiteError = (unknown);
+
+export type SearchAllData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        debug?: 'true' | 'false' | '1' | '0';
+        dir?: 'asc' | 'desc';
+        disableVector?: 'true' | 'false' | '1' | '0';
+        limit?: (number) | null;
+        minResultSimilarity?: (number) | null;
+        noCache?: 'true' | 'false' | '1' | '0';
+        orderBy?: string;
+        page?: (number) | null;
+        query?: (string) | null;
+        searchProvider?: ('algolia' | 'trigram' | 'hybrid') | null;
+        trigramThreshold?: (number) | null;
+        vectorThreshold?: (number) | null;
+    };
+};
+
+export type SearchAllResponse = (SearchAllSiteResults);
+
+export type SearchAllError = (unknown);
 
 export type GetTagsData = {
     path: {
@@ -1095,3 +1226,38 @@ export type SendBatchData = {
 export type SendBatchResponse = (BatchSendResult);
 
 export type SendBatchError = (unknown);
+
+export type ListMediaItemRolesData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+
+export type ListMediaItemRolesResponse = (Array<MediaItemRole>);
+
+export type ListMediaItemRolesError = (unknown);
+
+export type AddRoleToMediaItemData = {
+    body?: AddRoleToMediaItemInput;
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+
+export type AddRoleToMediaItemResponse = (Array<MediaItemRole>);
+
+export type AddRoleToMediaItemError = (unknown);
+
+export type RemoveRoleFromMediaItemData = {
+    path: {
+        mediaItemId: string;
+        roleId: string;
+        siteKey: string;
+    };
+};
+
+export type RemoveRoleFromMediaItemResponse = (Array<MediaItemRole>);
+
+export type RemoveRoleFromMediaItemError = (unknown);

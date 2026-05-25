@@ -8,13 +8,13 @@
 type CreateDraftBatchInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:48](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L48)
+Defined in: [packages/sdk/src/client/types.gen.ts:52](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L52)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="name"></a> `name`? | `string` | [packages/sdk/src/client/types.gen.ts:49](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L49) |
-| <a id="recipients"></a> `recipients` | [`Recipient`](Recipient.md)[] | [packages/sdk/src/client/types.gen.ts:52](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L52) |
-| <a id="subject"></a> `subject`? | `string` | [packages/sdk/src/client/types.gen.ts:51](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L51) |
-| <a id="templatekey"></a> `templateKey`? | `string` | [packages/sdk/src/client/types.gen.ts:50](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L50) |
+| <a id="name"></a> `name`? | `string` | [packages/sdk/src/client/types.gen.ts:53](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L53) |
+| <a id="recipients"></a> `recipients` | [`Recipient`](Recipient.md)[] | [packages/sdk/src/client/types.gen.ts:56](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L56) |
+| <a id="subject"></a> `subject`? | `string` | [packages/sdk/src/client/types.gen.ts:55](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L55) |
+| <a id="templatekey"></a> `templateKey`? | `string` | [packages/sdk/src/client/types.gen.ts:54](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L54) |

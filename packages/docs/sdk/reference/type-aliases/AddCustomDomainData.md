@@ -8,12 +8,12 @@
 type AddCustomDomainData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:934](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L934)
+Defined in: [packages/sdk/src/client/types.gen.ts:1065](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1065)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`AddDomainInput`](AddDomainInput.md) | [packages/sdk/src/client/types.gen.ts:935](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L935) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:936](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L936) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:937](https://github.com/venuecms/sdk/blob/3bd84adbd3a78fae724fcf1d00721691a6434bb8/packages/sdk/src/client/types.gen.ts#L937) |
+| <a id="body"></a> `body`? | [`AddDomainInput`](AddDomainInput.md) | [packages/sdk/src/client/types.gen.ts:1066](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1066) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1067](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1067) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1068](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1068) |

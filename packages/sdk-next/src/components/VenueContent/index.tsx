@@ -5,6 +5,7 @@
  */
 import { LocalizedContent } from "@venuecms/sdk";
 import { VenueImage } from "../VenueImage";
+import { EmbedResize } from "../EmbedResize";
 import Markdown from "markdown-to-jsx";
 import React, { JSX, ReactNode } from "react";
 
@@ -397,6 +398,7 @@ export const VenueContent = ({
   if (contentJSON) {
     return (
       <div className={className}>
+        <EmbedResize />
         {(contentJSON.content as Array<RenderNode>).map((node, i) => (
           <ContentRender key={i} classes={contentStyles} node={node} />
         ))}
@@ -406,14 +408,16 @@ export const VenueContent = ({
 
   if (content.content) {
     return (
-      <Markdown
-        className={className}
-        options={{
-          overrides: {
-            ...getMarkdownHandlers(contentStyles),
-          },
-        }}
-      >
+      <>
+        <EmbedResize />
+        <Markdown
+          className={className}
+          options={{
+            overrides: {
+              ...getMarkdownHandlers(contentStyles),
+            },
+          }}
+        >
         {
           /* There are issues with <hr> tags in the parsing so we fix that with a regex */
           // @ts-ignore
@@ -422,7 +426,8 @@ export const VenueContent = ({
             "\n\n***\n\n",
           )
         }
-      </Markdown>
+        </Markdown>
+      </>
     );
   }
 

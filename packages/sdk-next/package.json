@@ -1,6 +1,6 @@
 {
   "name": "@venuecms/sdk-next",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "author": "Scott Cazan",
   "description": "",
   "types": "dist/index.d.ts",

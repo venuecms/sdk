@@ -8,12 +8,12 @@
 type DraftBatchResult = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:64](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L64)
+Defined in: [packages/sdk/dist/index.d.mts:103](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L103)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="batchid"></a> `batchId` | `string` | [sdk/dist/index.d.mts:65](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L65) |
-| <a id="recipientcount"></a> `recipientCount` | `number` | [sdk/dist/index.d.mts:67](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L67) |
-| <a id="status"></a> `status` | `"DRAFT"` | [sdk/dist/index.d.mts:66](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L66) |
+| <a id="batchid"></a> `batchId` | `string` | [packages/sdk/dist/index.d.mts:104](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L104) |
+| <a id="recipientcount"></a> `recipientCount` | `number` | [packages/sdk/dist/index.d.mts:106](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L106) |
+| <a id="status"></a> `status` | `"DRAFT"` | [packages/sdk/dist/index.d.mts:105](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L105) |

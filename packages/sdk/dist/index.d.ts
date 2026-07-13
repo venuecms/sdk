@@ -7,8 +7,33 @@ type AddDomainResponse = {
     domain: string;
     records: Array<DnsRecord>;
 };
+type AddMediaItemToCollectionInput = {
+    mediaItemId: string;
+};
+type AddRoleToMediaCollectionInput = {
+    roleId: string;
+};
 type AddRoleToMediaItemInput = {
     roleId: string;
+};
+type AtprotoOauthDisconnectResponse = {
+    success: boolean;
+};
+type AtprotoOauthStartInput = {
+    /**
+     * ATproto handle or DID to start OAuth for
+     */
+    handle?: string;
+};
+type AtprotoOauthStartResponse = {
+    authorizeUrl: string;
+};
+type AtprotoOauthStatusResponse = {
+    connected: boolean;
+    did: (string) | null;
+    handle: (string) | null;
+    pdsUrl: (string) | null;
+    needsReauth: boolean;
 };
 type BatchEmail = {
     id: string;
@@ -47,6 +72,17 @@ type CreateDraftBatchInput = {
     subject?: string;
     recipients: Array<Recipient>;
 };
+type CreateLivestreamInput = {
+    title?: string;
+    roleIds?: Array<(string)>;
+};
+type CreateMediaCollectionInput = {
+    name: string;
+    description?: string;
+    entityType?: 'event' | 'profile' | 'page' | 'location' | 'product';
+    entityId?: string;
+};
+type entityType = 'event' | 'profile' | 'page' | 'location' | 'product';
 type CustomSchemaData = {
     data?: unknown;
     customSchemaId?: (string) | null;
@@ -141,6 +177,9 @@ type EmailStats = {
         since: string;
     };
 };
+type EntityMediaCount = {
+    count: number;
+};
 type Event = {
     id: string;
     siteId: string;
@@ -185,6 +224,31 @@ type EventRelations = {
     parents?: Array<EventReference>;
     children?: Array<EventReference>;
 };
+type LinkPreview = {
+    url: string;
+    meta?: {
+        title?: string;
+        description?: string;
+        author?: string;
+        site?: string;
+    };
+    html?: string;
+    thumbnail_url?: string;
+    provider_name?: string;
+    provider_url?: string;
+    error?: string;
+};
+type LivestreamResponse = {
+    mediaItem?: unknown;
+    streamKey: string;
+    rtmpUrl: string;
+    playbackPolicy: 'public' | 'signed';
+    muxLiveStreamId: string;
+    muxPlaybackId: string;
+    liveStatus?: 'idle' | 'active' | 'disabled';
+};
+type playbackPolicy = 'public' | 'signed';
+type liveStatus = 'idle' | 'active' | 'disabled';
 type LocalizedContent = {
     siteId: string;
     locale: string;
@@ -217,6 +281,31 @@ type LocationSlim = {
     tags?: Array<Tag>;
     localizedContent: Array<LocalizedContent>;
     isDefault?: boolean;
+};
+type MediaCollection = {
+    id: string;
+    siteId: string;
+    name: string;
+    description: (string) | null;
+    entityType: (string) | null;
+    entityId: (string) | null;
+    createdAt: string;
+    updatedAt: string;
+    items?: Array<{
+        mediaItemId: string;
+        collectionId: string;
+        order: number;
+        mediaItem?: unknown;
+    }>;
+    roles?: Array<MediaCollectionRole>;
+};
+type MediaCollectionRole = {
+    mediaCollectionId: string;
+    accessRoleId: string;
+    accessRole: {
+        id: string;
+        name: (string) | null;
+    };
 };
 type MediaItem = {
     siteId: string;
@@ -319,6 +408,9 @@ type Pagination = {
     total: number;
     totalPages: number;
 };
+type PlaybackToken = {
+    token: (string) | null;
+};
 type Product = {
     siteId: string;
     slug: string;
@@ -369,6 +461,20 @@ type ProfileSlim = {
     localizedContent: Array<LocalizedContent>;
     custom?: Array<CustomSchemaData>;
 };
+type PublicLinkPreview = {
+    url: string;
+    meta?: {
+        title?: string;
+        description?: string;
+        author?: string;
+        site?: string;
+    };
+    html?: string;
+    thumbnail_url?: string;
+    provider_name?: string;
+    provider_url?: string;
+    error?: string;
+};
 type Recipient = {
     email: string;
     subject?: string;
@@ -378,6 +484,10 @@ type Recipient = {
     metadata?: {
         [key: string]: unknown;
     };
+};
+type ReorderMediaCollectionItemInput = {
+    mediaItemId: string;
+    upperNeighbor: (string) | null;
 };
 type SearchAllSiteResults = {
     records: Array<{
@@ -481,6 +591,11 @@ type SiteSettings = {
         };
     };
 };
+type StopLivestreamResponse = {
+    mediaItem?: unknown;
+    liveStatus: 'idle' | 'active' | 'disabled' | 'completed';
+};
+type liveStatus2 = 'idle' | 'active' | 'disabled' | 'completed';
 type Tag = {
     tagId: string;
     tag: {
@@ -523,11 +638,37 @@ type TicketOnEvent = {
     localizedContent?: Array<LocalizedContent>;
     order?: number;
 };
+type UpdatedMediaItem = {
+    id: string;
+    title?: (string) | null;
+    caption?: (string) | null;
+    credit?: (string) | null;
+    altText?: (string) | null;
+};
 type UpdateDraftBatchInput = {
     name?: string;
     templateKey?: string;
     subject?: string;
     recipients?: Array<Recipient>;
+};
+type UpdateMediaCollectionInput = {
+    name?: string;
+    description?: (string) | null;
+};
+type UpdateMediaItemInput = {
+    title?: (string) | null;
+    caption?: (string) | null;
+    credit?: (string) | null;
+    altText?: (string) | null;
+};
+type UpdateMediaItemOrderInput = {
+    entityType: 'event' | 'profile' | 'page' | 'location' | 'product';
+    entityId: string;
+    mediaItemId: string;
+    upperNeighbor: (string) | null;
+};
+type UpdateMediaItemOrderResponse = {
+    itemIds: Array<(string)>;
 };
 type WebSite = {
     id: string;
@@ -888,6 +1029,24 @@ type GetTagsResponse = ({
     count?: number;
 });
 type GetTagsError = unknown;
+type GetPublicLinkPreviewData = {
+    path: {
+        siteKey: string;
+    };
+    query: {
+        url: string;
+    };
+};
+type GetPublicLinkPreviewResponse = (PublicLinkPreview);
+type GetPublicLinkPreviewError = (unknown);
+type GetPlaybackTokenData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+type GetPlaybackTokenResponse = (PlaybackToken);
+type GetPlaybackTokenError = (unknown);
 type ListSiteDomainsData = {
     path: {
         siteKey: string;
@@ -1059,6 +1218,14 @@ type SendBatchData = {
 };
 type SendBatchResponse = (BatchSendResult);
 type SendBatchError = (unknown);
+type UpdateMediaItemOrderData = {
+    body?: UpdateMediaItemOrderInput;
+    path: {
+        siteKey: string;
+    };
+};
+type UpdateMediaItemOrderResponse2 = (UpdateMediaItemOrderResponse);
+type UpdateMediaItemOrderError = (unknown);
 type ListMediaItemRolesData = {
     path: {
         mediaItemId: string;
@@ -1085,6 +1252,204 @@ type RemoveRoleFromMediaItemData = {
 };
 type RemoveRoleFromMediaItemResponse = (Array<MediaItemRole>);
 type RemoveRoleFromMediaItemError = (unknown);
+type UpdateMediaItemData = {
+    body?: UpdateMediaItemInput;
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+type UpdateMediaItemResponse = (UpdatedMediaItem);
+type UpdateMediaItemError = (unknown);
+type DeleteMediaItemData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+type DeleteMediaItemResponse = ({
+    success: boolean;
+});
+type DeleteMediaItemError = (unknown);
+type ListMediaCollectionsData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        entityId?: string;
+        entityType?: 'event' | 'profile' | 'page' | 'location' | 'product';
+    };
+};
+type ListMediaCollectionsResponse = (Array<MediaCollection>);
+type ListMediaCollectionsError = unknown;
+type CreateMediaCollectionData = {
+    body?: CreateMediaCollectionInput;
+    path: {
+        siteKey: string;
+    };
+};
+type CreateMediaCollectionResponse = (MediaCollection);
+type CreateMediaCollectionError = (unknown);
+type GetMediaCollectionData = {
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+type GetMediaCollectionResponse = (MediaCollection);
+type GetMediaCollectionError = (unknown);
+type UpdateMediaCollectionData = {
+    body?: UpdateMediaCollectionInput;
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+type UpdateMediaCollectionResponse = (MediaCollection);
+type UpdateMediaCollectionError = (unknown);
+type DeleteMediaCollectionData = {
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+type DeleteMediaCollectionResponse = ({
+    ok: boolean;
+});
+type DeleteMediaCollectionError = (unknown);
+type AddItemToMediaCollectionData = {
+    body?: AddMediaItemToCollectionInput;
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+type AddItemToMediaCollectionResponse = (MediaCollection);
+type AddItemToMediaCollectionError = (unknown);
+type ReorderMediaCollectionItemData = {
+    body?: ReorderMediaCollectionItemInput;
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+type ReorderMediaCollectionItemResponse = (MediaCollection);
+type ReorderMediaCollectionItemError = (unknown);
+type RemoveItemFromMediaCollectionData = {
+    path: {
+        collectionId: string;
+        mediaItemId: string;
+        siteKey: string;
+    };
+    query?: {
+        ensureEntityId?: string;
+        ensureEntityType?: 'event' | 'profile' | 'page' | 'location' | 'product';
+    };
+};
+type RemoveItemFromMediaCollectionResponse = (MediaCollection);
+type RemoveItemFromMediaCollectionError = (unknown);
+type ListMediaCollectionRolesData = {
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+type ListMediaCollectionRolesResponse = (Array<MediaCollectionRole>);
+type ListMediaCollectionRolesError = (unknown);
+type AddRoleToMediaCollectionData = {
+    body?: AddRoleToMediaCollectionInput;
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+type AddRoleToMediaCollectionResponse = (Array<MediaCollectionRole>);
+type AddRoleToMediaCollectionError = (unknown);
+type RemoveRoleFromMediaCollectionData = {
+    path: {
+        collectionId: string;
+        roleId: string;
+        siteKey: string;
+    };
+};
+type RemoveRoleFromMediaCollectionResponse = (Array<MediaCollectionRole>);
+type RemoveRoleFromMediaCollectionError = (unknown);
+type GetEntityMediaCountData = {
+    path: {
+        entityId: string;
+        entityType: 'event' | 'profile' | 'page' | 'location' | 'product';
+        siteKey: string;
+    };
+};
+type GetEntityMediaCountResponse = (EntityMediaCount);
+type GetEntityMediaCountError = (unknown);
+type GetBackendLinkPreviewData = {
+    path: {
+        siteKey: string;
+    };
+    query: {
+        url: string;
+    };
+};
+type GetBackendLinkPreviewResponse = (LinkPreview);
+type GetBackendLinkPreviewError = (unknown);
+type AtprotoOauthStartData = {
+    body?: AtprotoOauthStartInput;
+    path: {
+        siteKey: string;
+    };
+};
+type AtprotoOauthStartResponse2 = (AtprotoOauthStartResponse);
+type AtprotoOauthStartError = (unknown);
+type AtprotoOauthDisconnectData = {
+    path: {
+        siteKey: string;
+    };
+};
+type AtprotoOauthDisconnectResponse2 = (AtprotoOauthDisconnectResponse);
+type AtprotoOauthDisconnectError = (unknown);
+type AtprotoOauthStatusData = {
+    path: {
+        siteKey: string;
+    };
+};
+type AtprotoOauthStatusResponse2 = (AtprotoOauthStatusResponse);
+type AtprotoOauthStatusError = (unknown);
+type CreateEventLivestreamData = {
+    body?: CreateLivestreamInput;
+    path: {
+        eventId: string;
+        siteKey: string;
+    };
+};
+type CreateEventLivestreamResponse = (LivestreamResponse);
+type CreateEventLivestreamError = (unknown);
+type GetEventLivestreamData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+type GetEventLivestreamResponse = (LivestreamResponse);
+type GetEventLivestreamError = (unknown);
+type DeleteEventLivestreamData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+type DeleteEventLivestreamResponse = ({
+    success: boolean;
+});
+type DeleteEventLivestreamError = (unknown);
+type StopEventLivestreamData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+type StopEventLivestreamResponse = (StopLivestreamResponse);
+type StopEventLivestreamError = (unknown);
 
 /**
  * This function will properly resolve content blocks that are localized.
@@ -1434,4 +1799,4 @@ declare const searchSite: (params: SearchSiteData["query"]) => Promise<({
     response: Response;
 }>;
 
-export { type AddCustomDomainData, type AddCustomDomainError, type AddCustomDomainResponse, type AddDomainInput, type AddDomainResponse, type AddRoleToMediaItemData, type AddRoleToMediaItemError, type AddRoleToMediaItemInput, type AddRoleToMediaItemResponse, type BatchEmail, type BatchPagination, type BatchSendResult, type CreateAndSendBatchData, type CreateAndSendBatchError, type CreateAndSendBatchResponse, type CreateDraftBatchData, type CreateDraftBatchError, type CreateDraftBatchInput, type CreateDraftBatchResponse, type CustomSchemaData, type DeleteBatchData, type DeleteBatchError, type DeleteBatchResponse, type DnsRecord, type DomainStatus, type DraftBatchResult, type Email, type EmailBatch, type EmailBatchDetail, type EmailBatchesResponse, type EmailConfig, type EmailConfigInput, type EmailStats, type EmailsResponse, type Event, type EventDates, type EventReference, type EventRelations, type GetDomainStatusData, type GetDomainStatusError, type GetDomainStatusResponse, type GetEmailBatchData, type GetEmailBatchError, type GetEmailBatchResponse, type GetEmailBatchesData, type GetEmailBatchesError, type GetEmailBatchesResponse, type GetEmailByIdData, type GetEmailByIdError, type GetEmailByIdResponse, type GetEmailConfigData, type GetEmailConfigError, type GetEmailConfigResponse, type GetEmailStatsData, type GetEmailStatsError, type GetEmailStatsResponse, type GetEmailsData, type GetEmailsError, type GetEmailsResponse, type GetEventData, type GetEventDatesData, type GetEventDatesError, type GetEventDatesResponse, type GetEventError, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetNewsArticleData, type GetNewsArticleError, type GetNewsArticleResponse, type GetNewsData, type GetNewsDatesData, type GetNewsDatesError, type GetNewsDatesResponse, type GetNewsError, type GetNewsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileProductsData, type GetProfileProductsError, type GetProfileProductsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type GetTagsData, type GetTagsError, type GetTagsResponse, type ListMediaItemRolesData, type ListMediaItemRolesError, type ListMediaItemRolesResponse, type ListSiteDomainsData, type ListSiteDomainsError, type ListSiteDomainsResponse, type LocalizedContent, type LocationSlim, type MediaItem, type MediaItemRole, type NewsDates, type Page, type Pagination, type Product, type ProductVariant, type Profile, type ProfileSlim, type PublicSignInData, type PublicSignInError, type PublicSignInResponse, type PublicSignOutData, type PublicSignOutError, type PublicSignOutResponse, type PublicSignUpData, type PublicSignUpError, type PublicSignUpResponse, type Recipient, type RemoveCustomDomainData, type RemoveCustomDomainError, type RemoveCustomDomainResponse, type RemoveRoleFromMediaItemData, type RemoveRoleFromMediaItemError, type RemoveRoleFromMediaItemResponse, type SearchAllData, type SearchAllError, type SearchAllResponse, type SearchAllSiteResults, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type SendBatchData, type SendBatchError, type SendBatchResponse, type Site, type SiteSettings, type Tag, type TagListItem, type TicketOnEvent, type UpdateDraftBatchData, type UpdateDraftBatchError, type UpdateDraftBatchInput, type UpdateDraftBatchResponse, type UpdateEmailConfigData, type UpdateEmailConfigError, type UpdateEmailConfigResponse, type VerifyDomainData, type VerifyDomainError, type VerifyDomainResponse, type WebSite, cache, getEvent, getEventDates, getEvents, getLocalizedContent, getNews, getNewsArticle, getNewsDates, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfileProducts, getProfiles, getSite, getSiteKeyByDomain, getTags, listSiteDomains, type publishState, type recordType, searchSite, setConfig, type status, type status2, type status3, type status4, type type };
+export { type AddCustomDomainData, type AddCustomDomainError, type AddCustomDomainResponse, type AddDomainInput, type AddDomainResponse, type AddItemToMediaCollectionData, type AddItemToMediaCollectionError, type AddItemToMediaCollectionResponse, type AddMediaItemToCollectionInput, type AddRoleToMediaCollectionData, type AddRoleToMediaCollectionError, type AddRoleToMediaCollectionInput, type AddRoleToMediaCollectionResponse, type AddRoleToMediaItemData, type AddRoleToMediaItemError, type AddRoleToMediaItemInput, type AddRoleToMediaItemResponse, type AtprotoOauthDisconnectData, type AtprotoOauthDisconnectError, type AtprotoOauthDisconnectResponse, type AtprotoOauthDisconnectResponse2, type AtprotoOauthStartData, type AtprotoOauthStartError, type AtprotoOauthStartInput, type AtprotoOauthStartResponse, type AtprotoOauthStartResponse2, type AtprotoOauthStatusData, type AtprotoOauthStatusError, type AtprotoOauthStatusResponse, type AtprotoOauthStatusResponse2, type BatchEmail, type BatchPagination, type BatchSendResult, type CreateAndSendBatchData, type CreateAndSendBatchError, type CreateAndSendBatchResponse, type CreateDraftBatchData, type CreateDraftBatchError, type CreateDraftBatchInput, type CreateDraftBatchResponse, type CreateEventLivestreamData, type CreateEventLivestreamError, type CreateEventLivestreamResponse, type CreateLivestreamInput, type CreateMediaCollectionData, type CreateMediaCollectionError, type CreateMediaCollectionInput, type CreateMediaCollectionResponse, type CustomSchemaData, type DeleteBatchData, type DeleteBatchError, type DeleteBatchResponse, type DeleteEventLivestreamData, type DeleteEventLivestreamError, type DeleteEventLivestreamResponse, type DeleteMediaCollectionData, type DeleteMediaCollectionError, type DeleteMediaCollectionResponse, type DeleteMediaItemData, type DeleteMediaItemError, type DeleteMediaItemResponse, type DnsRecord, type DomainStatus, type DraftBatchResult, type Email, type EmailBatch, type EmailBatchDetail, type EmailBatchesResponse, type EmailConfig, type EmailConfigInput, type EmailStats, type EmailsResponse, type EntityMediaCount, type Event, type EventDates, type EventReference, type EventRelations, type GetBackendLinkPreviewData, type GetBackendLinkPreviewError, type GetBackendLinkPreviewResponse, type GetDomainStatusData, type GetDomainStatusError, type GetDomainStatusResponse, type GetEmailBatchData, type GetEmailBatchError, type GetEmailBatchResponse, type GetEmailBatchesData, type GetEmailBatchesError, type GetEmailBatchesResponse, type GetEmailByIdData, type GetEmailByIdError, type GetEmailByIdResponse, type GetEmailConfigData, type GetEmailConfigError, type GetEmailConfigResponse, type GetEmailStatsData, type GetEmailStatsError, type GetEmailStatsResponse, type GetEmailsData, type GetEmailsError, type GetEmailsResponse, type GetEntityMediaCountData, type GetEntityMediaCountError, type GetEntityMediaCountResponse, type GetEventData, type GetEventDatesData, type GetEventDatesError, type GetEventDatesResponse, type GetEventError, type GetEventLivestreamData, type GetEventLivestreamError, type GetEventLivestreamResponse, type GetEventResponse, type GetEventsData, type GetEventsError, type GetEventsResponse, type GetMediaCollectionData, type GetMediaCollectionError, type GetMediaCollectionResponse, type GetNewsArticleData, type GetNewsArticleError, type GetNewsArticleResponse, type GetNewsData, type GetNewsDatesData, type GetNewsDatesError, type GetNewsDatesResponse, type GetNewsError, type GetNewsResponse, type GetPageData, type GetPageError, type GetPageResponse, type GetPagesData, type GetPagesError, type GetPagesResponse, type GetPlaybackTokenData, type GetPlaybackTokenError, type GetPlaybackTokenResponse, type GetProductData, type GetProductError, type GetProductResponse, type GetProductsData, type GetProductsError, type GetProductsResponse, type GetProfileData, type GetProfileError, type GetProfileEventsData, type GetProfileEventsError, type GetProfileEventsResponse, type GetProfileProductsData, type GetProfileProductsError, type GetProfileProductsResponse, type GetProfileResponse, type GetProfilesData, type GetProfilesError, type GetProfilesResponse, type GetPublicLinkPreviewData, type GetPublicLinkPreviewError, type GetPublicLinkPreviewResponse, type GetSiteByDomainData, type GetSiteByDomainError, type GetSiteByDomainResponse, type GetSiteData, type GetSiteError, type GetSiteResponse, type GetTagsData, type GetTagsError, type GetTagsResponse, type LinkPreview, type ListMediaCollectionRolesData, type ListMediaCollectionRolesError, type ListMediaCollectionRolesResponse, type ListMediaCollectionsData, type ListMediaCollectionsError, type ListMediaCollectionsResponse, type ListMediaItemRolesData, type ListMediaItemRolesError, type ListMediaItemRolesResponse, type ListSiteDomainsData, type ListSiteDomainsError, type ListSiteDomainsResponse, type LivestreamResponse, type LocalizedContent, type LocationSlim, type MediaCollection, type MediaCollectionRole, type MediaItem, type MediaItemRole, type NewsDates, type Page, type Pagination, type PlaybackToken, type Product, type ProductVariant, type Profile, type ProfileSlim, type PublicLinkPreview, type PublicSignInData, type PublicSignInError, type PublicSignInResponse, type PublicSignOutData, type PublicSignOutError, type PublicSignOutResponse, type PublicSignUpData, type PublicSignUpError, type PublicSignUpResponse, type Recipient, type RemoveCustomDomainData, type RemoveCustomDomainError, type RemoveCustomDomainResponse, type RemoveItemFromMediaCollectionData, type RemoveItemFromMediaCollectionError, type RemoveItemFromMediaCollectionResponse, type RemoveRoleFromMediaCollectionData, type RemoveRoleFromMediaCollectionError, type RemoveRoleFromMediaCollectionResponse, type RemoveRoleFromMediaItemData, type RemoveRoleFromMediaItemError, type RemoveRoleFromMediaItemResponse, type ReorderMediaCollectionItemData, type ReorderMediaCollectionItemError, type ReorderMediaCollectionItemInput, type ReorderMediaCollectionItemResponse, type SearchAllData, type SearchAllError, type SearchAllResponse, type SearchAllSiteResults, type SearchSiteData, type SearchSiteError, type SearchSiteResponse, type SearchSiteResults, type SendBatchData, type SendBatchError, type SendBatchResponse, type Site, type SiteSettings, type StopEventLivestreamData, type StopEventLivestreamError, type StopEventLivestreamResponse, type StopLivestreamResponse, type Tag, type TagListItem, type TicketOnEvent, type UpdateDraftBatchData, type UpdateDraftBatchError, type UpdateDraftBatchInput, type UpdateDraftBatchResponse, type UpdateEmailConfigData, type UpdateEmailConfigError, type UpdateEmailConfigResponse, type UpdateMediaCollectionData, type UpdateMediaCollectionError, type UpdateMediaCollectionInput, type UpdateMediaCollectionResponse, type UpdateMediaItemData, type UpdateMediaItemError, type UpdateMediaItemInput, type UpdateMediaItemOrderData, type UpdateMediaItemOrderError, type UpdateMediaItemOrderInput, type UpdateMediaItemOrderResponse, type UpdateMediaItemOrderResponse2, type UpdateMediaItemResponse, type UpdatedMediaItem, type VerifyDomainData, type VerifyDomainError, type VerifyDomainResponse, type WebSite, cache, type entityType, getEvent, getEventDates, getEvents, getLocalizedContent, getNews, getNewsArticle, getNewsDates, getPage, getPages, getProduct, getProducts, getProfile, getProfileEvents, getProfileProducts, getProfiles, getSite, getSiteKeyByDomain, getTags, listSiteDomains, type liveStatus, type liveStatus2, type playbackPolicy, type publishState, type recordType, searchSite, setConfig, type status, type status2, type status3, type status4, type type };

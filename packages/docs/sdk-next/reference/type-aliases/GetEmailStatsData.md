@@ -8,13 +8,13 @@
 type GetEmailStatsData = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:713](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L713)
+Defined in: [packages/sdk/dist/index.d.mts:1135](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L1135)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:714](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L714) |
-| `path.siteKey` | `string` | [sdk/dist/index.d.mts:715](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L715) |
-| <a id="query"></a> `query`? | `object` | [sdk/dist/index.d.mts:717](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L717) |
-| `query.days`? | `string` | [sdk/dist/index.d.mts:718](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L718) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1136](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L1136) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1137](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L1137) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/dist/index.d.mts:1139](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L1139) |
+| `query.days`? | `string` | [packages/sdk/dist/index.d.mts:1140](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L1140) |

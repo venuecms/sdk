@@ -8,7 +8,7 @@
 function VenueContent(__namedParameters): null | Element
 ```
 
-Defined in: [sdk-next/src/components/VenueContent/index.tsx:308](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk-next/src/components/VenueContent/index.tsx#L308)
+Defined in: [packages/sdk-next/src/components/VenueContent/index.tsx:387](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk-next/src/components/VenueContent/index.tsx#L387)
 
 ## Parameters
 

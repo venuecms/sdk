@@ -8,13 +8,13 @@
 type Pagination = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:261](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L261)
+Defined in: [packages/sdk/dist/index.d.mts:405](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L405)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="limit"></a> `limit` | `number` | [sdk/dist/index.d.mts:263](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L263) |
-| <a id="page"></a> `page` | `number` | [sdk/dist/index.d.mts:262](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L262) |
-| <a id="total"></a> `total` | `number` | [sdk/dist/index.d.mts:264](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L264) |
-| <a id="totalpages"></a> `totalPages` | `number` | [sdk/dist/index.d.mts:265](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L265) |
+| <a id="limit"></a> `limit` | `number` | [packages/sdk/dist/index.d.mts:407](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L407) |
+| <a id="page"></a> `page` | `number` | [packages/sdk/dist/index.d.mts:406](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L406) |
+| <a id="total"></a> `total` | `number` | [packages/sdk/dist/index.d.mts:408](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L408) |
+| <a id="totalpages"></a> `totalPages` | `number` | [packages/sdk/dist/index.d.mts:409](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L409) |

@@ -8,11 +8,11 @@
 type EmailBatchDetail = EmailBatch & object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:103](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L103)
+Defined in: [packages/sdk/dist/index.d.mts:142](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L142)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `emails`? | [`BatchEmail`](BatchEmail.md)[] | [sdk/dist/index.d.mts:105](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L105) |
-| `recipients`? | [`Recipient`](Recipient.md)[] | [sdk/dist/index.d.mts:104](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L104) |
+| `emails`? | [`BatchEmail`](BatchEmail.md)[] | [packages/sdk/dist/index.d.mts:144](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L144) |
+| `recipients`? | [`Recipient`](Recipient.md)[] | [packages/sdk/dist/index.d.mts:143](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L143) |

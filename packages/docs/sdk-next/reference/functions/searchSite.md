@@ -16,7 +16,7 @@ function searchSite(params): Promise<
 } & object>
 ```
 
-Defined in: [sdk-next/src/lib/api/index.ts:112](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk-next/src/lib/api/index.ts#L112)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:112](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk-next/src/lib/api/index.ts#L112)
 
 Search a site for all content types (cached)
 
@@ -24,7 +24,7 @@ Search a site for all content types (cached)
 
 | Parameter | Type |
 | ------ | ------ |
-| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `limit`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `query`: `null` \| `string`; \} |
+| `params` | \| `undefined` \| \{ `debug`: `"0"` \| `"true"` \| `"false"` \| `"1"`; `dir`: `"asc"` \| `"desc"`; `disableVector`: `"0"` \| `"true"` \| `"false"` \| `"1"`; `limit`: `null` \| `number`; `minResultSimilarity`: `null` \| `number`; `noCache`: `"0"` \| `"true"` \| `"false"` \| `"1"`; `orderBy`: `string`; `page`: `null` \| `number`; `query`: `null` \| `string`; `searchProvider`: `null` \| `"algolia"` \| `"trigram"` \| `"hybrid"`; `trigramThreshold`: `null` \| `number`; `vectorThreshold`: `null` \| `number`; \} |
 
 ## Returns
 

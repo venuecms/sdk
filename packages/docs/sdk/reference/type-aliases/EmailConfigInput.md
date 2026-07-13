@@ -8,12 +8,12 @@
 type EmailConfigInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:145](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L145)
+Defined in: [packages/sdk/src/client/types.gen.ts:190](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L190)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="fromemail"></a> `fromEmail`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:146](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L146) |
-| <a id="fromname"></a> `fromName`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:147](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L147) |
-| <a id="replytoemail"></a> `replyToEmail`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:148](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L148) |
+| <a id="fromemail"></a> `fromEmail`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:191](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L191) |
+| <a id="fromname"></a> `fromName`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:192](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L192) |
+| <a id="replytoemail"></a> `replyToEmail`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:193](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L193) |

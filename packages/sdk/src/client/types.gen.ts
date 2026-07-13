@@ -9,8 +9,39 @@ export type AddDomainResponse = {
     records: Array<DnsRecord>;
 };
 
+export type AddMediaItemToCollectionInput = {
+    mediaItemId: string;
+};
+
+export type AddRoleToMediaCollectionInput = {
+    roleId: string;
+};
+
 export type AddRoleToMediaItemInput = {
     roleId: string;
+};
+
+export type AtprotoOauthDisconnectResponse = {
+    success: boolean;
+};
+
+export type AtprotoOauthStartInput = {
+    /**
+     * ATproto handle or DID to start OAuth for
+     */
+    handle?: string;
+};
+
+export type AtprotoOauthStartResponse = {
+    authorizeUrl: string;
+};
+
+export type AtprotoOauthStatusResponse = {
+    connected: boolean;
+    did: (string) | null;
+    handle: (string) | null;
+    pdsUrl: (string) | null;
+    needsReauth: boolean;
 };
 
 export type BatchEmail = {
@@ -55,6 +86,20 @@ export type CreateDraftBatchInput = {
     subject?: string;
     recipients: Array<Recipient>;
 };
+
+export type CreateLivestreamInput = {
+    title?: string;
+    roleIds?: Array<(string)>;
+};
+
+export type CreateMediaCollectionInput = {
+    name: string;
+    description?: string;
+    entityType?: 'event' | 'profile' | 'page' | 'location' | 'product';
+    entityId?: string;
+};
+
+export type entityType = 'event' | 'profile' | 'page' | 'location' | 'product';
 
 export type CustomSchemaData = {
     data?: unknown;
@@ -164,6 +209,10 @@ export type EmailStats = {
     };
 };
 
+export type EntityMediaCount = {
+    count: number;
+};
+
 export type Event = {
     id: string;
     siteId: string;
@@ -213,6 +262,35 @@ export type EventRelations = {
     children?: Array<EventReference>;
 };
 
+export type LinkPreview = {
+    url: string;
+    meta?: {
+        title?: string;
+        description?: string;
+        author?: string;
+        site?: string;
+    };
+    html?: string;
+    thumbnail_url?: string;
+    provider_name?: string;
+    provider_url?: string;
+    error?: string;
+};
+
+export type LivestreamResponse = {
+    mediaItem?: unknown;
+    streamKey: string;
+    rtmpUrl: string;
+    playbackPolicy: 'public' | 'signed';
+    muxLiveStreamId: string;
+    muxPlaybackId: string;
+    liveStatus?: 'idle' | 'active' | 'disabled';
+};
+
+export type playbackPolicy = 'public' | 'signed';
+
+export type liveStatus = 'idle' | 'active' | 'disabled';
+
 export type LocalizedContent = {
     siteId: string;
     locale: string;
@@ -246,6 +324,33 @@ export type LocationSlim = {
     tags?: Array<Tag>;
     localizedContent: Array<LocalizedContent>;
     isDefault?: boolean;
+};
+
+export type MediaCollection = {
+    id: string;
+    siteId: string;
+    name: string;
+    description: (string) | null;
+    entityType: (string) | null;
+    entityId: (string) | null;
+    createdAt: string;
+    updatedAt: string;
+    items?: Array<{
+        mediaItemId: string;
+        collectionId: string;
+        order: number;
+        mediaItem?: unknown;
+    }>;
+    roles?: Array<MediaCollectionRole>;
+};
+
+export type MediaCollectionRole = {
+    mediaCollectionId: string;
+    accessRoleId: string;
+    accessRole: {
+        id: string;
+        name: (string) | null;
+    };
 };
 
 export type MediaItem = {
@@ -356,6 +461,10 @@ export type Pagination = {
     totalPages: number;
 };
 
+export type PlaybackToken = {
+    token: (string) | null;
+};
+
 export type Product = {
     siteId: string;
     slug: string;
@@ -410,6 +519,21 @@ export type ProfileSlim = {
     custom?: Array<CustomSchemaData>;
 };
 
+export type PublicLinkPreview = {
+    url: string;
+    meta?: {
+        title?: string;
+        description?: string;
+        author?: string;
+        site?: string;
+    };
+    html?: string;
+    thumbnail_url?: string;
+    provider_name?: string;
+    provider_url?: string;
+    error?: string;
+};
+
 export type Recipient = {
     email: string;
     subject?: string;
@@ -419,6 +543,11 @@ export type Recipient = {
     metadata?: {
         [key: string]: unknown;
     };
+};
+
+export type ReorderMediaCollectionItemInput = {
+    mediaItemId: string;
+    upperNeighbor: (string) | null;
 };
 
 export type SearchAllSiteResults = {
@@ -527,6 +656,13 @@ export type SiteSettings = {
     };
 };
 
+export type StopLivestreamResponse = {
+    mediaItem?: unknown;
+    liveStatus: 'idle' | 'active' | 'disabled' | 'completed';
+};
+
+export type liveStatus2 = 'idle' | 'active' | 'disabled' | 'completed';
+
 export type Tag = {
     tagId: string;
     tag: {
@@ -572,11 +708,42 @@ export type TicketOnEvent = {
     order?: number;
 };
 
+export type UpdatedMediaItem = {
+    id: string;
+    title?: (string) | null;
+    caption?: (string) | null;
+    credit?: (string) | null;
+    altText?: (string) | null;
+};
+
 export type UpdateDraftBatchInput = {
     name?: string;
     templateKey?: string;
     subject?: string;
     recipients?: Array<Recipient>;
+};
+
+export type UpdateMediaCollectionInput = {
+    name?: string;
+    description?: (string) | null;
+};
+
+export type UpdateMediaItemInput = {
+    title?: (string) | null;
+    caption?: (string) | null;
+    credit?: (string) | null;
+    altText?: (string) | null;
+};
+
+export type UpdateMediaItemOrderInput = {
+    entityType: 'event' | 'profile' | 'page' | 'location' | 'product';
+    entityId: string;
+    mediaItemId: string;
+    upperNeighbor: (string) | null;
+};
+
+export type UpdateMediaItemOrderResponse = {
+    itemIds: Array<(string)>;
 };
 
 export type WebSite = {
@@ -1002,6 +1169,30 @@ export type GetTagsResponse = ({
 
 export type GetTagsError = unknown;
 
+export type GetPublicLinkPreviewData = {
+    path: {
+        siteKey: string;
+    };
+    query: {
+        url: string;
+    };
+};
+
+export type GetPublicLinkPreviewResponse = (PublicLinkPreview);
+
+export type GetPublicLinkPreviewError = (unknown);
+
+export type GetPlaybackTokenData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+
+export type GetPlaybackTokenResponse = (PlaybackToken);
+
+export type GetPlaybackTokenError = (unknown);
+
 export type ListSiteDomainsData = {
     path: {
         siteKey: string;
@@ -1227,6 +1418,17 @@ export type SendBatchResponse = (BatchSendResult);
 
 export type SendBatchError = (unknown);
 
+export type UpdateMediaItemOrderData = {
+    body?: UpdateMediaItemOrderInput;
+    path: {
+        siteKey: string;
+    };
+};
+
+export type UpdateMediaItemOrderResponse2 = (UpdateMediaItemOrderResponse);
+
+export type UpdateMediaItemOrderError = (unknown);
+
 export type ListMediaItemRolesData = {
     path: {
         mediaItemId: string;
@@ -1261,3 +1463,267 @@ export type RemoveRoleFromMediaItemData = {
 export type RemoveRoleFromMediaItemResponse = (Array<MediaItemRole>);
 
 export type RemoveRoleFromMediaItemError = (unknown);
+
+export type UpdateMediaItemData = {
+    body?: UpdateMediaItemInput;
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+
+export type UpdateMediaItemResponse = (UpdatedMediaItem);
+
+export type UpdateMediaItemError = (unknown);
+
+export type DeleteMediaItemData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+
+export type DeleteMediaItemResponse = ({
+    success: boolean;
+});
+
+export type DeleteMediaItemError = (unknown);
+
+export type ListMediaCollectionsData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        entityId?: string;
+        entityType?: 'event' | 'profile' | 'page' | 'location' | 'product';
+    };
+};
+
+export type ListMediaCollectionsResponse = (Array<MediaCollection>);
+
+export type ListMediaCollectionsError = unknown;
+
+export type CreateMediaCollectionData = {
+    body?: CreateMediaCollectionInput;
+    path: {
+        siteKey: string;
+    };
+};
+
+export type CreateMediaCollectionResponse = (MediaCollection);
+
+export type CreateMediaCollectionError = (unknown);
+
+export type GetMediaCollectionData = {
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+
+export type GetMediaCollectionResponse = (MediaCollection);
+
+export type GetMediaCollectionError = (unknown);
+
+export type UpdateMediaCollectionData = {
+    body?: UpdateMediaCollectionInput;
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+
+export type UpdateMediaCollectionResponse = (MediaCollection);
+
+export type UpdateMediaCollectionError = (unknown);
+
+export type DeleteMediaCollectionData = {
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+
+export type DeleteMediaCollectionResponse = ({
+    ok: boolean;
+});
+
+export type DeleteMediaCollectionError = (unknown);
+
+export type AddItemToMediaCollectionData = {
+    body?: AddMediaItemToCollectionInput;
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+
+export type AddItemToMediaCollectionResponse = (MediaCollection);
+
+export type AddItemToMediaCollectionError = (unknown);
+
+export type ReorderMediaCollectionItemData = {
+    body?: ReorderMediaCollectionItemInput;
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+
+export type ReorderMediaCollectionItemResponse = (MediaCollection);
+
+export type ReorderMediaCollectionItemError = (unknown);
+
+export type RemoveItemFromMediaCollectionData = {
+    path: {
+        collectionId: string;
+        mediaItemId: string;
+        siteKey: string;
+    };
+    query?: {
+        ensureEntityId?: string;
+        ensureEntityType?: 'event' | 'profile' | 'page' | 'location' | 'product';
+    };
+};
+
+export type RemoveItemFromMediaCollectionResponse = (MediaCollection);
+
+export type RemoveItemFromMediaCollectionError = (unknown);
+
+export type ListMediaCollectionRolesData = {
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+
+export type ListMediaCollectionRolesResponse = (Array<MediaCollectionRole>);
+
+export type ListMediaCollectionRolesError = (unknown);
+
+export type AddRoleToMediaCollectionData = {
+    body?: AddRoleToMediaCollectionInput;
+    path: {
+        collectionId: string;
+        siteKey: string;
+    };
+};
+
+export type AddRoleToMediaCollectionResponse = (Array<MediaCollectionRole>);
+
+export type AddRoleToMediaCollectionError = (unknown);
+
+export type RemoveRoleFromMediaCollectionData = {
+    path: {
+        collectionId: string;
+        roleId: string;
+        siteKey: string;
+    };
+};
+
+export type RemoveRoleFromMediaCollectionResponse = (Array<MediaCollectionRole>);
+
+export type RemoveRoleFromMediaCollectionError = (unknown);
+
+export type GetEntityMediaCountData = {
+    path: {
+        entityId: string;
+        entityType: 'event' | 'profile' | 'page' | 'location' | 'product';
+        siteKey: string;
+    };
+};
+
+export type GetEntityMediaCountResponse = (EntityMediaCount);
+
+export type GetEntityMediaCountError = (unknown);
+
+export type GetBackendLinkPreviewData = {
+    path: {
+        siteKey: string;
+    };
+    query: {
+        url: string;
+    };
+};
+
+export type GetBackendLinkPreviewResponse = (LinkPreview);
+
+export type GetBackendLinkPreviewError = (unknown);
+
+export type AtprotoOauthStartData = {
+    body?: AtprotoOauthStartInput;
+    path: {
+        siteKey: string;
+    };
+};
+
+export type AtprotoOauthStartResponse2 = (AtprotoOauthStartResponse);
+
+export type AtprotoOauthStartError = (unknown);
+
+export type AtprotoOauthDisconnectData = {
+    path: {
+        siteKey: string;
+    };
+};
+
+export type AtprotoOauthDisconnectResponse2 = (AtprotoOauthDisconnectResponse);
+
+export type AtprotoOauthDisconnectError = (unknown);
+
+export type AtprotoOauthStatusData = {
+    path: {
+        siteKey: string;
+    };
+};
+
+export type AtprotoOauthStatusResponse2 = (AtprotoOauthStatusResponse);
+
+export type AtprotoOauthStatusError = (unknown);
+
+export type CreateEventLivestreamData = {
+    body?: CreateLivestreamInput;
+    path: {
+        eventId: string;
+        siteKey: string;
+    };
+};
+
+export type CreateEventLivestreamResponse = (LivestreamResponse);
+
+export type CreateEventLivestreamError = (unknown);
+
+export type GetEventLivestreamData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+
+export type GetEventLivestreamResponse = (LivestreamResponse);
+
+export type GetEventLivestreamError = (unknown);
+
+export type DeleteEventLivestreamData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+
+export type DeleteEventLivestreamResponse = ({
+    success: boolean;
+});
+
+export type DeleteEventLivestreamError = (unknown);
+
+export type StopEventLivestreamData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+
+export type StopEventLivestreamResponse = (StopLivestreamResponse);
+
+export type StopEventLivestreamError = (unknown);

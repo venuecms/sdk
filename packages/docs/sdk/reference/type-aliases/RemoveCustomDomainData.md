@@ -8,11 +8,11 @@
 type RemoveCustomDomainData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1076](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1076)
+Defined in: [packages/sdk/src/client/types.gen.ts:1267](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1267)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1077](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1077) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1078](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1078) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1268](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1268) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1269](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1269) |

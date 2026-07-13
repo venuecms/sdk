@@ -21,7 +21,8 @@
   "scripts": {
     "build": "tsup",
     "build:docs": "typedoc",
-    "build:all": "pnpm build && pnpm build:docs"
+    "build:all": "pnpm build && pnpm build:docs",
+    "test": "vitest run"
   },
   "keywords": [
     "venue",
@@ -39,6 +40,7 @@
     "react": ">=19"
   },
   "dependencies": {
+    "@types/react": "^19.0.8",
     "@venuecms/sdk": "0.0.31",
     "clsx": "^2.1.1",
     "markdown-to-jsx": "^7.7.3",
@@ -49,7 +51,12 @@
     "tsup": "^8.3.5",
     "typedoc": "^0.27.1",
     "typedoc-plugin-markdown": "^4.3.3",
-    "typescript": "^5.5.0",
-    "@types/react": "^19.0.8"
+    "typescript": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "vitest": "^4.1.10"
   }
 }

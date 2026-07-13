@@ -16,7 +16,7 @@ function getProducts(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:288](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/main.ts#L288)
+Defined in: [packages/sdk/src/main.ts:288](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/main.ts#L288)
 
 Get a listing of products
 

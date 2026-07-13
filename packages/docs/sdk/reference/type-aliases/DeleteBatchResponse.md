@@ -8,10 +8,10 @@
 type DeleteBatchResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1202](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1202)
+Defined in: [packages/sdk/src/client/types.gen.ts:1393](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1393)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="deleted"></a> `deleted` | `boolean` | [packages/sdk/src/client/types.gen.ts:1203](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1203) |
+| <a id="deleted"></a> `deleted` | `boolean` | [packages/sdk/src/client/types.gen.ts:1394](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1394) |

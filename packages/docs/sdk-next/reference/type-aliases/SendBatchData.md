@@ -8,12 +8,12 @@
 type SendBatchData = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:791](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L791)
+Defined in: [packages/sdk/dist/index.d.mts:1213](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L1213)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [sdk/dist/index.d.mts:792](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L792) |
-| `path.batchId` | `string` | [sdk/dist/index.d.mts:793](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L793) |
-| `path.siteKey` | `string` | [sdk/dist/index.d.mts:794](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L794) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1214](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L1214) |
+| `path.batchId` | `string` | [packages/sdk/dist/index.d.mts:1215](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L1215) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1216](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L1216) |

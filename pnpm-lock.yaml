@@ -46,8 +46,8 @@ importers:
         specifier: ^19.0.8
         version: 19.0.8
       '@venuecms/sdk':
-        specifier: 0.0.31
-        version: 0.0.31
+        specifier: ^1.5.1
+        version: link:../sdk
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -117,15 +117,6 @@ packages:
     requiresBuild: true
     dependencies:
       tslib: 2.8.1
-    dev: true
-    optional: true
-
-  /@emnapi/runtime@1.7.1:
-    resolution: {integrity: sha512-PVtJr5CmLwYAU9PZDMITZoR5iAOShYREoR45EyyLrbntV50mdePTgUn4AmOw90Ifcj+x2kRjdzr1HP3RrNiHGA==}
-    requiresBuild: true
-    dependencies:
-      tslib: 2.8.1
-    dev: false
     optional: true
 
   /@emnapi/wasi-threads@1.2.2:
@@ -566,7 +557,7 @@ packages:
     cpu: [wasm32]
     requiresBuild: true
     dependencies:
-      '@emnapi/runtime': 1.7.1
+      '@emnapi/runtime': 1.11.1
     dev: false
     optional: true
 
@@ -1092,13 +1083,6 @@ packages:
 
   /@types/unist@3.0.3:
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
-
-  /@venuecms/sdk@0.0.31:
-    resolution: {integrity: sha512-cwYnmPA9Iy9jvatY/W+/NFHIsYxnccX4xFZWyvz0GLmNW1tzBnbHyrz6d/ILaxju91NAZkbmAw5uQwdha3Pxeg==}
-    dependencies:
-      '@hey-api/client-fetch': 0.5.7
-      zod: 3.24.1
-    dev: false
 
   /@vitest/expect@4.1.10:
     resolution: {integrity: sha512-YsCn+qAk1GWjQOWFEsEcL2gNQ0zmVmQu3T03qP6UyjhtmdtwtbuI+DASn/7iQB3HGTXkdBwGddzxPlmiql5vlA==}

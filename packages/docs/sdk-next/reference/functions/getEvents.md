@@ -16,7 +16,7 @@ function getEvents(params): Promise<
 } & object>
 ```
 
-Defined in: [sdk-next/src/lib/api/index.ts:37](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk-next/src/lib/api/index.ts#L37)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:37](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk-next/src/lib/api/index.ts#L37)
 
 Get a list of events (cached)
 
@@ -24,7 +24,7 @@ Get a list of events (cached)
 
 | Parameter | Type |
 | ------ | ------ |
-| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `featured`: `null` \| `boolean`; `gt`: `null` \| `number`; `legacyId`: `string`; `limit`: `null` \| `number`; `lt`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `tags`: `string` \| `string`[]; `upcoming`: `null` \| `boolean`; \} |
+| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `featured`: `null` \| `boolean`; `gt`: `null` \| `number`; `legacyId`: `string`; `limit`: `null` \| `number`; `lt`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `query`: `null` \| `string`; `rootOnly`: `null` \| `boolean`; `tags`: `string` \| `string`[]; `upcoming`: `null` \| `boolean`; \} |
 
 ## Returns
 

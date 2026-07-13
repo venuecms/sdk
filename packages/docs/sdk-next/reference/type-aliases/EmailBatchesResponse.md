@@ -8,11 +8,11 @@
 type EmailBatchesResponse = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:107](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L107)
+Defined in: [packages/sdk/dist/index.d.mts:146](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L146)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="batches"></a> `batches` | [`EmailBatch`](EmailBatch.md)[] | [sdk/dist/index.d.mts:108](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L108) |
-| <a id="pagination"></a> `pagination` | [`BatchPagination`](BatchPagination.md) | [sdk/dist/index.d.mts:109](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L109) |
+| <a id="batches"></a> `batches` | [`EmailBatch`](EmailBatch.md)[] | [packages/sdk/dist/index.d.mts:147](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L147) |
+| <a id="pagination"></a> `pagination` | [`BatchPagination`](BatchPagination.md) | [packages/sdk/dist/index.d.mts:148](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L148) |

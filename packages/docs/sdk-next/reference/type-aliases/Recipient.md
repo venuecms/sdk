@@ -8,13 +8,13 @@
 type Recipient = object;
 ```
 
-Defined in: [sdk/dist/index.d.mts:309](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L309)
+Defined in: [packages/sdk/dist/index.d.mts:478](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L478)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="email"></a> `email` | `string` | [sdk/dist/index.d.mts:310](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L310) |
-| <a id="metadata"></a> `metadata`? | `object` | [sdk/dist/index.d.mts:315](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L315) |
-| <a id="subject"></a> `subject`? | `string` | [sdk/dist/index.d.mts:311](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L311) |
-| <a id="variables"></a> `variables`? | `object` | [sdk/dist/index.d.mts:312](https://github.com/venuecms/sdk/blob/fccd7a6c5d53db66655878a682d412275fbffc69/packages/sdk/dist/index.d.mts#L312) |
+| <a id="email"></a> `email` | `string` | [packages/sdk/dist/index.d.mts:479](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L479) |
+| <a id="metadata"></a> `metadata`? | `object` | [packages/sdk/dist/index.d.mts:484](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L484) |
+| <a id="subject"></a> `subject`? | `string` | [packages/sdk/dist/index.d.mts:480](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L480) |
+| <a id="variables"></a> `variables`? | `object` | [packages/sdk/dist/index.d.mts:481](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L481) |

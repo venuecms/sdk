@@ -1,0 +1,39 @@
+[**@venuecms/sdk-next**](../Index.md)
+
+***
+
+# Function: getTags()
+
+```ts
+function getTags(params): Promise<
+  | {
+  data: undefined;
+  error: unknown;
+ }
+  | {
+  data: GetTagsResponse;
+  error: undefined;
+} & object>
+```
+
+Defined in: [packages/sdk/dist/index.d.mts:1776](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L1776)
+
+Get a listing of tags in use
+
+## Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `limit`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `parentId`: `string`; `query`: `string`; \} |
+
+## Returns
+
+`Promise`\<
+  \| \{
+  `data`: `undefined`;
+  `error`: `unknown`;
+ \}
+  \| \{
+  `data`: [`GetTagsResponse`](../type-aliases/GetTagsResponse.md);
+  `error`: `undefined`;
+ \} & `object`\>

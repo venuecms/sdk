@@ -8,14 +8,14 @@
 type MediaItemRole = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:270](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L270)
+Defined in: [packages/sdk/src/client/types.gen.ts:375](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L375)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="accessrole"></a> `accessRole` | `object` | [packages/sdk/src/client/types.gen.ts:273](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L273) |
-| `accessRole.id` | `string` | [packages/sdk/src/client/types.gen.ts:274](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L274) |
-| `accessRole.name` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:275](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L275) |
-| <a id="accessroleid"></a> `accessRoleId` | `string` | [packages/sdk/src/client/types.gen.ts:272](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L272) |
-| <a id="mediaitemid"></a> `mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:271](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L271) |
+| <a id="accessrole"></a> `accessRole` | `object` | [packages/sdk/src/client/types.gen.ts:378](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L378) |
+| `accessRole.id` | `string` | [packages/sdk/src/client/types.gen.ts:379](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L379) |
+| `accessRole.name` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:380](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L380) |
+| <a id="accessroleid"></a> `accessRoleId` | `string` | [packages/sdk/src/client/types.gen.ts:377](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L377) |
+| <a id="mediaitemid"></a> `mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:376](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L376) |

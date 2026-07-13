@@ -8,13 +8,13 @@
 type UpdateDraftBatchData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1181](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1181)
+Defined in: [packages/sdk/src/client/types.gen.ts:1372](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1372)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateDraftBatchInput`](UpdateDraftBatchInput.md) | [packages/sdk/src/client/types.gen.ts:1182](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1182) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1183](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1183) |
-| `path.batchId` | `string` | [packages/sdk/src/client/types.gen.ts:1184](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1184) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1185](https://github.com/venuecms/sdk/blob/cb09188b47f9ac25f1f81e21ef5a4b3057b36e8c/packages/sdk/src/client/types.gen.ts#L1185) |
+| <a id="body"></a> `body`? | [`UpdateDraftBatchInput`](UpdateDraftBatchInput.md) | [packages/sdk/src/client/types.gen.ts:1373](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1373) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1374](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1374) |
+| `path.batchId` | `string` | [packages/sdk/src/client/types.gen.ts:1375](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1375) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1376](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1376) |

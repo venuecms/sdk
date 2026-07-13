@@ -46,8 +46,8 @@ importers:
         specifier: ^19.0.8
         version: 19.0.8
       '@venuecms/sdk':
-        specifier: ^1.5.1
-        version: link:../sdk
+        specifier: ^1.6.1
+        version: 1.6.1
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1083,6 +1083,13 @@ packages:
 
   /@types/unist@3.0.3:
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
+
+  /@venuecms/sdk@1.6.1:
+    resolution: {integrity: sha512-WC8KCeERDljgx1cMSsxswnUs4DhY1TDG0N3dT98zvfA7WBwdwSPtVnhcRyUoL3innH2fKLpDT8cXXLjbTRTYuQ==}
+    dependencies:
+      '@hey-api/client-fetch': 0.5.7
+      zod: 3.24.1
+    dev: false
 
   /@vitest/expect@4.1.10:
     resolution: {integrity: sha512-YsCn+qAk1GWjQOWFEsEcL2gNQ0zmVmQu3T03qP6UyjhtmdtwtbuI+DASn/7iQB3HGTXkdBwGddzxPlmiql5vlA==}

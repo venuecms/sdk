@@ -8,10 +8,10 @@
 type UpdateMediaItemOrderResponse = object;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:670
+Defined in: [packages/sdk/dist/index.d.mts:685](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L685)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="itemids"></a> `itemIds` | `string`[] | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:671 |
+| <a id="itemids"></a> `itemIds` | `string`[] | [packages/sdk/dist/index.d.mts:686](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L686) |

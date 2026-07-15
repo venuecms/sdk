@@ -8,13 +8,13 @@
 type UpdateMediaItemData = object;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1255
+Defined in: [packages/sdk/dist/index.d.mts:1270](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1270)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateMediaItemInput`](UpdateMediaItemInput.md) | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1256 |
-| <a id="path"></a> `path` | `object` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1257 |
-| `path.mediaItemId` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1258 |
-| `path.siteKey` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1259 |
+| <a id="body"></a> `body`? | [`UpdateMediaItemInput`](UpdateMediaItemInput.md) | [packages/sdk/dist/index.d.mts:1271](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1271) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1272](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1272) |
+| `path.mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:1273](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1273) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1274](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1274) |

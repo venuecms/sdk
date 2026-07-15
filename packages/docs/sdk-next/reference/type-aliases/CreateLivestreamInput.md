@@ -8,11 +8,11 @@
 type CreateLivestreamInput = object;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:75
+Defined in: [packages/sdk/dist/index.d.mts:75](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L75)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="roleids"></a> `roleIds`? | `string`[] | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:77 |
-| <a id="title"></a> `title`? | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:76 |
+| <a id="roleids"></a> `roleIds`? | `string`[] | [packages/sdk/dist/index.d.mts:77](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L77) |
+| <a id="title"></a> `title`? | `string` | [packages/sdk/dist/index.d.mts:76](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L76) |

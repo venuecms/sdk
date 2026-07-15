@@ -16,7 +16,7 @@ function getTags(params): Promise<
 } & object>
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1776
+Defined in: [packages/sdk/dist/index.d.mts:1813](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1813)
 
 Get a listing of tags in use
 

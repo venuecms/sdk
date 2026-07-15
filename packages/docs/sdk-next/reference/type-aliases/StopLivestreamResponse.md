@@ -8,11 +8,11 @@
 type StopLivestreamResponse = object;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:594
+Defined in: [packages/sdk/dist/index.d.mts:598](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L598)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="livestatus"></a> `liveStatus` | `"idle"` \| `"active"` \| `"disabled"` \| `"completed"` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:596 |
-| <a id="mediaitem"></a> `mediaItem`? | `unknown` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:595 |
+| <a id="livestatus"></a> `liveStatus` | `"idle"` \| `"active"` \| `"disabled"` \| `"completed"` | [packages/sdk/dist/index.d.mts:600](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L600) |
+| <a id="mediaitem"></a> `mediaItem`? | `unknown` | [packages/sdk/dist/index.d.mts:599](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L599) |

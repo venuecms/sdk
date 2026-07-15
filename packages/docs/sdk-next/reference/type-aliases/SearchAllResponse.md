@@ -8,4 +8,4 @@
 type SearchAllResponse = SearchAllSiteResults;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1012
+Defined in: [packages/sdk/dist/index.d.mts:1027](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1027)

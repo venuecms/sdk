@@ -8,16 +8,16 @@
 type TicketOnEvent = object;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:632
+Defined in: [packages/sdk/dist/index.d.mts:647](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L647)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="currency"></a> `currency`? | `string` \| `null` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:636 |
-| <a id="externallink"></a> `externalLink`? | `string` \| `null` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:635 |
-| <a id="localizedcontent"></a> `localizedContent`? | [`LocalizedContent`](LocalizedContent.md)[] | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:638 |
-| <a id="name"></a> `name` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:633 |
-| <a id="order"></a> `order`? | `number` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:639 |
-| <a id="price"></a> `price` | `number` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:634 |
-| <a id="roles"></a> `roles` | `unknown`[] | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:637 |
+| <a id="currency"></a> `currency`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:651](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L651) |
+| <a id="externallink"></a> `externalLink`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:650](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L650) |
+| <a id="localizedcontent"></a> `localizedContent`? | [`LocalizedContent`](LocalizedContent.md)[] | [packages/sdk/dist/index.d.mts:653](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L653) |
+| <a id="name"></a> `name` | `string` | [packages/sdk/dist/index.d.mts:648](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L648) |
+| <a id="order"></a> `order`? | `number` | [packages/sdk/dist/index.d.mts:654](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L654) |
+| <a id="price"></a> `price` | `number` | [packages/sdk/dist/index.d.mts:649](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L649) |
+| <a id="roles"></a> `roles` | `unknown`[] | [packages/sdk/dist/index.d.mts:652](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L652) |

@@ -8,15 +8,15 @@
 type DnsRecord = object;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:90
+Defined in: [packages/sdk/dist/index.d.mts:90](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L90)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="name"></a> `name` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:92 |
-| <a id="priority"></a> `priority`? | `number` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:95 |
-| <a id="status"></a> `status`? | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:96 |
-| <a id="ttl"></a> `ttl`? | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:94 |
-| <a id="type"></a> `type` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:91 |
-| <a id="value"></a> `value` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:93 |
+| <a id="name"></a> `name` | `string` | [packages/sdk/dist/index.d.mts:92](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L92) |
+| <a id="priority"></a> `priority`? | `number` | [packages/sdk/dist/index.d.mts:95](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L95) |
+| <a id="status"></a> `status`? | `string` | [packages/sdk/dist/index.d.mts:96](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L96) |
+| <a id="ttl"></a> `ttl`? | `string` | [packages/sdk/dist/index.d.mts:94](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L94) |
+| <a id="type"></a> `type` | `string` | [packages/sdk/dist/index.d.mts:91](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L91) |
+| <a id="value"></a> `value` | `string` | [packages/sdk/dist/index.d.mts:93](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L93) |

@@ -8,14 +8,14 @@
 type MediaCollectionRole = object;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:302
+Defined in: [packages/sdk/dist/index.d.mts:306](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L306)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="accessrole"></a> `accessRole` | `object` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:305 |
-| `accessRole.id` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:306 |
-| `accessRole.name` | `string` \| `null` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:307 |
-| <a id="accessroleid"></a> `accessRoleId` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:304 |
-| <a id="mediacollectionid"></a> `mediaCollectionId` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:303 |
+| <a id="accessrole"></a> `accessRole` | `object` | [packages/sdk/dist/index.d.mts:309](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L309) |
+| `accessRole.id` | `string` | [packages/sdk/dist/index.d.mts:310](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L310) |
+| `accessRole.name` | `string` \| `null` | [packages/sdk/dist/index.d.mts:311](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L311) |
+| <a id="accessroleid"></a> `accessRoleId` | `string` | [packages/sdk/dist/index.d.mts:308](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L308) |
+| <a id="mediacollectionid"></a> `mediaCollectionId` | `string` | [packages/sdk/dist/index.d.mts:307](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L307) |

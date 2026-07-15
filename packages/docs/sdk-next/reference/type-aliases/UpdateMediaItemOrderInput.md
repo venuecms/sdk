@@ -8,13 +8,13 @@
 type UpdateMediaItemOrderInput = object;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:664
+Defined in: [packages/sdk/dist/index.d.mts:679](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L679)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="entityid"></a> `entityId` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:666 |
-| <a id="entitytype"></a> `entityType` | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:665 |
-| <a id="mediaitemid"></a> `mediaItemId` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:667 |
-| <a id="upperneighbor"></a> `upperNeighbor` | `string` \| `null` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:668 |
+| <a id="entityid"></a> `entityId` | `string` | [packages/sdk/dist/index.d.mts:681](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L681) |
+| <a id="entitytype"></a> `entityType` | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | [packages/sdk/dist/index.d.mts:680](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L680) |
+| <a id="mediaitemid"></a> `mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:682](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L682) |
+| <a id="upperneighbor"></a> `upperNeighbor` | `string` \| `null` | [packages/sdk/dist/index.d.mts:683](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L683) |

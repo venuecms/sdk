@@ -8,13 +8,13 @@
 type TagListItem = object;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:617
+Defined in: [packages/sdk/dist/index.d.mts:632](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L632)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:618 |
-| <a id="parenttags"></a> `parentTags`? | `object`[] | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:621 |
-| <a id="siteid"></a> `siteId` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:619 |
-| <a id="title"></a> `title` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:620 |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:633](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L633) |
+| <a id="parenttags"></a> `parentTags`? | `object`[] | [packages/sdk/dist/index.d.mts:636](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L636) |
+| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:634](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L634) |
+| <a id="title"></a> `title` | `string` | [packages/sdk/dist/index.d.mts:635](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L635) |

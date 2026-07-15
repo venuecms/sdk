@@ -8,16 +8,16 @@
 type RemoveItemFromMediaCollectionData = object;
 ```
 
-Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1338
+Defined in: [packages/sdk/dist/index.d.mts:1353](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1353)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1339 |
-| `path.collectionId` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1340 |
-| `path.mediaItemId` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1341 |
-| `path.siteKey` | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1342 |
-| <a id="query"></a> `query`? | `object` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1344 |
-| `query.ensureEntityId`? | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1345 |
-| `query.ensureEntityType`? | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:1346 |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1354](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1354) |
+| `path.collectionId` | `string` | [packages/sdk/dist/index.d.mts:1355](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1355) |
+| `path.mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:1356](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1356) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1357](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1357) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/dist/index.d.mts:1359](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1359) |
+| `query.ensureEntityId`? | `string` | [packages/sdk/dist/index.d.mts:1360](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1360) |
+| `query.ensureEntityType`? | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | [packages/sdk/dist/index.d.mts:1361](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1361) |

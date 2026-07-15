@@ -8,14 +8,14 @@
 type UpdatedMediaItem = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:711](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L711)
+Defined in: [packages/sdk/src/client/types.gen.ts:730](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L730)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="alttext"></a> `altText`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:716](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L716) |
-| <a id="caption"></a> `caption`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:714](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L714) |
-| <a id="credit"></a> `credit`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:715](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L715) |
-| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:712](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L712) |
-| <a id="title"></a> `title`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:713](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L713) |
+| <a id="alttext"></a> `altText`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:735](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L735) |
+| <a id="caption"></a> `caption`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:733](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L733) |
+| <a id="credit"></a> `credit`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:734](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L734) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:731](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L731) |
+| <a id="title"></a> `title`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:732](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L732) |

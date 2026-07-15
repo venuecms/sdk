@@ -8,12 +8,12 @@
 type GetProductData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1092](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1092)
+Defined in: [packages/sdk/src/client/types.gen.ts:1111](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1111)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1093](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1093) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1094](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1094) |
-| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:1095](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1095) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1112](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1112) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1113](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1113) |
+| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:1114](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1114) |

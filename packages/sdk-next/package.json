@@ -1,6 +1,6 @@
 {
   "name": "@venuecms/sdk-next",
-  "version": "1.6.1",
+  "version": "1.7.1",
   "author": "Scott Cazan",
   "description": "",
   "types": "dist/index.d.ts",
@@ -36,7 +36,7 @@
     "dist/"
   ],
   "peerDependencies": {
-    "@venuecms/sdk": "^1.6.1",
+    "@venuecms/sdk": "^1.7.1",
     "next": ">=14",
     "react": ">=19"
   },

@@ -232,6 +232,10 @@ export type Event = {
     custom?: Array<CustomSchemaData>;
     localizedContent: Array<LocalizedContent>;
     relations?: EventRelations;
+    jsonLd?: {
+        [key: string]: unknown;
+    } | null;
+    ogImageUrl?: (string) | null;
 };
 
 export type publishState = 'DRAFT' | 'REQUEST' | 'PUBLISHED' | 'CANCELLED';
@@ -399,7 +403,7 @@ export type Page = {
     featured: boolean;
     featuredExpiration?: (string | unknown);
     date?: (string | unknown);
-    type: 'CONTENT' | 'NEWS' | 'LINK';
+    type: 'CONTENT' | 'NEWS' | 'NEWSLIST' | 'LINK';
     linkUrl?: (string) | null;
     openInNewTab: boolean;
     parentId?: (string) | null;
@@ -422,7 +426,7 @@ export type Page = {
         featured: boolean;
         featuredExpiration?: (string) | null;
         date?: (string) | null;
-        type: 'CONTENT' | 'NEWS' | 'LINK';
+        type: 'CONTENT' | 'NEWS' | 'NEWSLIST' | 'LINK';
         linkUrl?: (string) | null;
         openInNewTab: boolean;
         imageId?: (string) | null;
@@ -450,7 +454,7 @@ export type Page = {
     }>;
 };
 
-export type type = 'CONTENT' | 'NEWS' | 'LINK';
+export type type = 'CONTENT' | 'NEWS' | 'NEWSLIST' | 'LINK';
 
 export type recordType = 'SOURCE' | 'PUBLISHED' | 'REVISION';
 
@@ -662,6 +666,21 @@ export type StopLivestreamResponse = {
 };
 
 export type liveStatus2 = 'idle' | 'active' | 'disabled' | 'completed';
+
+export type StripeKeyStatus = {
+    hasKey: boolean;
+    keyType: ('live' | 'test') | null;
+};
+
+export type keyType = 'live' | 'test';
+
+export type StripeKeySuccess = {
+    success: boolean;
+};
+
+export type StripeKeyUpdateInput = {
+    stripeApiKey: string;
+};
 
 export type Tag = {
     tagId: string;
@@ -1680,6 +1699,37 @@ export type AtprotoOauthStatusData = {
 export type AtprotoOauthStatusResponse2 = (AtprotoOauthStatusResponse);
 
 export type AtprotoOauthStatusError = (unknown);
+
+export type GetStripeKeyStatusData = {
+    path: {
+        siteKey: string;
+    };
+};
+
+export type GetStripeKeyStatusResponse = (StripeKeyStatus);
+
+export type GetStripeKeyStatusError = (unknown);
+
+export type UpdateStripeKeyData = {
+    body?: StripeKeyUpdateInput;
+    path: {
+        siteKey: string;
+    };
+};
+
+export type UpdateStripeKeyResponse = (StripeKeySuccess);
+
+export type UpdateStripeKeyError = (unknown);
+
+export type RemoveStripeKeyData = {
+    path: {
+        siteKey: string;
+    };
+};
+
+export type RemoveStripeKeyResponse = (StripeKeySuccess);
+
+export type RemoveStripeKeyError = (unknown);
 
 export type CreateEventLivestreamData = {
     body?: CreateLivestreamInput;

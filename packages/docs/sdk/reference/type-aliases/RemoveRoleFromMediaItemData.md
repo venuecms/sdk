@@ -8,13 +8,13 @@
 type RemoveRoleFromMediaItemData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1455](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1455)
+Defined in: [packages/sdk/src/client/types.gen.ts:1474](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1474)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1456](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1456) |
-| `path.mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:1457](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1457) |
-| `path.roleId` | `string` | [packages/sdk/src/client/types.gen.ts:1458](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1458) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1459](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1459) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1475](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1475) |
+| `path.mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:1476](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1476) |
+| `path.roleId` | `string` | [packages/sdk/src/client/types.gen.ts:1477](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1477) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1478](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1478) |

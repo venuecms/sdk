@@ -8,4 +8,4 @@
 type liveStatus2 = "idle" | "active" | "disabled" | "completed";
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:664](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L664)
+Defined in: [packages/sdk/src/client/types.gen.ts:668](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L668)

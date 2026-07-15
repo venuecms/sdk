@@ -8,11 +8,11 @@
 type GetNewsResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:906](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L906)
+Defined in: [packages/sdk/src/client/types.gen.ts:925](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L925)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count` | `number` | [packages/sdk/src/client/types.gen.ts:912](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L912) |
-| <a id="records"></a> `records` | [`Page`](Page.md) & `object`[] | [packages/sdk/src/client/types.gen.ts:907](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L907) |
+| <a id="count"></a> `count` | `number` | [packages/sdk/src/client/types.gen.ts:931](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L931) |
+| <a id="records"></a> `records` | [`Page`](Page.md) & `object`[] | [packages/sdk/src/client/types.gen.ts:926](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L926) |

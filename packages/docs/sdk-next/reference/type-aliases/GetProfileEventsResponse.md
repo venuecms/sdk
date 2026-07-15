@@ -8,11 +8,11 @@
 type GetProfileEventsResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:922](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L922)
+Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:922
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count`? | `number` | [packages/sdk/dist/index.d.mts:924](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L924) |
-| <a id="records"></a> `records` | [`Event`](Event.md)[] | [packages/sdk/dist/index.d.mts:923](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L923) |
+| <a id="count"></a> `count`? | `number` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:924 |
+| <a id="records"></a> `records` | [`Event`](Event.md)[] | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:923 |

@@ -16,7 +16,7 @@ function getProfiles(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:69](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk-next/src/lib/api/index.ts#L69)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:69](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk-next/src/lib/api/index.ts#L69)
 
 Get a list of profiles (cached)
 

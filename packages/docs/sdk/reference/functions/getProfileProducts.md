@@ -16,7 +16,7 @@ function getProfileProducts(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:273](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/main.ts#L273)
+Defined in: [packages/sdk/src/main.ts:273](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/main.ts#L273)
 
 Get a listing of products for a profile
 

@@ -8,11 +8,11 @@
 type StopLivestreamResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:659](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L659)
+Defined in: [packages/sdk/src/client/types.gen.ts:663](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L663)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="livestatus"></a> `liveStatus` | `"idle"` \| `"active"` \| `"disabled"` \| `"completed"` | [packages/sdk/src/client/types.gen.ts:661](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L661) |
-| <a id="mediaitem"></a> `mediaItem`? | `unknown` | [packages/sdk/src/client/types.gen.ts:660](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L660) |
+| <a id="livestatus"></a> `liveStatus` | `"idle"` \| `"active"` \| `"disabled"` \| `"completed"` | [packages/sdk/src/client/types.gen.ts:665](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L665) |
+| <a id="mediaitem"></a> `mediaItem`? | `unknown` | [packages/sdk/src/client/types.gen.ts:664](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L664) |

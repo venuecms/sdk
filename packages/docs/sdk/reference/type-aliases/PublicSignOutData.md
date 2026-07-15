@@ -8,11 +8,11 @@
 type PublicSignOutData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:789](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L789)
+Defined in: [packages/sdk/src/client/types.gen.ts:808](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L808)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:790](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L790) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:791](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L791) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:809](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L809) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:810](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L810) |

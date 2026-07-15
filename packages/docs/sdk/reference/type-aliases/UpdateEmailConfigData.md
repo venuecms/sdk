@@ -8,12 +8,12 @@
 type UpdateEmailConfigData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1235](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1235)
+Defined in: [packages/sdk/src/client/types.gen.ts:1254](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1254)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`EmailConfigInput`](EmailConfigInput.md) | [packages/sdk/src/client/types.gen.ts:1236](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1236) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1237](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1237) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1238](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/src/client/types.gen.ts#L1238) |
+| <a id="body"></a> `body`? | [`EmailConfigInput`](EmailConfigInput.md) | [packages/sdk/src/client/types.gen.ts:1255](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1255) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1256](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1256) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1257](https://github.com/venuecms/sdk/blob/b577ca42e1528e0087fd3a3363af76781ba1fd0a/packages/sdk/src/client/types.gen.ts#L1257) |

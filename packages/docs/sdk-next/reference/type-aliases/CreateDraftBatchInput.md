@@ -8,13 +8,13 @@
 type CreateDraftBatchInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:69](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L69)
+Defined in: node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:69
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="name"></a> `name`? | `string` | [packages/sdk/dist/index.d.mts:70](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L70) |
-| <a id="recipients"></a> `recipients` | [`Recipient`](Recipient.md)[] | [packages/sdk/dist/index.d.mts:73](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L73) |
-| <a id="subject"></a> `subject`? | `string` | [packages/sdk/dist/index.d.mts:72](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L72) |
-| <a id="templatekey"></a> `templateKey`? | `string` | [packages/sdk/dist/index.d.mts:71](https://github.com/venuecms/sdk/blob/d7f812fa56e163f7f856b97d8ff40b967233ef00/packages/sdk/dist/index.d.mts#L71) |
+| <a id="name"></a> `name`? | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:70 |
+| <a id="recipients"></a> `recipients` | [`Recipient`](Recipient.md)[] | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:73 |
+| <a id="subject"></a> `subject`? | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:72 |
+| <a id="templatekey"></a> `templateKey`? | `string` | node\_modules/.pnpm/@venuecms+sdk@1.6.1/node\_modules/@venuecms/sdk/dist/index.d.mts:71 |

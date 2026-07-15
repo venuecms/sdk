@@ -11,16 +11,26 @@ const ASPECTS = {
   video: "aspect-video",
 };
 
+type CreditPosition = "overlay" | "below";
+
 export const VenueImage = ({
   className,
   image,
   aspect,
   props,
+  creditPosition = "overlay",
+  creditWrapperClassName,
+  creditClassName,
+  hideCredits = false,
 }: {
   className?: string;
   image?: Partial<MediaItem>;
   aspect?: keyof typeof ASPECTS;
   props?: object;
+  creditPosition?: CreditPosition;
+  creditWrapperClassName?: string;
+  creditClassName?: string;
+  hideCredits?: boolean;
 }) => {
   if (image) {
     const imageUrl = getPublicImage(image);
@@ -30,7 +40,13 @@ export const VenueImage = ({
       const { width, height } = metadata ?? {};
 
       return (
-        <CreditWrapper credit={credit}>
+        <CreditWrapper
+          credit={credit}
+          position={creditPosition}
+          wrapperClassName={creditWrapperClassName}
+          creditClassName={creditClassName}
+          hideCredits={hideCredits}
+        >
           {aspect ? (
             <ImageWrapper aspect={aspect}>
               <ResponsiveImage
@@ -68,20 +84,47 @@ export const VenueImage = ({
 const CreditWrapper = ({
   children,
   credit,
+  position = "overlay",
+  wrapperClassName,
+  creditClassName,
+  hideCredits = false,
 }: {
   children?: ReactNode;
   credit?: string | null;
-}) =>
-  credit ? (
-    <div className="relative">
+  position?: CreditPosition;
+  wrapperClassName?: string;
+  creditClassName?: string;
+  hideCredits?: boolean;
+}) => {
+  if (!credit || hideCredits) {
+    return children;
+  }
+
+  if (position === "below") {
+    return (
+      <div className={cn("flex flex-col gap-0", wrapperClassName)}>
+        {children}
+        <div className={cn("text-end text-xs text-muted", creditClassName)}>
+          {credit}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className={cn("relative", wrapperClassName)}>
       {children}
-      <div className="absolute bottom--1 right-0 text-end text-xs text-muted opacity-60">
+      <div
+        className={cn(
+          "absolute bottom--1 right-0 text-end text-xs text-muted opacity-60",
+          creditClassName,
+        )}
+      >
         {credit}
       </div>
     </div>
-  ) : (
-    children
   );
+};
 
 // wrapper to contain the ResponsiveImage
 const ImageWrapper = ({

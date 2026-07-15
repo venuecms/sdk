@@ -8,7 +8,7 @@
 function getLocalizedContent(localizedContent, locale): object
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1519](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1519)
+Defined in: [packages/sdk/dist/index.d.mts:1519](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1519)
 
 This function will properly resolve content blocks that are localized.
 It takes in the array of localized content and returns the proper content
@@ -27,8 +27,8 @@ to be used in your page.
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="content"></a> `content` | [`LocalizedContent`](../type-aliases/LocalizedContent.md) | [packages/sdk/dist/index.d.mts:1520](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1520) |
-| <a id="currentlocale"></a> `currentLocale` | `string` | [packages/sdk/dist/index.d.mts:1521](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1521) |
+| <a id="content"></a> `content` | [`LocalizedContent`](../type-aliases/LocalizedContent.md) | [packages/sdk/dist/index.d.mts:1520](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1520) |
+| <a id="currentlocale"></a> `currentLocale` | `string` | [packages/sdk/dist/index.d.mts:1521](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1521) |
 
 ## Example
 

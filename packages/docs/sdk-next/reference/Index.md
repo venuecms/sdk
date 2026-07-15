@@ -39,7 +39,7 @@
 | ------ | ------ |
 | [getProfile](functions/getProfile.md) | Get a profile (cached) |
 | [getProfileEvents](functions/getProfileEvents.md) | Get a listing of events for a profile (cached) |
-| [getProfileProducts](functions/getProfileProducts.md) | Get a listing of products for a profile |
+| [getProfileProducts](functions/getProfileProducts.md) | Get a listing of products for a profile (cached) |
 | [getProfiles](functions/getProfiles.md) | Get a list of profiles (cached) |
 
 ## Products
@@ -368,8 +368,8 @@
 
 | Function | Description |
 | ------ | ------ |
-| [getNews](functions/getNews.md) | Get a list of all news items |
-| [getNewsArticle](functions/getNewsArticle.md) | Get a single news item using the slug |
+| [getNews](functions/getNews.md) | Get a list of all news items (cached) |
+| [getNewsArticle](functions/getNewsArticle.md) | Get a single news item using the slug (cached) |
 | [getNewsDates](functions/getNewsDates.md) | - |
 
 ## Tags

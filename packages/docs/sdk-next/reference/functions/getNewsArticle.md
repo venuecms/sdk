@@ -16,9 +16,9 @@ function getNewsArticle(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1699](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L1699)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:83](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk-next/src/lib/api/index.ts#L83)
 
-Get a single news item using the slug
+Get a single news item using the slug (cached)
 
 ## Parameters
 

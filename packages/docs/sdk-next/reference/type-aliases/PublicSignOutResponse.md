@@ -8,10 +8,10 @@
 type PublicSignOutResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:729](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L729)
+Defined in: [packages/sdk/dist/index.d.mts:729](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L729)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="success"></a> `success` | `boolean` | [packages/sdk/dist/index.d.mts:730](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L730) |
+| <a id="success"></a> `success` | `boolean` | [packages/sdk/dist/index.d.mts:730](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L730) |

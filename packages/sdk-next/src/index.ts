@@ -5,6 +5,14 @@ export {
 
   // Domain lookup (already has custom caching in SDK)
   getSiteKeyByDomain,
+  listSiteDomains,
+
+  // Date listings (pass-through)
+  getEventDates,
+  getNewsDates,
+
+  // Tags (pass-through)
+  getTags,
 
   // Utilities
   getLocalizedContent,
@@ -20,9 +28,12 @@ export {
   getEvent,
   getPages,
   getPage,
+  getNews,
+  getNewsArticle,
   getProfiles,
   getProfile,
   getProfileEvents,
+  getProfileProducts,
   getProducts,
   getProduct,
   searchSite,

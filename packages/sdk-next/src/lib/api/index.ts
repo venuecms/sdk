@@ -5,9 +5,12 @@ import {
   getEvent as _getEvent,
   getPages as _getPages,
   getPage as _getPage,
+  getNews as _getNews,
+  getNewsArticle as _getNewsArticle,
   getProfiles as _getProfiles,
   getProfile as _getProfile,
   getProfileEvents as _getProfileEvents,
+  getProfileProducts as _getProfileProducts,
   getProducts as _getProducts,
   getProduct as _getProduct,
   searchSite as _searchSite,
@@ -15,9 +18,12 @@ import {
   type GetEventData,
   type GetPagesData,
   type GetPageData,
+  type GetNewsData,
+  type GetNewsArticleData,
   type GetProfilesData,
   type GetProfileData,
   type GetProfileEventsData,
+  type GetProfileProductsData,
   type GetProductsData,
   type GetProductData,
   type SearchSiteData,
@@ -62,6 +68,23 @@ export const getPage = cache(
 );
 
 /**
+ * Get a list of all news items (cached)
+ * @category News
+ */
+export const getNews = cache(
+  (params: GetNewsData["query"] = {}) => _getNews(params)
+);
+
+/**
+ * Get a single news item using the slug (cached)
+ * @category News
+ */
+export const getNewsArticle = cache(
+  (params: Omit<GetNewsArticleData["path"], "siteKey">) =>
+    _getNewsArticle(params)
+);
+
+/**
  * Get a list of profiles (cached)
  * @category Profiles
  */
@@ -86,6 +109,17 @@ export const getProfileEvents = cache(
     params: Omit<GetProfileEventsData["path"], "siteKey"> &
       GetProfileEventsData["query"]
   ) => _getProfileEvents(params)
+);
+
+/**
+ * Get a listing of products for a profile (cached)
+ * @category Profiles
+ */
+export const getProfileProducts = cache(
+  (
+    params: Omit<GetProfileProductsData["path"], "siteKey"> &
+      GetProfileProductsData["query"]
+  ) => _getProfileProducts(params)
 );
 
 /**

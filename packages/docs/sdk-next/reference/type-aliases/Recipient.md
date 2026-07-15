@@ -8,13 +8,13 @@
 type Recipient = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:482](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L482)
+Defined in: [packages/sdk/dist/index.d.mts:482](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L482)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="email"></a> `email` | `string` | [packages/sdk/dist/index.d.mts:483](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L483) |
-| <a id="metadata"></a> `metadata`? | `object` | [packages/sdk/dist/index.d.mts:488](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L488) |
-| <a id="subject"></a> `subject`? | `string` | [packages/sdk/dist/index.d.mts:484](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L484) |
-| <a id="variables"></a> `variables`? | `object` | [packages/sdk/dist/index.d.mts:485](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L485) |
+| <a id="email"></a> `email` | `string` | [packages/sdk/dist/index.d.mts:483](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L483) |
+| <a id="metadata"></a> `metadata`? | `object` | [packages/sdk/dist/index.d.mts:488](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L488) |
+| <a id="subject"></a> `subject`? | `string` | [packages/sdk/dist/index.d.mts:484](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L484) |
+| <a id="variables"></a> `variables`? | `object` | [packages/sdk/dist/index.d.mts:485](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L485) |

@@ -16,7 +16,7 @@ function getProducts(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:96](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk-next/src/lib/api/index.ts#L96)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:130](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk-next/src/lib/api/index.ts#L130)
 
 Get a listing of products (cached)
 

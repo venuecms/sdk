@@ -16,7 +16,7 @@ function searchSite(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:112](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk-next/src/lib/api/index.ts#L112)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:146](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk-next/src/lib/api/index.ts#L146)
 
 Search a site for all content types (cached)
 

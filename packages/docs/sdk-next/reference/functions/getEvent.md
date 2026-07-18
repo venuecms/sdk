@@ -16,7 +16,7 @@ function getEvent(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:45](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk-next/src/lib/api/index.ts#L45)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:51](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk-next/src/lib/api/index.ts#L51)
 
 Retrieve data for a single event (cached)
 

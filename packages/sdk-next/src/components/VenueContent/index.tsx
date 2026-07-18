@@ -388,10 +388,12 @@ export const VenueContent = ({
   content,
   contentStyles,
   className,
+  components,
 }: {
   content: LocalizedContent;
   contentStyles?: ContentStyles;
   className?: string;
+  components?: NodeHandlers;
 }) => {
   const { contentJSON } = content;
 
@@ -400,7 +402,12 @@ export const VenueContent = ({
       <div className={className}>
         <EmbedResize />
         {(contentJSON.content as Array<RenderNode>).map((node, i) => (
-          <ContentRender key={i} classes={contentStyles} node={node} />
+          <ContentRender
+            key={i}
+            classes={contentStyles}
+            node={node}
+            handlers={components}
+          />
         ))}
       </div>
     );

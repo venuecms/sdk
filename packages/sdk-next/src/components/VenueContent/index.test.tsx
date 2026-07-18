@@ -1,11 +1,14 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 
-import { VenueContent } from "./index";
+import { VenueContent, type NodeHandlers } from "./index";
 
-const render = (nodes: unknown[]) =>
+const render = (nodes: unknown[], components?: NodeHandlers) =>
   renderToStaticMarkup(
-    <VenueContent content={{ contentJSON: { content: nodes } } as never} />,
+    <VenueContent
+      content={{ contentJSON: { content: nodes } } as never}
+      components={components}
+    />,
   );
 
 describe("VenueContent migrated handlers", () => {
@@ -48,6 +51,46 @@ describe("VenueContent migrated handlers", () => {
     expect(html).toContain("A description");
     expect(html).toContain("example.com");
     expect(html).toContain('src="https://example.com/og.png"');
+  });
+
+  it("renders passed-in components in place of default handlers", () => {
+    const components: NodeHandlers = {
+      paragraph: (props) => <p className="custom-paragraph">{props.children}</p>,
+    };
+
+    const html = render(
+      [{ type: "paragraph", content: [{ type: "text", text: "hello" }] }],
+      components,
+    );
+
+    expect(html).toContain("custom-paragraph");
+    expect(html).toContain("hello");
+  });
+
+  it("adds handlers for custom node types via components", () => {
+    const components: NodeHandlers = {
+      callout: (props) => (
+        <aside className="callout">{props.node.attrs?.message}</aside>
+      ),
+    };
+
+    const html = render(
+      [{ type: "callout", attrs: { message: "heads up" } }],
+      components,
+    );
+
+    expect(html).toContain("callout");
+    expect(html).toContain("heads up");
+  });
+
+  it("keeps default handlers when no components are passed", () => {
+    const html = render([
+      { type: "paragraph", content: [{ type: "text", text: "default" }] },
+    ]);
+
+    expect(html).toContain("<p");
+    expect(html).not.toContain("custom-paragraph");
+    expect(html).toContain("default");
   });
 
   it("honors iframely aspectRatio on iframe embeds", () => {

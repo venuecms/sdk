@@ -8,13 +8,13 @@
 type CreateDraftBatchInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:69](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L69)
+Defined in: [packages/sdk/dist/index.d.mts:69](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L69)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="name"></a> `name`? | `string` | [packages/sdk/dist/index.d.mts:70](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L70) |
-| <a id="recipients"></a> `recipients` | [`Recipient`](Recipient.md)[] | [packages/sdk/dist/index.d.mts:73](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L73) |
-| <a id="subject"></a> `subject`? | `string` | [packages/sdk/dist/index.d.mts:72](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L72) |
-| <a id="templatekey"></a> `templateKey`? | `string` | [packages/sdk/dist/index.d.mts:71](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/dist/index.d.mts#L71) |
+| <a id="name"></a> `name`? | `string` | [packages/sdk/dist/index.d.mts:70](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L70) |
+| <a id="recipients"></a> `recipients` | [`Recipient`](Recipient.md)[] | [packages/sdk/dist/index.d.mts:73](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L73) |
+| <a id="subject"></a> `subject`? | `string` | [packages/sdk/dist/index.d.mts:72](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L72) |
+| <a id="templatekey"></a> `templateKey`? | `string` | [packages/sdk/dist/index.d.mts:71](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L71) |

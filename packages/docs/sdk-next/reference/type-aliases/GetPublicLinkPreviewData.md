@@ -8,13 +8,13 @@
 type GetPublicLinkPreviewData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1047](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1047)
+Defined in: [packages/sdk/dist/index.d.mts:1047](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1047)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1048](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1048) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1049](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1049) |
-| <a id="query"></a> `query` | `object` | [packages/sdk/dist/index.d.mts:1051](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1051) |
-| `query.url` | `string` | [packages/sdk/dist/index.d.mts:1052](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1052) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1048](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1048) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1049](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1049) |
+| <a id="query"></a> `query` | `object` | [packages/sdk/dist/index.d.mts:1051](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1051) |
+| `query.url` | `string` | [packages/sdk/dist/index.d.mts:1052](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1052) |

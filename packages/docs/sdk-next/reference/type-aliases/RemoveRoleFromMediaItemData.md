@@ -8,13 +8,13 @@
 type RemoveRoleFromMediaItemData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1261](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1261)
+Defined in: [packages/sdk/dist/index.d.mts:1261](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1261)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1262](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1262) |
-| `path.mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:1263](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1263) |
-| `path.roleId` | `string` | [packages/sdk/dist/index.d.mts:1264](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1264) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1265](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L1265) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1262](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1262) |
+| `path.mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:1263](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1263) |
+| `path.roleId` | `string` | [packages/sdk/dist/index.d.mts:1264](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1264) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1265](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1265) |

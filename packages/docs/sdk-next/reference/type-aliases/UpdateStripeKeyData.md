@@ -8,12 +8,12 @@
 type UpdateStripeKeyData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1440](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1440)
+Defined in: [packages/sdk/dist/index.d.mts:1440](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1440)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`StripeKeyUpdateInput`](StripeKeyUpdateInput.md) | [packages/sdk/dist/index.d.mts:1441](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1441) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1442](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1442) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1443](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1443) |
+| <a id="body"></a> `body`? | [`StripeKeyUpdateInput`](StripeKeyUpdateInput.md) | [packages/sdk/dist/index.d.mts:1441](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1441) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1442](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1442) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1443](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1443) |

@@ -8,13 +8,13 @@
 type UpdateDraftBatchInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:663](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L663)
+Defined in: [packages/sdk/dist/index.d.mts:663](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L663)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="name"></a> `name`? | `string` | [packages/sdk/dist/index.d.mts:664](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L664) |
-| <a id="recipients"></a> `recipients`? | [`Recipient`](Recipient.md)[] | [packages/sdk/dist/index.d.mts:667](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L667) |
-| <a id="subject"></a> `subject`? | `string` | [packages/sdk/dist/index.d.mts:666](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L666) |
-| <a id="templatekey"></a> `templateKey`? | `string` | [packages/sdk/dist/index.d.mts:665](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L665) |
+| <a id="name"></a> `name`? | `string` | [packages/sdk/dist/index.d.mts:664](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L664) |
+| <a id="recipients"></a> `recipients`? | [`Recipient`](Recipient.md)[] | [packages/sdk/dist/index.d.mts:667](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L667) |
+| <a id="subject"></a> `subject`? | `string` | [packages/sdk/dist/index.d.mts:666](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L666) |
+| <a id="templatekey"></a> `templateKey`? | `string` | [packages/sdk/dist/index.d.mts:665](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L665) |

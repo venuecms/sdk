@@ -8,15 +8,15 @@
 type DnsRecord = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:90](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L90)
+Defined in: [packages/sdk/dist/index.d.mts:90](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L90)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="name"></a> `name` | `string` | [packages/sdk/dist/index.d.mts:92](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L92) |
-| <a id="priority"></a> `priority`? | `number` | [packages/sdk/dist/index.d.mts:95](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L95) |
-| <a id="status"></a> `status`? | `string` | [packages/sdk/dist/index.d.mts:96](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L96) |
-| <a id="ttl"></a> `ttl`? | `string` | [packages/sdk/dist/index.d.mts:94](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L94) |
-| <a id="type"></a> `type` | `string` | [packages/sdk/dist/index.d.mts:91](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L91) |
-| <a id="value"></a> `value` | `string` | [packages/sdk/dist/index.d.mts:93](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L93) |
+| <a id="name"></a> `name` | `string` | [packages/sdk/dist/index.d.mts:92](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L92) |
+| <a id="priority"></a> `priority`? | `number` | [packages/sdk/dist/index.d.mts:95](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L95) |
+| <a id="status"></a> `status`? | `string` | [packages/sdk/dist/index.d.mts:96](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L96) |
+| <a id="ttl"></a> `ttl`? | `string` | [packages/sdk/dist/index.d.mts:94](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L94) |
+| <a id="type"></a> `type` | `string` | [packages/sdk/dist/index.d.mts:91](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L91) |
+| <a id="value"></a> `value` | `string` | [packages/sdk/dist/index.d.mts:93](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L93) |

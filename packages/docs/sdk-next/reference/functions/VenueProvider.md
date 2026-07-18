@@ -8,7 +8,7 @@
 function VenueProvider(__namedParameters): Element
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueProvider/index.tsx:10](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk-next/src/components/VenueProvider/index.tsx#L10)
+Defined in: [packages/sdk-next/src/components/VenueProvider/index.tsx:10](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk-next/src/components/VenueProvider/index.tsx#L10)
 
 ## Parameters
 

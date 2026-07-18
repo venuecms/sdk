@@ -8,10 +8,10 @@
 type GetNewsArticleResponse = Page & object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:849](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L849)
+Defined in: [packages/sdk/dist/index.d.mts:849](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L849)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `parent`? | `object` | [packages/sdk/dist/index.d.mts:850](https://github.com/venuecms/sdk/blob/6af46ae3b5b61e0d4cb381a0141c00dccc61886c/packages/sdk/dist/index.d.mts#L850) |
+| `parent`? | `object` | [packages/sdk/dist/index.d.mts:850](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L850) |

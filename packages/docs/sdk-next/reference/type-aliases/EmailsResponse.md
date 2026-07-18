@@ -8,11 +8,11 @@
 type EmailsResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:166](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L166)
+Defined in: [packages/sdk/dist/index.d.mts:166](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L166)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="emails"></a> `emails` | [`Email`](Email.md)[] | [packages/sdk/dist/index.d.mts:167](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L167) |
-| <a id="pagination"></a> `pagination` | [`Pagination`](Pagination.md) | [packages/sdk/dist/index.d.mts:168](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L168) |
+| <a id="emails"></a> `emails` | [`Email`](Email.md)[] | [packages/sdk/dist/index.d.mts:167](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L167) |
+| <a id="pagination"></a> `pagination` | [`Pagination`](Pagination.md) | [packages/sdk/dist/index.d.mts:168](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L168) |

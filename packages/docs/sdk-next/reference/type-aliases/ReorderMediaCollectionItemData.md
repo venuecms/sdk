@@ -8,13 +8,13 @@
 type ReorderMediaCollectionItemData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1344](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1344)
+Defined in: [packages/sdk/dist/index.d.mts:1344](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1344)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`ReorderMediaCollectionItemInput`](ReorderMediaCollectionItemInput.md) | [packages/sdk/dist/index.d.mts:1345](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1345) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1346](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1346) |
-| `path.collectionId` | `string` | [packages/sdk/dist/index.d.mts:1347](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1347) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1348](https://github.com/venuecms/sdk/blob/ed1e980a18956c14408ea4f812e24d6b4c2c1fee/packages/sdk/dist/index.d.mts#L1348) |
+| <a id="body"></a> `body`? | [`ReorderMediaCollectionItemInput`](ReorderMediaCollectionItemInput.md) | [packages/sdk/dist/index.d.mts:1345](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1345) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1346](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1346) |
+| `path.collectionId` | `string` | [packages/sdk/dist/index.d.mts:1347](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1347) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1348](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1348) |

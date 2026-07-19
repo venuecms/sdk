@@ -8,6 +8,8 @@ export const ResponsiveImage = async ({
   src,
   image = {},
   fallback,
+  placeholder,
+  blurDataURL,
   ...props
 }: {
   src?: string;
@@ -56,8 +58,8 @@ export const ResponsiveImage = async ({
       alt={(altText as string) ?? "image"}
       src={remoteImageProps.img.src}
       fill={true}
-      placeholder="blur"
-      blurDataURL={remoteImageProps.base64}
+      placeholder={placeholder ?? "blur"}
+      blurDataURL={blurDataURL ?? remoteImageProps.base64}
       objectFit="cover"
       objectPosition={`${center.x * 100}% ${center.y * 100}%`}
       {...props}

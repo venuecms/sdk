@@ -32,7 +32,12 @@ export const VenueImage = ({
       if (aspect) {
         return (
           <ImageWrapper aspect={aspect}>
-            <ResponsiveImage src={imageUrl} image={image} className={className} />
+            <ResponsiveImage
+              src={imageUrl}
+              image={image}
+              className={className}
+              {...props}
+            />
           </ImageWrapper>
         );
       }
@@ -53,7 +58,7 @@ export const VenueImage = ({
   if (aspect) {
     return (
       <ImageWrapper aspect={aspect}>
-        <ResponsiveImage src="" className={className} />
+        <ResponsiveImage src="" className={className} {...props} />
       </ImageWrapper>
     );
   }

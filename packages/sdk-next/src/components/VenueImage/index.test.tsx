@@ -32,6 +32,21 @@ describe("VenueImage", () => {
     expect(html).toContain("photo.jpg");
   });
 
+  it("forwards custom props (e.g. blurDataURL) to the underlying image", () => {
+    const html = renderToStaticMarkup(
+      <VenueImage
+        image={{
+          url: "photo.jpg",
+          altText: "alt",
+          metadata: { width: 800, height: 600 },
+        }}
+        props={{ blurDataURL: "data:image/png;base64,CUSTOMBLUR" }}
+      />,
+    );
+
+    expect(html).toContain("data:image/png;base64,CUSTOMBLUR");
+  });
+
   it("returns nothing when no image and no aspect", () => {
     const html = renderToStaticMarkup(<VenueImage />);
 

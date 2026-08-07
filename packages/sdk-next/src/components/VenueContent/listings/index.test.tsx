@@ -7,6 +7,13 @@ import { listingHandlers, splitContentEntries } from "./index";
 // The listing layer's whole job is to query and hand the results over, so the
 // endpoints are mocked and the assertions are about what was asked for and what
 // the component received.
+// `connection()` marks the listing's subtree dynamic, and throws outside a Next
+// request scope — which is where these tests render. Next's dynamic marking is
+// not what they exercise, so it is stubbed rather than worked around. Kept as a
+// spy because dropping the call fails silently: the throw it guards against is
+// swallowed by the listing's own boundaries, so only an assertion catches it.
+vi.mock("next/server", () => ({ connection: vi.fn(() => Promise.resolve()) }));
+
 vi.mock("../../../lib/api", () => ({
   getEvents: vi.fn(),
   getNews: vi.fn(),
@@ -201,6 +208,17 @@ describe("listing blocks", () => {
     expect(html).toContain("before");
     expect(html).toContain("after");
     expect(html).not.toContain("THE_LISTING_DREW");
+  });
+
+  it("marks the listing dynamic before reading request-time data", async () => {
+    const { connection } = await import("next/server");
+    getEvents.mockResolvedValue(listing([{ id: "e1", slug: "first-show" }]));
+
+    await renderListing({ eventListing: () => null }, eventNode({}));
+
+    // Without this a prerender under `cacheComponents` bails out on the clock
+    // and the configured site key that the query below reads.
+    expect(vi.mocked(connection)).toHaveBeenCalled();
   });
 
   it("still renders a profile listing when the site read failed", async () => {

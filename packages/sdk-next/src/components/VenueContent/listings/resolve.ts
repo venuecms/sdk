@@ -20,6 +20,8 @@ import type {
   GetProfilesResponse,
 } from "@venuecms/sdk";
 
+import { connection } from "next/server";
+
 import {
   getEvents,
   getNews,
@@ -120,6 +122,14 @@ export const resolveListing = async <Type extends ListingBlockNodeType>(
   nodeType: Type,
   params: ListingParams[Type],
 ): Promise<ResolvedListing<Type>> => {
+  // A listing is request-time data — it reads the configured site key, and a
+  // "past" window reads the clock — so it has to be marked dynamic before any of
+  // that runs, or a prerender under `cacheComponents` bails out. It is marked
+  // here rather than by the caller because this is the function that does the
+  // reading. The listing renders inside a Suspense boundary, so this makes only
+  // that subtree dynamic and leaves the rest of the page prerenderable.
+  await connection();
+
   const [records, site] = await Promise.all([
     resolveRecords[nodeType](params),
     getSite().then(({ data }) => data ?? null),

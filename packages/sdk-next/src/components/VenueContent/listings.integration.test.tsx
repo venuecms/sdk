@@ -7,6 +7,11 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import { VenueContent } from "./index";
 
+// `connection()` marks the listing's subtree dynamic, and throws outside a Next
+// request scope — which is where these tests render. Next's dynamic marking is
+// not what they exercise, so it is stubbed rather than worked around.
+vi.mock("next/server", () => ({ connection: () => Promise.resolve() }));
+
 vi.mock("../../lib/api", () => ({
   getEvents: vi.fn(),
   getNews: vi.fn(),

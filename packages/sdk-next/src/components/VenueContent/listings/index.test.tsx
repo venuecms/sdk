@@ -87,8 +87,8 @@ describe("splitContentEntries", () => {
 describe("listing blocks", () => {
   it("queries the endpoint and hands the records to the component", async () => {
     const events = [
-      { id: "e1", title: "First" },
-      { id: "e2", title: "Second" },
+      { id: "e1", slug: "first-show" },
+      { id: "e2", slug: "second-show" },
     ];
     getEvents.mockResolvedValue(listing(events));
 
@@ -97,7 +97,7 @@ describe("listing blocks", () => {
         eventListing: ({ records }) => (
           <ul>
             {records.map((event) => (
-              <li key={event.id}>{event.title}</li>
+              <li key={event.id}>{event.slug}</li>
             ))}
           </ul>
         ),
@@ -105,12 +105,12 @@ describe("listing blocks", () => {
       eventNode({ limit: 2 }),
     );
 
-    expect(html).toContain("First");
-    expect(html).toContain("Second");
+    expect(html).toContain("first-show");
+    expect(html).toContain("second-show");
   });
 
   it("passes the site alongside the records", async () => {
-    getEvents.mockResolvedValue(listing([{ id: "e1", title: "First" }]));
+    getEvents.mockResolvedValue(listing([{ id: "e1", slug: "first-show" }]));
 
     const html = await renderListing(
       { eventListing: ({ site: resolved }) => <span>{resolved?.timeZone}</span> },
@@ -205,13 +205,13 @@ describe("listing blocks", () => {
 
   it("still renders a profile listing when the site read failed", async () => {
     getSite.mockResolvedValue({ data: undefined } as never);
-    getProfiles.mockResolvedValue(listing([{ slug: "ana", name: "Ana" }]));
+    getProfiles.mockResolvedValue(listing([{ slug: "ana-profile" }]));
 
     const handlers = listingHandlers({
       profileListing: ({ records }) => (
         <ul>
           {records.map((profile) => (
-            <li key={profile.slug}>{profile.name}</li>
+            <li key={profile.slug}>{profile.slug}</li>
           ))}
         </ul>
       ),
@@ -226,6 +226,6 @@ describe("listing blocks", () => {
       <Handler node={{ type: "profileListing", attrs: {} }} />,
     );
 
-    expect(html).toContain("Ana");
+    expect(html).toContain("ana-profile");
   });
 });

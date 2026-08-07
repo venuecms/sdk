@@ -34,7 +34,7 @@ beforeEach(() => {
 describe("VenueContent with listing blocks", () => {
   it("styles prose and renders a queried listing from one map", async () => {
     getEvents.mockResolvedValue({
-      data: { records: [{ id: "e1", title: "Opening Night" }], count: 1 },
+      data: { records: [{ id: "e1", slug: "opening-night" }], count: 1 },
     } as never);
 
     const html = await render(
@@ -57,7 +57,7 @@ describe("VenueContent with listing blocks", () => {
           eventListing: ({ records }) => (
             <ul data-testid="events">
               {records.map((event) => (
-                <li key={event.id}>{event.title}</li>
+                <li key={event.id}>{event.slug}</li>
               ))}
             </ul>
           ),
@@ -69,7 +69,7 @@ describe("VenueContent with listing blocks", () => {
     expect(html).toContain("prose-paragraph");
     expect(html).toContain("Some prose.");
     // ...and the listing was queried and drawn by the supplied component.
-    expect(html).toContain("Opening Night");
+    expect(html).toContain("opening-night");
     expect(getEvents).toHaveBeenCalledWith(
       expect.objectContaining({ limit: 5 }),
     );

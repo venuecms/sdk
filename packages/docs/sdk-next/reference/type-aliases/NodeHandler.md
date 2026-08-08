@@ -8,7 +8,7 @@
 type NodeHandler = (props) => JSX.Element;
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/index.tsx:381](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk-next/src/components/VenueContent/index.tsx#L381)
+Defined in: [packages/sdk-next/src/components/VenueContent/types.ts:27](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk-next/src/components/VenueContent/types.ts#L27)
 
 ## Parameters
 

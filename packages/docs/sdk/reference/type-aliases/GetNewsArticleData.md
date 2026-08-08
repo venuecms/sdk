@@ -8,12 +8,12 @@
 type GetNewsArticleData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:951](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L951)
+Defined in: [packages/sdk/src/client/types.gen.ts:1661](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1661)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:952](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L952) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:953](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L953) |
-| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:954](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L954) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1662](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1662) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1663](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1663) |
+| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:1664](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1664) |

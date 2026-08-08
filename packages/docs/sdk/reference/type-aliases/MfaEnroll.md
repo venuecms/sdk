@@ -1,0 +1,20 @@
+[**@venuecms/sdk**](../Index.md)
+
+***
+
+# Type Alias: MfaEnroll
+
+```ts
+type MfaEnroll = object;
+```
+
+Defined in: [packages/sdk/src/client/types.gen.ts:725](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L725)
+
+## Type declaration
+
+| Name | Type | Defined in |
+| ------ | ------ | ------ |
+| <a id="factorid"></a> `factorId` | `string` | [packages/sdk/src/client/types.gen.ts:726](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L726) |
+| <a id="qrcode"></a> `qrCode` | `string` | [packages/sdk/src/client/types.gen.ts:727](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L727) |
+| <a id="secret"></a> `secret` | `string` | [packages/sdk/src/client/types.gen.ts:728](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L728) |
+| <a id="uri"></a> `uri` | `string` | [packages/sdk/src/client/types.gen.ts:729](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L729) |

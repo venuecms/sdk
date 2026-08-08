@@ -8,10 +8,10 @@
 type AtprotoOauthStartInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:22](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L22)
+Defined in: [packages/sdk/dist/index.d.mts:100](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L100)
 
 ## Type declaration
 
 | Name | Type | Description | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="handle"></a> `handle`? | `string` | ATproto handle or DID to start OAuth for | [packages/sdk/dist/index.d.mts:26](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L26) |
+| <a id="handle"></a> `handle`? | `string` | ATproto handle or DID to start OAuth for | [packages/sdk/dist/index.d.mts:104](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L104) |

@@ -1,0 +1,11 @@
+[**@venuecms/sdk**](../Index.md)
+
+***
+
+# Type Alias: CreateWebsiteResponse
+
+```ts
+type CreateWebsiteResponse = Website;
+```
+
+Defined in: [packages/sdk/src/client/types.gen.ts:4229](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4229)

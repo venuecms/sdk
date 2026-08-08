@@ -1,0 +1,17 @@
+[**@venuecms/sdk**](../Index.md)
+
+***
+
+# Type Alias: DetachMediaItemResponse
+
+```ts
+type DetachMediaItemResponse = object;
+```
+
+Defined in: [packages/sdk/src/client/types.gen.ts:317](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L317)
+
+## Type declaration
+
+| Name | Type | Defined in |
+| ------ | ------ | ------ |
+| <a id="success"></a> `success` | `boolean` | [packages/sdk/src/client/types.gen.ts:318](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L318) |

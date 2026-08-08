@@ -8,12 +8,12 @@
 type DeleteMediaCollectionData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1559](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1559)
+Defined in: [packages/sdk/src/client/types.gen.ts:2443](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2443)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1560](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1560) |
-| `path.collectionId` | `string` | [packages/sdk/src/client/types.gen.ts:1561](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1561) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1562](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1562) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2444](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2444) |
+| `path.collectionId` | `string` | [packages/sdk/src/client/types.gen.ts:2445](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2445) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2446](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2446) |

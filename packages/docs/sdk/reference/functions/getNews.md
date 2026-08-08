@@ -16,7 +16,7 @@ function getNews(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:190](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/main.ts#L190)
+Defined in: [packages/sdk/src/main.ts:190](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/main.ts#L190)
 
 Get a list of all news items
 
@@ -24,9 +24,9 @@ Get a list of all news items
 
 | Parameter | Type |
 | ------ | ------ |
-| `params` | \{ `dir`: `"asc"` \| `"desc"`; `featured`: `boolean`; `gt`: `number`; `limit`: `number`; `lt`: `number`; `orderBy`: `string`; `page`: `number`; `query`: `string`; `tags`: `string` \| `string`[]; `upcoming`: `boolean`; \} |
+| `params` | \{ `dir`: `"asc"` \| `"desc"`; `featured`: `string` \| `string`[]; `gt`: `number`; `limit`: `number`; `lt`: `number`; `orderBy`: `string`; `page`: `number`; `query`: `string`; `tags`: `string` \| `string`[]; `upcoming`: `string` \| `string`[]; \} |
 | `params.dir`? | `"asc"` \| `"desc"` |
-| `params.featured`? | `boolean` |
+| `params.featured`? | `string` \| `string`[] |
 | `params.gt`? | `number` |
 | `params.limit`? | `number` |
 | `params.lt`? | `number` |
@@ -34,7 +34,7 @@ Get a list of all news items
 | `params.page`? | `number` |
 | `params.query`? | `string` |
 | `params.tags`? | `string` \| `string`[] |
-| `params.upcoming`? | `boolean` |
+| `params.upcoming`? | `string` \| `string`[] |
 
 ## Returns
 

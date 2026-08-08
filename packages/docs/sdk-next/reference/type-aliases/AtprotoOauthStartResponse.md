@@ -8,10 +8,10 @@
 type AtprotoOauthStartResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:28](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L28)
+Defined in: [packages/sdk/dist/index.d.mts:106](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L106)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="authorizeurl"></a> `authorizeUrl` | `string` | [packages/sdk/dist/index.d.mts:29](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L29) |
+| <a id="authorizeurl"></a> `authorizeUrl` | `string` | [packages/sdk/dist/index.d.mts:107](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L107) |

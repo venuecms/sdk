@@ -8,13 +8,13 @@
 type GetBackendLinkPreviewData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1401](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1401)
+Defined in: [packages/sdk/dist/index.d.mts:3234](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L3234)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1402](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1402) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1403](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1403) |
-| <a id="query"></a> `query` | `object` | [packages/sdk/dist/index.d.mts:1405](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1405) |
-| `query.url` | `string` | [packages/sdk/dist/index.d.mts:1406](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1406) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3235](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L3235) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3236](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L3236) |
+| <a id="query"></a> `query` | `object` | [packages/sdk/dist/index.d.mts:3238](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L3238) |
+| `query.url` | `string` | [packages/sdk/dist/index.d.mts:3239](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L3239) |

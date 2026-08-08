@@ -8,14 +8,14 @@
 type AtprotoOauthStatusResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:31](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L31)
+Defined in: [packages/sdk/dist/index.d.mts:109](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L109)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="connected"></a> `connected` | `boolean` | [packages/sdk/dist/index.d.mts:32](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L32) |
-| <a id="did"></a> `did` | `string` \| `null` | [packages/sdk/dist/index.d.mts:33](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L33) |
-| <a id="handle"></a> `handle` | `string` \| `null` | [packages/sdk/dist/index.d.mts:34](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L34) |
-| <a id="needsreauth"></a> `needsReauth` | `boolean` | [packages/sdk/dist/index.d.mts:36](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L36) |
-| <a id="pdsurl"></a> `pdsUrl` | `string` \| `null` | [packages/sdk/dist/index.d.mts:35](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L35) |
+| <a id="connected"></a> `connected` | `boolean` | [packages/sdk/dist/index.d.mts:110](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L110) |
+| <a id="did"></a> `did` | `string` \| `null` | [packages/sdk/dist/index.d.mts:111](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L111) |
+| <a id="handle"></a> `handle` | `string` \| `null` | [packages/sdk/dist/index.d.mts:112](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L112) |
+| <a id="needsreauth"></a> `needsReauth` | `boolean` | [packages/sdk/dist/index.d.mts:114](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L114) |
+| <a id="pdsurl"></a> `pdsUrl` | `string` \| `null` | [packages/sdk/dist/index.d.mts:113](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L113) |

@@ -1,6 +1,6 @@
 {
   "name": "@venuecms/sdk-next",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "author": "Scott Cazan",
   "description": "",
   "types": "dist/index.d.ts",
@@ -50,7 +50,7 @@
     "tailwindcss": "^4.0.3",
     "tsup": "^8.3.5",
     "typedoc": "^0.27.1",
-    "typedoc-plugin-markdown": "^4.3.3",
+    "typedoc-plugin-markdown": "~4.4.2",
     "typescript": "^5.5.0"
   },
   "devDependencies": {

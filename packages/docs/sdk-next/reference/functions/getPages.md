@@ -16,7 +16,7 @@ function getPages(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:59](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk-next/src/lib/api/index.ts#L59)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:59](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk-next/src/lib/api/index.ts#L59)
 
 Get a list of all pages (cached)
 
@@ -24,7 +24,7 @@ Get a list of all pages (cached)
 
 | Parameter | Type |
 | ------ | ------ |
-| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `featured`: `null` \| `boolean`; `limit`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `query`: `null` \| `string`; `tags`: `string` \| `string`[]; \} |
+| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `featured`: `string` \| `string`[]; `limit`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `query`: `null` \| `string`; `tags`: `string` \| `string`[]; \} |
 
 ## Returns
 

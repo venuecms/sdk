@@ -8,12 +8,12 @@
 type GetPlaybackTokenData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1204](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1204)
+Defined in: [packages/sdk/src/client/types.gen.ts:1914](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1914)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1205](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1205) |
-| `path.mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:1206](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1206) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1207](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1207) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1915](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1915) |
+| `path.mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:1916](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1916) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1917](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1917) |

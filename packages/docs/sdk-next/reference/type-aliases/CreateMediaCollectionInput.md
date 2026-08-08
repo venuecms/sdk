@@ -8,13 +8,13 @@
 type CreateMediaCollectionInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:79](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L79)
+Defined in: [packages/sdk/dist/index.d.mts:197](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L197)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="description"></a> `description`? | `string` | [packages/sdk/dist/index.d.mts:81](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L81) |
-| <a id="entityid"></a> `entityId`? | `string` | [packages/sdk/dist/index.d.mts:83](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L83) |
-| <a id="entitytype"></a> `entityType`? | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | [packages/sdk/dist/index.d.mts:82](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L82) |
-| <a id="name"></a> `name` | `string` | [packages/sdk/dist/index.d.mts:80](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L80) |
+| <a id="description"></a> `description`? | `string` | [packages/sdk/dist/index.d.mts:199](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L199) |
+| <a id="entityid"></a> `entityId`? | `string` | [packages/sdk/dist/index.d.mts:201](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L201) |
+| <a id="entitytype"></a> `entityType`? | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | [packages/sdk/dist/index.d.mts:200](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L200) |
+| <a id="name"></a> `name` | `string` | [packages/sdk/dist/index.d.mts:198](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L198) |

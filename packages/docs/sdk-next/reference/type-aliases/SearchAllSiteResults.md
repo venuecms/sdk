@@ -8,10 +8,10 @@
 type SearchAllSiteResults = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:496](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L496)
+Defined in: [packages/sdk/dist/index.d.mts:892](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L892)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="records"></a> `records` | `object`[] | [packages/sdk/dist/index.d.mts:497](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L497) |
+| <a id="records"></a> `records` | `object`[] | [packages/sdk/dist/index.d.mts:893](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L893) |

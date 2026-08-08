@@ -8,13 +8,13 @@
 type Recipient = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:482](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L482)
+Defined in: [packages/sdk/dist/index.d.mts:858](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L858)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="email"></a> `email` | `string` | [packages/sdk/dist/index.d.mts:483](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L483) |
-| <a id="metadata"></a> `metadata`? | `object` | [packages/sdk/dist/index.d.mts:488](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L488) |
-| <a id="subject"></a> `subject`? | `string` | [packages/sdk/dist/index.d.mts:484](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L484) |
-| <a id="variables"></a> `variables`? | `object` | [packages/sdk/dist/index.d.mts:485](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L485) |
+| <a id="email"></a> `email` | `string` | [packages/sdk/dist/index.d.mts:859](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L859) |
+| <a id="metadata"></a> `metadata`? | `object` | [packages/sdk/dist/index.d.mts:864](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L864) |
+| <a id="subject"></a> `subject`? | `string` | [packages/sdk/dist/index.d.mts:860](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L860) |
+| <a id="variables"></a> `variables`? | `object` | [packages/sdk/dist/index.d.mts:861](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L861) |

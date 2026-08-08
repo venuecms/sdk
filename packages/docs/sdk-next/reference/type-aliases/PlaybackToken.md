@@ -8,10 +8,10 @@
 type PlaybackToken = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:415](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L415)
+Defined in: [packages/sdk/dist/index.d.mts:737](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L737)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="token"></a> `token` | `string` \| `null` | [packages/sdk/dist/index.d.mts:416](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L416) |
+| <a id="token"></a> `token` | `string` \| `null` | [packages/sdk/dist/index.d.mts:738](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L738) |

@@ -8,11 +8,11 @@
 type GetTagsResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1042](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1042)
+Defined in: [packages/sdk/dist/index.d.mts:1619](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1619)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count`? | `number` | [packages/sdk/dist/index.d.mts:1044](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1044) |
-| <a id="records"></a> `records` | [`TagListItem`](TagListItem.md)[] | [packages/sdk/dist/index.d.mts:1043](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1043) |
+| <a id="count"></a> `count`? | `number` | [packages/sdk/dist/index.d.mts:1621](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1621) |
+| <a id="records"></a> `records` | [`TagListItem`](TagListItem.md)[] | [packages/sdk/dist/index.d.mts:1620](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1620) |

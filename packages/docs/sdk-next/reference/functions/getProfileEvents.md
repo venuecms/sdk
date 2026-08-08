@@ -16,7 +16,7 @@ function getProfileEvents(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:108](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk-next/src/lib/api/index.ts#L108)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:108](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk-next/src/lib/api/index.ts#L108)
 
 Get a listing of events for a profile (cached)
 

@@ -8,16 +8,16 @@
 type LivestreamResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:245](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L245)
+Defined in: [packages/sdk/dist/index.d.mts:460](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L460)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="livestatus"></a> `liveStatus`? | `"idle"` \| `"active"` \| `"disabled"` | [packages/sdk/dist/index.d.mts:252](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L252) |
-| <a id="mediaitem"></a> `mediaItem`? | `unknown` | [packages/sdk/dist/index.d.mts:246](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L246) |
-| <a id="muxlivestreamid"></a> `muxLiveStreamId` | `string` | [packages/sdk/dist/index.d.mts:250](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L250) |
-| <a id="muxplaybackid"></a> `muxPlaybackId` | `string` | [packages/sdk/dist/index.d.mts:251](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L251) |
-| <a id="playbackpolicy"></a> `playbackPolicy` | `"public"` \| `"signed"` | [packages/sdk/dist/index.d.mts:249](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L249) |
-| <a id="rtmpurl"></a> `rtmpUrl` | `string` | [packages/sdk/dist/index.d.mts:248](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L248) |
-| <a id="streamkey"></a> `streamKey` | `string` | [packages/sdk/dist/index.d.mts:247](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L247) |
+| <a id="livestatus"></a> `liveStatus`? | `"idle"` \| `"active"` \| `"disabled"` | [packages/sdk/dist/index.d.mts:467](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L467) |
+| <a id="mediaitem"></a> `mediaItem`? | `unknown` | [packages/sdk/dist/index.d.mts:461](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L461) |
+| <a id="muxlivestreamid"></a> `muxLiveStreamId` | `string` | [packages/sdk/dist/index.d.mts:465](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L465) |
+| <a id="muxplaybackid"></a> `muxPlaybackId` | `string` | [packages/sdk/dist/index.d.mts:466](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L466) |
+| <a id="playbackpolicy"></a> `playbackPolicy` | `"public"` \| `"signed"` | [packages/sdk/dist/index.d.mts:464](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L464) |
+| <a id="rtmpurl"></a> `rtmpUrl` | `string` | [packages/sdk/dist/index.d.mts:463](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L463) |
+| <a id="streamkey"></a> `streamKey` | `string` | [packages/sdk/dist/index.d.mts:462](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L462) |

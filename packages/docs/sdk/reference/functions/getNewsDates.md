@@ -16,7 +16,7 @@ function getNewsDates(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:216](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/main.ts#L216)
+Defined in: [packages/sdk/src/main.ts:216](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/main.ts#L216)
 
 ## Parameters
 

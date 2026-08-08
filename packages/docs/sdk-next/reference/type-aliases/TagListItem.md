@@ -8,13 +8,13 @@
 type TagListItem = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:632](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L632)
+Defined in: [packages/sdk/dist/index.d.mts:1062](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1062)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:633](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L633) |
-| <a id="parenttags"></a> `parentTags`? | `object`[] | [packages/sdk/dist/index.d.mts:636](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L636) |
-| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:634](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L634) |
-| <a id="title"></a> `title` | `string` | [packages/sdk/dist/index.d.mts:635](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L635) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:1063](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1063) |
+| <a id="parenttags"></a> `parentTags`? | `object`[] | [packages/sdk/dist/index.d.mts:1066](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1066) |
+| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:1064](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1064) |
+| <a id="title"></a> `title` | `string` | [packages/sdk/dist/index.d.mts:1065](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1065) |

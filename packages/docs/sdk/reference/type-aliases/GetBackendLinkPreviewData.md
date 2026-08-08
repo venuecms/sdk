@@ -8,13 +8,13 @@
 type GetBackendLinkPreviewData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1659](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1659)
+Defined in: [packages/sdk/src/client/types.gen.ts:4000](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4000)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1660](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1660) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1661](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1661) |
-| <a id="query"></a> `query` | `object` | [packages/sdk/src/client/types.gen.ts:1663](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1663) |
-| `query.url` | `string` | [packages/sdk/src/client/types.gen.ts:1664](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1664) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4001](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4001) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4002](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4002) |
+| <a id="query"></a> `query` | `object` | [packages/sdk/src/client/types.gen.ts:4004](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4004) |
+| `query.url` | `string` | [packages/sdk/src/client/types.gen.ts:4005](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4005) |

@@ -117,9 +117,13 @@ const compact = <T extends object>(query: T): T =>
 
 const optional = <T>(value: T | null): T | undefined => value ?? undefined;
 
-/** A flag only narrows a listing, so an unset one is omitted rather than sent. */
-const optionalFlag = (value: boolean): true | undefined =>
-  value ? true : undefined;
+/**
+ * A flag only narrows a listing, so an unset one is omitted rather than sent.
+ * The endpoint types its flags as raw query values (`string | string[]`, the
+ * same shape as `tags`), so a set flag is serialized as `"true"`.
+ */
+const optionalFlag = (value: boolean): "true" | undefined =>
+  value ? "true" : undefined;
 
 const optionalTags = (tags: string[]): string[] | undefined =>
   tags.length ? tags : undefined;
@@ -197,7 +201,7 @@ export const buildEventListingQuery = (
   now: number,
 ): EventsQuery => {
   const query: EventsQuery = {
-    upcoming: attrs.listingType === "upcoming" ? true : undefined,
+    upcoming: optionalFlag(attrs.listingType === "upcoming"),
     lt: resolveListingLt(attrs.listingType, attrs.lt, now),
     gt: optional(attrs.gt),
     limit: optional(attrs.limit),
@@ -241,7 +245,7 @@ export const buildNewsListingQuery = (
   now: number,
 ): NewsQuery => {
   const query: NewsQuery = {
-    upcoming: attrs.listingType === "upcoming" ? true : undefined,
+    upcoming: optionalFlag(attrs.listingType === "upcoming"),
     lt: resolveListingLt(attrs.listingType, attrs.lt, now),
     gt: optional(attrs.gt),
     limit: optional(attrs.limit),

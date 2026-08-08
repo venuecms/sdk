@@ -8,11 +8,11 @@
 type GetProductsResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1104](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1104)
+Defined in: [packages/sdk/src/client/types.gen.ts:1814](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1814)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count`? | `number` | [packages/sdk/src/client/types.gen.ts:1106](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1106) |
-| <a id="records"></a> `records` | [`Product`](Product.md)[] | [packages/sdk/src/client/types.gen.ts:1105](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1105) |
+| <a id="count"></a> `count`? | `number` | [packages/sdk/src/client/types.gen.ts:1816](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1816) |
+| <a id="records"></a> `records` | [`Product`](Product.md)[] | [packages/sdk/src/client/types.gen.ts:1815](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1815) |

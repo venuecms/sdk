@@ -8,15 +8,15 @@
 type ProfileSlim = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:460](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L460)
+Defined in: [packages/sdk/dist/index.d.mts:818](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L818)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="custom"></a> `custom`? | [`CustomSchemaData`](CustomSchemaData.md)[] | [packages/sdk/dist/index.d.mts:466](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L466) |
-| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) | [packages/sdk/dist/index.d.mts:464](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L464) |
-| <a id="localizedcontent"></a> `localizedContent` | [`LocalizedContent`](LocalizedContent.md)[] | [packages/sdk/dist/index.d.mts:465](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L465) |
-| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:461](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L461) |
-| <a id="slug"></a> `slug` | `string` | [packages/sdk/dist/index.d.mts:462](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L462) |
-| <a id="tags"></a> `tags`? | [`Tag`](Tag.md)[] | [packages/sdk/dist/index.d.mts:463](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L463) |
+| <a id="custom"></a> `custom`? | [`CustomSchemaData`](CustomSchemaData.md)[] | [packages/sdk/dist/index.d.mts:824](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L824) |
+| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) | [packages/sdk/dist/index.d.mts:822](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L822) |
+| <a id="localizedcontent"></a> `localizedContent` | [`LocalizedContent`](LocalizedContent.md)[] | [packages/sdk/dist/index.d.mts:823](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L823) |
+| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:819](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L819) |
+| <a id="slug"></a> `slug` | `string` | [packages/sdk/dist/index.d.mts:820](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L820) |
+| <a id="tags"></a> `tags`? | [`Tag`](Tag.md)[] | [packages/sdk/dist/index.d.mts:821](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L821) |

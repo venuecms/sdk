@@ -8,12 +8,12 @@
 type GetEmailBatchData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1191](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1191)
+Defined in: [packages/sdk/dist/index.d.mts:1839](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1839)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1192](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1192) |
-| `path.batchId` | `string` | [packages/sdk/dist/index.d.mts:1193](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1193) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1194](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1194) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1840](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1840) |
+| `path.batchId` | `string` | [packages/sdk/dist/index.d.mts:1841](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1841) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1842](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1842) |

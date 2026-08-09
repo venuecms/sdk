@@ -8,12 +8,12 @@
 type CreateMediaCollectionData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1300](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1300)
+Defined in: [packages/sdk/dist/index.d.mts:2003](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L2003)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`CreateMediaCollectionInput`](CreateMediaCollectionInput.md) | [packages/sdk/dist/index.d.mts:1301](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1301) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1302](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1302) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1303](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1303) |
+| <a id="body"></a> `body`? | [`CreateMediaCollectionInput`](CreateMediaCollectionInput.md) | [packages/sdk/dist/index.d.mts:2004](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L2004) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2005](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L2005) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2006](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L2006) |

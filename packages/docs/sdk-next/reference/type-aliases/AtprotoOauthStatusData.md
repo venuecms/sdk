@@ -8,11 +8,11 @@
 type AtprotoOauthStatusData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1426](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1426)
+Defined in: [packages/sdk/dist/index.d.mts:3259](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L3259)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1427](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1427) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1428](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1428) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3260](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L3260) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3261](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L3261) |

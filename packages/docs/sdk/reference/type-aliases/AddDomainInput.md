@@ -8,10 +8,10 @@
 type AddDomainInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L3)
+Defined in: [packages/sdk/src/client/types.gen.ts:8](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L8)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="domain"></a> `domain` | `string` | [packages/sdk/src/client/types.gen.ts:4](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L4) |
+| <a id="domain"></a> `domain` | `string` | [packages/sdk/src/client/types.gen.ts:9](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L9) |

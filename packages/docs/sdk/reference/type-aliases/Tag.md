@@ -8,15 +8,15 @@
 type Tag = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:685](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L685)
+Defined in: [packages/sdk/src/client/types.gen.ts:1196](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1196)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="tag"></a> `tag` | `object` | [packages/sdk/src/client/types.gen.ts:687](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L687) |
-| `tag.id` | `string` | [packages/sdk/src/client/types.gen.ts:688](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L688) |
-| `tag.parentTags`? | `object`[] | [packages/sdk/src/client/types.gen.ts:691](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L691) |
-| `tag.siteId` | `string` | [packages/sdk/src/client/types.gen.ts:689](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L689) |
-| `tag.title` | `string` | [packages/sdk/src/client/types.gen.ts:690](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L690) |
-| <a id="tagid"></a> `tagId` | `string` | [packages/sdk/src/client/types.gen.ts:686](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L686) |
+| <a id="tag"></a> `tag` | `object` | [packages/sdk/src/client/types.gen.ts:1198](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1198) |
+| `tag.id` | `string` | [packages/sdk/src/client/types.gen.ts:1199](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1199) |
+| `tag.parentTags`? | `object`[] | [packages/sdk/src/client/types.gen.ts:1202](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1202) |
+| `tag.siteId` | `string` | [packages/sdk/src/client/types.gen.ts:1200](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1200) |
+| `tag.title` | `string` | [packages/sdk/src/client/types.gen.ts:1201](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1201) |
+| <a id="tagid"></a> `tagId` | `string` | [packages/sdk/src/client/types.gen.ts:1197](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1197) |

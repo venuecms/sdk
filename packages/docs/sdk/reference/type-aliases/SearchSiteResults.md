@@ -8,13 +8,13 @@
 type SearchSiteResults = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:576](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L576)
+Defined in: [packages/sdk/src/client/types.gen.ts:1062](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1062)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="events"></a> `events` | `object`[] | [packages/sdk/src/client/types.gen.ts:577](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L577) |
-| <a id="pages"></a> `pages` | `object`[] | [packages/sdk/src/client/types.gen.ts:589](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L589) |
-| <a id="products"></a> `products` | `object`[] | [packages/sdk/src/client/types.gen.ts:613](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L613) |
-| <a id="profiles"></a> `profiles` | `object`[] | [packages/sdk/src/client/types.gen.ts:601](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L601) |
+| <a id="events"></a> `events` | `object`[] | [packages/sdk/src/client/types.gen.ts:1063](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1063) |
+| <a id="pages"></a> `pages` | `object`[] | [packages/sdk/src/client/types.gen.ts:1075](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1075) |
+| <a id="products"></a> `products` | `object`[] | [packages/sdk/src/client/types.gen.ts:1099](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1099) |
+| <a id="profiles"></a> `profiles` | `object`[] | [packages/sdk/src/client/types.gen.ts:1087](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1087) |

@@ -8,21 +8,21 @@
 type Product = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:418](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L418)
+Defined in: [packages/sdk/dist/index.d.mts:740](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L740)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="artists"></a> `artists` | `object`[] | [packages/sdk/dist/index.d.mts:428](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L428) |
-| <a id="author"></a> `author`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:424](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L424) |
-| <a id="custom"></a> `custom`? | [`CustomSchemaData`](CustomSchemaData.md)[] | [packages/sdk/dist/index.d.mts:432](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L432) |
-| <a id="featured"></a> `featured` | `boolean` | [packages/sdk/dist/index.d.mts:422](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L422) |
-| <a id="featuredexpiration"></a> `featuredExpiration`? | `string` \| `unknown` | [packages/sdk/dist/index.d.mts:423](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L423) |
-| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) | [packages/sdk/dist/index.d.mts:426](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L426) |
-| <a id="localizedcontent"></a> `localizedContent` | [`LocalizedContent`](LocalizedContent.md)[] | [packages/sdk/dist/index.d.mts:427](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L427) |
-| <a id="order"></a> `order` | `number` | [packages/sdk/dist/index.d.mts:421](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L421) |
-| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:419](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L419) |
-| <a id="slug"></a> `slug` | `string` | [packages/sdk/dist/index.d.mts:420](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L420) |
-| <a id="tags"></a> `tags`? | [`Tag`](Tag.md)[] | [packages/sdk/dist/index.d.mts:425](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L425) |
-| <a id="variants"></a> `variants`? | [`ProductVariant`](ProductVariant.md)[] | [packages/sdk/dist/index.d.mts:431](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L431) |
+| <a id="artists"></a> `artists` | `object`[] | [packages/sdk/dist/index.d.mts:750](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L750) |
+| <a id="author"></a> `author`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:746](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L746) |
+| <a id="custom"></a> `custom`? | [`CustomSchemaData`](CustomSchemaData.md)[] | [packages/sdk/dist/index.d.mts:754](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L754) |
+| <a id="featured"></a> `featured` | `boolean` | [packages/sdk/dist/index.d.mts:744](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L744) |
+| <a id="featuredexpiration"></a> `featuredExpiration`? | `string` \| `unknown` | [packages/sdk/dist/index.d.mts:745](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L745) |
+| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) | [packages/sdk/dist/index.d.mts:748](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L748) |
+| <a id="localizedcontent"></a> `localizedContent` | [`LocalizedContent`](LocalizedContent.md)[] | [packages/sdk/dist/index.d.mts:749](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L749) |
+| <a id="order"></a> `order` | `number` | [packages/sdk/dist/index.d.mts:743](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L743) |
+| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:741](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L741) |
+| <a id="slug"></a> `slug` | `string` | [packages/sdk/dist/index.d.mts:742](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L742) |
+| <a id="tags"></a> `tags`? | [`Tag`](Tag.md)[] | [packages/sdk/dist/index.d.mts:747](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L747) |
+| <a id="variants"></a> `variants`? | [`ProductVariant`](ProductVariant.md)[] | [packages/sdk/dist/index.d.mts:753](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L753) |

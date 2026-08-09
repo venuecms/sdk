@@ -8,12 +8,12 @@
 type ListMediaCollectionRolesData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1612](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1612)
+Defined in: [packages/sdk/src/client/types.gen.ts:2496](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2496)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1613](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1613) |
-| `path.collectionId` | `string` | [packages/sdk/src/client/types.gen.ts:1614](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1614) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1615](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1615) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2497](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2497) |
+| `path.collectionId` | `string` | [packages/sdk/src/client/types.gen.ts:2498](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2498) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2499](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2499) |

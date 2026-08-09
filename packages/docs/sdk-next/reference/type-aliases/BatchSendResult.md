@@ -8,15 +8,15 @@
 type BatchSendResult = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:54](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L54)
+Defined in: [packages/sdk/dist/index.d.mts:155](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L155)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="batchid"></a> `batchId` | `string` | [packages/sdk/dist/index.d.mts:55](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L55) |
-| <a id="failedcount"></a> `failedCount` | `number` | [packages/sdk/dist/index.d.mts:59](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L59) |
-| <a id="results"></a> `results` | `object`[] | [packages/sdk/dist/index.d.mts:60](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L60) |
-| <a id="sentcount"></a> `sentCount` | `number` | [packages/sdk/dist/index.d.mts:58](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L58) |
-| <a id="status"></a> `status` | `"COMPLETED"` | [packages/sdk/dist/index.d.mts:56](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L56) |
-| <a id="totalcount"></a> `totalCount` | `number` | [packages/sdk/dist/index.d.mts:57](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L57) |
+| <a id="batchid"></a> `batchId` | `string` | [packages/sdk/dist/index.d.mts:156](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L156) |
+| <a id="failedcount"></a> `failedCount` | `number` | [packages/sdk/dist/index.d.mts:160](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L160) |
+| <a id="results"></a> `results` | `object`[] | [packages/sdk/dist/index.d.mts:161](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L161) |
+| <a id="sentcount"></a> `sentCount` | `number` | [packages/sdk/dist/index.d.mts:159](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L159) |
+| <a id="status"></a> `status` | `"COMPLETED"` | [packages/sdk/dist/index.d.mts:157](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L157) |
+| <a id="totalcount"></a> `totalCount` | `number` | [packages/sdk/dist/index.d.mts:158](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L158) |

@@ -8,7 +8,7 @@
 function cache<T>(__namedParameters): Promise<T>
 ```
 
-Defined in: [packages/sdk/src/utils/cache.ts:24](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/utils/cache.ts#L24)
+Defined in: [packages/sdk/src/utils/cache.ts:24](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/utils/cache.ts#L24)
 
 ## Type Parameters
 

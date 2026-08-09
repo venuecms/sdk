@@ -2,22 +2,16 @@
 
 ***
 
-# Type Alias: WebSite
+# Type Alias: Website
 
 ```ts
-type WebSite = object;
+type Website = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:688](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L688)
+Defined in: [packages/sdk/dist/index.d.mts:1267](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1267)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="config"></a> `config`? | \{\} \| `null` | [packages/sdk/dist/index.d.mts:693](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L693) |
-| <a id="customdomain"></a> `customDomain`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:691](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L691) |
-| <a id="customschemaid"></a> `customSchemaId`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:692](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L692) |
-| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:689](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L689) |
-| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) & `unknown` | [packages/sdk/dist/index.d.mts:696](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L696) |
-| <a id="localizedcontent"></a> `localizedContent`? | [`LocalizedContent`](LocalizedContent.md)[] \| `null` | [packages/sdk/dist/index.d.mts:697](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L697) |
-| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:690](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L690) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:1268](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1268) |

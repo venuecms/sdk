@@ -8,10 +8,10 @@
 type PublicSignUpError = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:750](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L750)
+Defined in: [packages/sdk/dist/index.d.mts:1327](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1327)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="error"></a> `error` | `string` | [packages/sdk/dist/index.d.mts:751](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L751) |
+| <a id="error"></a> `error` | `string` | [packages/sdk/dist/index.d.mts:1328](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1328) |

@@ -1,0 +1,17 @@
+[**@venuecms/sdk-next**](../Index.md)
+
+***
+
+# Type Alias: LocationTagsResponse
+
+```ts
+type LocationTagsResponse = object;
+```
+
+Defined in: [packages/sdk/dist/index.d.mts:512](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L512)
+
+## Type declaration
+
+| Name | Type | Defined in |
+| ------ | ------ | ------ |
+| <a id="records"></a> `records` | `object`[] | [packages/sdk/dist/index.d.mts:513](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L513) |

@@ -8,14 +8,14 @@
 type EmailStats = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:170](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L170)
+Defined in: [packages/sdk/dist/index.d.mts:342](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L342)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="bystatus"></a> `byStatus` | `object` | [packages/sdk/dist/index.d.mts:172](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L172) |
-| <a id="period"></a> `period` | `object` | [packages/sdk/dist/index.d.mts:175](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L175) |
-| `period.days` | `number` | [packages/sdk/dist/index.d.mts:176](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L176) |
-| `period.since` | `string` | [packages/sdk/dist/index.d.mts:177](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L177) |
-| <a id="total"></a> `total` | `number` | [packages/sdk/dist/index.d.mts:171](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L171) |
+| <a id="bystatus"></a> `byStatus` | `object` | [packages/sdk/dist/index.d.mts:344](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L344) |
+| <a id="period"></a> `period` | `object` | [packages/sdk/dist/index.d.mts:347](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L347) |
+| `period.days` | `number` | [packages/sdk/dist/index.d.mts:348](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L348) |
+| `period.since` | `string` | [packages/sdk/dist/index.d.mts:349](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L349) |
+| <a id="total"></a> `total` | `number` | [packages/sdk/dist/index.d.mts:343](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L343) |

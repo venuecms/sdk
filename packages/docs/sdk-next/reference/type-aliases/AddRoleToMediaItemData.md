@@ -8,13 +8,13 @@
 type AddRoleToMediaItemData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1252](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1252)
+Defined in: [packages/sdk/dist/index.d.mts:1924](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1924)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`AddRoleToMediaItemInput`](AddRoleToMediaItemInput.md) | [packages/sdk/dist/index.d.mts:1253](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1253) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1254](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1254) |
-| `path.mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:1255](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1255) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1256](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1256) |
+| <a id="body"></a> `body`? | [`AddRoleToMediaItemInput`](AddRoleToMediaItemInput.md) | [packages/sdk/dist/index.d.mts:1925](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1925) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1926](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1926) |
+| `path.mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:1927](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1927) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1928](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1928) |

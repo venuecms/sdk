@@ -8,13 +8,13 @@
 type UpdateMediaItemOrderInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:679](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L679)
+Defined in: [packages/sdk/dist/index.d.mts:1171](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1171)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="entityid"></a> `entityId` | `string` | [packages/sdk/dist/index.d.mts:681](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L681) |
-| <a id="entitytype"></a> `entityType` | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | [packages/sdk/dist/index.d.mts:680](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L680) |
-| <a id="mediaitemid"></a> `mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:682](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L682) |
-| <a id="upperneighbor"></a> `upperNeighbor` | `string` \| `null` | [packages/sdk/dist/index.d.mts:683](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L683) |
+| <a id="entityid"></a> `entityId` | `string` | [packages/sdk/dist/index.d.mts:1173](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1173) |
+| <a id="entitytype"></a> `entityType` | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | [packages/sdk/dist/index.d.mts:1172](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1172) |
+| <a id="mediaitemid"></a> `mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:1174](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1174) |
+| <a id="upperneighbor"></a> `upperNeighbor` | `string` \| `null` | [packages/sdk/dist/index.d.mts:1175](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1175) |

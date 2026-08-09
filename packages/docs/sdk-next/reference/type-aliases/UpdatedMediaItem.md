@@ -8,14 +8,14 @@
 type UpdatedMediaItem = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:656](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L656)
+Defined in: [packages/sdk/dist/index.d.mts:1133](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1133)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="alttext"></a> `altText`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:661](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L661) |
-| <a id="caption"></a> `caption`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:659](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L659) |
-| <a id="credit"></a> `credit`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:660](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L660) |
-| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:657](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L657) |
-| <a id="title"></a> `title`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:658](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L658) |
+| <a id="alttext"></a> `altText`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:1138](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1138) |
+| <a id="caption"></a> `caption`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:1136](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1136) |
+| <a id="credit"></a> `credit`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:1137](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1137) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:1134](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1134) |
+| <a id="title"></a> `title`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:1135](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1135) |

@@ -8,11 +8,11 @@
 type NewsDates = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:388](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L388)
+Defined in: [packages/sdk/src/client/types.gen.ts:759](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L759)
 
 ## Type declaration
 
 | Name | Type | Description | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="dates"></a> `dates` | `string`[] | Array of unique news dates. Format depends on interval: day (YYYY-MM-DD), month (YYYY-MM), or year (YYYY) | [packages/sdk/src/client/types.gen.ts:392](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L392) |
-| <a id="years"></a> `years` | `number`[] | Array of unique years that have news articles | [packages/sdk/src/client/types.gen.ts:396](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L396) |
+| <a id="dates"></a> `dates` | `string`[] | Array of unique news dates. Format depends on interval: day (YYYY-MM-DD), month (YYYY-MM), or year (YYYY) | [packages/sdk/src/client/types.gen.ts:763](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L763) |
+| <a id="years"></a> `years` | `number`[] | Array of unique years that have news articles | [packages/sdk/src/client/types.gen.ts:767](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L767) |

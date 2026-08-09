@@ -8,12 +8,12 @@
 type DeleteEventLivestreamData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1757](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1757)
+Defined in: [packages/sdk/src/client/types.gen.ts:4326](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4326)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1758](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1758) |
-| `path.mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:1759](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1759) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1760](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1760) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4327](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4327) |
+| `path.mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:4328](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4328) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4329](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4329) |

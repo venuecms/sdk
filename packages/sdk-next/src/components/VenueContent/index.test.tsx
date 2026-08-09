@@ -69,8 +69,10 @@ describe("VenueContent migrated handlers", () => {
 
   it("adds handlers for custom node types via components", () => {
     const components: NodeHandlers = {
+      // A node's attrs are `unknown`, since a TipTap node may carry anything, so
+      // a handler narrows what it means to render.
       callout: (props) => (
-        <aside className="callout">{props.node.attrs?.message}</aside>
+        <aside className="callout">{String(props.node.attrs?.message)}</aside>
       ),
     };
 

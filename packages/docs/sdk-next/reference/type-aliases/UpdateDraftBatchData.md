@@ -8,13 +8,13 @@
 type UpdateDraftBatchData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1199](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1199)
+Defined in: [packages/sdk/dist/index.d.mts:1847](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1847)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateDraftBatchInput`](UpdateDraftBatchInput.md) | [packages/sdk/dist/index.d.mts:1200](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1200) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1201](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1201) |
-| `path.batchId` | `string` | [packages/sdk/dist/index.d.mts:1202](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1202) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1203](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1203) |
+| <a id="body"></a> `body`? | [`UpdateDraftBatchInput`](UpdateDraftBatchInput.md) | [packages/sdk/dist/index.d.mts:1848](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1848) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1849](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1849) |
+| `path.batchId` | `string` | [packages/sdk/dist/index.d.mts:1850](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1850) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1851](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1851) |

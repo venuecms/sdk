@@ -11,6 +11,16 @@ const ASPECTS = {
   video: "aspect-video",
 };
 
+const getFallThroughAspect = (aspect: keyof typeof ASPECTS | string) => {
+  const resolvedAspect = ASPECTS[aspect as keyof typeof ASPECTS];
+
+  if (resolvedAspect) {
+    return resolvedAspect;
+  }
+
+  return aspect;
+};
+
 export const VenueImage = ({
   className,
   image,
@@ -19,7 +29,7 @@ export const VenueImage = ({
 }: {
   className?: string;
   image?: Partial<MediaItem>;
-  aspect?: keyof typeof ASPECTS;
+  aspect?: keyof typeof ASPECTS | string;
   props?: object;
 }) => {
   if (image) {
@@ -72,13 +82,13 @@ const ImageWrapper = ({
   aspect,
 }: {
   children?: ReactNode;
-  aspect: keyof typeof ASPECTS;
+  aspect: keyof typeof ASPECTS | string;
 }) => (
   <div className="flex h-full w-full flex-col gap-1">
     <div
       className={cn(
         "relative h-full w-full bg-cover bg-center",
-        ASPECTS[aspect],
+        getFallThroughAspect(aspect),
       )}
     >
       {children}

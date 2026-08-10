@@ -8,10 +8,10 @@
 type MetaOauthStartResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:603](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L603)
+Defined in: [packages/sdk/dist/index.d.mts:603](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L603)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="authorizeurl"></a> `authorizeUrl` | `string` | [packages/sdk/dist/index.d.mts:604](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L604) |
+| <a id="authorizeurl"></a> `authorizeUrl` | `string` | [packages/sdk/dist/index.d.mts:604](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L604) |

@@ -5,10 +5,10 @@
 # Function: splitContentEntries()
 
 ```ts
-function splitContentEntries<Styles>(entries): object
+function splitContentEntries<Styles>(entries, context): object
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:174](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L174)
+Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:338](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L338)
 
 Splits a caller's one map into the class names the renderer applies and the
 handlers it dispatches on.
@@ -25,9 +25,10 @@ a map: no node type takes both.
 
 ## Parameters
 
-| Parameter | Type |
-| ------ | ------ |
-| `entries` | `Styles` |
+| Parameter | Type | Default value |
+| ------ | ------ | ------ |
+| `entries` | `Styles` | `undefined` |
+| `context` | [`ListingContext`](../type-aliases/ListingContext.md) | `NO_CONTEXT` |
 
 ## Returns
 
@@ -35,5 +36,5 @@ a map: no node type takes both.
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="classes"></a> `classes` | `Record`\<`string`, `string`\> | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:176](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L176) |
-| <a id="handlers"></a> `handlers` | [`NodeHandlers`](../interfaces/NodeHandlers.md) | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:176](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L176) |
+| <a id="classes"></a> `classes` | `Record`\<`string`, `string`\> | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:341](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L341) |
+| <a id="handlers"></a> `handlers` | [`NodeHandlers`](../interfaces/NodeHandlers.md) | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:341](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L341) |

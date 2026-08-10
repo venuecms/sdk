@@ -8,10 +8,10 @@
 type UpdateParentTagsInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1196](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1196)
+Defined in: [packages/sdk/dist/index.d.mts:1196](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1196)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="parenttagids"></a> `parentTagIds` | `string`[] | [packages/sdk/dist/index.d.mts:1197](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L1197) |
+| <a id="parenttagids"></a> `parentTagIds` | `string`[] | [packages/sdk/dist/index.d.mts:1197](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1197) |

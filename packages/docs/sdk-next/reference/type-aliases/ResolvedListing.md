@@ -8,7 +8,7 @@
 type ResolvedListing<Type> = object;
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/listings/resolve.ts:69](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk-next/src/components/VenueContent/listings/resolve.ts#L69)
+Defined in: [packages/sdk-next/src/components/VenueContent/listings/resolve.ts:72](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/resolve.ts#L72)
 
 What a listing component is handed: the block's records, plus the site.
 
@@ -27,7 +27,8 @@ render when it is missing.
 
 ## Type declaration
 
-| Name | Type | Defined in |
-| ------ | ------ | ------ |
-| <a id="records"></a> `records` | [`ListingRecords`](ListingRecords.md)\[`Type`\] | [packages/sdk-next/src/components/VenueContent/listings/resolve.ts:70](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk-next/src/components/VenueContent/listings/resolve.ts#L70) |
-| <a id="site"></a> `site` | [`Site`](Site.md) \| `null` | [packages/sdk-next/src/components/VenueContent/listings/resolve.ts:71](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk-next/src/components/VenueContent/listings/resolve.ts#L71) |
+| Name | Type | Description | Defined in |
+| ------ | ------ | ------ | ------ |
+| <a id="count"></a> `count` | `number` \| `null` | Total records matching the block's filters, across every page, or null when the endpoint did not report one. The products and profiles endpoints declare `count` optional, so null is a response they are allowed to give. It is carried through as null rather than substituted, because every plausible substitute is a lie a template would print: the page's own length says "12 products" for a match of a hundred and takes the next page's link away with it, and zero renders the block as nothing at all. Downstream, an unknown count means a pager that can still go forward — see `paginationMeta` — but cannot say how far. Null on a failed read too, since the endpoint reports a bad request in-band as absent data. | [packages/sdk-next/src/components/VenueContent/listings/resolve.ts:90](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/resolve.ts#L90) |
+| <a id="records"></a> `records` | [`ListingRecords`](ListingRecords.md)\[`Type`\] | - | [packages/sdk-next/src/components/VenueContent/listings/resolve.ts:73](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/resolve.ts#L73) |
+| <a id="site"></a> `site` | [`Site`](Site.md) \| `null` | - | [packages/sdk-next/src/components/VenueContent/listings/resolve.ts:74](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/resolve.ts#L74) |

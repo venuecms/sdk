@@ -5,10 +5,10 @@
 # Function: listingHandlers()
 
 ```ts
-function listingHandlers(components): NodeHandlers
+function listingHandlers(components, context): NodeHandlers
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:138](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L138)
+Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:301](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L301)
 
 The supplied listing components wrapped into node handlers.
 
@@ -19,9 +19,10 @@ remount them.
 
 ## Parameters
 
-| Parameter | Type |
-| ------ | ------ |
-| `components` | [`ListingComponents`](../type-aliases/ListingComponents.md) |
+| Parameter | Type | Default value |
+| ------ | ------ | ------ |
+| `components` | [`ListingComponents`](../type-aliases/ListingComponents.md) | `undefined` |
+| `context` | [`ListingContext`](../type-aliases/ListingContext.md) | `NO_CONTEXT` |
 
 ## Returns
 

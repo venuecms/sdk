@@ -8,8 +8,12 @@ import { VenueImage } from "../VenueImage";
 import { EmbedResize } from "../EmbedResize";
 import Markdown from "markdown-to-jsx";
 import React, { JSX, ReactNode } from "react";
-import type { ListingComponents } from "./listings";
-import { splitContentEntries } from "./listings";
+import type { ListingComponents, SearchParams } from "./listings";
+import {
+  LISTING_BLOCK_NODE_TYPES,
+  listingParamNames,
+  splitContentEntries,
+} from "./listings";
 import type { NodeHandlers, RenderNode } from "./types";
 
 type ElementClasses = {
@@ -386,7 +390,14 @@ const ContentRender = (props: {
 
   // return empty if we are missing a handler for this type
   if (!(node.type in handlers)) {
-    console.warn(`missing type`, node);
+    // A listing block with no component is a caller's choice, not a gap: every
+    // key on the map is optional, and leaving one off is how a template says it
+    // does not draw that listing. Warning about it would put a line in the
+    // server log for every such block on every uncached render of the article.
+    if (!(LISTING_BLOCK_NODE_TYPES as readonly string[]).includes(node.type)) {
+      console.warn(`missing type`, node);
+    }
+
     return <></>;
   }
   // render the handler for this type
@@ -428,25 +439,49 @@ export const VenueContent = ({
   contentStyles,
   className,
   components,
+  searchParams,
 }: {
   content: LocalizedContent;
   contentStyles?: ContentEntries;
   className?: string;
   components?: NodeHandlers;
+  /**
+   * The route's search params, for listing blocks that paginate by link.
+   *
+   * Only a route segment can read search params — a listing sits too deep to
+   * ask for them — so a caller that wants paginated listings to produce hrefs
+   * passes them down from the page. Leaving it off costs a listing only its
+   * `pagination.links`, which is then null; the records and the counts arrive
+   * without it.
+   */
+  searchParams?: SearchParams;
 }) => {
   const { contentJSON } = content;
+
+  const nodes = (contentJSON?.content ?? []) as Array<RenderNode>;
+
+  // Which param each listing block owns is a property of the whole document —
+  // two identical blocks have to be told apart — so it is worked out once here
+  // rather than by each block as it renders.
+  const listingContext = {
+    searchParams: searchParams ?? null,
+    paramNames: listingParamNames(nodes),
+  };
 
   // Listing components ride in on `contentStyles`; `components` stays for
   // callers passing raw node handlers, and wins on any key the two share, since
   // a handler is the more specific thing to have asked for.
-  const { classes, handlers } = splitContentEntries(contentStyles ?? {});
+  const { classes, handlers } = splitContentEntries(
+    contentStyles ?? {},
+    listingContext,
+  );
   const allHandlers = { ...handlers, ...components };
 
   if (contentJSON) {
     return (
       <div className={className}>
         <EmbedResize />
-        {(contentJSON.content as Array<RenderNode>).map((node, i) => (
+        {nodes.map((node, i) => (
           <ContentRender
             key={i}
             classes={classes}

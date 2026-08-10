@@ -85,6 +85,19 @@ const crossed: ContentEntries = {
   newsListing: ({ records }: ListingProps<"eventListing">) => records.length,
 };
 
+// A Client Component needs things the SDK does not hand a listing component —
+// the locale — so the Server Component closes over them and passes them as a
+// prop. Written without JSX because this file is a `.ts`; the docs show the
+// element form. Asserted here because a docs example that does not compile is
+// only found by the person following it.
+const clientListing = (
+  props: ListingProps<"eventListing"> & { locale: string },
+) => props.records.length + props.locale.length;
+
+asContentEntries({
+  eventListing: (props) => clientListing({ ...props, locale: "en" }),
+});
+
 describe("listing contract", () => {
   it("holds at compile time", () => {
     // The assertions above are the test; this keeps the file a real suite and

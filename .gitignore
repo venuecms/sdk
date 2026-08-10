@@ -10,3 +10,6 @@ dist/*
 *.vim
 
 package/
+
+# fallow analyzer cache
+.fallow/

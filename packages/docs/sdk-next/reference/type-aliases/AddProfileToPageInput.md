@@ -8,10 +8,10 @@
 type AddProfileToPageInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:76](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L76)
+Defined in: [packages/sdk/dist/index.d.mts:76](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L76)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="profileid"></a> `profileId` | `string` | [packages/sdk/dist/index.d.mts:77](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/dist/index.d.mts#L77) |
+| <a id="profileid"></a> `profileId` | `string` | [packages/sdk/dist/index.d.mts:77](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L77) |

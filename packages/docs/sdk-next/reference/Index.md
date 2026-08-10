@@ -515,7 +515,10 @@
 | [ListingBlockNodeType](type-aliases/ListingBlockNodeType.md) | - |
 | [ListingComponent](type-aliases/ListingComponent.md) | A component that renders one listing block's records. |
 | [ListingComponents](type-aliases/ListingComponents.md) | The listing components a caller may supply, keyed by node type. |
-| [ListingProps](type-aliases/ListingProps.md) | What a listing component receives: the block's records and the site. |
+| [ListingContext](type-aliases/ListingContext.md) | What the renderer knows that a listing block cannot work out for itself. |
+| [ListingPageLinks](type-aliases/ListingPageLinks.md) | - |
+| [ListingPagination](type-aliases/ListingPagination.md) | - |
+| [ListingProps](type-aliases/ListingProps.md) | What a listing component receives: the block's records, the site, and — for the listings that paginate — the pagination. |
 | [ListingRecords](type-aliases/ListingRecords.md) | The records each listing resolves to. |
 | [ListLocationsData](type-aliases/ListLocationsData.md) | - |
 | [ListLocationsError](type-aliases/ListLocationsError.md) | - |
@@ -636,7 +639,9 @@
 | [PageMediaItemUpload](type-aliases/PageMediaItemUpload.md) | - |
 | [PagesListResponse](type-aliases/PagesListResponse.md) | - |
 | [PageTagsResponse](type-aliases/PageTagsResponse.md) | - |
+| [PaginatedListingNodeType](type-aliases/PaginatedListingNodeType.md) | - |
 | [Pagination](type-aliases/Pagination.md) | - |
+| [PaginationMeta](type-aliases/PaginationMeta.md) | - |
 | [playbackPolicy](type-aliases/playbackPolicy.md) | - |
 | [PlaybackToken](type-aliases/PlaybackToken.md) | - |
 | [Product](type-aliases/Product.md) | - |
@@ -762,6 +767,7 @@
 | [SearchAllError](type-aliases/SearchAllError.md) | - |
 | [SearchAllResponse](type-aliases/SearchAllResponse.md) | - |
 | [SearchAllSiteResults](type-aliases/SearchAllSiteResults.md) | - |
+| [SearchParams](type-aliases/SearchParams.md) | A page's worth of search params, as a route hands them over. |
 | [SearchSiteData](type-aliases/SearchSiteData.md) | - |
 | [SearchSiteError](type-aliases/SearchSiteError.md) | - |
 | [SearchSiteResponse](type-aliases/SearchSiteResponse.md) | - |
@@ -977,10 +983,15 @@
 | [WebSite](type-aliases/WebSite-1.md) | - |
 | [WebsiteTemplatesList](type-aliases/WebsiteTemplatesList.md) | - |
 | [LISTING\_BLOCK\_NODE\_TYPES](variables/LISTING_BLOCK_NODE_TYPES.md) | Every TipTap node type rendered as a listing. |
+| [MAX\_PAGE](variables/MAX_PAGE.md) | The deepest page a URL may name. |
+| [MAX\_PAGE\_LINKS](variables/MAX_PAGE_LINKS.md) | How many page hrefs `links.hrefs` carries at most. |
+| [MAX\_PAGE\_SIZE](variables/MAX_PAGE_SIZE.md) | What the endpoint is allowed to be asked for on an author's say-so. |
+| [PAGINATED\_LISTING\_NODE\_TYPES](variables/PAGINATED_LISTING_NODE_TYPES.md) | The listings that paginate. |
 | [cache](functions/cache.md) | - |
 | [EmbedResize](functions/EmbedResize.md) | Component form of [useEmbedResize](functions/useEmbedResize.md). Renders nothing. Mounted once by VenueContent; can also be placed in a layout if rendering embeds elsewhere. |
 | [getEventDates](functions/getEventDates.md) | - |
 | [listingHandlers](functions/listingHandlers.md) | The supplied listing components wrapped into node handlers. |
+| [listingParamNames](functions/listingParamNames.md) | Every paginated block in a document, mapped to the param it owns. |
 | [splitContentEntries](functions/splitContentEntries.md) | Splits a caller's one map into the class names the renderer applies and the handlers it dispatches on. |
 | [useEmbedResize](functions/useEmbedResize.md) | - |
 | [VenueContent](functions/VenueContent.md) | - |

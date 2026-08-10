@@ -803,9 +803,10 @@ describe("listing pagination off the request", () => {
   });
 
   it("does not read the request for a block that draws no pager", async () => {
-    // Reading it is a dynamic API, and a listing with no page size will never
-    // have a URL to link to — so an unpaginated block should not be the reason
-    // a page reads the request.
+    // Not about dynamic rendering — every listing marks its subtree dynamic
+    // through `connection()` whether it paginates or not. It is that a block
+    // with no page size has no use for the URL: no page to take from it and no
+    // pager to link back with, so it should not be reading it.
     getEvents.mockResolvedValue(listing([{ id: "e1" }]));
 
     await renderListing({ eventListing: () => null }, eventNode({}));

@@ -16,7 +16,7 @@ function getProfileProducts(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:119](https://github.com/venuecms/sdk/blob/716d10b745ed0715f8414e594f4b5aaf9180e529/packages/sdk-next/src/lib/api/index.ts#L119)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:119](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk-next/src/lib/api/index.ts#L119)
 
 Get a listing of products for a profile (cached)
 

@@ -8,7 +8,7 @@
 function getRequestSearchParams(): Promise<null | SearchParams>
 ```
 
-Defined in: packages/sdk-next/src/lib/searchParams/index.ts:34
+Defined in: [packages/sdk-next/src/lib/searchParams/index.ts:34](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk-next/src/lib/searchParams/index.ts#L34)
 
 The current request's search params, or null when they cannot be read.
 

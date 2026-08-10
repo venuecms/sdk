@@ -8,7 +8,7 @@
 const PAGINATED_LISTING_NODE_TYPES: readonly ["eventListing", "newsListing", "productListing", "profileListing"];
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/listings/pagination.ts:33](https://github.com/venuecms/sdk/blob/716d10b745ed0715f8414e594f4b5aaf9180e529/packages/sdk-next/src/components/VenueContent/listings/pagination.ts#L33)
+Defined in: [packages/sdk-next/src/components/VenueContent/listings/pagination.ts:33](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk-next/src/components/VenueContent/listings/pagination.ts#L33)
 
 The listings that paginate.
 

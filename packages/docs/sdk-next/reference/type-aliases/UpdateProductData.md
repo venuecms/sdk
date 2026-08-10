@@ -8,13 +8,13 @@
 type UpdateProductData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2996](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2996)
+Defined in: [packages/sdk/dist/index.d.mts:2996](https://github.com/venuecms/sdk/blob/716d10b745ed0715f8414e594f4b5aaf9180e529/packages/sdk/dist/index.d.mts#L2996)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateProductInput`](UpdateProductInput.md) | [packages/sdk/dist/index.d.mts:2997](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2997) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2998](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2998) |
-| `path.productId` | `string` | [packages/sdk/dist/index.d.mts:2999](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2999) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3000](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3000) |
+| <a id="body"></a> `body`? | [`UpdateProductInput`](UpdateProductInput.md) | [packages/sdk/dist/index.d.mts:2997](https://github.com/venuecms/sdk/blob/716d10b745ed0715f8414e594f4b5aaf9180e529/packages/sdk/dist/index.d.mts#L2997) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2998](https://github.com/venuecms/sdk/blob/716d10b745ed0715f8414e594f4b5aaf9180e529/packages/sdk/dist/index.d.mts#L2998) |
+| `path.productId` | `string` | [packages/sdk/dist/index.d.mts:2999](https://github.com/venuecms/sdk/blob/716d10b745ed0715f8414e594f4b5aaf9180e529/packages/sdk/dist/index.d.mts#L2999) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3000](https://github.com/venuecms/sdk/blob/716d10b745ed0715f8414e594f4b5aaf9180e529/packages/sdk/dist/index.d.mts#L3000) |

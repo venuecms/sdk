@@ -8,7 +8,7 @@
 type AllListingComponents = { [Type in ListingBlockNodeType]: ListingComponent<Type> };
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:172](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L172)
+Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:173](https://github.com/venuecms/sdk/blob/716d10b745ed0715f8414e594f4b5aaf9180e529/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L173)
 
 The same map with every listing required.
 

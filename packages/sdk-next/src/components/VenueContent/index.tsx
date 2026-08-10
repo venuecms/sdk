@@ -448,11 +448,13 @@ export const VenueContent = ({
   /**
    * The route's search params, for listing blocks that paginate by link.
    *
-   * Only a route segment can read search params — a listing sits too deep to
-   * ask for them — so a caller that wants paginated listings to produce hrefs
-   * passes them down from the page. Leaving it off costs a listing only its
-   * `pagination.links`, which is then null; the records and the counts arrive
-   * without it.
+   * Optional, and normally left off: a listing reads them off the request
+   * itself, which is what `venueRequestHeaders` in the site's proxy is for. Pass
+   * them to override that — content rendered for a URL other than the one being
+   * requested, or a site with no proxy of its own.
+   *
+   * With neither, a listing loses only its `pagination.links`, which is then
+   * null; the records and the counts arrive without it.
    */
   searchParams?: SearchParams;
 }) => {

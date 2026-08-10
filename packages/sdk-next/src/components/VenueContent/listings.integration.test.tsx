@@ -5,12 +5,21 @@
 import { renderToReadableStream } from "react-dom/server.browser";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
+import { VENUE_URL_HEADER } from "../../lib/searchParams";
+
 import { VenueContent } from "./index";
 
 // `connection()` marks the listing's subtree dynamic, and throws outside a Next
 // request scope — which is where these tests render. Next's dynamic marking is
 // not what they exercise, so it is stubbed rather than worked around.
 vi.mock("next/server", () => ({ connection: () => Promise.resolve() }));
+
+// The request whose URL a listing reads its search params off. Stubbed with no
+// stamp by default, so a test that does not set one renders as it would on a
+// site whose proxy never installed `venueRequestHeaders`.
+vi.mock("next/headers", () => ({
+  headers: vi.fn(() => Promise.resolve(new Headers())),
+}));
 
 vi.mock("../../lib/api", () => ({
   getEvents: vi.fn(),
@@ -22,6 +31,9 @@ vi.mock("../../lib/api", () => ({
 }));
 
 const api = await import("../../lib/api");
+const { headers } = await import("next/headers");
+
+const mockHeaders = vi.mocked(headers);
 const getEvents = vi.mocked(api.getEvents);
 const getSite = vi.mocked(api.getSite);
 
@@ -33,6 +45,9 @@ const render = async (element: React.ReactNode) => {
 
 beforeEach(() => {
   vi.clearAllMocks();
+  // Restored rather than left as the factory set it: `clearAllMocks` clears the
+  // calls but keeps whatever implementation a test last installed.
+  mockHeaders.mockResolvedValue(new Headers() as never);
   getSite.mockResolvedValue({ data: { id: "site_1" } } as never);
 });
 
@@ -116,7 +131,41 @@ describe("VenueContent with listing blocks", () => {
     expect(new Set(params).size).toBe(2);
   });
 
-  it("gives a listing no links when the route's params were not passed down", async () => {
+  it("paginates off the request when no page threaded anything down", async () => {
+    // The seam this replaces: a template used to reach `VenueContent` through
+    // its own layout components, so a page that wanted pagers had to pass
+    // `searchParams` to every one of them. With the URL stamped by the proxy,
+    // the blocks find it themselves and the prop disappears from the template.
+    getEvents.mockResolvedValue({
+      data: { records: [{ id: "e1", slug: "opening-night" }], count: 30 },
+    } as never);
+
+    const listingNode = { type: "eventListing", attrs: { limit: 5 } };
+    const seen: (string | null)[] = [];
+
+    mockHeaders.mockResolvedValue(
+      new Headers({
+        [VENUE_URL_HEADER]: "https://example.com/p/about?locale=de",
+      }) as never,
+    );
+
+    await render(
+      <VenueContent
+        content={{ contentJSON: { content: [listingNode] } } as never}
+        contentStyles={{
+          eventListing: ({ pagination }) => {
+            seen.push(pagination?.links?.nextHref ?? null);
+            return null;
+          },
+        }}
+      />,
+    );
+
+    expect(seen).toHaveLength(1);
+    expect(seen[0]).toContain("locale=de");
+  });
+
+  it("gives a listing no links when there are no params anywhere", async () => {
     getEvents.mockResolvedValue({
       data: { records: [{ id: "e1", slug: "opening-night" }], count: 30 },
     } as never);

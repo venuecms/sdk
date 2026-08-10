@@ -16,7 +16,7 @@ function getSite(): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:36](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/lib/api/index.ts#L36)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:36](https://github.com/venuecms/sdk/blob/716d10b745ed0715f8414e594f4b5aaf9180e529/packages/sdk-next/src/lib/api/index.ts#L36)
 
 Get the site configured via the siteKey (cached)
 

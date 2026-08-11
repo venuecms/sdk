@@ -39,4 +39,14 @@ export {
   searchSite,
 } from "./lib/api";
 
+// The request URL, stamped onto a header in the proxy and read back inside the
+// render, so listing blocks paginate without a page threading `searchParams`
+// down to them. `SearchParams` itself comes out through ./components, which is
+// where it was already exported from.
+export {
+  VENUE_URL_HEADER,
+  getRequestSearchParams,
+  venueRequestHeaders,
+} from "./lib/searchParams";
+
 export * from "./components";

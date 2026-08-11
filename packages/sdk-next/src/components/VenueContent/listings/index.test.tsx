@@ -1,6 +1,8 @@
 import { renderToReadableStream } from "react-dom/server.browser";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
+import { VENUE_URL_HEADER } from "../../../lib/searchParams";
+
 import { listingParamBase } from "./identity";
 import type {
   ListingComponents,
@@ -21,6 +23,13 @@ import { listingHandlers, splitContentEntries } from "./index";
 // swallowed by the listing's own boundaries, so only an assertion catches it.
 vi.mock("next/server", () => ({ connection: vi.fn(() => Promise.resolve()) }));
 
+// The request a block reads its search params off, absent an explicit prop.
+// Stubbed empty by default, so the tests above render as they would on a site
+// whose proxy does not stamp the URL.
+vi.mock("next/headers", () => ({
+  headers: vi.fn(() => Promise.resolve(new Headers())),
+}));
+
 vi.mock("../../../lib/api", () => ({
   getEvents: vi.fn(),
   getNews: vi.fn(),
@@ -31,6 +40,9 @@ vi.mock("../../../lib/api", () => ({
 }));
 
 const api = await import("../../../lib/api");
+const { headers } = await import("next/headers");
+
+const mockHeaders = vi.mocked(headers);
 
 const getEvents = vi.mocked(api.getEvents);
 const getProfiles = vi.mocked(api.getProfiles);
@@ -137,6 +149,9 @@ const paginationOf = (spy: ReturnType<typeof listingSpy>) => {
 
 beforeEach(() => {
   vi.clearAllMocks();
+  // Restored rather than left as the factory set it: `clearAllMocks` clears the
+  // calls but keeps whatever implementation a test last installed.
+  mockHeaders.mockResolvedValue(new Headers() as never);
   getSite.mockResolvedValue({ data: site } as never);
 });
 
@@ -699,5 +714,103 @@ describe("listing pagination", () => {
 
     expect(getEvents.mock.calls[0]?.[0]).not.toHaveProperty("page");
     expect(propsOf(component)).toMatchObject({ pagination: null });
+  });
+});
+
+describe("listing pagination off the request", () => {
+  const paramFor = (attrs: Record<string, unknown>) =>
+    listingParamBase("eventListing", attrs);
+
+  /** A request whose proxy stamped this URL, as `venueRequestHeaders` does. */
+  const requestAt = (url: string) =>
+    mockHeaders.mockResolvedValue(
+      new Headers({ [VENUE_URL_HEADER]: url }) as never,
+    );
+
+  it("reads the block's page off the request with nothing threaded in", async () => {
+    // The point of the whole mechanism: no page passed `searchParams` to
+    // anything, and the block still paginates.
+    const attrs = { limit: 10 };
+    requestAt(`https://example.com/p/about?${paramFor(attrs)}=2`);
+    getEvents.mockResolvedValue(listingPage([{ id: "e1" }], 30));
+
+    await renderListing({ eventListing: () => null }, eventNode(attrs));
+
+    expect(getEvents).toHaveBeenCalledWith(
+      expect.objectContaining({ limit: 10, page: 2 }),
+    );
+  });
+
+  it("builds the links off the request's params", async () => {
+    const attrs = { limit: 10 };
+    const param = paramFor(attrs);
+    requestAt(`https://example.com/p/about?${param}=1&locale=de`);
+    getEvents.mockResolvedValue(listingPage([{ id: "e1" }], 30));
+    const component = listingSpy();
+
+    await renderListing({ eventListing: component }, eventNode(attrs));
+
+    expect(paginationOf(component).links).toMatchObject({
+      param,
+      prevHref: `?locale=de`,
+      nextHref: `?locale=de&${param}=2`,
+    });
+  });
+
+  it("takes the params a caller threaded in over the request's", async () => {
+    // Content rendered for a URL other than the one being requested has no
+    // other way to say so, and every template that already threads them keeps
+    // working unchanged.
+    const attrs = { limit: 10 };
+    const param = paramFor(attrs);
+    requestAt(`https://example.com/p/about?${param}=9`);
+    getEvents.mockResolvedValue(listingPage([{ id: "e1" }], 300));
+
+    await renderListing({ eventListing: () => null }, eventNode(attrs), {
+      searchParams: { [param]: "2" },
+      paramNames: new Map(),
+    });
+
+    expect(getEvents).toHaveBeenCalledWith(expect.objectContaining({ page: 2 }));
+  });
+
+  it("leaves a listing without links where nothing stamped the URL", async () => {
+    // A site whose proxy does not install the helper: the records still arrive
+    // and the counts are still right, only the hrefs are missing.
+    const attrs = { limit: 10 };
+    getEvents.mockResolvedValue(listingPage([{ id: "e1" }], 30));
+    const component = listingSpy();
+
+    await renderListing({ eventListing: component }, eventNode(attrs));
+
+    expect(paginationOf(component)).toMatchObject({ count: 30, links: null });
+  });
+
+  it("keeps a block with no page size out of the URL entirely", async () => {
+    // A block with no page size is queried unpaginated, so the records it got
+    // back are the whole listing. A URL naming its param must not reach the
+    // emptiness check either: an empty listing renders as nothing whatever page
+    // the URL claims, because there is no pager to get a reader back from one.
+    const attrs = {};
+    requestAt(`https://example.com/p/about?${paramFor(attrs)}=2`);
+    getEvents.mockResolvedValue({ data: { records: [] } } as never);
+    const component = listingSpy(() => <span>drawn</span>);
+
+    const html = await renderListing({ eventListing: component }, eventNode(attrs));
+
+    expect(html).not.toContain("drawn");
+    expect(getEvents.mock.calls[0]?.[0]).not.toHaveProperty("page");
+  });
+
+  it("does not read the request for a block that draws no pager", async () => {
+    // Not about dynamic rendering — every listing marks its subtree dynamic
+    // through `connection()` whether it paginates or not. It is that a block
+    // with no page size has no use for the URL: no page to take from it and no
+    // pager to link back with, so it should not be reading it.
+    getEvents.mockResolvedValue(listing([{ id: "e1" }]));
+
+    await renderListing({ eventListing: () => null }, eventNode({}));
+
+    expect(mockHeaders).not.toHaveBeenCalled();
   });
 });

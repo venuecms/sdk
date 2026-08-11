@@ -31,6 +31,7 @@
 import type { Site } from "@venuecms/sdk";
 import { Suspense } from "react";
 
+import { getRequestSearchParams } from "../../../lib/searchParams";
 import { ErrorBoundary } from "../../utils/ErrorBoundary";
 import type { NodeHandler, NodeHandlers, NodeProps, RenderNode } from "../types";
 
@@ -90,10 +91,10 @@ export type ListingProps<Type extends ListingBlockNodeType> = {
 /**
  * What the renderer knows that a listing block cannot work out for itself.
  *
- * Search params come from the route, since a nested Server Component cannot
- * read them; the param names come from a walk of the whole document, since a
- * block's param depends on the other blocks around it. Both are optional, and a
- * listing without them still renders — it only loses its links.
+ * Search params are the ones a caller threaded in, which override what the
+ * block would otherwise read off the request; the param names come from a walk
+ * of the whole document, since a block's param depends on the other blocks
+ * around it. Both are optional, and a listing without either still renders.
  */
 export type ListingContext = {
   searchParams: SearchParams | null;
@@ -217,24 +218,32 @@ const listingHandler = <Type extends ListingBlockNodeType>(
         listingParamBase(nodeType, attrs as Record<string, unknown>))
       : null;
 
+    // Only a block that reports pagination reads the URL or has its page
+    // overridden. A paginated node type whose author set no page size has a
+    // param name all the same — it is a hash of the attributes, not of the page
+    // size — and shifting its query by a page it will never draw a pager for
+    // would move records with nothing on screen to explain it.
+    const paginated =
+      param != null && (params as { limit?: number | null }).limit != null;
+
+    // Where the search params come from, in order: what a caller threaded in,
+    // then the request the block is rendering under. Threaded ones win because
+    // a caller that passed them meant those — a page rendering content for a
+    // URL other than its own has no other way to say so — and because that is
+    // what every template did before the SDK could read the request itself.
+    const searchParams = paginated
+      ? (context.searchParams ?? (await getRequestSearchParams()))
+      : null;
+
     // The URL wins over the author's starting page, which is what makes a link
     // a reader followed show the page they asked for — but only when it names
     // this block. A URL silent about it leaves the author's `page` standing,
     // rather than resetting every block that starts on a later page the moment
-    // a caller threads `searchParams` in.
+    // the URL becomes readable.
     const fromUrl =
-      context.searchParams && param
-        ? readPage(context.searchParams, param)
-        : null;
+      searchParams && param ? readPage(searchParams, param) : null;
 
     const page = fromUrl ?? (params as { page?: number | null }).page ?? 0;
-
-    // Only a block that reports pagination has its page overridden. A paginated
-    // node type whose author set no page size has a param name all the same —
-    // it is a hash of the attributes, not of the page size — and shifting its
-    // query by a page it will never draw a pager for would move records with
-    // nothing on screen to explain it.
-    const paginated = param != null && (params as { limit?: number | null }).limit != null;
 
     const { records, count, site } = await resolveListing(nodeType, {
       ...params,
@@ -264,7 +273,7 @@ const listingHandler = <Type extends ListingBlockNodeType>(
       count,
       records.length,
       param,
-      context.searchParams,
+      searchParams,
     );
 
     // One cast at the boundary: `ListingProps` gives `pagination` only to the

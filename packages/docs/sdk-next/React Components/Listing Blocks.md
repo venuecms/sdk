@@ -88,7 +88,53 @@ Everything on `pagination` is plain data — strings and numbers, no functions �
 
 ### Paginating with links
 
-Only a route segment can read search params — a listing block sits too deep in the content to ask for them — so pass them down from your page:
+A pager needs the URL it is linking from, and Next hands search params to `page.tsx` and nowhere else — a listing block sits too deep in the content to ask for them. So stamp the request URL onto the request in your proxy, once, and every block on every page can read it:
+
+```ts
+// src/proxy.ts (or middleware.ts)
+import { venueRequestHeaders } from "@venuecms/sdk-next";
+import type { NextRequest } from "next/server";
+import { NextResponse } from "next/server";
+
+export default function proxy(request: NextRequest) {
+  return NextResponse.next({
+    request: { headers: venueRequestHeaders(request) },
+  });
+}
+```
+
+`venueRequestHeaders` returns the request's own headers with the URL added, so pass its result wherever you already build a response. A template that rewrites — to prefix a site key, say — passes it the same way:
+
+```ts
+return NextResponse.rewrite(rewrittenUrl, {
+  request: { headers: venueRequestHeaders(request) },
+});
+```
+
+Nothing else changes: no page passes `searchParams` to anything.
+
+Two things to check when the pagers do not appear:
+
+* **Your `config.matcher` has to cover the content routes.** A path the proxy skips is a path with no stamped URL, and its blocks get no links.
+* **Stamp on every branch that renders.** A proxy that returns early — a locale redirect, an API rewrite — only needs the helper on the branches that end in a rendered page.
+
+The helper also *replaces* any `x-venue-url` the client sent, so once it is installed the site decides what a listing paginates against. Until it is installed there is nothing to overwrite: on an unstamped route a reader can supply the header themselves, which reaches their own listing's page number (clamped to `MAX_PAGE`) and their own page links (URL-encoded), and nothing else.
+
+`pagination.links` is `null` until the SDK can resolve the URL — which is how a proxy that has not been wired up shows itself, rather than as hrefs that never move. The records and the counts arrive without it.
+
+You can also read the params yourself, in any Server Component under the request, with the same resolver:
+
+```ts
+import { getRequestSearchParams } from "@venuecms/sdk-next";
+
+const searchParams = await getRequestSearchParams(); // null if nothing stamped the URL
+```
+
+Like `headers()`, it is request data: it opts the calling subtree out of static rendering, and throws if there is no request to read.
+
+#### Passing search params explicitly
+
+`VenueContent` still takes a `searchParams` prop, and it wins over the request. Use it when the content is being rendered for some URL other than the one being requested, or on a site with no proxy of its own:
 
 ```tsx
 export default async function Page({
@@ -99,7 +145,6 @@ export default async function Page({
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
   const { locale, slug } = await params;
-  const search = await searchParams;
 
   const { data: page } = await getPage({ slug });
   const { content } = getLocalizedContent(page?.localizedContent, locale);
@@ -108,15 +153,13 @@ export default async function Page({
     <VenueContent
       content={content}
       contentStyles={contentStyles(locale)}
-      searchParams={search}
+      searchParams={await searchParams}
     />
   );
 }
 ```
 
-`pagination.links` is `null` until you do — which is how a missing `searchParams` prop shows up, rather than as hrefs that never move. The records and the counts arrive without it.
-
-With search params threaded through, a prev/next pager:
+Either way, a prev/next pager looks the same:
 
 ```tsx
 import Link from "next/link";
@@ -241,12 +284,13 @@ Import types from `@venuecms/sdk-next` freely — type-only imports erase. Do no
 * **`page` is 0-indexed** everywhere, matching the endpoints. `pageNumber` is the 1-based one to display.
 * **`count` is the total match**, not the size of the current page — `records.length` is the page — or `null` where the endpoint reported no total.
 * **Each block owns its own search param**, named from the listing type and a hash of its filters — `?evt_1a2b3c=2`. Two listings on one page therefore page independently, and adding, removing, or reordering blocks does not shuffle the others' params. Two blocks with identical filters get an ordinal suffix (`_2`) to tell them apart.
+* **That suffix is worked out per `VenueContent`.** Two blocks with identical filters in *separate* `VenueContent` renders on one route — an article and a sidebar, say — each look like the first of their kind, so they share a param and page together. Give one of them a filter the other does not have (a different page size is enough) if they should move independently.
 * **`pageListing` does not paginate**, so `pagination` is absent from its props rather than always null. A page read has to return every page for parent-path resolution.
 * **`links.hrefs` is capped** at `MAX_PAGE_LINKS` (200) entries so a very large listing does not put thousands of strings on your props. `pageCount` stays exact, so you can tell when the list has been truncated. `prevHref`/`nextHref` are unaffected.
 * **A listing that matched nothing renders nothing** rather than an empty state — it sits mid-prose, where a "nothing found" message would read as the author's copy. A page *past* the end of a listing that did match still renders, so a reader who overshot gets a pager with a link back.
 * **A page is capped at `MAX_PAGE_SIZE` (100) records.** An author who sets a larger page size on the block gets 100; `pagination.pageSize` reports the size actually used, and every record is still reachable across the pages.
 * **`page` is capped at `MAX_PAGE` (1000).** A URL asking for a deeper page clamps to it, and a `page` attribute on the block clamps to it. `nextHref` stops there too, so a pager never offers a link that would clamp back to where it was clicked. The endpoints page by offset, so an unbounded page number is an unbounded scan; no pager a reader clicks reaches this far.
 * **`count` may be absent** on product and profile responses, which declare it optional. It is then reported as `null` rather than guessed: the records render, prev/next still work off "was this page full", but there is no total to display and `pageCount`/`hrefs` are empty. The one cost is a next link on the last page of a listing whose length is an exact multiple of the page size — it lands on a page with no records. That page still draws, with a pager back, rather than the block disappearing from the article.
-* **The URL only overrides the author's page when it names the block.** An author can start a listing on a later page via the block's own `page` attribute; passing `searchParams` does not reset that. `?evt_1a2b3c=0` does override it, since that names the block explicitly — and that is what the generated links write for such a block, so its "Previous" and its "1" reach page 0 rather than falling back to where the author started. A block whose author left `page` alone keeps the shorter first-page href, with no `=0` in it.
+* **The URL only overrides the author's page when it names the block.** An author can start a listing on a later page via the block's own `page` attribute; a URL that says nothing about the block does not reset that. `?evt_1a2b3c=0` does override it, since that names the block explicitly — and that is what the generated links write for such a block, so its "Previous" and its "1" reach page 0 rather than falling back to where the author started. A block whose author left `page` alone keeps the shorter first-page href, with no `=0` in it.
 * **A padded query string is not carried into every link.** Each page href reflects the rest of the query so your own params survive pagination, but there is a budget on how much — far above any real page's query string — since one request's params otherwise multiply into every one of up to 200 hrefs per block. The budget is measured on the encoded href, so it is a bound on what gets written rather than on what arrived.
 * **This package ships no server actions.** Pagination is entirely server-rendered, and everything on `pagination` is data. An action is a public HTTP endpoint whose arguments its caller supplies, so one shipped from an SDK would be an endpoint you mount without having written it; a build check fails if a `"use server"` ever reaches the output. If you want records appended in place rather than a page navigation, write that action in your own app, where you decide what it accepts.

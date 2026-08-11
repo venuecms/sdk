@@ -8,13 +8,13 @@
 type CreateEventLivestreamData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3462](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3462)
+Defined in: [packages/sdk/dist/index.d.mts:3462](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk/dist/index.d.mts#L3462)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`CreateLivestreamInput`](CreateLivestreamInput.md) | [packages/sdk/dist/index.d.mts:3463](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3463) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3464](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3464) |
-| `path.eventId` | `string` | [packages/sdk/dist/index.d.mts:3465](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3465) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3466](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3466) |
+| <a id="body"></a> `body`? | [`CreateLivestreamInput`](CreateLivestreamInput.md) | [packages/sdk/dist/index.d.mts:3463](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk/dist/index.d.mts#L3463) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3464](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk/dist/index.d.mts#L3464) |
+| `path.eventId` | `string` | [packages/sdk/dist/index.d.mts:3465](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk/dist/index.d.mts#L3465) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3466](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk/dist/index.d.mts#L3466) |

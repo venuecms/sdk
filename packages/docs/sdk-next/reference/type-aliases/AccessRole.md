@@ -8,11 +8,11 @@
 type AccessRole = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3)
+Defined in: [packages/sdk/dist/index.d.mts:3](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk/dist/index.d.mts#L3)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:4](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L4) |
-| <a id="name"></a> `name` | `string` \| `null` | [packages/sdk/dist/index.d.mts:5](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L5) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:4](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk/dist/index.d.mts#L4) |
+| <a id="name"></a> `name` | `string` \| `null` | [packages/sdk/dist/index.d.mts:5](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk/dist/index.d.mts#L5) |

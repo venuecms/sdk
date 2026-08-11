@@ -767,7 +767,7 @@
 | [SearchAllError](type-aliases/SearchAllError.md) | - |
 | [SearchAllResponse](type-aliases/SearchAllResponse.md) | - |
 | [SearchAllSiteResults](type-aliases/SearchAllSiteResults.md) | - |
-| [SearchParams](type-aliases/SearchParams.md) | A page's worth of search params, as a route hands them over. |
+| [SearchParams](type-aliases/SearchParams.md) | A page's worth of search params, in the shape a route hands them over. |
 | [SearchSiteData](type-aliases/SearchSiteData.md) | - |
 | [SearchSiteError](type-aliases/SearchSiteError.md) | - |
 | [SearchSiteResponse](type-aliases/SearchSiteResponse.md) | - |
@@ -987,9 +987,11 @@
 | [MAX\_PAGE\_LINKS](variables/MAX_PAGE_LINKS.md) | How many page hrefs `links.hrefs` carries at most. |
 | [MAX\_PAGE\_SIZE](variables/MAX_PAGE_SIZE.md) | What the endpoint is allowed to be asked for on an author's say-so. |
 | [PAGINATED\_LISTING\_NODE\_TYPES](variables/PAGINATED_LISTING_NODE_TYPES.md) | The listings that paginate. |
+| [VENUE\_URL\_HEADER](variables/VENUE_URL_HEADER.md) | The header the request URL travels on. |
 | [cache](functions/cache.md) | - |
 | [EmbedResize](functions/EmbedResize.md) | Component form of [useEmbedResize](functions/useEmbedResize.md). Renders nothing. Mounted once by VenueContent; can also be placed in a layout if rendering embeds elsewhere. |
 | [getEventDates](functions/getEventDates.md) | - |
+| [getRequestSearchParams](functions/getRequestSearchParams.md) | The current request's search params, or null when they cannot be read. |
 | [listingHandlers](functions/listingHandlers.md) | The supplied listing components wrapped into node handlers. |
 | [listingParamNames](functions/listingParamNames.md) | Every paginated block in a document, mapped to the param it owns. |
 | [splitContentEntries](functions/splitContentEntries.md) | Splits a caller's one map into the class names the renderer applies and the handlers it dispatches on. |
@@ -998,6 +1000,7 @@
 | [VenueContext](functions/VenueContext.md) | - |
 | [VenueImage](functions/VenueImage.md) | - |
 | [VenueProvider](functions/VenueProvider.md) | - |
+| [venueRequestHeaders](functions/venueRequestHeaders.md) | The request's headers with its URL stamped on, for a proxy to forward. |
 
 ## News
 

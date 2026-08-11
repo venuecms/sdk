@@ -8,7 +8,7 @@
 type ListingProps<Type> = object & Type extends PaginatedListingNodeType ? object : Record<never, never>;
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:83](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L83)
+Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:84](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L84)
 
 What a listing component receives: the block's records, the site, and — for
 the listings that paginate — the pagination.
@@ -25,8 +25,8 @@ endpoint returned every record, so there are no pages to draw.
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `records` | [`ListingRecords`](ListingRecords.md)\[`Type`\] | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:84](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L84) |
-| `site` | [`Site`](Site.md) \| `null` | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:85](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L85) |
+| `records` | [`ListingRecords`](ListingRecords.md)\[`Type`\] | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:85](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L85) |
+| `site` | [`Site`](Site.md) \| `null` | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:86](https://github.com/venuecms/sdk/blob/a5fc3f24dc596f59818f1be9e45a5dfde69b8661/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L86) |
 
 ## Type Parameters
 

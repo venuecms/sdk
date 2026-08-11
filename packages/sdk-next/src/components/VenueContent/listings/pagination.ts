@@ -11,10 +11,16 @@
  * and the listing component stays a Server Component; and props that are all
  * data cross to a Client Component unchanged if a consumer wants one.
  *
- * `links` is null unless the caller threaded `searchParams` into `VenueContent`,
- * because a nested Server Component cannot read them on its own — the type says
- * so rather than leaving a consumer to discover an href that never populates.
+ * `links` is null when the search params could not be resolved at all — neither
+ * threaded into `VenueContent` nor stamped onto the request by the proxy helper
+ * — because there is then no URL to link to. The type says so rather than
+ * leaving a consumer to discover an href that never populates.
  */
+// Declared with the reader that produces them, so the params a route threads in
+// and the params the SDK reads off the request are the one type. Re-exported
+// below, where consumers have always got it from.
+import type { SearchParams } from "../../../lib/searchParams/url";
+
 /**
  * The listings that paginate.
  *
@@ -39,8 +45,7 @@ export const isPaginatedListing = (
 ): nodeType is PaginatedListingNodeType =>
   (PAGINATED_LISTING_NODE_TYPES as readonly string[]).includes(nodeType);
 
-/** A page's worth of search params, as a route hands them over. */
-export type SearchParams = Record<string, string | string[] | undefined>;
+export type { SearchParams };
 
 /**
  * How many page hrefs `links.hrefs` carries at most.
@@ -252,11 +257,12 @@ export const pageHref = (
 };
 
 /**
- * The links for one block, or null when the caller passed no search params.
+ * The links for one block, or null when no search params could be resolved.
  *
- * Returning null rather than empty strings is what makes the missing
- * `searchParams` prop visible: a template guarding on `pagination.links` shows
- * no pager at all rather than a pager whose every href is the current page.
+ * Returning null rather than empty strings is what makes an unreadable URL
+ * visible — the proxy does not stamp this route, and no caller threaded params
+ * in: a template guarding on `pagination.links` shows no pager at all rather
+ * than a pager whose every href is the current page.
  */
 export const pageLinks = (
   searchParams: SearchParams | null,

@@ -23,8 +23,15 @@ import {
 let siteKey: string = process.env.VENUE_SITE_KEY;
 let apiKey: string = process.env.VENUE_API_KEY;
 
+// The key goes on `x-api-key`, never on `Authorization`. Vercel's CDN refuses
+// to cache any function response whose request carries an `Authorization`
+// header — a hard entry in its cacheable-response criteria, with no
+// `public`/`s-maxage` exception — so sending the key there forces
+// `x-vercel-cache: BYPASS` on every public read and makes the API's
+// `CDN-Cache-Control` inert. Sending both headers does not help: the presence
+// of `Authorization` alone is what triggers the bypass.
 const headers = {
-  Authorization: `Bearer ${apiKey}`,
+  "x-api-key": apiKey,
 };
 const baseUrl = `https://app.venuecms.com`;
 

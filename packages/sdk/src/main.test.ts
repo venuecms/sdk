@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 
 const API_KEY = "test-api-key-value";
 const SITE_KEY = "test-site";
@@ -11,8 +11,8 @@ const SITE_KEY = "test-site";
 const loadSdk = async () => {
   vi.resetModules();
 
-  process.env.VENUE_API_KEY = API_KEY;
-  process.env.VENUE_SITE_KEY = SITE_KEY;
+  vi.stubEnv("VENUE_API_KEY", API_KEY);
+  vi.stubEnv("VENUE_SITE_KEY", SITE_KEY);
 
   const requests: Request[] = [];
 
@@ -34,12 +34,9 @@ const loadSdk = async () => {
 };
 
 describe("SDK request headers", () => {
-  beforeEach(() => {
-    vi.unstubAllGlobals();
-  });
-
   afterEach(() => {
     vi.unstubAllGlobals();
+    vi.unstubAllEnvs();
     vi.resetModules();
   });
 
@@ -67,5 +64,26 @@ describe("SDK request headers", () => {
     expect(requests).toHaveLength(1);
     expect(requests[0].headers.get("x-api-key")).toBe(API_KEY);
     expect(requests[0].headers.get("Authorization")).toBeNull();
+  });
+
+  // `setConfig` reconfigures the client on every server-rendered request in
+  // `@venuecms/sdk-next`, and it merges caller options over the defaults. A
+  // change there that drops the default headers would silently put every
+  // public read back on the uncacheable path, so pin it.
+  it("keeps x-api-key after setConfig overrides other options", async () => {
+    const { main, requests } = await loadSdk();
+
+    main.setConfig({
+      siteKey: "other-site",
+      options: { baseUrl: "https://example.test" },
+    });
+    await main.getEvents();
+
+    expect(requests).toHaveLength(1);
+    expect(requests[0].headers.get("x-api-key")).toBe(API_KEY);
+    expect(requests[0].headers.get("Authorization")).toBeNull();
+    expect(requests[0].url).toBe(
+      "https://example.test/api/v2/other-site/public/events",
+    );
   });
 });

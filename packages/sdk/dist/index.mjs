@@ -167,7 +167,7 @@ var getSiteByDomain = (options) => {
 var siteKey = process.env.VENUE_SITE_KEY;
 var apiKey = process.env.VENUE_API_KEY;
 var headers = {
-  Authorization: `Bearer ${apiKey}`
+  "x-api-key": apiKey
 };
 var baseUrl = `https://app.venuecms.com`;
 var customFetch = (url, options) => fetch(url, { ...options, next: { revalidate: 60 } });

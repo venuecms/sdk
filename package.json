@@ -2,7 +2,8 @@
   "private": true,
   "packageManager": "pnpm@8.15.4",
   "scripts": {
-    "build": "turbo build:all"
+    "build": "turbo build:all",
+    "test": "turbo test"
   },
   "devDependencies": {
     "turbo": "^2.3.0"

@@ -33,6 +33,19 @@ const loadSdk = async () => {
   return { main, requests };
 };
 
+/**
+ * The underlying client merges into its live config rather than replacing it,
+ * so the header set at module load is sticky and would mask a regression in
+ * any later code path. Drop it first — `null` is the value the client's header
+ * merge deletes on — so the assertions that follow are actually load-bearing.
+ */
+const clearConfiguredApiKey = (main: Awaited<ReturnType<typeof loadSdk>>["main"]) => {
+  main.setConfig({
+    siteKey: SITE_KEY,
+    options: { headers: { "x-api-key": null } },
+  });
+};
+
 describe("SDK request headers", () => {
   afterEach(() => {
     vi.unstubAllGlobals();
@@ -54,11 +67,12 @@ describe("SDK request headers", () => {
     expect(requests[0].headers.get("Authorization")).toBeNull();
   });
 
-  // `getSite` and `getSiteKeyByDomain` pass `headers` per call rather than
-  // relying solely on the client config, so they need their own coverage.
-  it("sends x-api-key on calls that pass headers explicitly", async () => {
+  // `getSite` and `getSiteKeyByDomain` pass `headers` per call instead of
+  // relying on the client config, so that object needs its own key.
+  it("carries x-api-key on the per-call headers, independent of the config", async () => {
     const { main, requests } = await loadSdk();
 
+    clearConfiguredApiKey(main);
     await main.getSite();
 
     expect(requests).toHaveLength(1);
@@ -67,23 +81,20 @@ describe("SDK request headers", () => {
   });
 
   // `setConfig` reconfigures the client on every server-rendered request in
-  // `@venuecms/sdk-next`, and it merges caller options over the defaults. A
-  // change there that drops the default headers would silently put every
-  // public read back on the uncacheable path, so pin it.
-  it("keeps x-api-key after setConfig overrides other options", async () => {
+  // `@venuecms/sdk-next`. It must re-apply the default headers, not just the
+  // caller's options, or every public read silently loses its key.
+  it("re-applies the default x-api-key on every setConfig", async () => {
     const { main, requests } = await loadSdk();
 
-    main.setConfig({
-      siteKey: "other-site",
-      options: { baseUrl: "https://example.test" },
-    });
+    clearConfiguredApiKey(main);
+    main.setConfig({ siteKey: "other-site" });
     await main.getEvents();
 
     expect(requests).toHaveLength(1);
     expect(requests[0].headers.get("x-api-key")).toBe(API_KEY);
     expect(requests[0].headers.get("Authorization")).toBeNull();
     expect(requests[0].url).toBe(
-      "https://example.test/api/v2/other-site/public/events",
+      "https://app.venuecms.com/api/v2/other-site/public/events",
     );
   });
 });

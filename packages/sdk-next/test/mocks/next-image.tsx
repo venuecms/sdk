@@ -1,6 +1,8 @@
 const Image = (props: Record<string, unknown>) => {
-  const { fill, placeholder, blurDataURL, objectFit, objectPosition, ...rest } =
-    props;
+  // `objectFit` / `objectPosition` are deliberately NOT filtered out here.
+  // Real next/image ignores them, so swallowing them in the double is what let
+  // the focal point silently stop being applied without any test noticing.
+  const { fill, placeholder, blurDataURL, ...rest } = props;
   return (
     <img
       {...rest}

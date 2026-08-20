@@ -1,7 +1,7 @@
 import type { MediaItem } from "@venuecms/sdk";
 import Image, { ImageProps, StaticImageData } from "next/image";
 
-const defaultBlur =
+export const defaultBlur =
   "data:image/webp;base64,UklGRv4DAABXRUJQVlA4WAoAAAAgAAAAgwEAkwAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggEAIAANAdAJ0BKoQBlAA+tVilTqktq6Ij9mohsBaJaW7gAPxl327WrOr58lOBv3B2bV5tXZG3Cs6EfYIdF424VnQj3sc4AMwGX1tsW6mMzpnfFGE1GqNdd/F7s678DobD7FfMxZq6bbtOzeddTkEpR+67ecBjZeqt6WbksaOXRpgBgEOOz4uFCd7CmYlDgXL/btUenqYAvWU/dHQyD2WRrg4L8jdr+i+96BUwSEAuxzz/yZyIpjDAU3sa721c0j+AMO4HenRSOGLzlakWd611T6K5KqXs8Am4keQ1qQED9127pMUPWP9qY5XXO1FJSju/YBoKBjsg3KYTOZAA/vUMRConj2py6XdVy2rj5AFT3UUJuYDcedD9qv+/wNrkmRL5Q+Q/p3tAMxss1zgMyXdiAuRB3G81Lg7asSIQDcl2oLiGi/r9KhPwmr3o19NXEMyqHKAFFkajHBu1F7wU9laytcLsMPFdOTmAjafCJvui62qPOt3Uq0lfNJSWaGE20X7xAR/eg4w/RSRrRSqyst9YYCZexkg5Vu30Rxz3KySFBqy+xh9KAqRuzi1iU1DEeNRWTaXMfqO4JJnl+1ljW0Gynj147omoWIfGrzVBoiEMIAft8agFKSUudUje3Gsc4cSHkqqKLhR1ZGJgAeKbNPVn3RIvYRgVcCyiJLbwIwf9aK6q7hN2psdlEPjMdq4oNmLAqSwAAA==";
 
 export const ResponsiveImage = async ({
@@ -10,6 +10,7 @@ export const ResponsiveImage = async ({
   fallback,
   placeholder,
   blurDataURL,
+  style,
   ...props
 }: {
   src?: string;
@@ -60,8 +61,15 @@ export const ResponsiveImage = async ({
       fill={true}
       placeholder={placeholder ?? "blur"}
       blurDataURL={blurDataURL ?? remoteImageProps.base64}
-      objectFit="cover"
-      objectPosition={`${center.x * 100}% ${center.y * 100}%`}
+      // `objectFit` / `objectPosition` were props on the pre-v13 next/image
+      // and are ignored (with a console warning) on current versions, which
+      // silently discarded the focal point computed above. They belong in
+      // `style` now. A caller-supplied `style` still wins.
+      style={{
+        objectFit: "cover",
+        objectPosition: `${center.x * 100}% ${center.y * 100}%`,
+        ...style,
+      }}
       {...props}
     />
   );

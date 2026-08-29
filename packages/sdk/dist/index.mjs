@@ -181,6 +181,7 @@ var setConfig = (params) => {
   siteKey = params.siteKey;
   client.setConfig({ ...defaultOptions, ...params.options });
 };
+var getSiteKey = () => siteKey;
 var getSite2 = () => {
   return getSite({
     path: {
@@ -356,6 +357,7 @@ export {
   getProfileProducts2 as getProfileProducts,
   getProfiles2 as getProfiles,
   getSite2 as getSite,
+  getSiteKey,
   getSiteKeyByDomain,
   getTags2 as getTags,
   listSiteDomains2 as listSiteDomains,

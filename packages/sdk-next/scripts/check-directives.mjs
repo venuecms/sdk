@@ -21,6 +21,20 @@
  * scan for "use server" covers both, because there the point is not whether the
  * directive is live in that format — it is that the source it came from should
  * not exist.
+ *
+ * "use cache" is checked from both directions, because it can fail either way.
+ *
+ * It must never appear in a *prologue*: at module level the directive caches
+ * every export of that module, and hoisted onto a barrel it would turn the
+ * whole package — components included — into cache entries. Same failure shape
+ * as the "use server" one above, so it is asserted absent in the same place.
+ *
+ * It must also not go *missing*. The directive sits inside a function body,
+ * where it is syntactically an expression statement with no effect, and a
+ * minifier that treated it as dead code would strip it and leave the reads
+ * looking identical while silently uncached — the exact bug this package added
+ * it to fix (VEN-700). esbuild does preserve it, and this counts the survivors
+ * so a bundler upgrade cannot quietly stop.
  */
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
@@ -35,7 +49,17 @@ const EXPECTED = {
     "components/utils/ErrorBoundary/index.mjs",
   ],
   "use server": [],
+  // Never at module level: it would cache every export of the module it lands on.
+  "use cache": [],
 };
+
+/**
+ * How many cached reads `src/lib/api/index.ts` defines — one "use cache" per
+ * function body. A count rather than a list of names because minification
+ * renames the functions, leaving the number of directives as the only thing
+ * still recognisable in the output.
+ */
+const CACHED_READS = 13;
 
 const walk = (dir) =>
   readdirSync(dir).flatMap((entry) => {
@@ -55,7 +79,7 @@ const walk = (dir) =>
  */
 const leading = (source) => {
   const directives = new Set();
-  const prologue = /^\s*(["'])use (client|server)\1\s*;?/;
+  const prologue = /^\s*(["'])use (client|server|cache)\1\s*;?/;
 
   let rest = source;
   let match = rest.match(prologue);
@@ -69,7 +93,8 @@ const leading = (source) => {
   return [...directives];
 };
 
-const found = { "use client": [], "use server": [] };
+const found = { "use client": [], "use server": [], "use cache": [] };
+const cached = { ".mjs": 0, ".js": 0 };
 const problems = [];
 
 for (const path of walk(DIST)) {
@@ -89,6 +114,10 @@ for (const path of walk(DIST)) {
   if (/(["'])use server\1/.test(source)) {
     problems.push(`${relative} carries a "use server"`);
   }
+
+  cached[path.endsWith(".mjs") ? ".mjs" : ".js"] += (
+    source.match(/(["'])use cache\1/g) ?? []
+  ).length;
 
   if (!path.endsWith(".mjs")) {
     continue;
@@ -119,16 +148,27 @@ for (const [directive, expected] of Object.entries(EXPECTED)) {
   }
 }
 
+for (const [format, count] of Object.entries(cached)) {
+  if (count < CACHED_READS) {
+    problems.push(
+      `the ${format} build kept ${count} of ${CACHED_READS} "use cache" ` +
+        `directives — the missing reads are uncached, and silently so`,
+    );
+  }
+}
+
 if (problems.length) {
   console.error("Directive check failed:");
   problems.forEach((problem) => console.error(`  - ${problem}`));
   console.error(
-    '\nThis package ships no server actions, and a barrel marked "use server" ' +
-      "publishes every export as one.",
+    '\nA barrel marked "use server" publishes every export as an action, one ' +
+      'marked "use cache" turns every export into a cache entry, and a "use ' +
+      'cache" that went missing leaves a read silently uncached.',
   );
   process.exit(1);
 }
 
 console.log(
-  `Directives OK: ${EXPECTED["use client"].length} client modules, no server actions.`,
+  `Directives OK: ${EXPECTED["use client"].length} client modules, ` +
+    `${cached[".mjs"]} cached reads, no server actions.`,
 );

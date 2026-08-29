@@ -14,6 +14,10 @@ export type AddDomainResponse = {
     records: Array<DnsRecord>;
 };
 
+export type AddEventImageResponse = {
+    [key: string]: unknown;
+};
+
 export type AddImageResponse = {
     [key: string]: unknown;
 };
@@ -57,6 +61,10 @@ export type AddLocaleInput = {
     locale: string;
 };
 
+export type AddLocaleToEventInput = {
+    locale: string;
+};
+
 export type AddLocaleToLocationInput = {
     locale: string;
 };
@@ -66,6 +74,10 @@ export type AddLocaleToPageInput = {
 };
 
 export type AddLocaleToProductInput = {
+    locale: string;
+};
+
+export type AddLocaleToProfileInput = {
     locale: string;
 };
 
@@ -113,6 +125,14 @@ export type AddRoleToUserInput = {
     roleId: string;
 };
 
+export type AddSiteImageResponse = {
+    [key: string]: unknown;
+};
+
+export type AddUserToEventInput = {
+    userId: string;
+};
+
 export type AddUserToProfileInput = {
     userId: string;
 };
@@ -152,6 +172,10 @@ export type AttacheventsToTagInput = {
     eventId: string;
 };
 
+export type AttachLocationToEventInput = {
+    locationId: string;
+};
+
 export type AttachpagesToTagInput = {
     pageId: string;
 };
@@ -168,6 +192,10 @@ export type AttachTagRelationResponse = {
     record: {
         [key: string]: unknown;
     };
+};
+
+export type AttachTicketToEventInput = {
+    ticketId: string;
 };
 
 export type BatchEmail = {
@@ -460,6 +488,10 @@ export type Event = {
 
 export type publishState = 'DRAFT' | 'REQUEST' | 'PUBLISHED' | 'CANCELLED';
 
+export type EventChildOrderInput = {
+    upperNeighbor?: (string) | null;
+};
+
 export type EventDates = {
     /**
      * Array of unique event dates. Format depends on interval: day (YYYY-MM-DD), month (YYYY-MM), or year (YYYY)
@@ -469,6 +501,34 @@ export type EventDates = {
      * Array of unique years that have events
      */
     years: Array<(number)>;
+};
+
+export type EventMediaItemUpload = {
+    fileName: string;
+    mimeType: string;
+    size: number;
+    contentHash?: string;
+    metadata?: {
+        width: number;
+        height: number;
+    };
+    isMainImage?: boolean;
+};
+
+export type EventNote = {
+    id: string;
+};
+
+export type EventNoteOk = {
+    success: boolean;
+};
+
+export type EventNoteOrderOk = {
+    success: boolean;
+};
+
+export type EventNotesResponse = {
+    records: Array<EventNote>;
 };
 
 export type EventProfiles = {
@@ -582,6 +642,24 @@ export type Location = {
     siteId: string;
 };
 
+export type LocationMediaItemUpload = {
+    fileName: string;
+    mimeType: string;
+    size: number;
+    contentHash?: string;
+    metadata?: {
+        width: number;
+        height: number;
+    };
+    isMainImage?: boolean;
+};
+
+export type LocationNotesResponse = {
+    records: Array<{
+        id: string;
+    }>;
+};
+
 export type LocationSlim = {
     siteId: string;
     image?: MediaItem;
@@ -659,7 +737,19 @@ export type MediaDownloads = {
     downloads: Array<MediaDownload>;
 };
 
+export type MediaEmbed = {
+    html: string;
+    src: string;
+    playbackId: string;
+    kind: 'audio' | 'video';
+    aspectRatio?: number;
+    height?: number;
+};
+
+export type kind2 = 'audio' | 'video';
+
 export type MediaItem = {
+    id: string;
     siteId: string;
     uploaded: boolean;
     inline: boolean;
@@ -688,14 +778,23 @@ export type MediaItemRole = {
 };
 
 export type MediaItemUpload = {
-    fileName: string;
-    mimeType: string;
-    size: number;
+    fileName?: string;
+    mimeType?: string;
+    size?: number;
+    isMainImage?: boolean;
 };
 
 export type MediaOriginalDownload = {
     original: MediaDownload;
 };
+
+export type MediaShare = {
+    url: string;
+    embedHtml: string;
+    kind: 'video' | 'audio' | 'image' | 'file';
+};
+
+export type kind3 = 'video' | 'audio' | 'image' | 'file';
 
 export type MembershipSubscriber = {
     id: string;
@@ -775,6 +874,10 @@ export type Ok = {
     success: boolean;
 };
 
+export type OkRecord = {
+    ok: boolean;
+};
+
 export type Page = {
     id: string;
     order: number;
@@ -816,14 +919,6 @@ export type Page = {
     roles: Array<{
         pageId: string;
         accessRoleId: string;
-        accessRole: {
-            id: string;
-            siteId: string;
-            createdAt: string;
-            updatedAt: string;
-            name: string;
-            description?: (string) | null;
-        };
     }>;
     custom?: Array<CustomSchemaData>;
     tags?: Array<Tag>;
@@ -839,6 +934,12 @@ export type PageMediaItemUpload = {
     fileName: string;
     mimeType: string;
     size: number;
+    contentHash?: string;
+    metadata?: {
+        width: number;
+        height: number;
+    };
+    isMainImage?: boolean;
 };
 
 export type PagesListResponse = {
@@ -943,6 +1044,18 @@ export type ProfileConnectedRecords = {
     }>;
 };
 
+export type ProfileMediaItemUpload = {
+    fileName: string;
+    mimeType: string;
+    size: number;
+    contentHash?: string;
+    metadata?: {
+        width: number;
+        height: number;
+    };
+    isMainImage?: boolean;
+};
+
 export type ProfilePreview = {
     siteId: string;
     slug: string;
@@ -1009,6 +1122,11 @@ export type Recipient = {
     };
 };
 
+export type RemoveEventImageInput = {
+    isMainImage?: boolean;
+    id?: string;
+};
+
 export type RemoveLocationImageInput = {
     isMainImage?: boolean;
 };
@@ -1018,6 +1136,10 @@ export type RemovePageImageInput = {
 };
 
 export type RemoveProductImageInput = {
+    isMainImage?: boolean;
+};
+
+export type RemoveProfileImageInput = {
     isMainImage?: boolean;
 };
 
@@ -1157,6 +1279,18 @@ export type SiteApiKeySuccess = {
     success: boolean;
 };
 
+export type SiteMediaItemUpload = {
+    fileName: string;
+    mimeType: string;
+    size: number;
+    contentHash?: string;
+    metadata?: {
+        width: number;
+        height: number;
+    };
+    isMainImage?: boolean;
+};
+
 export type SiteSettings = {
     locale?: {
         default: string;
@@ -1274,6 +1408,11 @@ export type TicketOnEvent = {
     order?: number;
 };
 
+export type TicketOnEventRecord = {
+    ticketId: string;
+    eventId: string;
+};
+
 export type TicketRecordResponse = {
     records: Ticket;
 };
@@ -1302,6 +1441,12 @@ export type Translation = {
     translatedText: (string) | null;
 };
 
+export type UnpublishEventInput = {
+    publishState?: 'DRAFT' | 'CANCELLED';
+};
+
+export type publishState2 = 'DRAFT' | 'CANCELLED';
+
 export type UnpublishPageInput = {
     publishState?: 'DRAFT' | 'REQUEST' | 'PUBLISHED' | 'CANCELLED';
 };
@@ -1327,6 +1472,14 @@ export type UpdateDraftBatchInput = {
 
 export type UpdateEventInput = {
     [key: string]: unknown;
+};
+
+export type UpdateEventNoteInput = {
+    [key: string]: unknown;
+};
+
+export type UpdateEventNoteOrderInput = {
+    upperNeighbor: (string) | null;
 };
 
 export type UpdateEventTagsInput = {
@@ -1372,7 +1525,7 @@ export type UpdateNoteInput = {
 };
 
 export type UpdateNoteOrderInput = {
-    upperNeighbor: string;
+    upperNeighbor: (string) | null;
 };
 
 export type UpdatePageInput = {
@@ -1438,12 +1591,27 @@ export type UpdateTicketInput = {
     roleIds?: Array<(string)>;
 };
 
+export type UpdateTicketOnEventInput = {
+    price?: (number) | null;
+    capacity?: (number) | null;
+    externalLink?: (string) | null;
+};
+
 export type UpdateUserInput = {
     name?: string;
+    marketingEmailOptIn?: boolean;
+};
+
+export type UpdateUserOnEventInput = {
+    permission: string;
 };
 
 export type UpdateUserOnProfileInput = {
     permission: string;
+};
+
+export type UpdateUserTagsInput = {
+    tags: Array<(string)>;
 };
 
 export type UpdateVariantInput = {
@@ -1462,6 +1630,12 @@ export type User = {
 export type UsersListResponse = {
     records: Array<User>;
     count: number;
+};
+
+export type UserTagsResponse = {
+    records: Array<{
+        [key: string]: unknown;
+    }>;
 };
 
 export type WebSite = {
@@ -1532,6 +1706,7 @@ export type PublicSignUpData = {
         email: string;
         password: string;
         captchaToken?: string;
+        marketingEmailOptIn?: boolean;
     };
     path: {
         siteKey: string;
@@ -1921,6 +2096,17 @@ export type GetPlaybackTokenData = {
 export type GetPlaybackTokenResponse = (PlaybackToken);
 
 export type GetPlaybackTokenError = (unknown);
+
+export type GetMediaEmbedData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+
+export type GetMediaEmbedResponse = (MediaEmbed);
+
+export type GetMediaEmbedError = (unknown);
 
 export type ListSiteDomainsData = {
     path: {
@@ -2323,6 +2509,17 @@ export type RemoveRoleFromMediaItemData = {
 export type RemoveRoleFromMediaItemResponse = (Array<MediaItemRole>);
 
 export type RemoveRoleFromMediaItemError = (unknown);
+
+export type GetMediaShareData = {
+    path: {
+        mediaItemId: string;
+        siteKey: string;
+    };
+};
+
+export type GetMediaShareResponse = (MediaShare);
+
+export type GetMediaShareError = (unknown);
 
 export type UpdateMediaItemData = {
     body?: UpdateMediaItemInput;
@@ -3037,8 +3234,23 @@ export type PublishProfileResponse = (PublishState);
 
 export type PublishProfileError = (unknown);
 
+export type AddLocaleToProfileData = {
+    body?: AddLocaleToProfileInput;
+    path: {
+        profileId: string;
+        siteKey: string;
+    };
+};
+
+export type AddLocaleToProfileResponse = ((Profile & {
+    id: string;
+    siteId: string;
+}));
+
+export type AddLocaleToProfileError = (unknown);
+
 export type AddImageToProfileData = {
-    body?: MediaItemUpload;
+    body?: ProfileMediaItemUpload;
     path: {
         profileId: string;
         siteKey: string;
@@ -3050,7 +3262,7 @@ export type AddImageToProfileResponse = (AddImageResponse);
 export type AddImageToProfileError = (unknown);
 
 export type RemoveImageFromProfileData = {
-    body?: MediaItemUpload;
+    body?: RemoveProfileImageInput;
     path: {
         profileId: string;
         siteKey: string;
@@ -3178,10 +3390,7 @@ export type UpdateNoteOrderOnProfileData = {
     };
 };
 
-export type UpdateNoteOrderOnProfileResponse = ((Profile & {
-    id: string;
-    siteId: string;
-}));
+export type UpdateNoteOrderOnProfileResponse = (Ok);
 
 export type UpdateNoteOrderOnProfileError = (unknown);
 
@@ -3501,7 +3710,7 @@ export type PublishLocationResponse = (PublishState);
 export type PublishLocationError = (unknown);
 
 export type AddImageToLocationData = {
-    body?: MediaItemUpload;
+    body?: LocationMediaItemUpload;
     path: {
         locationId: string;
         siteKey: string;
@@ -3535,6 +3744,17 @@ export type AddLocaleToLocationData = {
 export type AddLocaleToLocationResponse = (Location);
 
 export type AddLocaleToLocationError = (unknown);
+
+export type GetLocationNotesData = {
+    path: {
+        locationId: string;
+        siteKey: string;
+    };
+};
+
+export type GetLocationNotesResponse = (LocationNotesResponse);
+
+export type GetLocationNotesError = (unknown);
 
 export type AddNoteToLocationData = {
     path: {
@@ -3573,9 +3793,7 @@ export type RemoveNoteOnLocationResponse = (Ok);
 export type RemoveNoteOnLocationError = (unknown);
 
 export type UpdateNoteOrderOnLocationData = {
-    body?: (UpdateNoteOrderInput & {
-    upperNeighbor?: (string) | null;
-});
+    body?: UpdateNoteOrderInput;
     path: {
         locationId: string;
         noteId: string;
@@ -3941,6 +4159,8 @@ export type ListUsersData = {
         orderBy?: string;
         page?: (number) | null;
         query?: string;
+        subscribed?: (string | Array<(string)>);
+        tags?: (string | Array<(string)>);
     };
 };
 
@@ -3958,6 +4178,29 @@ export type CreateUserData = {
 export type CreateUserResponse = (User);
 
 export type CreateUserError = (unknown);
+
+export type ListUserTagsData = {
+    path: {
+        siteKey: string;
+        userId: string;
+    };
+};
+
+export type ListUserTagsResponse = (UserTagsResponse);
+
+export type ListUserTagsError = (unknown);
+
+export type UpdateUserTagsData = {
+    body?: UpdateUserTagsInput;
+    path: {
+        siteKey: string;
+        userId: string;
+    };
+};
+
+export type UpdateUserTagsResponse = (UserTagsResponse);
+
+export type UpdateUserTagsError = (unknown);
 
 export type AddImageToUserData = {
     body?: AddImageToUserInput;
@@ -4204,13 +4447,19 @@ export type ListWebsiteTemplatesResponse = (WebsiteTemplatesList);
 
 export type ListWebsiteTemplatesError = (unknown);
 
+export type AddImageToSiteData = {
+    body?: SiteMediaItemUpload;
+    path: {
+        siteKey: string;
+    };
+};
+
+export type AddImageToSiteResponse = (AddSiteImageResponse);
+
+export type AddImageToSiteError = (unknown);
+
 export type RemoveImageFromSiteData = {
-    body?: (MediaItemUpload & {
-    fileName?: string;
-    mimeType?: string;
-    size?: number;
-    isMainImage?: boolean;
-});
+    body?: MediaItemUpload;
     path: {
         siteKey: string;
     };
@@ -4243,12 +4492,7 @@ export type UpdateWebsiteResponse = (Website);
 export type UpdateWebsiteError = (unknown);
 
 export type AddImageToWebsiteData = {
-    body?: (MediaItemUpload & {
-    fileName?: string;
-    mimeType?: string;
-    size?: number;
-    isMainImage?: boolean;
-});
+    body?: MediaItemUpload;
     path: {
         siteKey: string;
         websiteId: string;
@@ -4260,12 +4504,7 @@ export type AddImageToWebsiteResponse = (AddImageResponse);
 export type AddImageToWebsiteError = (unknown);
 
 export type RemoveImageFromWebsiteData = {
-    body?: (MediaItemUpload & {
-    fileName?: string;
-    mimeType?: string;
-    size?: number;
-    isMainImage?: boolean;
-});
+    body?: MediaItemUpload;
     path: {
         siteKey: string;
         websiteId: string;
@@ -4565,6 +4804,30 @@ export type RemoveEventRelationResponse = ((EventRelations & {
 
 export type RemoveEventRelationError = (unknown);
 
+export type AddImageToEventData = {
+    body?: EventMediaItemUpload;
+    path: {
+        id: string;
+        siteKey: string;
+    };
+};
+
+export type AddImageToEventResponse = (AddEventImageResponse);
+
+export type AddImageToEventError = (unknown);
+
+export type RemoveImageFromEventData = {
+    body?: RemoveEventImageInput;
+    path: {
+        id: string;
+        siteKey: string;
+    };
+};
+
+export type RemoveImageFromEventResponse = (unknown);
+
+export type RemoveImageFromEventError = (unknown);
+
 export type ListEventTagsData = {
     path: {
         id: string;
@@ -4587,3 +4850,234 @@ export type UpdateEventTagsData = {
 export type UpdateEventTagsResponse = (EventTagsResponse);
 
 export type UpdateEventTagsError = (unknown);
+
+export type ListEventNotesData = {
+    path: {
+        eventId: string;
+        siteKey: string;
+    };
+};
+
+export type ListEventNotesResponse = (EventNotesResponse);
+
+export type ListEventNotesError = (unknown);
+
+export type AddNoteToEventData = {
+    path: {
+        eventId: string;
+        siteKey: string;
+    };
+};
+
+export type AddNoteToEventResponse = (EventNote);
+
+export type AddNoteToEventError = (unknown);
+
+export type UpdateNoteOnEventData = {
+    body?: UpdateEventNoteInput;
+    path: {
+        eventId: string;
+        noteId: string;
+        siteKey: string;
+    };
+};
+
+export type UpdateNoteOnEventResponse = (EventNote);
+
+export type UpdateNoteOnEventError = (unknown);
+
+export type RemoveNoteOnEventData = {
+    path: {
+        eventId: string;
+        noteId: string;
+        siteKey: string;
+    };
+};
+
+export type RemoveNoteOnEventResponse = (EventNoteOk);
+
+export type RemoveNoteOnEventError = (unknown);
+
+export type UpdateNoteOrderOnEventData = {
+    body?: UpdateEventNoteOrderInput;
+    path: {
+        eventId: string;
+        noteId: string;
+        siteKey: string;
+    };
+};
+
+export type UpdateNoteOrderOnEventResponse = (EventNoteOrderOk);
+
+export type UpdateNoteOrderOnEventError = (unknown);
+
+export type PublishEventData = {
+    path: {
+        eventId: string;
+        siteKey: string;
+    };
+};
+
+export type PublishEventResponse = (EventRecord);
+
+export type PublishEventError = (unknown);
+
+export type UnpublishEventData = {
+    body?: UnpublishEventInput;
+    path: {
+        eventId: string;
+        siteKey: string;
+    };
+};
+
+export type UnpublishEventResponse = (EventRecord);
+
+export type UnpublishEventError = (unknown);
+
+export type ToggleProfileVisibilityOnEventData = {
+    path: {
+        eventId: string;
+        profileId: string;
+        siteKey: string;
+    };
+};
+
+export type ToggleProfileVisibilityOnEventResponse = (EventRecord);
+
+export type ToggleProfileVisibilityOnEventError = (unknown);
+
+export type UpdateProfileOrderOnEventData = {
+    body?: EventChildOrderInput;
+    path: {
+        eventId: string;
+        profileId: string;
+        siteKey: string;
+    };
+};
+
+export type UpdateProfileOrderOnEventResponse = (unknown);
+
+export type UpdateProfileOrderOnEventError = (unknown);
+
+export type UpdateTicketOrderOnEventData = {
+    body?: EventChildOrderInput;
+    path: {
+        eventId: string;
+        siteKey: string;
+        ticketId: string;
+    };
+};
+
+export type UpdateTicketOrderOnEventResponse = (unknown);
+
+export type UpdateTicketOrderOnEventError = (unknown);
+
+export type AddTicketToEventData = {
+    body?: AttachTicketToEventInput;
+    path: {
+        eventId: string;
+        siteKey: string;
+    };
+};
+
+export type AddTicketToEventResponse = (EventRecord);
+
+export type AddTicketToEventError = (unknown);
+
+export type UpdateTicketOnEventData = {
+    body?: UpdateTicketOnEventInput;
+    path: {
+        eventId: string;
+        siteKey: string;
+        ticketId: string;
+    };
+};
+
+export type UpdateTicketOnEventResponse = (TicketOnEventRecord);
+
+export type UpdateTicketOnEventError = (unknown);
+
+export type RemoveTicketFromEventData = {
+    path: {
+        eventId: string;
+        siteKey: string;
+        ticketId: string;
+    };
+};
+
+export type RemoveTicketFromEventResponse = (OkRecord);
+
+export type RemoveTicketFromEventError = (unknown);
+
+export type AddLocationToEventData = {
+    body?: AttachLocationToEventInput;
+    path: {
+        eventId: string;
+        siteKey: string;
+    };
+};
+
+export type AddLocationToEventResponse = (EventRecord);
+
+export type AddLocationToEventError = (unknown);
+
+export type AddUserToEventData = {
+    body?: AddUserToEventInput;
+    path: {
+        eventId: string;
+        siteKey: string;
+    };
+};
+
+export type AddUserToEventResponse = ((Event & {
+    id: string;
+    siteId: string;
+    slug: string;
+}));
+
+export type AddUserToEventError = (unknown);
+
+export type AddLocaleToEventData = {
+    body?: AddLocaleToEventInput;
+    path: {
+        id: string;
+        siteKey: string;
+    };
+};
+
+export type AddLocaleToEventResponse = (EventRecord);
+
+export type AddLocaleToEventError = (unknown);
+
+export type UpdateUserOnEventData = {
+    body?: UpdateUserOnEventInput;
+    path: {
+        eventId: string;
+        siteKey: string;
+        userId: string;
+    };
+};
+
+export type UpdateUserOnEventResponse = ((Event & {
+    id: string;
+    siteId: string;
+    slug: string;
+}));
+
+export type UpdateUserOnEventError = (unknown);
+
+export type RemoveUserFromEventData = {
+    path: {
+        eventId: string;
+        siteKey: string;
+        userId: string;
+    };
+};
+
+export type RemoveUserFromEventResponse = ((Event & {
+    id: string;
+    siteId: string;
+    slug: string;
+}));
+
+export type RemoveUserFromEventError = (unknown);

@@ -22,17 +22,18 @@
  * directive is live in that format — it is that the source it came from should
  * not exist.
  *
- * "use cache" is checked both ways: never in a prologue, where it would cache
- * every export of the module it landed on, and never fewer than CACHED_READS in
- * the output, since it sits inside a function body where a minifier could strip
- * it as a no-op and leave the reads silently uncached.
+ * "use cache" is checked for position, not count. Inside a function body it is
+ * a build error in every module a client component imports — and the templates
+ * all pull this barrel into client code — so the ESM build must carry it only
+ * in a prologue. At least one module has to carry it there, or the reads are
+ * uncached and silently so.
  */
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 const DIST = new URL("../dist/", import.meta.url).pathname;
 
-/** Which modules are allowed to be client modules. */
+/** Which modules are allowed to carry each directive. */
 const EXPECTED = {
   "use client": [
     "components/EmbedResize/index.mjs",
@@ -40,12 +41,8 @@ const EXPECTED = {
     "components/utils/ErrorBoundary/index.mjs",
   ],
   "use server": [],
-  // Never at module level: it would cache every export of the module it lands on.
-  "use cache": [],
+  "use cache": ["lib/api/cached.mjs"],
 };
-
-// One per cached function body. A count, not names — minification renames them.
-const CACHED_READS = 13;
 
 const walk = (dir) =>
   readdirSync(dir).flatMap((entry) => {
@@ -54,7 +51,7 @@ const walk = (dir) =>
   });
 
 /**
- * Every directive in a module's prologue, not just the first.
+ * A module's prologue directives and everything after them.
  *
  * The plugin genuinely emits more than one — a client module comes out
  * `"use client";\n\n"use client";import…`, the directive both hoisted and
@@ -63,7 +60,7 @@ const walk = (dir) =>
  * `"use server"` together would be filed as client-only, and the module that
  * needed reporting would be the one skipped.
  */
-const leading = (source) => {
+const split = (source) => {
   const directives = new Set();
   const prologue = /^\s*(["'])use (client|server|cache)\1\s*;?/;
 
@@ -76,11 +73,11 @@ const leading = (source) => {
     match = rest.match(prologue);
   }
 
-  return [...directives];
+  return { directives: [...directives], body: rest };
 };
 
 const found = { "use client": [], "use server": [], "use cache": [] };
-const cached = { ".mjs": 0, ".js": 0 };
+const cachedModules = [];
 const problems = [];
 
 for (const path of walk(DIST)) {
@@ -101,12 +98,21 @@ for (const path of walk(DIST)) {
     problems.push(`${relative} carries a "use server"`);
   }
 
-  cached[path.endsWith(".mjs") ? ".mjs" : ".js"] += (
-    source.match(/(["'])use cache\1/g) ?? []
-  ).length;
-
   if (!path.endsWith(".mjs")) {
     continue;
+  }
+
+  const { directives, body } = split(source);
+
+  if (/(["'])use cache\1/.test(body)) {
+    problems.push(
+      `${relative} carries a "use cache" below its prologue — an inline one ` +
+        "fails the build of every client component that imports this package",
+    );
+  }
+
+  if (directives.includes("use cache")) {
+    cachedModules.push(relative);
   }
 
   // Chunks are named by content hash, so they are checked by what they hold
@@ -116,7 +122,7 @@ for (const path of walk(DIST)) {
     continue;
   }
 
-  for (const directive of leading(source)) {
+  for (const directive of directives) {
     found[directive].push(relative);
   }
 }
@@ -134,13 +140,11 @@ for (const [directive, expected] of Object.entries(EXPECTED)) {
   }
 }
 
-for (const [format, count] of Object.entries(cached)) {
-  if (count < CACHED_READS) {
-    problems.push(
-      `the ${format} build kept ${count} of ${CACHED_READS} "use cache" ` +
-        `directives — the missing reads are uncached, and silently so`,
-    );
-  }
+if (!cachedModules.length) {
+  problems.push(
+    'no module in the build carries a "use cache" — the reads are uncached, ' +
+      "and silently so",
+  );
 }
 
 if (problems.length) {
@@ -155,5 +159,5 @@ if (problems.length) {
 
 console.log(
   `Directives OK: ${EXPECTED["use client"].length} client modules, ` +
-    `${cached[".mjs"]} cached reads, no server actions.`,
+    `${cachedModules.length} cached modules, no server actions.`,
 );

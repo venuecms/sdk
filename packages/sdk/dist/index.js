@@ -36,6 +36,7 @@ __export(index_exports, {
   getProfileProducts: () => getProfileProducts2,
   getProfiles: () => getProfiles2,
   getSite: () => getSite2,
+  getSiteKey: () => getSiteKey,
   getSiteKeyByDomain: () => getSiteKeyByDomain,
   getTags: () => getTags2,
   listSiteDomains: () => listSiteDomains2,
@@ -227,6 +228,7 @@ var setConfig = (params) => {
   siteKey = params.siteKey;
   client.setConfig({ ...defaultOptions, ...params.options });
 };
+var getSiteKey = () => siteKey;
 var getSite2 = () => {
   return getSite({
     path: {
@@ -403,6 +405,7 @@ var searchSite2 = (params) => {
   getProfileProducts,
   getProfiles,
   getSite,
+  getSiteKey,
   getSiteKeyByDomain,
   getTags,
   listSiteDomains,

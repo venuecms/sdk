@@ -43,7 +43,7 @@ export default defineConfig((options) => ({
       // see one in the build and fail. Dropping it from this list would strip a
       // stray directive out of the output and hide exactly the regression that
       // check exists to catch.
-      directives: ["use client", "use server", "use strict"],
+      directives: ["use cache", "use client", "use server", "use strict"],
       include: /\.(js|ts|jsx|tsx)$/,
       exclude: /node_modules/,
     }),

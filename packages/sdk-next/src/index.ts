@@ -39,4 +39,6 @@ export {
   searchSite,
 } from "./lib/api";
 
+export { venueCacheTag, type VenueCollection } from "./lib/api/tags";
+
 export * from "./components";

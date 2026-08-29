@@ -49,6 +49,14 @@ export const setConfig = (params: { siteKey: string; options?: Partial<RequestOp
 }
 
 /**
+ * The siteKey the SDK is currently configured with, from {@link setConfig} or
+ * `process.env.VENUE_SITE_KEY`.
+ *
+ * @category Configuration
+ */
+export const getSiteKey = () => siteKey;
+
+/**
  * Get the site configured via the siteKey
  *
  * @category Sites

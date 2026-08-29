@@ -21,13 +21,19 @@
  * scan for "use server" covers both, because there the point is not whether the
  * directive is live in that format — it is that the source it came from should
  * not exist.
+ *
+ * "use cache" is checked for position, not count. Inside a function body it is
+ * a build error in every module a client component imports — and the templates
+ * all pull this barrel into client code — so the ESM build must carry it only
+ * in a prologue. At least one module has to carry it there, or the reads are
+ * uncached and silently so.
  */
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 
 const DIST = new URL("../dist/", import.meta.url).pathname;
 
-/** Which modules are allowed to be client modules. */
+/** Which modules are allowed to carry each directive. */
 const EXPECTED = {
   "use client": [
     "components/EmbedResize/index.mjs",
@@ -35,6 +41,7 @@ const EXPECTED = {
     "components/utils/ErrorBoundary/index.mjs",
   ],
   "use server": [],
+  "use cache": ["lib/api/cached.mjs"],
 };
 
 const walk = (dir) =>
@@ -44,7 +51,7 @@ const walk = (dir) =>
   });
 
 /**
- * Every directive in a module's prologue, not just the first.
+ * A module's prologue directives and everything after them.
  *
  * The plugin genuinely emits more than one — a client module comes out
  * `"use client";\n\n"use client";import…`, the directive both hoisted and
@@ -53,9 +60,9 @@ const walk = (dir) =>
  * `"use server"` together would be filed as client-only, and the module that
  * needed reporting would be the one skipped.
  */
-const leading = (source) => {
+const split = (source) => {
   const directives = new Set();
-  const prologue = /^\s*(["'])use (client|server)\1\s*;?/;
+  const prologue = /^\s*(["'])use (client|server|cache)\1\s*;?/;
 
   let rest = source;
   let match = rest.match(prologue);
@@ -66,10 +73,11 @@ const leading = (source) => {
     match = rest.match(prologue);
   }
 
-  return [...directives];
+  return { directives: [...directives], body: rest };
 };
 
-const found = { "use client": [], "use server": [] };
+const found = { "use client": [], "use server": [], "use cache": [] };
+const cachedModules = [];
 const problems = [];
 
 for (const path of walk(DIST)) {
@@ -94,6 +102,19 @@ for (const path of walk(DIST)) {
     continue;
   }
 
+  const { directives, body } = split(source);
+
+  if (/(["'])use cache\1/.test(body)) {
+    problems.push(
+      `${relative} carries a "use cache" below its prologue — an inline one ` +
+        "fails the build of every client component that imports this package",
+    );
+  }
+
+  if (directives.includes("use cache")) {
+    cachedModules.push(relative);
+  }
+
   // Chunks are named by content hash, so they are checked by what they hold
   // rather than listed by name. An entry with no directive whose chunk has one
   // is correct — that is what splitting is for.
@@ -101,7 +122,7 @@ for (const path of walk(DIST)) {
     continue;
   }
 
-  for (const directive of leading(source)) {
+  for (const directive of directives) {
     found[directive].push(relative);
   }
 }
@@ -119,16 +140,24 @@ for (const [directive, expected] of Object.entries(EXPECTED)) {
   }
 }
 
+if (!cachedModules.length) {
+  problems.push(
+    'no module in the build carries a "use cache" — the reads are uncached, ' +
+      "and silently so",
+  );
+}
+
 if (problems.length) {
   console.error("Directive check failed:");
   problems.forEach((problem) => console.error(`  - ${problem}`));
   console.error(
-    '\nThis package ships no server actions, and a barrel marked "use server" ' +
-      "publishes every export as one.",
+    '\nA barrel marked "use server" or "use cache" turns every export into an ' +
+      'action or a cache entry; a missing "use cache" leaves a read uncached.',
   );
   process.exit(1);
 }
 
 console.log(
-  `Directives OK: ${EXPECTED["use client"].length} client modules, no server actions.`,
+  `Directives OK: ${EXPECTED["use client"].length} client modules, ` +
+    `${cachedModules.length} cached modules, no server actions.`,
 );

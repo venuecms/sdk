@@ -49,13 +49,8 @@ export const setConfig = (params: { siteKey: string; options?: Partial<RequestOp
 }
 
 /**
- * The siteKey the SDK is currently configured with, whether it came from
- * {@link setConfig} or `process.env.VENUE_SITE_KEY`.
- *
- * Exposed because the siteKey lives in this module's scope rather than in any
- * call's arguments: a caller that caches a result has no other way to key that
- * cache by site, and a key that omits it is shared by every site rendered from
- * one deployment.
+ * The siteKey the SDK is currently configured with, from {@link setConfig} or
+ * `process.env.VENUE_SITE_KEY`.
  *
  * @category Configuration
  */

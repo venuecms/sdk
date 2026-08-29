@@ -22,19 +22,10 @@
  * directive is live in that format — it is that the source it came from should
  * not exist.
  *
- * "use cache" is checked from both directions, because it can fail either way.
- *
- * It must never appear in a *prologue*: at module level the directive caches
- * every export of that module, and hoisted onto a barrel it would turn the
- * whole package — components included — into cache entries. Same failure shape
- * as the "use server" one above, so it is asserted absent in the same place.
- *
- * It must also not go *missing*. The directive sits inside a function body,
- * where it is syntactically an expression statement with no effect, and a
- * minifier that treated it as dead code would strip it and leave the reads
- * looking identical while silently uncached — the exact bug this package added
- * it to fix (VEN-700). esbuild does preserve it, and this counts the survivors
- * so a bundler upgrade cannot quietly stop.
+ * "use cache" is checked both ways: never in a prologue, where it would cache
+ * every export of the module it landed on, and never fewer than CACHED_READS in
+ * the output, since it sits inside a function body where a minifier could strip
+ * it as a no-op and leave the reads silently uncached.
  */
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
@@ -53,12 +44,7 @@ const EXPECTED = {
   "use cache": [],
 };
 
-/**
- * How many cached reads `src/lib/api/index.ts` defines — one "use cache" per
- * function body. A count rather than a list of names because minification
- * renames the functions, leaving the number of directives as the only thing
- * still recognisable in the output.
- */
+// One per cached function body. A count, not names — minification renames them.
 const CACHED_READS = 13;
 
 const walk = (dir) =>
@@ -161,9 +147,8 @@ if (problems.length) {
   console.error("Directive check failed:");
   problems.forEach((problem) => console.error(`  - ${problem}`));
   console.error(
-    '\nA barrel marked "use server" publishes every export as an action, one ' +
-      'marked "use cache" turns every export into a cache entry, and a "use ' +
-      'cache" that went missing leaves a read silently uncached.',
+    '\nA barrel marked "use server" or "use cache" turns every export into an ' +
+      'action or a cache entry; a missing "use cache" leaves a read uncached.',
   );
   process.exit(1);
 }

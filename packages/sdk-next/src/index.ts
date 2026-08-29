@@ -39,7 +39,6 @@ export {
   searchSite,
 } from "./lib/api";
 
-// The tags those cached reads attach, so a publish webhook can purge them.
 export { venueCacheTag, type VenueCollection } from "./lib/api/tags";
 
 export * from "./components";

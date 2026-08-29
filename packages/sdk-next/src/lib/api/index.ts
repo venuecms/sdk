@@ -1,40 +1,6 @@
 /**
- * The cached read layer.
- *
- * Every getter here is the same call as the one in `@venuecms/sdk`, wrapped in
- * a Next cache entry with a lifetime and a set of tags. Two things make that
- * wrapping necessary rather than an optimisation:
- *
- * 1. Under `cacheComponents`, a `fetch`'s `next: { revalidate }` no longer sets
- *    how long the *route* may be reused. A route with no dynamic API and no
- *    `"use cache"` is prerendered at build time and never revalidates — which is
- *    how a published edit went a week without reaching a live news page. The
- *    directive is what gives the render an expiry at all.
- *
- * 2. Nothing purges on publish yet (VEN-543). Tags are the hook that a webhook
- *    will pull: see `./tags`. They are attached now, before the handler exists,
- *    because a cache entry written without a tag can never be invalidated by
- *    one — the tags have to be in the entries before the purge is written, not
- *    after.
- *
- * ## The two-function shape
- *
- * Each getter is a plain wrapper that reads the siteKey and calls a cached
- * function taking it as an argument. That split is not stylistic. The siteKey
- * lives in the SDK's module scope, set per request by `setConfig` — a
- * multi-tenant template serves many sites from one deployment. A cache entry is
- * keyed by its function's arguments, so a cached function that read the siteKey
- * from module scope itself would produce one entry shared by every tenant, and
- * the first site rendered after a cold start would be served to all of them.
- * Reading it *outside* the cache scope and passing it *in* is what puts it in
- * the key.
- *
- * ## The return shape
- *
- * The underlying SDK resolves to `{ data, error, request, response }`, and
- * `Request`/`Response` cannot cross a cache boundary — they are not
- * serializable. So these return `{ data, error }`. No call site in the templates
- * reads `request` or `response`; `error` is preserved because search does.
+ * Cached wrappers around the `@venuecms/sdk` reads. Requires Next 16 with
+ * `cacheComponents: true`; without it `"use cache"` is a build error.
  */
 import {
   getSiteKey,
@@ -71,33 +37,21 @@ import { cache } from "react";
 
 import { venueCacheTag } from "./tags";
 
-/**
- * How long a read may be reused before Next refetches it.
- *
- * `"minutes"` is Next's built-in profile: reuse for a minute, serve stale for
- * up to an hour while revalidating. It matches the `revalidate: 60` the SDK
- * already puts on its fetches — that value clamps anything longer, so a larger
- * profile here would have no effect without a change in `@venuecms/sdk` too.
- *
- * A minute is the tolerable staleness for content nothing purges. Once the
- * publish webhook lands, the tags do the real work and this becomes the
- * backstop for a purge that never arrived.
- */
+// Clamped by the `revalidate: 60` @venuecms/sdk puts on its fetches, so a
+// longer profile needs a change there too.
 const LIFETIME = "minutes";
 
-/**
- * Drops the parts of an SDK result a cache entry cannot hold.
- *
- * `Request` and `Response` are live objects with streams attached; returning
- * one from a `"use cache"` function is a serialization error at runtime, not a
- * silent pass-through.
- */
+/** `Request`/`Response` are not serializable and cannot cross a cache boundary. */
 const serializable = <T extends { data?: unknown; error?: unknown }>(
   result: T,
 ): { data: T["data"]; error: T["error"] } => ({
   data: result.data,
   error: result.error,
 });
+
+// Every read passes the siteKey in rather than letting the cached function read
+// it from module scope: entries are keyed by arguments, so a siteKey read inside
+// the cache scope would give every tenant one shared entry.
 
 /**
  * Get the site configured via the siteKey (cached)
@@ -285,8 +239,7 @@ export const getProfileEvents = async (
     GetProfileEventsData["query"],
 ) => cachedProfileEvents(getSiteKey(), params);
 
-// Tagged under both collections it depends on: the listing changes when the
-// profile changes and when any event does, so either publish has to purge it.
+// Tagged under events too: a new event changes this listing.
 const cachedProfileEvents = async (
   siteKey: string,
   params: Omit<GetProfileEventsData["path"], "siteKey"> &
@@ -369,13 +322,8 @@ const cachedProduct = async (
 };
 
 /**
- * Search a site for all content types (cached)
- *
- * Deliberately the one getter with no `"use cache"`. Its key is a query string
- * a visitor typed, so a persistent entry per distinct query is unbounded — and
- * a searcher expects to find what was published a moment ago, which is the one
- * place a minute of staleness is visible as a bug. `cache` from React still
- * dedupes it within a single render.
+ * Search a site for all content types (deduped per render, not cached across
+ * requests: the key is visitor input, so entries would be unbounded)
  *
  * @category Sites
  */

@@ -8,10 +8,10 @@
 type UpdateProductOrderResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3266](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3266)
+Defined in: [packages/sdk/dist/index.d.mts:3266](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3266)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="order"></a> `order` | `string`[] | [packages/sdk/dist/index.d.mts:3267](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3267) |
+| <a id="order"></a> `order` | `string`[] | [packages/sdk/dist/index.d.mts:3267](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3267) |

@@ -8,11 +8,11 @@
 type WebsiteTemplatesList = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1477](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1477)
+Defined in: [packages/sdk/dist/index.d.mts:1477](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1477)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count` | `number` | [packages/sdk/dist/index.d.mts:1481](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1481) |
-| <a id="records"></a> `records` | `object`[] | [packages/sdk/dist/index.d.mts:1478](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1478) |
+| <a id="count"></a> `count` | `number` | [packages/sdk/dist/index.d.mts:1481](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1481) |
+| <a id="records"></a> `records` | `object`[] | [packages/sdk/dist/index.d.mts:1478](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1478) |

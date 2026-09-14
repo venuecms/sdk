@@ -8,13 +8,13 @@
 type AddProfileToProductData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3408](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3408)
+Defined in: [packages/sdk/dist/index.d.mts:3408](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3408)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`AddProfileToProductInput`](AddProfileToProductInput.md) | [packages/sdk/dist/index.d.mts:3409](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3409) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3410](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3410) |
-| `path.productId` | `string` | [packages/sdk/dist/index.d.mts:3411](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3411) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3412](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3412) |
+| <a id="body"></a> `body`? | [`AddProfileToProductInput`](AddProfileToProductInput.md) | [packages/sdk/dist/index.d.mts:3409](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3409) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3410](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3410) |
+| `path.productId` | `string` | [packages/sdk/dist/index.d.mts:3411](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3411) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3412](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3412) |

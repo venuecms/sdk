@@ -8,7 +8,7 @@
 type ListingComponents = { [Type in ListingBlockNodeType]?: ListingComponent<Type> };
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:161](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L161)
+Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:161](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L161)
 
 The listing components a caller may supply, keyed by node type.
 

@@ -8,7 +8,7 @@
 function splitContentEntries<Styles>(entries, context): object
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:338](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L338)
+Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:338](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L338)
 
 Splits a caller's one map into the class names the renderer applies and the
 handlers it dispatches on.
@@ -36,5 +36,5 @@ a map: no node type takes both.
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="classes"></a> `classes` | `Record`\<`string`, `string`\> | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:341](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L341) |
-| <a id="handlers"></a> `handlers` | [`NodeHandlers`](../interfaces/NodeHandlers.md) | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:341](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L341) |
+| <a id="classes"></a> `classes` | `Record`\<`string`, `string`\> | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:341](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L341) |
+| <a id="handlers"></a> `handlers` | [`NodeHandlers`](../interfaces/NodeHandlers.md) | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:341](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L341) |

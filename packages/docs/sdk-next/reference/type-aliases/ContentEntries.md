@@ -8,7 +8,7 @@
 type ContentEntries = ContentStyles & ListingComponents;
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/index.tsx:435](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/index.tsx#L435)
+Defined in: [packages/sdk-next/src/components/VenueContent/index.tsx:435](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/components/VenueContent/index.tsx#L435)
 
 One entry per node type, on a single map.
 

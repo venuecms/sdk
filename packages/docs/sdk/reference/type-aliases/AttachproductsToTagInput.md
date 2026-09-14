@@ -8,10 +8,10 @@
 type AttachproductsToTagInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:191](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L191)
+Defined in: [packages/sdk/src/client/types.gen.ts:191](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L191)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="productid"></a> `productId` | `string` | [packages/sdk/src/client/types.gen.ts:192](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L192) |
+| <a id="productid"></a> `productId` | `string` | [packages/sdk/src/client/types.gen.ts:192](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L192) |

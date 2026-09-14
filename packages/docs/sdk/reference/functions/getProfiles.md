@@ -16,7 +16,7 @@ function getProfiles(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:239](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/main.ts#L239)
+Defined in: [packages/sdk/src/main.ts:271](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/main.ts#L271)
 
 Get a list of profiles
 

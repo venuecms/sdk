@@ -8,12 +8,12 @@
 type AddProfileToEventResponse = Event & object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3956](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3956)
+Defined in: [packages/sdk/dist/index.d.mts:3956](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3956)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/dist/index.d.mts:3957](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3957) |
-| `siteId` | `string` | [packages/sdk/dist/index.d.mts:3958](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3958) |
-| `slug` | `string` | [packages/sdk/dist/index.d.mts:3959](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3959) |
+| `id` | `string` | [packages/sdk/dist/index.d.mts:3957](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3957) |
+| `siteId` | `string` | [packages/sdk/dist/index.d.mts:3958](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3958) |
+| `slug` | `string` | [packages/sdk/dist/index.d.mts:3959](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L3959) |

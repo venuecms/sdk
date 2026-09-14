@@ -10,6 +10,7 @@
 | ------ | ------ |
 | [getSiteKey](functions/getSiteKey.md) | The siteKey the SDK is currently configured with, from [setConfig](functions/setConfig.md) or `process.env.VENUE_SITE_KEY`. |
 | [setConfig](functions/setConfig.md) | Allows you to pass in the siteKey and API key manually in case you want it to be dynamically set. If you don't use this function, the SDK will default to using process.env.VENUE_SITE_KEY and process.env.VENUE_API_KEY instead. |
+| [withSiteKey](functions/withSiteKey.md) | Runs `fn` against an explicit siteKey, restoring the configured one after. |
 
 ## Sites
 

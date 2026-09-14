@@ -4,7 +4,7 @@
 
 # Interface: RenderNode
 
-Defined in: [packages/sdk-next/src/components/VenueContent/types.ts:14](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/types.ts#L14)
+Defined in: [packages/sdk-next/src/components/VenueContent/types.ts:14](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/components/VenueContent/types.ts#L14)
 
 ## Indexable
 
@@ -16,7 +16,7 @@ Defined in: [packages/sdk-next/src/components/VenueContent/types.ts:14](https://
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="attrs"></a> `attrs?` | `Attrs` | [packages/sdk-next/src/components/VenueContent/types.ts:16](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/types.ts#L16) |
-| <a id="content"></a> `content?` | [`RenderNode`](RenderNode.md)[] | [packages/sdk-next/src/components/VenueContent/types.ts:18](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/types.ts#L18) |
-| <a id="marks"></a> `marks?` | `Attrs`[] | [packages/sdk-next/src/components/VenueContent/types.ts:17](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/types.ts#L17) |
-| <a id="type"></a> `type` | `string` | [packages/sdk-next/src/components/VenueContent/types.ts:15](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/types.ts#L15) |
+| <a id="attrs"></a> `attrs?` | `Attrs` | [packages/sdk-next/src/components/VenueContent/types.ts:16](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/components/VenueContent/types.ts#L16) |
+| <a id="content"></a> `content?` | [`RenderNode`](RenderNode.md)[] | [packages/sdk-next/src/components/VenueContent/types.ts:18](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/components/VenueContent/types.ts#L18) |
+| <a id="marks"></a> `marks?` | `Attrs`[] | [packages/sdk-next/src/components/VenueContent/types.ts:17](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/components/VenueContent/types.ts#L17) |
+| <a id="type"></a> `type` | `string` | [packages/sdk-next/src/components/VenueContent/types.ts:15](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/components/VenueContent/types.ts#L15) |

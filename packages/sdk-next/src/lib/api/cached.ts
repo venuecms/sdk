@@ -21,6 +21,7 @@ import {
   getProfileProducts as _getProfileProducts,
   getProducts as _getProducts,
   getProduct as _getProduct,
+  withSiteKey,
   type GetEventsData,
   type GetEventData,
   type GetPagesData,
@@ -61,13 +62,22 @@ const settle = <T extends { data?: unknown; error?: unknown }>(result: T) => {
 // Every read takes the siteKey as an argument rather than reading it from the
 // SDK's module scope: entries are keyed by arguments, so a siteKey read inside
 // the cache scope would give every tenant one shared entry.
+//
+// `withSiteKey` is what makes the argument authoritative all the way down. The
+// core SDK reads its siteKey from a module-level variable that `setConfig`
+// overwrites, and one server process handles every site it is asked for — so
+// between this function being called and the fetch it awaits, another request
+// can have repointed that variable. Without the wrapper the entry is tagged for
+// the site named here and filled from whichever site configured itself last:
+// one tenant's content, served under another's tag, for the whole LIFETIME and
+// beyond the reach of the right site's revalidation.
 
 export const cachedSite = async (siteKey: string) => {
   cacheTag(
     venueCacheTag.site(siteKey),
     venueCacheTag.collection(siteKey, "site"),
   );
-  return settle(await _getSite());
+  return settle(await withSiteKey(siteKey, () => _getSite()));
 };
 
 export const cachedEvents = async (
@@ -78,7 +88,7 @@ export const cachedEvents = async (
     venueCacheTag.site(siteKey),
     venueCacheTag.collection(siteKey, "events"),
   );
-  return settle(await _getEvents(params));
+  return settle(await withSiteKey(siteKey, () => _getEvents(params)));
 };
 
 export const cachedEvent = async (
@@ -90,7 +100,7 @@ export const cachedEvent = async (
     venueCacheTag.collection(siteKey, "events"),
     venueCacheTag.record(siteKey, "events", params.slug),
   );
-  return settle(await _getEvent(params));
+  return settle(await withSiteKey(siteKey, () => _getEvent(params)));
 };
 
 export const cachedPages = async (
@@ -101,7 +111,7 @@ export const cachedPages = async (
     venueCacheTag.site(siteKey),
     venueCacheTag.collection(siteKey, "pages"),
   );
-  return settle(await _getPages(params));
+  return settle(await withSiteKey(siteKey, () => _getPages(params)));
 };
 
 export const cachedPage = async (
@@ -113,7 +123,7 @@ export const cachedPage = async (
     venueCacheTag.collection(siteKey, "pages"),
     venueCacheTag.record(siteKey, "pages", params.slug),
   );
-  return settle(await _getPage(params));
+  return settle(await withSiteKey(siteKey, () => _getPage(params)));
 };
 
 export const cachedNews = async (
@@ -124,7 +134,7 @@ export const cachedNews = async (
     venueCacheTag.site(siteKey),
     venueCacheTag.collection(siteKey, "news"),
   );
-  return settle(await _getNews(params));
+  return settle(await withSiteKey(siteKey, () => _getNews(params)));
 };
 
 export const cachedNewsArticle = async (
@@ -136,7 +146,7 @@ export const cachedNewsArticle = async (
     venueCacheTag.collection(siteKey, "news"),
     venueCacheTag.record(siteKey, "news", params.slug),
   );
-  return settle(await _getNewsArticle(params));
+  return settle(await withSiteKey(siteKey, () => _getNewsArticle(params)));
 };
 
 export const cachedProfiles = async (
@@ -147,7 +157,7 @@ export const cachedProfiles = async (
     venueCacheTag.site(siteKey),
     venueCacheTag.collection(siteKey, "profiles"),
   );
-  return settle(await _getProfiles(params));
+  return settle(await withSiteKey(siteKey, () => _getProfiles(params)));
 };
 
 export const cachedProfile = async (
@@ -159,7 +169,7 @@ export const cachedProfile = async (
     venueCacheTag.collection(siteKey, "profiles"),
     venueCacheTag.record(siteKey, "profiles", params.slug),
   );
-  return settle(await _getProfile(params));
+  return settle(await withSiteKey(siteKey, () => _getProfile(params)));
 };
 
 // Tagged under events too: a new event changes this listing.
@@ -173,7 +183,7 @@ export const cachedProfileEvents = async (
     venueCacheTag.collection(siteKey, "events"),
     venueCacheTag.record(siteKey, "profiles", params.slug),
   );
-  return settle(await _getProfileEvents(params));
+  return settle(await withSiteKey(siteKey, () => _getProfileEvents(params)));
 };
 
 export const cachedProfileProducts = async (
@@ -186,7 +196,7 @@ export const cachedProfileProducts = async (
     venueCacheTag.collection(siteKey, "products"),
     venueCacheTag.record(siteKey, "profiles", params.slug),
   );
-  return settle(await _getProfileProducts(params));
+  return settle(await withSiteKey(siteKey, () => _getProfileProducts(params)));
 };
 
 export const cachedProducts = async (
@@ -197,7 +207,7 @@ export const cachedProducts = async (
     venueCacheTag.site(siteKey),
     venueCacheTag.collection(siteKey, "products"),
   );
-  return settle(await _getProducts(params));
+  return settle(await withSiteKey(siteKey, () => _getProducts(params)));
 };
 
 export const cachedProduct = async (
@@ -209,5 +219,5 @@ export const cachedProduct = async (
     venueCacheTag.collection(siteKey, "products"),
     venueCacheTag.record(siteKey, "products", params.slug),
   );
-  return settle(await _getProduct(params));
+  return settle(await withSiteKey(siteKey, () => _getProduct(params)));
 };

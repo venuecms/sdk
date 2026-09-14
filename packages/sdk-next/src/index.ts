@@ -1,8 +1,5 @@
 // Re-export everything from SDK except the data-fetching functions we override
 export {
-  // Configuration
-  setConfig,
-
   // Domain lookup (already has custom caching in SDK)
   getSiteKeyByDomain,
   listSiteDomains,
@@ -38,6 +35,10 @@ export {
   getProduct,
   searchSite,
 } from "./lib/api";
+
+// Configuration. This package's own `setConfig`, which scopes the siteKey to
+// the request as well as configuring the core SDK — see `./lib/api/siteKey`.
+export { setConfig } from "./lib/api/siteKey";
 
 export { venueCacheTag, type VenueCollection } from "./lib/api/tags";
 

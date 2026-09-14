@@ -182,6 +182,15 @@ var setConfig = (params) => {
   client.setConfig({ ...defaultOptions, ...params.options });
 };
 var getSiteKey = () => siteKey;
+var withSiteKey = (key, fn) => {
+  const configured = siteKey;
+  siteKey = key;
+  try {
+    return fn();
+  } finally {
+    siteKey = configured;
+  }
+};
 var getSite2 = () => {
   return getSite({
     path: {
@@ -362,5 +371,6 @@ export {
   getTags2 as getTags,
   listSiteDomains2 as listSiteDomains,
   searchSite2 as searchSite,
-  setConfig
+  setConfig,
+  withSiteKey
 };

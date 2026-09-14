@@ -57,6 +57,38 @@ export const setConfig = (params: { siteKey: string; options?: Partial<RequestOp
 export const getSiteKey = () => siteKey;
 
 /**
+ * Runs `fn` against an explicit siteKey, restoring the configured one after.
+ *
+ * {@link setConfig} writes a module-level siteKey, so in a process serving more
+ * than one site — one Next server behind several domains — the key a read uses
+ * is whichever site configured itself most recently, not the one the request
+ * belongs to. A caller that already knows which site it is reading for passes
+ * it here instead of trusting that global.
+ *
+ * Safe despite the shared variable because the swap spans no await: every read
+ * below puts the siteKey into its request synchronously and `fn` returns the
+ * pending promise, so nothing else can run between the assignment and the read.
+ * That also means `fn` must not await before it calls a read — pass the read
+ * itself, not an async wrapper around it.
+ *
+ * @category Configuration
+ * @example
+ * ```typescript
+ * const site = await withSiteKey("my-site", () => getSite());
+ * ```
+ */
+export const withSiteKey = <T>(key: string, fn: () => T): T => {
+  const configured = siteKey;
+  siteKey = key;
+
+  try {
+    return fn();
+  } finally {
+    siteKey = configured;
+  }
+};
+
+/**
  * Get the site configured via the siteKey
  *
  * @category Sites

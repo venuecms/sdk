@@ -1,11 +1,11 @@
 /**
- * The public reads. Each resolves the siteKey and hands it to its counterpart
- * in `./cached`, which is where the caching lives. Requires Next 16 with
+ * The public reads. Each resolves the siteKey for the current request and hands
+ * it to its counterpart in `./cached`, which is where the caching lives. Requires Next 16 with
  * `cacheComponents: true`; without it `"use cache"` is a build error.
  */
 import {
-  getSiteKey,
   searchSite as _searchSite,
+  withSiteKey,
   type GetEventsData,
   type GetEventData,
   type GetPagesData,
@@ -21,6 +21,8 @@ import {
   type SearchSiteData,
 } from "@venuecms/sdk";
 import { cache } from "react";
+
+import { resolveSiteKey } from "./siteKey";
 
 import {
   cachedSite,
@@ -42,43 +44,42 @@ import {
  * Get the site configured via the siteKey (cached)
  * @category Sites
  */
-export const getSite = async () => cachedSite(getSiteKey());
+export const getSite = async () => cachedSite(resolveSiteKey());
 
 /**
  * Get a list of events (cached)
  * @category Events
  */
 export const getEvents = async (params: GetEventsData["query"] = {}) =>
-  cachedEvents(getSiteKey(), params);
+  cachedEvents(resolveSiteKey(), params);
 
 /**
  * Retrieve data for a single event (cached)
  * @category Events
  */
-export const getEvent = async (
-  params: Omit<GetEventData["path"], "siteKey">,
-) => cachedEvent(getSiteKey(), params);
+export const getEvent = async (params: Omit<GetEventData["path"], "siteKey">) =>
+  cachedEvent(resolveSiteKey(), params);
 
 /**
  * Get a list of all pages (cached)
  * @category Pages
  */
 export const getPages = async (params: GetPagesData["query"] = {}) =>
-  cachedPages(getSiteKey(), params);
+  cachedPages(resolveSiteKey(), params);
 
 /**
  * Get a single page using the slug (cached)
  * @category Pages
  */
 export const getPage = async (params: Omit<GetPageData["path"], "siteKey">) =>
-  cachedPage(getSiteKey(), params);
+  cachedPage(resolveSiteKey(), params);
 
 /**
  * Get a list of all news items (cached)
  * @category News
  */
 export const getNews = async (params: GetNewsData["query"] = {}) =>
-  cachedNews(getSiteKey(), params);
+  cachedNews(resolveSiteKey(), params);
 
 /**
  * Get a single news item using the slug (cached)
@@ -86,14 +87,14 @@ export const getNews = async (params: GetNewsData["query"] = {}) =>
  */
 export const getNewsArticle = async (
   params: Omit<GetNewsArticleData["path"], "siteKey">,
-) => cachedNewsArticle(getSiteKey(), params);
+) => cachedNewsArticle(resolveSiteKey(), params);
 
 /**
  * Get a list of profiles (cached)
  * @category Profiles
  */
 export const getProfiles = async (params: GetProfilesData["query"] = {}) =>
-  cachedProfiles(getSiteKey(), params);
+  cachedProfiles(resolveSiteKey(), params);
 
 /**
  * Get a profile (cached)
@@ -101,7 +102,7 @@ export const getProfiles = async (params: GetProfilesData["query"] = {}) =>
  */
 export const getProfile = async (
   params: Omit<GetProfileData["path"], "siteKey">,
-) => cachedProfile(getSiteKey(), params);
+) => cachedProfile(resolveSiteKey(), params);
 
 /**
  * Get a listing of events for a profile (cached)
@@ -110,7 +111,7 @@ export const getProfile = async (
 export const getProfileEvents = async (
   params: Omit<GetProfileEventsData["path"], "siteKey"> &
     GetProfileEventsData["query"],
-) => cachedProfileEvents(getSiteKey(), params);
+) => cachedProfileEvents(resolveSiteKey(), params);
 
 /**
  * Get a listing of products for a profile (cached)
@@ -119,14 +120,14 @@ export const getProfileEvents = async (
 export const getProfileProducts = async (
   params: Omit<GetProfileProductsData["path"], "siteKey"> &
     GetProfileProductsData["query"],
-) => cachedProfileProducts(getSiteKey(), params);
+) => cachedProfileProducts(resolveSiteKey(), params);
 
 /**
  * Get a listing of products (cached)
  * @category Products
  */
 export const getProducts = async (params: GetProductsData["query"]) =>
-  cachedProducts(getSiteKey(), params);
+  cachedProducts(resolveSiteKey(), params);
 
 /**
  * Get a product (cached)
@@ -134,7 +135,7 @@ export const getProducts = async (params: GetProductsData["query"]) =>
  */
 export const getProduct = async (
   params: Omit<GetProductData["path"], "siteKey">,
-) => cachedProduct(getSiteKey(), params);
+) => cachedProduct(resolveSiteKey(), params);
 
 /**
  * Search a site for all content types (deduped per render, not cached across
@@ -143,5 +144,5 @@ export const getProduct = async (
  * @category Sites
  */
 export const searchSite = cache((params: SearchSiteData["query"]) =>
-  _searchSite(params),
+  withSiteKey(resolveSiteKey(), () => _searchSite(params)),
 );

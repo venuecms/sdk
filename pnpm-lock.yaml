@@ -46,7 +46,7 @@ importers:
         specifier: ^19.0.8
         version: 19.2.18
       '@venuecms/sdk':
-        specifier: 1.10.0
+        specifier: 1.12.0
         version: link:../sdk
       clsx:
         specifier: ^2.1.1

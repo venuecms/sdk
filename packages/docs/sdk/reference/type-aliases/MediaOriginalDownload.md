@@ -8,10 +8,10 @@
 type MediaOriginalDownload = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:696](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L696)
+Defined in: [packages/sdk/src/client/types.gen.ts:801](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L801)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="original"></a> `original` | [`MediaDownload`](MediaDownload.md) | [packages/sdk/src/client/types.gen.ts:697](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L697) |
+| <a id="original"></a> `original` | [`MediaDownload`](MediaDownload.md) | [packages/sdk/src/client/types.gen.ts:802](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L802) |

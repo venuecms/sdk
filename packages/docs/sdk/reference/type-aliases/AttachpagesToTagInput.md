@@ -8,10 +8,10 @@
 type AttachpagesToTagInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:155](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L155)
+Defined in: [packages/sdk/src/client/types.gen.ts:187](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L187)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="pageid"></a> `pageId` | `string` | [packages/sdk/src/client/types.gen.ts:156](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L156) |
+| <a id="pageid"></a> `pageId` | `string` | [packages/sdk/src/client/types.gen.ts:188](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L188) |

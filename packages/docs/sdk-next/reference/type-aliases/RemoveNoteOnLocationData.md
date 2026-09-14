@@ -8,13 +8,13 @@
 type RemoveNoteOnLocationData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2893](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2893)
+Defined in: [packages/sdk/dist/index.d.mts:3199](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3199)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2894](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2894) |
-| `path.locationId` | `string` | [packages/sdk/dist/index.d.mts:2895](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2895) |
-| `path.noteId` | `string` | [packages/sdk/dist/index.d.mts:2896](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2896) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2897](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2897) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3200](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3200) |
+| `path.locationId` | `string` | [packages/sdk/dist/index.d.mts:3201](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3201) |
+| `path.noteId` | `string` | [packages/sdk/dist/index.d.mts:3202](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3202) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3203](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3203) |

@@ -8,10 +8,10 @@
 type MfaEnrollInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:618](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L618)
+Defined in: [packages/sdk/dist/index.d.mts:709](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L709)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="friendlyname"></a> `friendlyName`? | `string` | [packages/sdk/dist/index.d.mts:619](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L619) |
+| <a id="friendlyname"></a> `friendlyName`? | `string` | [packages/sdk/dist/index.d.mts:710](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L710) |

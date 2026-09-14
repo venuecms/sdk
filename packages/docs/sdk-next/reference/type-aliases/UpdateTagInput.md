@@ -8,10 +8,10 @@
 type UpdateTagInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1220](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1220)
+Defined in: [packages/sdk/dist/index.d.mts:1387](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1387)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="title"></a> `title` | `string` | [packages/sdk/dist/index.d.mts:1221](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1221) |
+| <a id="title"></a> `title` | `string` | [packages/sdk/dist/index.d.mts:1388](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1388) |

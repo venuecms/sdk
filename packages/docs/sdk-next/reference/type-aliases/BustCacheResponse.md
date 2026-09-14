@@ -8,11 +8,11 @@
 type BustCacheResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:170](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L170)
+Defined in: [packages/sdk/dist/index.d.mts:197](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L197)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="error"></a> `error`? | `string` | [packages/sdk/dist/index.d.mts:175](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L175) |
-| <a id="results"></a> `results`? | `object`[] | [packages/sdk/dist/index.d.mts:171](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L171) |
+| <a id="error"></a> `error`? | `string` | [packages/sdk/dist/index.d.mts:202](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L202) |
+| <a id="results"></a> `results`? | `object`[] | [packages/sdk/dist/index.d.mts:198](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L198) |

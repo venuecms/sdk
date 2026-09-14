@@ -8,13 +8,13 @@
 type TagListItem = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1062](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1062)
+Defined in: [packages/sdk/dist/index.d.mts:1210](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1210)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:1063](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1063) |
-| <a id="parenttags"></a> `parentTags`? | `object`[] | [packages/sdk/dist/index.d.mts:1066](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1066) |
-| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:1064](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1064) |
-| <a id="title"></a> `title` | `string` | [packages/sdk/dist/index.d.mts:1065](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1065) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:1211](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1211) |
+| <a id="parenttags"></a> `parentTags`? | `object`[] | [packages/sdk/dist/index.d.mts:1214](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1214) |
+| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:1212](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1212) |
+| <a id="title"></a> `title` | `string` | [packages/sdk/dist/index.d.mts:1213](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1213) |

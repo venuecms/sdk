@@ -8,10 +8,10 @@
 type GetMembershipTierResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3342](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3342)
+Defined in: [packages/sdk/dist/index.d.mts:3666](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3666)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="records"></a> `records` | [`MembershipTier`](MembershipTier.md)[] | [packages/sdk/dist/index.d.mts:3343](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3343) |
+| <a id="records"></a> `records` | [`MembershipTier`](MembershipTier.md)[] | [packages/sdk/dist/index.d.mts:3667](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3667) |

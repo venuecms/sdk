@@ -8,12 +8,12 @@
 type DeleteMediaCollectionData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2028](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2028)
+Defined in: [packages/sdk/dist/index.d.mts:2252](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2252)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2029](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2029) |
-| `path.collectionId` | `string` | [packages/sdk/dist/index.d.mts:2030](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2030) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2031](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2031) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2253](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2253) |
+| `path.collectionId` | `string` | [packages/sdk/dist/index.d.mts:2254](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2254) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2255](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2255) |

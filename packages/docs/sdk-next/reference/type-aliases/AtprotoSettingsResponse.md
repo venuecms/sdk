@@ -8,10 +8,10 @@
 type AtprotoSettingsResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:119](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L119)
+Defined in: [packages/sdk/dist/index.d.mts:140](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L140)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="publishenabled"></a> `publishEnabled` | `boolean` | [packages/sdk/dist/index.d.mts:120](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L120) |
+| <a id="publishenabled"></a> `publishEnabled` | `boolean` | [packages/sdk/dist/index.d.mts:141](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L141) |

@@ -8,13 +8,13 @@
 type MfaEnroll = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:725](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L725)
+Defined in: [packages/sdk/src/client/types.gen.ts:838](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L838)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="factorid"></a> `factorId` | `string` | [packages/sdk/src/client/types.gen.ts:726](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L726) |
-| <a id="qrcode"></a> `qrCode` | `string` | [packages/sdk/src/client/types.gen.ts:727](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L727) |
-| <a id="secret"></a> `secret` | `string` | [packages/sdk/src/client/types.gen.ts:728](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L728) |
-| <a id="uri"></a> `uri` | `string` | [packages/sdk/src/client/types.gen.ts:729](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L729) |
+| <a id="factorid"></a> `factorId` | `string` | [packages/sdk/src/client/types.gen.ts:839](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L839) |
+| <a id="qrcode"></a> `qrCode` | `string` | [packages/sdk/src/client/types.gen.ts:840](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L840) |
+| <a id="secret"></a> `secret` | `string` | [packages/sdk/src/client/types.gen.ts:841](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L841) |
+| <a id="uri"></a> `uri` | `string` | [packages/sdk/src/client/types.gen.ts:842](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L842) |

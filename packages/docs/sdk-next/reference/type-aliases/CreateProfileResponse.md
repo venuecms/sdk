@@ -8,11 +8,11 @@
 type CreateProfileResponse = Profile & object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2395](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2395)
+Defined in: [packages/sdk/dist/index.d.mts:2619](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2619)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/dist/index.d.mts:2396](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2396) |
-| `siteId` | `string` | [packages/sdk/dist/index.d.mts:2397](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2397) |
+| `id` | `string` | [packages/sdk/dist/index.d.mts:2620](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2620) |
+| `siteId` | `string` | [packages/sdk/dist/index.d.mts:2621](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2621) |

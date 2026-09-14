@@ -8,14 +8,14 @@
 type UpdateNoteOrderOnLocationData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3575](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3575)
+Defined in: [packages/sdk/src/client/types.gen.ts:3959](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3959)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateNoteOrderInput`](UpdateNoteOrderInput.md) & `object` | [packages/sdk/src/client/types.gen.ts:3576](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3576) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3579](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3579) |
-| `path.locationId` | `string` | [packages/sdk/src/client/types.gen.ts:3580](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3580) |
-| `path.noteId` | `string` | [packages/sdk/src/client/types.gen.ts:3581](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3581) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3582](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3582) |
+| <a id="body"></a> `body`? | [`UpdateNoteOrderInput`](UpdateNoteOrderInput.md) | [packages/sdk/src/client/types.gen.ts:3960](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3960) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3961](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3961) |
+| `path.locationId` | `string` | [packages/sdk/src/client/types.gen.ts:3962](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3962) |
+| `path.noteId` | `string` | [packages/sdk/src/client/types.gen.ts:3963](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3963) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3964](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3964) |

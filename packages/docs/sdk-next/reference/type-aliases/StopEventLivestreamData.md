@@ -8,12 +8,12 @@
 type StopEventLivestreamData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3489](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3489)
+Defined in: [packages/sdk/dist/index.d.mts:3831](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3831)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3490](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3490) |
-| `path.mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:3491](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3491) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3492](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3492) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3832](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3832) |
+| `path.mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:3833](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3833) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3834](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3834) |

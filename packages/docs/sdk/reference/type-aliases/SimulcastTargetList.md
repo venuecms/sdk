@@ -8,10 +8,10 @@
 type SimulcastTargetList = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1128](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1128)
+Defined in: [packages/sdk/src/client/types.gen.ts:1296](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1296)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="records"></a> `records` | [`SimulcastTarget`](SimulcastTarget.md)[] | [packages/sdk/src/client/types.gen.ts:1129](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1129) |
+| <a id="records"></a> `records` | [`SimulcastTarget`](SimulcastTarget.md)[] | [packages/sdk/src/client/types.gen.ts:1297](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1297) |

@@ -8,10 +8,10 @@
 type ImageDescriptionInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:443](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L443)
+Defined in: [packages/sdk/dist/index.d.mts:501](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L501)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="imageurl"></a> `imageUrl` | `string` | [packages/sdk/dist/index.d.mts:444](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L444) |
+| <a id="imageurl"></a> `imageUrl` | `string` | [packages/sdk/dist/index.d.mts:502](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L502) |

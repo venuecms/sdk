@@ -8,18 +8,18 @@
 type MediaDownload = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:642](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L642)
+Defined in: [packages/sdk/src/client/types.gen.ts:734](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L734)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="ext"></a> `ext` | `string` | [packages/sdk/src/client/types.gen.ts:646](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L646) |
-| <a id="filesize"></a> `filesize`? | `number` | [packages/sdk/src/client/types.gen.ts:651](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L651) |
-| <a id="height"></a> `height`? | `number` | [packages/sdk/src/client/types.gen.ts:650](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L650) |
-| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:643](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L643) |
-| <a id="kind"></a> `kind` | `"rendition"` \| `"original"` | [packages/sdk/src/client/types.gen.ts:645](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L645) |
-| <a id="label"></a> `label` | `string` | [packages/sdk/src/client/types.gen.ts:644](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L644) |
-| <a id="status"></a> `status` | `"ready"` \| `"preparing"` \| `"errored"` \| `"unavailable"` | [packages/sdk/src/client/types.gen.ts:647](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L647) |
-| <a id="url"></a> `url` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:648](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L648) |
-| <a id="width"></a> `width`? | `number` | [packages/sdk/src/client/types.gen.ts:649](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L649) |
+| <a id="ext"></a> `ext` | `string` | [packages/sdk/src/client/types.gen.ts:738](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L738) |
+| <a id="filesize"></a> `filesize`? | `number` | [packages/sdk/src/client/types.gen.ts:743](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L743) |
+| <a id="height"></a> `height`? | `number` | [packages/sdk/src/client/types.gen.ts:742](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L742) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:735](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L735) |
+| <a id="kind"></a> `kind` | `"rendition"` \| `"original"` | [packages/sdk/src/client/types.gen.ts:737](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L737) |
+| <a id="label"></a> `label` | `string` | [packages/sdk/src/client/types.gen.ts:736](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L736) |
+| <a id="status"></a> `status` | `"ready"` \| `"preparing"` \| `"errored"` \| `"unavailable"` | [packages/sdk/src/client/types.gen.ts:739](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L739) |
+| <a id="url"></a> `url` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:740](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L740) |
+| <a id="width"></a> `width`? | `number` | [packages/sdk/src/client/types.gen.ts:741](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L741) |

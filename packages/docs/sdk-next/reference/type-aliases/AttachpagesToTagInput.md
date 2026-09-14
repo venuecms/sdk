@@ -8,10 +8,10 @@
 type AttachpagesToTagInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:125](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L125)
+Defined in: [packages/sdk/dist/index.d.mts:149](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L149)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="pageid"></a> `pageId` | `string` | [packages/sdk/dist/index.d.mts:126](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L126) |
+| <a id="pageid"></a> `pageId` | `string` | [packages/sdk/dist/index.d.mts:150](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L150) |

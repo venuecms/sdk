@@ -8,11 +8,11 @@
 type Location = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:486](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L486)
+Defined in: [packages/sdk/dist/index.d.mts:544](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L544)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:487](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L487) |
-| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:488](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L488) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:545](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L545) |
+| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:546](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L546) |

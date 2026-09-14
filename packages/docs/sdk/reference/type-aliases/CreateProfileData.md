@@ -8,12 +8,12 @@
 type CreateProfileData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2903](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2903)
+Defined in: [packages/sdk/src/client/types.gen.ts:3178](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3178)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`CreateProfileInput`](CreateProfileInput.md) | [packages/sdk/src/client/types.gen.ts:2904](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2904) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2905](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2905) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2906](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2906) |
+| <a id="body"></a> `body`? | [`CreateProfileInput`](CreateProfileInput.md) | [packages/sdk/src/client/types.gen.ts:3179](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3179) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3180](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3180) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3181](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3181) |

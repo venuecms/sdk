@@ -8,10 +8,10 @@
 type DeleteResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:251](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L251)
+Defined in: [packages/sdk/dist/index.d.mts:283](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L283)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="ok"></a> `ok` | `boolean` | [packages/sdk/dist/index.d.mts:252](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L252) |
+| <a id="ok"></a> `ok` | `boolean` | [packages/sdk/dist/index.d.mts:284](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L284) |

@@ -8,12 +8,12 @@
 type AtprotoSettingsUpdateData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:4054](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4054)
+Defined in: [packages/sdk/src/client/types.gen.ts:4462](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4462)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`AtprotoSettingsInput`](AtprotoSettingsInput.md) | [packages/sdk/src/client/types.gen.ts:4055](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4055) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4056](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4056) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4057](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4057) |
+| <a id="body"></a> `body`? | [`AtprotoSettingsInput`](AtprotoSettingsInput.md) | [packages/sdk/src/client/types.gen.ts:4463](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4463) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4464](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4464) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4465](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4465) |

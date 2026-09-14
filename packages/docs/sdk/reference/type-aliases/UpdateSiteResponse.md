@@ -8,10 +8,10 @@
 type UpdateSiteResponse = Site & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:4191](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4191)
+Defined in: [packages/sdk/src/client/types.gen.ts:4599](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4599)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/src/client/types.gen.ts:4192](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4192) |
+| `id` | `string` | [packages/sdk/src/client/types.gen.ts:4600](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4600) |

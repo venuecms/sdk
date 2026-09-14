@@ -8,13 +8,13 @@
 type AddUserToProfileData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2514](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2514)
+Defined in: [packages/sdk/dist/index.d.mts:2750](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2750)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`AddUserToProfileInput`](AddUserToProfileInput.md) | [packages/sdk/dist/index.d.mts:2515](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2515) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2516](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2516) |
-| `path.profileId` | `string` | [packages/sdk/dist/index.d.mts:2517](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2517) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2518](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2518) |
+| <a id="body"></a> `body`? | [`AddUserToProfileInput`](AddUserToProfileInput.md) | [packages/sdk/dist/index.d.mts:2751](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2751) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2752](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2752) |
+| `path.profileId` | `string` | [packages/sdk/dist/index.d.mts:2753](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2753) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2754](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2754) |

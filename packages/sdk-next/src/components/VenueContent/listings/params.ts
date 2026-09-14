@@ -173,11 +173,14 @@ const optional = <T>(value: T | null): T | undefined => value ?? undefined;
 
 /**
  * A flag only narrows a listing, so an unset one is omitted rather than sent.
- * The endpoint types its flags as raw query values (`string | string[]`, the
- * same shape as `tags`), so a set flag is serialized as `"true"`.
+ * Sending `false` is not the same thing: the endpoint reads it as "narrow to
+ * the records without this flag", where an absent param applies no filter.
+ *
+ * Accepts the string form too, so an attribute bag that never went through
+ * `toFlag` still reads the same way the endpoint does.
  */
-const optionalFlag = (value: boolean): "true" | undefined =>
-  value ? "true" : undefined;
+const optionalFlag = (value: boolean | string | undefined): true | undefined =>
+  toFlag(value) ? true : undefined;
 
 const optionalTags = (tags: string[]): string[] | undefined =>
   tags.length ? tags : undefined;

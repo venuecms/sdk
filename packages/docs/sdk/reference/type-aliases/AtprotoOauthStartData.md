@@ -8,12 +8,12 @@
 type AtprotoOauthStartData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:4013](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4013)
+Defined in: [packages/sdk/src/client/types.gen.ts:4421](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4421)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`AtprotoOauthStartInput`](AtprotoOauthStartInput.md) | [packages/sdk/src/client/types.gen.ts:4014](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4014) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4015](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4015) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4016](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4016) |
+| <a id="body"></a> `body`? | [`AtprotoOauthStartInput`](AtprotoOauthStartInput.md) | [packages/sdk/src/client/types.gen.ts:4422](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4422) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4423](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4423) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4424](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4424) |

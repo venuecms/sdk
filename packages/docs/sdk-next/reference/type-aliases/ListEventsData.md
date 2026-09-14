@@ -8,14 +8,14 @@
 type ListEventsData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3525](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3525)
+Defined in: [packages/sdk/dist/index.d.mts:3867](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3867)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3526](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3526) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3527](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3527) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/dist/index.d.mts:3529](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3529) |
-| `query.includeSubEvents`? | `"true"` \| `"false"` | [packages/sdk/dist/index.d.mts:3530](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3530) |
-| `query.query`? | `string` | [packages/sdk/dist/index.d.mts:3531](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3531) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3868](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3868) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3869](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3869) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/dist/index.d.mts:3871](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3871) |
+| `query.includeSubEvents`? | `"true"` \| `"false"` | [packages/sdk/dist/index.d.mts:3872](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3872) |
+| `query.query`? | `string` | [packages/sdk/dist/index.d.mts:3873](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3873) |

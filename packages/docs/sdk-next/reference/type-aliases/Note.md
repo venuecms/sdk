@@ -8,10 +8,10 @@
 type Note = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:650](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L650)
+Defined in: [packages/sdk/dist/index.d.mts:741](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L741)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:651](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L651) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:742](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L742) |

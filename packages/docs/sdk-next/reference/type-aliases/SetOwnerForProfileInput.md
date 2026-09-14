@@ -8,10 +8,10 @@
 type SetOwnerForProfileInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:960](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L960)
+Defined in: [packages/sdk/dist/index.d.mts:1097](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1097)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="userid"></a> `userId` | `string` | [packages/sdk/dist/index.d.mts:961](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L961) |
+| <a id="userid"></a> `userId` | `string` | [packages/sdk/dist/index.d.mts:1098](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1098) |

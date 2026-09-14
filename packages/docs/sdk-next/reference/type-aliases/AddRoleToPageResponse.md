@@ -8,11 +8,11 @@
 type AddRoleToPageResponse = Page & object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2268](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2268)
+Defined in: [packages/sdk/dist/index.d.mts:2492](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2492)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/dist/index.d.mts:2269](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2269) |
-| `siteId` | `string` | [packages/sdk/dist/index.d.mts:2270](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2270) |
+| `id` | `string` | [packages/sdk/dist/index.d.mts:2493](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2493) |
+| `siteId` | `string` | [packages/sdk/dist/index.d.mts:2494](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2494) |

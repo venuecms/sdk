@@ -8,13 +8,13 @@
 type GetEmailStatsData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2135](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2135)
+Defined in: [packages/sdk/src/client/types.gen.ts:2399](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2399)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2136](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2136) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2137](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2137) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:2139](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2139) |
-| `query.days`? | `string` | [packages/sdk/src/client/types.gen.ts:2140](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2140) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2400](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2400) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2401](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2401) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:2403](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2403) |
+| `query.days`? | `string` | [packages/sdk/src/client/types.gen.ts:2404](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2404) |

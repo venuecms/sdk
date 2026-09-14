@@ -8,12 +8,12 @@
 type CreateProfileData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2389](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2389)
+Defined in: [packages/sdk/dist/index.d.mts:2613](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2613)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`CreateProfileInput`](CreateProfileInput.md) | [packages/sdk/dist/index.d.mts:2390](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2390) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2391](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2391) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2392](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2392) |
+| <a id="body"></a> `body`? | [`CreateProfileInput`](CreateProfileInput.md) | [packages/sdk/dist/index.d.mts:2614](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2614) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2615](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2615) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2616](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2616) |

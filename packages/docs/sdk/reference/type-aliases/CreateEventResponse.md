@@ -8,12 +8,12 @@
 type CreateEventResponse = Event & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:4410](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4410)
+Defined in: [packages/sdk/src/client/types.gen.ts:4848](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4848)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/src/client/types.gen.ts:4411](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4411) |
-| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:4412](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4412) |
-| `slug` | `string` | [packages/sdk/src/client/types.gen.ts:4413](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4413) |
+| `id` | `string` | [packages/sdk/src/client/types.gen.ts:4849](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4849) |
+| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:4850](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4850) |
+| `slug` | `string` | [packages/sdk/src/client/types.gen.ts:4851](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4851) |

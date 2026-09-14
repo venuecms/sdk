@@ -8,13 +8,13 @@
 type AddImageToWebsiteData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3416](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3416)
+Defined in: [packages/sdk/dist/index.d.mts:3751](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3751)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`MediaItemUpload`](MediaItemUpload.md) & `object` | [packages/sdk/dist/index.d.mts:3417](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3417) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3423](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3423) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3424](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3424) |
-| `path.websiteId` | `string` | [packages/sdk/dist/index.d.mts:3425](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3425) |
+| <a id="body"></a> `body`? | [`MediaItemUpload`](MediaItemUpload.md) | [packages/sdk/dist/index.d.mts:3752](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3752) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3753](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3753) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3754](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3754) |
+| `path.websiteId` | `string` | [packages/sdk/dist/index.d.mts:3755](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3755) |

@@ -8,11 +8,11 @@
 type CustomSchemaData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:302](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L302)
+Defined in: [packages/sdk/src/client/types.gen.ts:344](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L344)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="customschemaid"></a> `customSchemaId`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:304](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L304) |
-| <a id="data"></a> `data`? | `unknown` | [packages/sdk/src/client/types.gen.ts:303](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L303) |
+| <a id="customschemaid"></a> `customSchemaId`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:346](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L346) |
+| <a id="data"></a> `data`? | `unknown` | [packages/sdk/src/client/types.gen.ts:345](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L345) |

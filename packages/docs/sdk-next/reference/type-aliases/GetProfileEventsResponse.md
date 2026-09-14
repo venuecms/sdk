@@ -8,11 +8,11 @@
 type GetProfileEventsResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1514](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1514)
+Defined in: [packages/sdk/dist/index.d.mts:1722](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1722)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count`? | `number` | [packages/sdk/dist/index.d.mts:1516](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1516) |
-| <a id="records"></a> `records` | [`Event`](Event.md)[] | [packages/sdk/dist/index.d.mts:1515](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1515) |
+| <a id="count"></a> `count`? | `number` | [packages/sdk/dist/index.d.mts:1724](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1724) |
+| <a id="records"></a> `records` | [`Event`](Event.md)[] | [packages/sdk/dist/index.d.mts:1723](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1723) |

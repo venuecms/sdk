@@ -8,11 +8,11 @@
 type GetProfilesPublicPreviewResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2428](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2428)
+Defined in: [packages/sdk/dist/index.d.mts:2652](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2652)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count` | `number` | [packages/sdk/dist/index.d.mts:2430](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2430) |
-| <a id="records"></a> `records` | [`ProfilePreview`](ProfilePreview.md)[] | [packages/sdk/dist/index.d.mts:2429](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2429) |
+| <a id="count"></a> `count` | `number` | [packages/sdk/dist/index.d.mts:2654](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2654) |
+| <a id="records"></a> `records` | [`ProfilePreview`](ProfilePreview.md)[] | [packages/sdk/dist/index.d.mts:2653](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2653) |

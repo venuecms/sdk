@@ -8,4 +8,4 @@
 type CreateDraftBatchResponse = DraftBatchResult;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1837](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1837)
+Defined in: [packages/sdk/dist/index.d.mts:2053](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2053)

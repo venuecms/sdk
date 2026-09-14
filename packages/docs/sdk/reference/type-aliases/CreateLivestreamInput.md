@@ -8,11 +8,11 @@
 type CreateLivestreamInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:232](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L232)
+Defined in: [packages/sdk/src/client/types.gen.ts:268](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L268)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="roleids"></a> `roleIds`? | `string`[] | [packages/sdk/src/client/types.gen.ts:234](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L234) |
-| <a id="title"></a> `title`? | `string` | [packages/sdk/src/client/types.gen.ts:233](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L233) |
+| <a id="roleids"></a> `roleIds`? | `string`[] | [packages/sdk/src/client/types.gen.ts:270](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L270) |
+| <a id="title"></a> `title`? | `string` | [packages/sdk/src/client/types.gen.ts:269](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L269) |

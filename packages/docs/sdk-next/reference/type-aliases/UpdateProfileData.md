@@ -8,13 +8,13 @@
 type UpdateProfileData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2444](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2444)
+Defined in: [packages/sdk/dist/index.d.mts:2668](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2668)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateProfileInput`](UpdateProfileInput.md) | [packages/sdk/dist/index.d.mts:2445](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2445) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2446](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2446) |
-| `path.profileId` | `string` | [packages/sdk/dist/index.d.mts:2447](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2447) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2448](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2448) |
+| <a id="body"></a> `body`? | [`UpdateProfileInput`](UpdateProfileInput.md) | [packages/sdk/dist/index.d.mts:2669](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2669) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2670](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2670) |
+| `path.profileId` | `string` | [packages/sdk/dist/index.d.mts:2671](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2671) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2672](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2672) |

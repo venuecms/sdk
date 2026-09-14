@@ -5,6 +5,10 @@ export type AccessRole = {
     name: (string) | null;
 };
 
+export type AccessZonesResponse = {
+    zones: Array<(string)>;
+};
+
 export type AddDomainInput = {
     domain: string;
 };
@@ -135,6 +139,10 @@ export type AddUserToEventInput = {
 
 export type AddUserToProfileInput = {
     userId: string;
+};
+
+export type AddWebsiteLogoResponse = {
+    [key: string]: unknown;
 };
 
 export type AtprotoOauthDisconnectResponse = {
@@ -288,6 +296,12 @@ export type CreateProfileInput = {
     content?: string;
     shortContent?: string;
     eventId?: string;
+};
+
+export type CreateRoleInput = {
+    name: string;
+    description?: (string) | null;
+    access?: RoleAccessInput;
 };
 
 export type CreateSimulcastTargetInput = {
@@ -1143,6 +1157,11 @@ export type RemoveProfileImageInput = {
     isMainImage?: boolean;
 };
 
+export type RemoveRoleFromPageResponse = {
+    ok: boolean;
+    updatedAt: string;
+};
+
 export type ReorderMediaCollectionItemInput = {
     mediaItemId: string;
     upperNeighbor: (string) | null;
@@ -1157,8 +1176,35 @@ export type ReorderVariantInput = {
     upperNeighbor?: string;
 };
 
+export type RoleAccessInput = {
+    [key: string]: (number);
+};
+
+export type RoleMember = {
+    id: string;
+    name: (string) | null;
+    email: (string) | null;
+    image: {
+        url: (string) | null;
+    } | null;
+};
+
+export type RoleMembersListResponse = {
+    records: Array<RoleMember>;
+    count: number;
+};
+
 export type RolesListResponse = {
     records: Array<AccessRole>;
+    count: number;
+};
+
+export type RoleVocabularyResponse = {
+    records: Array<{
+        id: string;
+        name: string;
+        description: (string) | null;
+    }>;
     count: number;
 };
 
@@ -1569,6 +1615,12 @@ export type UpdateProfileTagsInput = {
     tags: Array<(string)>;
 };
 
+export type UpdateRoleInput = {
+    name?: string;
+    description?: (string) | null;
+    access?: RoleAccessInput;
+};
+
 export type UpdateSiteInput = {
     [key: string]: unknown;
 };
@@ -1647,11 +1699,37 @@ export type WebSite = {
         [key: string]: unknown;
     } | null;
     image?: (MediaItem & unknown);
+    logo?: (MediaItem & unknown);
     localizedContent?: Array<LocalizedContent> | null;
 };
 
 export type Website = {
     id: string;
+};
+
+export type WebsiteDomainStatus = {
+    mode: 'template' | 'api-only';
+    domain: string;
+    verified: boolean;
+    records: Array<{
+        type: string;
+        name: string;
+        value: string;
+    }>;
+};
+
+export type mode = 'template' | 'api-only';
+
+export type WebsiteLogoMediaItemUpload = {
+    fileName: string;
+    mimeType: string;
+    size: number;
+    contentHash?: string;
+    metadata?: {
+        width: number;
+        height: number;
+    };
+    isMainImage?: boolean;
 };
 
 export type WebsiteTemplatesList = {
@@ -1741,7 +1819,7 @@ export type GetEventsData = {
     };
     query?: {
         dir?: 'asc' | 'desc';
-        featured?: (string | Array<(string)>);
+        featured?: boolean;
         gt?: (number) | null;
         legacyId?: string;
         limit?: (number) | null;
@@ -1749,9 +1827,9 @@ export type GetEventsData = {
         orderBy?: string;
         page?: (number) | null;
         query?: (string) | null;
-        rootOnly?: (string | Array<(string)>);
+        rootOnly?: boolean;
         tags?: (string | Array<(string)>);
-        upcoming?: (string | Array<(string)>);
+        upcoming?: boolean;
     };
 };
 
@@ -1770,7 +1848,7 @@ export type GetEventDatesData = {
         gt?: (number) | null;
         interval?: 'day' | 'month' | 'year';
         lt?: (number) | null;
-        upcoming?: (string | Array<(string)>);
+        upcoming?: boolean;
     };
 };
 
@@ -1795,7 +1873,7 @@ export type GetNewsData = {
     };
     query?: {
         dir?: 'asc' | 'desc';
-        featured?: (string | Array<(string)>);
+        featured?: boolean;
         gt?: (number) | null;
         limit?: (number) | null;
         lt?: (number) | null;
@@ -1803,7 +1881,7 @@ export type GetNewsData = {
         page?: (number) | null;
         query?: (string) | null;
         tags?: (string | Array<(string)>);
-        upcoming?: (string | Array<(string)>);
+        upcoming?: boolean;
     };
 };
 
@@ -1854,7 +1932,7 @@ export type GetPagesData = {
     };
     query?: {
         dir?: 'asc' | 'desc';
-        featured?: (string | Array<(string)>);
+        featured?: boolean;
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
@@ -1929,7 +2007,7 @@ export type GetProfileEventsData = {
     };
     query?: {
         dir?: 'asc' | 'desc';
-        featured?: (string | Array<(string)>);
+        featured?: boolean;
         gt?: (number) | null;
         legacyId?: string;
         limit?: (number) | null;
@@ -1937,9 +2015,9 @@ export type GetProfileEventsData = {
         orderBy?: string;
         page?: (number) | null;
         query?: (string) | null;
-        rootOnly?: (string | Array<(string)>);
+        rootOnly?: boolean;
         tags?: (string | Array<(string)>);
-        upcoming?: (string | Array<(string)>);
+        upcoming?: boolean;
     };
 };
 
@@ -2755,7 +2833,7 @@ export type GetNewsPublicPreviewData = {
     };
     query?: {
         dir?: 'asc' | 'desc';
-        featured?: (string | Array<(string)>);
+        featured?: boolean;
         gt?: (number) | null;
         limit?: (number) | null;
         lt?: (number) | null;
@@ -2763,7 +2841,7 @@ export type GetNewsPublicPreviewData = {
         page?: (number) | null;
         query?: (string) | null;
         tags?: (string | Array<(string)>);
-        upcoming?: (string | Array<(string)>);
+        upcoming?: boolean;
     };
 };
 
@@ -2829,7 +2907,7 @@ export type GetPagesPublicPreviewData = {
     };
     query?: {
         dir?: 'asc' | 'desc';
-        featured?: (string | Array<(string)>);
+        featured?: boolean;
         limit?: (number) | null;
         orderBy?: string;
         page?: (number) | null;
@@ -2849,19 +2927,19 @@ export type GetPagesPublicPreviewResponse = ({
 
 export type GetPagesPublicPreviewError = (unknown);
 
-export type GetPage1Data = {
+export type GetBackendPageData = {
     path: {
         pageId: string;
         siteKey: string;
     };
 };
 
-export type GetPage1Response = ((Page & {
+export type GetBackendPageResponse = ((Page & {
     id: string;
     siteId: string;
 }));
 
-export type GetPage1Error = (unknown);
+export type GetBackendPageError = (unknown);
 
 export type DeletePageData = {
     path: {
@@ -2953,7 +3031,7 @@ export type RemoveRoleFromPageData = {
     };
 };
 
-export type RemoveRoleFromPageResponse = (DeleteResponse);
+export type RemoveRoleFromPageResponse2 = (RemoveRoleFromPageResponse);
 
 export type RemoveRoleFromPageError = (unknown);
 
@@ -3150,19 +3228,19 @@ export type GetProfilesPublicPreviewResponse = ({
 
 export type GetProfilesPublicPreviewError = (unknown);
 
-export type GetProfile1Data = {
+export type GetBackendProfileData = {
     path: {
         profileId: string;
         siteKey: string;
     };
 };
 
-export type GetProfile1Response = ((Profile & {
+export type GetBackendProfileResponse = ((Profile & {
     id: string;
     siteId: string;
 }));
 
-export type GetProfile1Error = (unknown);
+export type GetBackendProfileError = (unknown);
 
 export type UpdateProfileData = {
     body?: UpdateProfileInput;
@@ -3190,27 +3268,27 @@ export type RemoveProfileResponse = (Ok);
 
 export type RemoveProfileError = (unknown);
 
-export type GetProfileEvents1Data = {
+export type GetBackendProfileEventsData = {
     path: {
         profileId: string;
         siteKey: string;
     };
 };
 
-export type GetProfileEvents1Response = (ProfileConnectedRecords);
+export type GetBackendProfileEventsResponse = (ProfileConnectedRecords);
 
-export type GetProfileEvents1Error = (unknown);
+export type GetBackendProfileEventsError = (unknown);
 
-export type GetProfileProducts1Data = {
+export type GetBackendProfileProductsData = {
     path: {
         profileId: string;
         siteKey: string;
     };
 };
 
-export type GetProfileProducts1Response = (ProfileConnectedRecords);
+export type GetBackendProfileProductsResponse = (ProfileConnectedRecords);
 
-export type GetProfileProducts1Error = (unknown);
+export type GetBackendProfileProductsError = (unknown);
 
 export type GetProfilePagesData = {
     path: {
@@ -3638,7 +3716,7 @@ export type ListRolesData = {
         siteKey: string;
     };
     query?: {
-        limit?: (number) | null;
+        limit?: number;
         page?: (number) | null;
     };
 };
@@ -3646,6 +3724,92 @@ export type ListRolesData = {
 export type ListRolesResponse = (RolesListResponse);
 
 export type ListRolesError = (unknown);
+
+export type CreateRoleData = {
+    body?: CreateRoleInput;
+    path: {
+        siteKey: string;
+    };
+};
+
+export type CreateRoleResponse = (AccessRole);
+
+export type CreateRoleError = (unknown);
+
+export type ListAccessZonesData = {
+    path: {
+        siteKey: string;
+    };
+};
+
+export type ListAccessZonesResponse = (AccessZonesResponse);
+
+export type ListAccessZonesError = (unknown);
+
+export type ListRoleVocabularyData = {
+    path: {
+        siteKey: string;
+    };
+    query?: {
+        limit?: number;
+        page?: (number) | null;
+    };
+};
+
+export type ListRoleVocabularyResponse = (RoleVocabularyResponse);
+
+export type ListRoleVocabularyError = (unknown);
+
+export type GetRoleData = {
+    path: {
+        roleId: string;
+        siteKey: string;
+    };
+};
+
+export type GetRoleResponse = (AccessRole);
+
+export type GetRoleError = (unknown);
+
+export type UpdateRoleData = {
+    body?: UpdateRoleInput;
+    path: {
+        roleId: string;
+        siteKey: string;
+    };
+};
+
+export type UpdateRoleResponse = (AccessRole);
+
+export type UpdateRoleError = (unknown);
+
+export type DeleteRoleData = {
+    path: {
+        roleId: string;
+        siteKey: string;
+    };
+};
+
+export type DeleteRoleResponse = ({
+    ok: boolean;
+});
+
+export type DeleteRoleError = (unknown);
+
+export type ListRoleUsersData = {
+    path: {
+        roleId: string;
+        siteKey: string;
+    };
+    query?: {
+        limit?: number;
+        page?: (number) | null;
+    };
+};
+
+export type ListRoleUsersResponse = (RoleMembersListResponse);
+
+export type ListRoleUsersError = (unknown);
 
 export type ListLocationsData = {
     path: {
@@ -3894,19 +4058,19 @@ export type GetProductsPublicPreviewResponse = ({
 
 export type GetProductsPublicPreviewError = (unknown);
 
-export type GetProduct1Data = {
+export type GetBackendProductData = {
     path: {
         productId: string;
         siteKey: string;
     };
 };
 
-export type GetProduct1Response = ((Product & {
+export type GetBackendProductResponse = ((Product & {
     id: string;
     siteId: string;
 }));
 
-export type GetProduct1Error = (unknown);
+export type GetBackendProductError = (unknown);
 
 export type UpdateProductData = {
     body?: UpdateProductInput;
@@ -4159,7 +4323,7 @@ export type ListUsersData = {
         orderBy?: string;
         page?: (number) | null;
         query?: string;
-        subscribed?: (string | Array<(string)>);
+        subscribed?: boolean;
         tags?: (string | Array<(string)>);
     };
 };
@@ -4236,6 +4400,7 @@ export type RemoveRoleFromUserData = {
 
 export type RemoveRoleFromUserResponse = ({
     ok: boolean;
+    updatedAt: string;
 });
 
 export type RemoveRoleFromUserError = (unknown);
@@ -4412,17 +4577,17 @@ export type ListMembershipSubscribersResponse = ({
 
 export type ListMembershipSubscribersError = (unknown);
 
-export type GetSite1Data = {
+export type GetBackendSiteData = {
     path: {
         siteKey: string;
     };
 };
 
-export type GetSite1Response = ((Site & {
+export type GetBackendSiteResponse = ((Site & {
     id: string;
 }));
 
-export type GetSite1Error = (unknown);
+export type GetBackendSiteError = (unknown);
 
 export type UpdateSiteData = {
     body?: UpdateSiteInput;
@@ -4491,6 +4656,17 @@ export type UpdateWebsiteResponse = (Website);
 
 export type UpdateWebsiteError = (unknown);
 
+export type VerifyWebsiteDomainData = {
+    path: {
+        siteKey: string;
+        websiteId: string;
+    };
+};
+
+export type VerifyWebsiteDomainResponse = (WebsiteDomainStatus);
+
+export type VerifyWebsiteDomainError = (unknown);
+
 export type AddImageToWebsiteData = {
     body?: MediaItemUpload;
     path: {
@@ -4514,6 +4690,29 @@ export type RemoveImageFromWebsiteData = {
 export type RemoveImageFromWebsiteResponse = (Ok);
 
 export type RemoveImageFromWebsiteError = (unknown);
+
+export type AddLogoToWebsiteData = {
+    body?: WebsiteLogoMediaItemUpload;
+    path: {
+        siteKey: string;
+        websiteId: string;
+    };
+};
+
+export type AddLogoToWebsiteResponse = (AddWebsiteLogoResponse);
+
+export type AddLogoToWebsiteError = (unknown);
+
+export type RemoveLogoFromWebsiteData = {
+    path: {
+        siteKey: string;
+        websiteId: string;
+    };
+};
+
+export type RemoveLogoFromWebsiteResponse = (Ok);
+
+export type RemoveLogoFromWebsiteError = (unknown);
 
 export type AddLocaleToWebsiteData = {
     body?: AddLocaleInput;
@@ -4660,7 +4859,7 @@ export type GetEventsPublicPreviewData = {
     };
     query?: {
         dir?: 'asc' | 'desc';
-        featured?: (string | Array<(string)>);
+        featured?: boolean;
         gt?: (number) | null;
         legacyId?: string;
         limit?: number;
@@ -4668,9 +4867,9 @@ export type GetEventsPublicPreviewData = {
         orderBy?: 'startDate' | 'createdAt' | 'updatedAt';
         page?: (number) | null;
         query?: (string) | null;
-        rootOnly?: (string | Array<(string)>);
+        rootOnly?: boolean;
         tags?: (string | Array<(string)>);
-        upcoming?: (string | Array<(string)>);
+        upcoming?: boolean;
     };
 };
 
@@ -4681,16 +4880,16 @@ export type GetEventsPublicPreviewResponse = ({
 
 export type GetEventsPublicPreviewError = (unknown);
 
-export type GetEvent1Data = {
+export type GetBackendEventData = {
     path: {
         id: string;
         siteKey: string;
     };
 };
 
-export type GetEvent1Response = (EventRecord);
+export type GetBackendEventResponse = (EventRecord);
 
-export type GetEvent1Error = (unknown);
+export type GetBackendEventError = (unknown);
 
 export type UpdateEventData = {
     body?: UpdateEventInput;

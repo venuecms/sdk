@@ -8,12 +8,13 @@
 type MediaItemUpload = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:584](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L584)
+Defined in: [packages/sdk/dist/index.d.mts:668](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L668)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="filename"></a> `fileName` | `string` | [packages/sdk/dist/index.d.mts:585](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L585) |
-| <a id="mimetype"></a> `mimeType` | `string` | [packages/sdk/dist/index.d.mts:586](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L586) |
-| <a id="size"></a> `size` | `number` | [packages/sdk/dist/index.d.mts:587](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L587) |
+| <a id="filename"></a> `fileName`? | `string` | [packages/sdk/dist/index.d.mts:669](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L669) |
+| <a id="ismainimage"></a> `isMainImage`? | `boolean` | [packages/sdk/dist/index.d.mts:672](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L672) |
+| <a id="mimetype"></a> `mimeType`? | `string` | [packages/sdk/dist/index.d.mts:670](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L670) |
+| <a id="size"></a> `size`? | `number` | [packages/sdk/dist/index.d.mts:671](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L671) |

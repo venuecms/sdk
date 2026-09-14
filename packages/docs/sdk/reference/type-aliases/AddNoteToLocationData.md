@@ -8,12 +8,12 @@
 type AddNoteToLocationData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3539](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3539)
+Defined in: [packages/sdk/src/client/types.gen.ts:3923](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3923)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3540](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3540) |
-| `path.locationId` | `string` | [packages/sdk/src/client/types.gen.ts:3541](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3541) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3542](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3542) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3924](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3924) |
+| `path.locationId` | `string` | [packages/sdk/src/client/types.gen.ts:3925](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3925) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3926](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3926) |

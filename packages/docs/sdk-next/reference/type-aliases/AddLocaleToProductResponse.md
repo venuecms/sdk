@@ -8,11 +8,11 @@
 type AddLocaleToProductResponse = Product & object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3099](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3099)
+Defined in: [packages/sdk/dist/index.d.mts:3403](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3403)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/dist/index.d.mts:3100](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3100) |
-| `siteId` | `string` | [packages/sdk/dist/index.d.mts:3101](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3101) |
+| `id` | `string` | [packages/sdk/dist/index.d.mts:3404](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3404) |
+| `siteId` | `string` | [packages/sdk/dist/index.d.mts:3405](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3405) |

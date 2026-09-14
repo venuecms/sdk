@@ -8,10 +8,10 @@
 type PageTagsResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:726](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L726)
+Defined in: [packages/sdk/dist/index.d.mts:818](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L818)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="records"></a> `records` | `object`[] | [packages/sdk/dist/index.d.mts:727](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L727) |
+| <a id="records"></a> `records` | `object`[] | [packages/sdk/dist/index.d.mts:819](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L819) |

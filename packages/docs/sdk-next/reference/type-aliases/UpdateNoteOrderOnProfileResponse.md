@@ -5,14 +5,7 @@
 # Type Alias: UpdateNoteOrderOnProfileResponse
 
 ```ts
-type UpdateNoteOrderOnProfileResponse = Profile & object;
+type UpdateNoteOrderOnProfileResponse = Ok;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2606](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2606)
-
-## Type declaration
-
-| Name | Type | Defined in |
-| ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/dist/index.d.mts:2607](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2607) |
-| `siteId` | `string` | [packages/sdk/dist/index.d.mts:2608](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2608) |
+Defined in: [packages/sdk/dist/index.d.mts:2842](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2842)

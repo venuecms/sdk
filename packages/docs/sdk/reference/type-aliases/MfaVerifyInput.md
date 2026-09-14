@@ -8,11 +8,11 @@
 type MfaVerifyInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:754](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L754)
+Defined in: [packages/sdk/src/client/types.gen.ts:867](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L867)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="code"></a> `code` | `string` | [packages/sdk/src/client/types.gen.ts:756](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L756) |
-| <a id="factorid"></a> `factorId` | `string` | [packages/sdk/src/client/types.gen.ts:755](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L755) |
+| <a id="code"></a> `code` | `string` | [packages/sdk/src/client/types.gen.ts:869](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L869) |
+| <a id="factorid"></a> `factorId` | `string` | [packages/sdk/src/client/types.gen.ts:868](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L868) |

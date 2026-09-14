@@ -8,11 +8,11 @@
 type ToggleProfileVisibilityOnProductResponse = Product & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3868](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3868)
+Defined in: [packages/sdk/src/client/types.gen.ts:4250](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4250)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/src/client/types.gen.ts:3869](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3869) |
-| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:3870](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3870) |
+| `id` | `string` | [packages/sdk/src/client/types.gen.ts:4251](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4251) |
+| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:4252](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4252) |

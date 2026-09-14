@@ -8,12 +8,12 @@
 type ListLocationTagsData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2914](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2914)
+Defined in: [packages/sdk/dist/index.d.mts:3218](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3218)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2915](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2915) |
-| `path.locationId` | `string` | [packages/sdk/dist/index.d.mts:2916](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2916) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2917](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2917) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3219](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3219) |
+| `path.locationId` | `string` | [packages/sdk/dist/index.d.mts:3220](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3220) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3221](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3221) |

@@ -8,10 +8,10 @@
 type DeleteEventLivestreamResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3485](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3485)
+Defined in: [packages/sdk/dist/index.d.mts:3827](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3827)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="success"></a> `success` | `boolean` | [packages/sdk/dist/index.d.mts:3486](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3486) |
+| <a id="success"></a> `success` | `boolean` | [packages/sdk/dist/index.d.mts:3828](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3828) |

@@ -5,18 +5,14 @@
 # Function: getProfiles()
 
 ```ts
-function getProfiles(params): Promise<
-  | {
-  data: undefined;
+function getProfiles(params): Promise<{
+  data:   | undefined
+     | GetProfilesResponse;
   error: unknown;
- }
-  | {
-  data: GetProfilesResponse;
-  error: undefined;
-} & object>
+}>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:92](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/lib/api/index.ts#L92)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:95](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/lib/api/index.ts#L95)
 
 Get a list of profiles (cached)
 
@@ -28,12 +24,8 @@ Get a list of profiles (cached)
 
 ## Returns
 
-`Promise`\<
-  \| \{
-  `data`: `undefined`;
+`Promise`\<\{
+  `data`:   \| `undefined`
+     \| [`GetProfilesResponse`](../type-aliases/GetProfilesResponse.md);
   `error`: `unknown`;
- \}
-  \| \{
-  `data`: [`GetProfilesResponse`](../type-aliases/GetProfilesResponse.md);
-  `error`: `undefined`;
- \} & `object`\>
+ \}\>

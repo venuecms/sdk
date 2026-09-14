@@ -8,11 +8,11 @@
 type ListSiteApiKeysData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1713](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1713)
+Defined in: [packages/sdk/dist/index.d.mts:1929](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1929)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1714](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1714) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1715](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1715) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1930](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1930) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1931](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1931) |

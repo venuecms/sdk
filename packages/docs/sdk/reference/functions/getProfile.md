@@ -16,7 +16,7 @@ function getProfile(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:245](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/main.ts#L245)
+Defined in: [packages/sdk/src/main.ts:253](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/main.ts#L253)
 
 Get a profile
 

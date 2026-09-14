@@ -8,12 +8,12 @@
 type GetImageDescriptionData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1665](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1665)
+Defined in: [packages/sdk/dist/index.d.mts:1881](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1881)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`ImageDescriptionInput`](ImageDescriptionInput.md) | [packages/sdk/dist/index.d.mts:1666](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1666) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1667](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1667) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1668](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1668) |
+| <a id="body"></a> `body`? | [`ImageDescriptionInput`](ImageDescriptionInput.md) | [packages/sdk/dist/index.d.mts:1882](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1882) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1883](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1883) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1884](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1884) |

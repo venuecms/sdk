@@ -8,13 +8,13 @@
 type UpdateProductData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3693](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3693)
+Defined in: [packages/sdk/src/client/types.gen.ts:4075](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4075)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateProductInput`](UpdateProductInput.md) | [packages/sdk/src/client/types.gen.ts:3694](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3694) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3695](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3695) |
-| `path.productId` | `string` | [packages/sdk/src/client/types.gen.ts:3696](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3696) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3697](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3697) |
+| <a id="body"></a> `body`? | [`UpdateProductInput`](UpdateProductInput.md) | [packages/sdk/src/client/types.gen.ts:4076](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4076) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4077](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4077) |
+| `path.productId` | `string` | [packages/sdk/src/client/types.gen.ts:4078](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4078) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4079](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4079) |

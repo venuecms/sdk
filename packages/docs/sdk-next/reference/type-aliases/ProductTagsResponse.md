@@ -8,10 +8,10 @@
 type ProductTagsResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:774](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L774)
+Defined in: [packages/sdk/dist/index.d.mts:866](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L866)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="records"></a> `records` | `object`[] | [packages/sdk/dist/index.d.mts:775](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L775) |
+| <a id="records"></a> `records` | `object`[] | [packages/sdk/dist/index.d.mts:867](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L867) |

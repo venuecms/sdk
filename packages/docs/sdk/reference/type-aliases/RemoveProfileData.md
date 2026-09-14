@@ -8,12 +8,12 @@
 type RemoveProfileData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2985](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2985)
+Defined in: [packages/sdk/src/client/types.gen.ts:3260](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3260)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2986](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2986) |
-| `path.profileId` | `string` | [packages/sdk/src/client/types.gen.ts:2987](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2987) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2988](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2988) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3261](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3261) |
+| `path.profileId` | `string` | [packages/sdk/src/client/types.gen.ts:3262](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3262) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3263](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3263) |

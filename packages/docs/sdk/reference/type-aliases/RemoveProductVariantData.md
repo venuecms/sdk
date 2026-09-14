@@ -8,13 +8,13 @@
 type RemoveProductVariantData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3776](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3776)
+Defined in: [packages/sdk/src/client/types.gen.ts:4158](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4158)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3777](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3777) |
-| `path.productId` | `string` | [packages/sdk/src/client/types.gen.ts:3778](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3778) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3779](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3779) |
-| `path.variantId` | `string` | [packages/sdk/src/client/types.gen.ts:3780](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3780) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4159](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4159) |
+| `path.productId` | `string` | [packages/sdk/src/client/types.gen.ts:4160](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4160) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4161](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4161) |
+| `path.variantId` | `string` | [packages/sdk/src/client/types.gen.ts:4162](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4162) |

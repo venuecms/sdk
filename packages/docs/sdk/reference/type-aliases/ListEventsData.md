@@ -8,14 +8,14 @@
 type ListEventsData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:4387](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4387)
+Defined in: [packages/sdk/src/client/types.gen.ts:4825](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4825)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4388](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4388) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4389](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4389) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:4391](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4391) |
-| `query.includeSubEvents`? | `"true"` \| `"false"` | [packages/sdk/src/client/types.gen.ts:4392](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4392) |
-| `query.query`? | `string` | [packages/sdk/src/client/types.gen.ts:4393](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4393) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4826](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4826) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4827](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4827) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:4829](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4829) |
+| `query.includeSubEvents`? | `"true"` \| `"false"` | [packages/sdk/src/client/types.gen.ts:4830](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4830) |
+| `query.query`? | `string` | [packages/sdk/src/client/types.gen.ts:4831](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4831) |

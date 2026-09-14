@@ -8,12 +8,12 @@
 type CreateUserData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3951](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3951)
+Defined in: [packages/sdk/src/client/types.gen.ts:4335](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4335)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`CreateUserInput`](CreateUserInput.md) | [packages/sdk/src/client/types.gen.ts:3952](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3952) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3953](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3953) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3954](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3954) |
+| <a id="body"></a> `body`? | [`CreateUserInput`](CreateUserInput.md) | [packages/sdk/src/client/types.gen.ts:4336](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4336) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4337](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4337) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4338](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4338) |

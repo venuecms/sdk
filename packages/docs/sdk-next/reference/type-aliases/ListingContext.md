@@ -8,7 +8,7 @@
 type ListingContext = object;
 ```
 
-Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:98](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L98)
+Defined in: [packages/sdk-next/src/components/VenueContent/listings/index.tsx:98](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L98)
 
 What the renderer knows that a listing block cannot work out for itself.
 
@@ -21,5 +21,5 @@ listing without them still renders — it only loses its links.
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="paramnames"></a> `paramNames` | `Map`\<[`RenderNode`](../interfaces/RenderNode.md), `string`\> | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:100](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L100) |
-| <a id="searchparams"></a> `searchParams` | [`SearchParams`](SearchParams.md) \| `null` | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:99](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L99) |
+| <a id="paramnames"></a> `paramNames` | `Map`\<[`RenderNode`](../interfaces/RenderNode.md), `string`\> | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:100](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L100) |
+| <a id="searchparams"></a> `searchParams` | [`SearchParams`](SearchParams.md) \| `null` | [packages/sdk-next/src/components/VenueContent/listings/index.tsx:99](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/components/VenueContent/listings/index.tsx#L99) |

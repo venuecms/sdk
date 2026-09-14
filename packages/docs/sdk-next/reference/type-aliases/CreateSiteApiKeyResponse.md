@@ -8,11 +8,11 @@
 type CreateSiteApiKeyResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:225](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L225)
+Defined in: [packages/sdk/dist/index.d.mts:257](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L257)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="key"></a> `key` | `string` | [packages/sdk/dist/index.d.mts:226](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L226) |
-| <a id="record"></a> `record` | [`SiteApiKey`](SiteApiKey.md) | [packages/sdk/dist/index.d.mts:227](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L227) |
+| <a id="key"></a> `key` | `string` | [packages/sdk/dist/index.d.mts:258](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L258) |
+| <a id="record"></a> `record` | [`SiteApiKey`](SiteApiKey.md) | [packages/sdk/dist/index.d.mts:259](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L259) |

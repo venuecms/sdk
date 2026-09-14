@@ -8,11 +8,11 @@
 type EmailBatchDetail = EmailBatch & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:380](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L380)
+Defined in: [packages/sdk/src/client/types.gen.ts:422](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L422)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `emails`? | [`BatchEmail`](BatchEmail.md)[] | [packages/sdk/src/client/types.gen.ts:382](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L382) |
-| `recipients`? | [`Recipient`](Recipient.md)[] | [packages/sdk/src/client/types.gen.ts:381](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L381) |
+| `emails`? | [`BatchEmail`](BatchEmail.md)[] | [packages/sdk/src/client/types.gen.ts:424](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L424) |
+| `recipients`? | [`Recipient`](Recipient.md)[] | [packages/sdk/src/client/types.gen.ts:423](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L423) |

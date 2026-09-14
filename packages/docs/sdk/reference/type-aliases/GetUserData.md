@@ -8,12 +8,12 @@
 type GetUserData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3911](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3911)
+Defined in: [packages/sdk/src/client/types.gen.ts:4293](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4293)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3912](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3912) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3913](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3913) |
-| `path.userId` | `string` | [packages/sdk/src/client/types.gen.ts:3914](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3914) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4294](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4294) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4295](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4295) |
+| `path.userId` | `string` | [packages/sdk/src/client/types.gen.ts:4296](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4296) |

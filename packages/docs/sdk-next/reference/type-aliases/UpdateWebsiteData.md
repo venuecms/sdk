@@ -8,13 +8,13 @@
 type UpdateWebsiteData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3407](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3407)
+Defined in: [packages/sdk/dist/index.d.mts:3734](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3734)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateWebsiteInput`](UpdateWebsiteInput.md) | [packages/sdk/dist/index.d.mts:3408](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3408) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3409](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3409) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3410](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3410) |
-| `path.websiteId` | `string` | [packages/sdk/dist/index.d.mts:3411](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3411) |
+| <a id="body"></a> `body`? | [`UpdateWebsiteInput`](UpdateWebsiteInput.md) | [packages/sdk/dist/index.d.mts:3735](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3735) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3736](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3736) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3737](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3737) |
+| `path.websiteId` | `string` | [packages/sdk/dist/index.d.mts:3738](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3738) |

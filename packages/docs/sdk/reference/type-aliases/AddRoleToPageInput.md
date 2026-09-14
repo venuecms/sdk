@@ -8,10 +8,10 @@
 type AddRoleToPageInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:108](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L108)
+Defined in: [packages/sdk/src/client/types.gen.ts:124](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L124)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="roleid"></a> `roleId` | `string` | [packages/sdk/src/client/types.gen.ts:109](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L109) |
+| <a id="roleid"></a> `roleId` | `string` | [packages/sdk/src/client/types.gen.ts:125](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L125) |

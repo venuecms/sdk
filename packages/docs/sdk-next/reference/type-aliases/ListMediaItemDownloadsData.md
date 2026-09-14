@@ -8,12 +8,12 @@
 type ListMediaItemDownloadsData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1900](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1900)
+Defined in: [packages/sdk/dist/index.d.mts:2116](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2116)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1901](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1901) |
-| `path.mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:1902](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1902) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1903](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1903) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2117](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2117) |
+| `path.mediaItemId` | `string` | [packages/sdk/dist/index.d.mts:2118](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2118) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2119](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2119) |

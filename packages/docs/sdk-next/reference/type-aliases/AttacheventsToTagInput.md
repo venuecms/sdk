@@ -8,10 +8,10 @@
 type AttacheventsToTagInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:122](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L122)
+Defined in: [packages/sdk/dist/index.d.mts:143](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L143)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="eventid"></a> `eventId` | `string` | [packages/sdk/dist/index.d.mts:123](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L123) |
+| <a id="eventid"></a> `eventId` | `string` | [packages/sdk/dist/index.d.mts:144](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L144) |

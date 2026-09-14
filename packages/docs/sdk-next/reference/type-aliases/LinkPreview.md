@@ -8,20 +8,20 @@
 type LinkPreview = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:446](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L446)
+Defined in: [packages/sdk/dist/index.d.mts:504](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L504)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="error"></a> `error`? | `string` | [packages/sdk/dist/index.d.mts:458](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L458) |
-| <a id="html"></a> `html`? | `string` | [packages/sdk/dist/index.d.mts:454](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L454) |
-| <a id="meta"></a> `meta`? | `object` | [packages/sdk/dist/index.d.mts:448](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L448) |
-| `meta.author`? | `string` | [packages/sdk/dist/index.d.mts:451](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L451) |
-| `meta.description`? | `string` | [packages/sdk/dist/index.d.mts:450](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L450) |
-| `meta.site`? | `string` | [packages/sdk/dist/index.d.mts:452](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L452) |
-| `meta.title`? | `string` | [packages/sdk/dist/index.d.mts:449](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L449) |
-| <a id="provider_name"></a> `provider_name`? | `string` | [packages/sdk/dist/index.d.mts:456](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L456) |
-| <a id="provider_url"></a> `provider_url`? | `string` | [packages/sdk/dist/index.d.mts:457](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L457) |
-| <a id="thumbnail_url"></a> `thumbnail_url`? | `string` | [packages/sdk/dist/index.d.mts:455](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L455) |
-| <a id="url"></a> `url` | `string` | [packages/sdk/dist/index.d.mts:447](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L447) |
+| <a id="error"></a> `error`? | `string` | [packages/sdk/dist/index.d.mts:516](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L516) |
+| <a id="html"></a> `html`? | `string` | [packages/sdk/dist/index.d.mts:512](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L512) |
+| <a id="meta"></a> `meta`? | `object` | [packages/sdk/dist/index.d.mts:506](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L506) |
+| `meta.author`? | `string` | [packages/sdk/dist/index.d.mts:509](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L509) |
+| `meta.description`? | `string` | [packages/sdk/dist/index.d.mts:508](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L508) |
+| `meta.site`? | `string` | [packages/sdk/dist/index.d.mts:510](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L510) |
+| `meta.title`? | `string` | [packages/sdk/dist/index.d.mts:507](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L507) |
+| <a id="provider_name"></a> `provider_name`? | `string` | [packages/sdk/dist/index.d.mts:514](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L514) |
+| <a id="provider_url"></a> `provider_url`? | `string` | [packages/sdk/dist/index.d.mts:515](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L515) |
+| <a id="thumbnail_url"></a> `thumbnail_url`? | `string` | [packages/sdk/dist/index.d.mts:513](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L513) |
+| <a id="url"></a> `url` | `string` | [packages/sdk/dist/index.d.mts:505](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L505) |

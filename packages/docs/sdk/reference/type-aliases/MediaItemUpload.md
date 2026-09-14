@@ -8,12 +8,13 @@
 type MediaItemUpload = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:690](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L690)
+Defined in: [packages/sdk/src/client/types.gen.ts:794](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L794)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="filename"></a> `fileName` | `string` | [packages/sdk/src/client/types.gen.ts:691](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L691) |
-| <a id="mimetype"></a> `mimeType` | `string` | [packages/sdk/src/client/types.gen.ts:692](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L692) |
-| <a id="size"></a> `size` | `number` | [packages/sdk/src/client/types.gen.ts:693](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L693) |
+| <a id="filename"></a> `fileName`? | `string` | [packages/sdk/src/client/types.gen.ts:795](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L795) |
+| <a id="ismainimage"></a> `isMainImage`? | `boolean` | [packages/sdk/src/client/types.gen.ts:798](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L798) |
+| <a id="mimetype"></a> `mimeType`? | `string` | [packages/sdk/src/client/types.gen.ts:796](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L796) |
+| <a id="size"></a> `size`? | `number` | [packages/sdk/src/client/types.gen.ts:797](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L797) |

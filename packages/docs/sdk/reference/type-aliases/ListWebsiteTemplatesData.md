@@ -8,11 +8,11 @@
 type ListWebsiteTemplatesData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:4197](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4197)
+Defined in: [packages/sdk/src/client/types.gen.ts:4605](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4605)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4198](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4198) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4199](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4199) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4606](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4606) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4607](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4607) |

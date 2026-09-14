@@ -8,12 +8,12 @@
 type SendBatchData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2237](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2237)
+Defined in: [packages/sdk/src/client/types.gen.ts:2501](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2501)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2238](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2238) |
-| `path.batchId` | `string` | [packages/sdk/src/client/types.gen.ts:2239](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2239) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2240](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2240) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2502](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2502) |
+| `path.batchId` | `string` | [packages/sdk/src/client/types.gen.ts:2503](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2503) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2504](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2504) |

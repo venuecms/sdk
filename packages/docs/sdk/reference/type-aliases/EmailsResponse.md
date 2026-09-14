@@ -8,11 +8,11 @@
 type EmailsResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:408](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L408)
+Defined in: [packages/sdk/src/client/types.gen.ts:450](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L450)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="emails"></a> `emails` | [`Email`](Email.md)[] | [packages/sdk/src/client/types.gen.ts:409](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L409) |
-| <a id="pagination"></a> `pagination` | [`Pagination`](Pagination.md) | [packages/sdk/src/client/types.gen.ts:410](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L410) |
+| <a id="emails"></a> `emails` | [`Email`](Email.md)[] | [packages/sdk/src/client/types.gen.ts:451](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L451) |
+| <a id="pagination"></a> `pagination` | [`Pagination`](Pagination.md) | [packages/sdk/src/client/types.gen.ts:452](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L452) |

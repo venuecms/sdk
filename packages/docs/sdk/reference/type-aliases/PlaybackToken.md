@@ -8,10 +8,10 @@
 type PlaybackToken = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:865](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L865)
+Defined in: [packages/sdk/src/client/types.gen.ts:980](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L980)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="token"></a> `token` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:866](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L866) |
+| <a id="token"></a> `token` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:981](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L981) |

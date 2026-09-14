@@ -8,11 +8,11 @@
 type Ticket = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1092](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1092)
+Defined in: [packages/sdk/dist/index.d.mts:1240](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1240)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:1093](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1093) |
-| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:1094](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1094) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:1241](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1241) |
+| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:1242](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1242) |

@@ -8,15 +8,15 @@
 type PublicSignInData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1490](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1490)
+Defined in: [packages/sdk/src/client/types.gen.ts:1742](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1742)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | `object` | [packages/sdk/src/client/types.gen.ts:1491](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1491) |
-| `body.captchaToken`? | `string` | [packages/sdk/src/client/types.gen.ts:1494](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1494) |
-| `body.email` | `string` | [packages/sdk/src/client/types.gen.ts:1492](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1492) |
-| `body.password` | `string` | [packages/sdk/src/client/types.gen.ts:1493](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1493) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1496](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1496) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1497](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1497) |
+| <a id="body"></a> `body`? | `object` | [packages/sdk/src/client/types.gen.ts:1743](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1743) |
+| `body.captchaToken`? | `string` | [packages/sdk/src/client/types.gen.ts:1746](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1746) |
+| `body.email` | `string` | [packages/sdk/src/client/types.gen.ts:1744](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1744) |
+| `body.password` | `string` | [packages/sdk/src/client/types.gen.ts:1745](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1745) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1748](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1748) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1749](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1749) |

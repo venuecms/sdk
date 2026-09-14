@@ -8,11 +8,11 @@
 type ToggleProfileVisibilityOnProductResponse = Product & object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3134](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3134)
+Defined in: [packages/sdk/dist/index.d.mts:3438](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3438)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/dist/index.d.mts:3135](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3135) |
-| `siteId` | `string` | [packages/sdk/dist/index.d.mts:3136](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3136) |
+| `id` | `string` | [packages/sdk/dist/index.d.mts:3439](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3439) |
+| `siteId` | `string` | [packages/sdk/dist/index.d.mts:3440](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3440) |

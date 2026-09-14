@@ -8,13 +8,13 @@
 type MfaEnroll = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:612](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L612)
+Defined in: [packages/sdk/dist/index.d.mts:703](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L703)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="factorid"></a> `factorId` | `string` | [packages/sdk/dist/index.d.mts:613](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L613) |
-| <a id="qrcode"></a> `qrCode` | `string` | [packages/sdk/dist/index.d.mts:614](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L614) |
-| <a id="secret"></a> `secret` | `string` | [packages/sdk/dist/index.d.mts:615](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L615) |
-| <a id="uri"></a> `uri` | `string` | [packages/sdk/dist/index.d.mts:616](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L616) |
+| <a id="factorid"></a> `factorId` | `string` | [packages/sdk/dist/index.d.mts:704](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L704) |
+| <a id="qrcode"></a> `qrCode` | `string` | [packages/sdk/dist/index.d.mts:705](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L705) |
+| <a id="secret"></a> `secret` | `string` | [packages/sdk/dist/index.d.mts:706](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L706) |
+| <a id="uri"></a> `uri` | `string` | [packages/sdk/dist/index.d.mts:707](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L707) |

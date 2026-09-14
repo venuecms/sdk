@@ -5,18 +5,13 @@
 # Function: getNews()
 
 ```ts
-function getNews(params): Promise<
-  | {
-  data: undefined;
+function getNews(params): Promise<{
+  data: undefined | GetNewsResponse;
   error: unknown;
- }
-  | {
-  data: GetNewsResponse;
-  error: undefined;
-} & object>
+}>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:75](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/lib/api/index.ts#L75)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:80](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/lib/api/index.ts#L80)
 
 Get a list of all news items (cached)
 
@@ -24,16 +19,11 @@ Get a list of all news items (cached)
 
 | Parameter | Type |
 | ------ | ------ |
-| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `featured`: `string` \| `string`[]; `gt`: `null` \| `number`; `limit`: `null` \| `number`; `lt`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `query`: `null` \| `string`; `tags`: `string` \| `string`[]; `upcoming`: `string` \| `string`[]; \} |
+| `params` | \| `undefined` \| \{ `dir`: `"asc"` \| `"desc"`; `featured`: `boolean`; `gt`: `null` \| `number`; `limit`: `null` \| `number`; `lt`: `null` \| `number`; `orderBy`: `string`; `page`: `null` \| `number`; `query`: `null` \| `string`; `tags`: `string` \| `string`[]; `upcoming`: `boolean`; \} |
 
 ## Returns
 
-`Promise`\<
-  \| \{
-  `data`: `undefined`;
+`Promise`\<\{
+  `data`: `undefined` \| [`GetNewsResponse`](../type-aliases/GetNewsResponse.md);
   `error`: `unknown`;
- \}
-  \| \{
-  `data`: [`GetNewsResponse`](../type-aliases/GetNewsResponse.md);
-  `error`: `undefined`;
- \} & `object`\>
+ \}\>

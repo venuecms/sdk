@@ -8,13 +8,13 @@
 type RemoveProfileFromPageData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2315](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2315)
+Defined in: [packages/sdk/dist/index.d.mts:2539](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2539)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2316](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2316) |
-| `path.pageId` | `string` | [packages/sdk/dist/index.d.mts:2317](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2317) |
-| `path.profileId` | `string` | [packages/sdk/dist/index.d.mts:2318](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2318) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2319](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2319) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2540](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2540) |
+| `path.pageId` | `string` | [packages/sdk/dist/index.d.mts:2541](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2541) |
+| `path.profileId` | `string` | [packages/sdk/dist/index.d.mts:2542](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2542) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2543](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2543) |

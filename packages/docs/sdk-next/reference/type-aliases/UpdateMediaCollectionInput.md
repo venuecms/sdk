@@ -8,11 +8,11 @@
 type UpdateMediaCollectionInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1158](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1158)
+Defined in: [packages/sdk/dist/index.d.mts:1320](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1320)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="description"></a> `description`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:1160](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1160) |
-| <a id="name"></a> `name`? | `string` | [packages/sdk/dist/index.d.mts:1159](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1159) |
+| <a id="description"></a> `description`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:1322](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1322) |
+| <a id="name"></a> `name`? | `string` | [packages/sdk/dist/index.d.mts:1321](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1321) |

@@ -8,11 +8,11 @@
 type AddImageToNoteResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:31](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L31)
+Defined in: [packages/sdk/dist/index.d.mts:37](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L37)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="uploadurl"></a> `uploadUrl` | `string` \| `null` | [packages/sdk/dist/index.d.mts:32](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L32) |
-| <a id="url"></a> `url`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:33](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L33) |
+| <a id="uploadurl"></a> `uploadUrl` | `string` \| `null` | [packages/sdk/dist/index.d.mts:38](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L38) |
+| <a id="url"></a> `url`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:39](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L39) |

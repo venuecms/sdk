@@ -8,11 +8,11 @@
 type AddLocaleToPageResponse = Page & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2729](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2729)
+Defined in: [packages/sdk/src/client/types.gen.ts:3004](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3004)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/src/client/types.gen.ts:2730](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2730) |
-| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:2731](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2731) |
+| `id` | `string` | [packages/sdk/src/client/types.gen.ts:3005](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3005) |
+| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:3006](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3006) |

@@ -8,4 +8,4 @@
 type UpdateMediaCollectionError = unknown;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2027](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2027)
+Defined in: [packages/sdk/dist/index.d.mts:2251](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2251)

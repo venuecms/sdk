@@ -8,13 +8,13 @@
 type UpdateTicketData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3404](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3404)
+Defined in: [packages/sdk/src/client/types.gen.ts:3691](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3691)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateTicketInput`](UpdateTicketInput.md) | [packages/sdk/src/client/types.gen.ts:3405](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3405) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3406](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3406) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3407](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3407) |
-| `path.ticketId` | `string` | [packages/sdk/src/client/types.gen.ts:3408](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3408) |
+| <a id="body"></a> `body`? | [`UpdateTicketInput`](UpdateTicketInput.md) | [packages/sdk/src/client/types.gen.ts:3692](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3692) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3693](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3693) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3694](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3694) |
+| `path.ticketId` | `string` | [packages/sdk/src/client/types.gen.ts:3695](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3695) |

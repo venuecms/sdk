@@ -8,10 +8,10 @@
 type AddRoleToUserInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:91](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L91)
+Defined in: [packages/sdk/dist/index.d.mts:103](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L103)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="roleid"></a> `roleId` | `string` | [packages/sdk/dist/index.d.mts:92](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L92) |
+| <a id="roleid"></a> `roleId` | `string` | [packages/sdk/dist/index.d.mts:104](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L104) |

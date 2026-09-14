@@ -8,14 +8,14 @@
 type UpdateNoteOnLocationData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2883](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2883)
+Defined in: [packages/sdk/dist/index.d.mts:3189](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3189)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateNoteInput`](UpdateNoteInput.md) | [packages/sdk/dist/index.d.mts:2884](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2884) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2885](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2885) |
-| `path.locationId` | `string` | [packages/sdk/dist/index.d.mts:2886](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2886) |
-| `path.noteId` | `string` | [packages/sdk/dist/index.d.mts:2887](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2887) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2888](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2888) |
+| <a id="body"></a> `body`? | [`UpdateNoteInput`](UpdateNoteInput.md) | [packages/sdk/dist/index.d.mts:3190](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3190) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3191](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3191) |
+| `path.locationId` | `string` | [packages/sdk/dist/index.d.mts:3192](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3192) |
+| `path.noteId` | `string` | [packages/sdk/dist/index.d.mts:3193](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3193) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3194](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3194) |

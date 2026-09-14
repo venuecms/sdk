@@ -8,13 +8,13 @@
 type RemoveEventRelationResponse = EventRelations & object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3663](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3663)
+Defined in: [packages/sdk/dist/index.d.mts:4005](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L4005)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `hasChildren`? | `boolean` | [packages/sdk/dist/index.d.mts:3665](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3665) |
-| `hasParent`? | `boolean` | [packages/sdk/dist/index.d.mts:3664](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3664) |
-| `parents`? | `unknown`[] | [packages/sdk/dist/index.d.mts:3666](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3666) |
-| `subEvents`? | `unknown`[] | [packages/sdk/dist/index.d.mts:3667](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3667) |
+| `hasChildren`? | `boolean` | [packages/sdk/dist/index.d.mts:4007](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L4007) |
+| `hasParent`? | `boolean` | [packages/sdk/dist/index.d.mts:4006](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L4006) |
+| `parents`? | `unknown`[] | [packages/sdk/dist/index.d.mts:4008](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L4008) |
+| `subEvents`? | `unknown`[] | [packages/sdk/dist/index.d.mts:4009](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L4009) |

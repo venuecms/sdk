@@ -8,4 +8,4 @@
 type DeletePageError = unknown;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2678](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2678)
+Defined in: [packages/sdk/src/client/types.gen.ts:2953](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2953)

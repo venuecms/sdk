@@ -8,11 +8,11 @@
 type UpdatePageResponse = Page & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2688](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2688)
+Defined in: [packages/sdk/src/client/types.gen.ts:2963](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2963)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/src/client/types.gen.ts:2689](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2689) |
-| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:2690](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2690) |
+| `id` | `string` | [packages/sdk/src/client/types.gen.ts:2964](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2964) |
+| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:2965](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2965) |

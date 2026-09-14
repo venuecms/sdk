@@ -5,18 +5,13 @@
 # Function: getPage()
 
 ```ts
-function getPage(params): Promise<
-  | {
-  data: undefined;
+function getPage(params): Promise<{
+  data: undefined | GetPageResponse;
   error: unknown;
- }
-  | {
-  data: GetPageResponse;
-  error: undefined;
-} & object>
+}>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:67](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/lib/api/index.ts#L67)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:73](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/lib/api/index.ts#L73)
 
 Get a single page using the slug (cached)
 
@@ -28,12 +23,7 @@ Get a single page using the slug (cached)
 
 ## Returns
 
-`Promise`\<
-  \| \{
-  `data`: `undefined`;
+`Promise`\<\{
+  `data`: `undefined` \| [`GetPageResponse`](../type-aliases/GetPageResponse.md);
   `error`: `unknown`;
- \}
-  \| \{
-  `data`: [`GetPageResponse`](../type-aliases/GetPageResponse.md);
-  `error`: `undefined`;
- \} & `object`\>
+ \}\>

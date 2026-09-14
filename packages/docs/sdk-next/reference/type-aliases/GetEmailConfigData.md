@@ -8,11 +8,11 @@
 type GetEmailConfigData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1736](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1736)
+Defined in: [packages/sdk/dist/index.d.mts:1952](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1952)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1737](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1737) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1738](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1738) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1953](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1953) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1954](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1954) |

@@ -8,21 +8,21 @@
 type EmailBatch = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:299](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L299)
+Defined in: [packages/sdk/dist/index.d.mts:331](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L331)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="completedat"></a> `completedAt` | `string` \| `null` | [packages/sdk/dist/index.d.mts:311](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L311) |
-| <a id="createdat"></a> `createdAt` | `string` | [packages/sdk/dist/index.d.mts:302](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L302) |
-| <a id="failedcount"></a> `failedCount` | `number` | [packages/sdk/dist/index.d.mts:309](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L309) |
-| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:300](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L300) |
-| <a id="name"></a> `name` | `string` \| `null` | [packages/sdk/dist/index.d.mts:303](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L303) |
-| <a id="sentat"></a> `sentAt` | `string` \| `null` | [packages/sdk/dist/index.d.mts:310](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L310) |
-| <a id="sentcount"></a> `sentCount` | `number` | [packages/sdk/dist/index.d.mts:308](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L308) |
-| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:301](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L301) |
-| <a id="status"></a> `status` | `"DRAFT"` \| `"SENDING"` \| `"COMPLETED"` | [packages/sdk/dist/index.d.mts:306](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L306) |
-| <a id="subject"></a> `subject` | `string` \| `null` | [packages/sdk/dist/index.d.mts:305](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L305) |
-| <a id="templatekey"></a> `templateKey` | `string` \| `null` | [packages/sdk/dist/index.d.mts:304](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L304) |
-| <a id="totalcount"></a> `totalCount` | `number` | [packages/sdk/dist/index.d.mts:307](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L307) |
+| <a id="completedat"></a> `completedAt` | `string` \| `null` | [packages/sdk/dist/index.d.mts:343](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L343) |
+| <a id="createdat"></a> `createdAt` | `string` | [packages/sdk/dist/index.d.mts:334](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L334) |
+| <a id="failedcount"></a> `failedCount` | `number` | [packages/sdk/dist/index.d.mts:341](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L341) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:332](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L332) |
+| <a id="name"></a> `name` | `string` \| `null` | [packages/sdk/dist/index.d.mts:335](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L335) |
+| <a id="sentat"></a> `sentAt` | `string` \| `null` | [packages/sdk/dist/index.d.mts:342](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L342) |
+| <a id="sentcount"></a> `sentCount` | `number` | [packages/sdk/dist/index.d.mts:340](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L340) |
+| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:333](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L333) |
+| <a id="status"></a> `status` | `"DRAFT"` \| `"SENDING"` \| `"COMPLETED"` | [packages/sdk/dist/index.d.mts:338](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L338) |
+| <a id="subject"></a> `subject` | `string` \| `null` | [packages/sdk/dist/index.d.mts:337](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L337) |
+| <a id="templatekey"></a> `templateKey` | `string` \| `null` | [packages/sdk/dist/index.d.mts:336](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L336) |
+| <a id="totalcount"></a> `totalCount` | `number` | [packages/sdk/dist/index.d.mts:339](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L339) |

@@ -8,12 +8,12 @@
 type TranslateProfileData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1681](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1681)
+Defined in: [packages/sdk/dist/index.d.mts:1897](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1897)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`TranslateInput`](TranslateInput.md) | [packages/sdk/dist/index.d.mts:1682](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1682) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1683](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1683) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1684](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1684) |
+| <a id="body"></a> `body`? | [`TranslateInput`](TranslateInput.md) | [packages/sdk/dist/index.d.mts:1898](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1898) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1899](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1899) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1900](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1900) |

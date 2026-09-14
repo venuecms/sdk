@@ -8,11 +8,11 @@
 type AddParentToPageResponse = Page & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2771](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2771)
+Defined in: [packages/sdk/src/client/types.gen.ts:3046](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3046)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/src/client/types.gen.ts:2772](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2772) |
-| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:2773](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2773) |
+| `id` | `string` | [packages/sdk/src/client/types.gen.ts:3047](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3047) |
+| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:3048](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3048) |

@@ -8,17 +8,17 @@
 type PublicSignInResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1286](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1286)
+Defined in: [packages/sdk/dist/index.d.mts:1493](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1493)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="session"></a> `session` | `object` | [packages/sdk/dist/index.d.mts:1287](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1287) |
-| `session.access_token` | `string` | [packages/sdk/dist/index.d.mts:1288](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1288) |
-| `session.expires_in` | `number` | [packages/sdk/dist/index.d.mts:1290](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1290) |
-| `session.refresh_token` | `string` | [packages/sdk/dist/index.d.mts:1289](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1289) |
-| `session.token_type` | `string` | [packages/sdk/dist/index.d.mts:1291](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1291) |
-| <a id="user"></a> `user` | `object` | [packages/sdk/dist/index.d.mts:1293](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1293) |
-| `user.email`? | `string` | [packages/sdk/dist/index.d.mts:1295](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1295) |
-| `user.id` | `string` | [packages/sdk/dist/index.d.mts:1294](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1294) |
+| <a id="session"></a> `session` | `object` | [packages/sdk/dist/index.d.mts:1494](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1494) |
+| `session.access_token` | `string` | [packages/sdk/dist/index.d.mts:1495](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1495) |
+| `session.expires_in` | `number` | [packages/sdk/dist/index.d.mts:1497](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1497) |
+| `session.refresh_token` | `string` | [packages/sdk/dist/index.d.mts:1496](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1496) |
+| `session.token_type` | `string` | [packages/sdk/dist/index.d.mts:1498](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1498) |
+| <a id="user"></a> `user` | `object` | [packages/sdk/dist/index.d.mts:1500](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1500) |
+| `user.email`? | `string` | [packages/sdk/dist/index.d.mts:1502](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1502) |
+| `user.id` | `string` | [packages/sdk/dist/index.d.mts:1501](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1501) |

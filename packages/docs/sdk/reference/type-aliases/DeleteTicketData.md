@@ -8,12 +8,12 @@
 type DeleteTicketData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3416](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3416)
+Defined in: [packages/sdk/src/client/types.gen.ts:3703](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3703)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3417](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3417) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3418](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3418) |
-| `path.ticketId` | `string` | [packages/sdk/src/client/types.gen.ts:3419](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3419) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3704](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3704) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3705](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3705) |
+| `path.ticketId` | `string` | [packages/sdk/src/client/types.gen.ts:3706](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3706) |

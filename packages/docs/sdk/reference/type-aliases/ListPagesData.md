@@ -8,19 +8,19 @@
 type ListPagesData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2596](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2596)
+Defined in: [packages/sdk/src/client/types.gen.ts:2871](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2871)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2597](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2597) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2598](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2598) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:2600](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2600) |
-| `query.dir`? | `"asc"` \| `"desc"` | [packages/sdk/src/client/types.gen.ts:2601](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2601) |
-| `query.limit`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:2602](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2602) |
-| `query.orderBy`? | `string` | [packages/sdk/src/client/types.gen.ts:2603](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2603) |
-| `query.page`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:2604](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2604) |
-| `query.publishState`? | `"DRAFT"` \| `"REQUEST"` \| `"PUBLISHED"` \| `"CANCELLED"` | [packages/sdk/src/client/types.gen.ts:2605](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2605) |
-| `query.query`? | `string` | [packages/sdk/src/client/types.gen.ts:2606](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2606) |
-| `query.type`? | \| `"CONTENT"` \| `"NEWS"` \| `"NEWSLIST"` \| `"EVENTLIST"` \| `"PROFILELIST"` \| `"PRODUCTLIST"` \| `"LINK"` | [packages/sdk/src/client/types.gen.ts:2607](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2607) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2872](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2872) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2873](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2873) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:2875](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2875) |
+| `query.dir`? | `"asc"` \| `"desc"` | [packages/sdk/src/client/types.gen.ts:2876](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2876) |
+| `query.limit`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:2877](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2877) |
+| `query.orderBy`? | `string` | [packages/sdk/src/client/types.gen.ts:2878](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2878) |
+| `query.page`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:2879](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2879) |
+| `query.publishState`? | `"DRAFT"` \| `"REQUEST"` \| `"PUBLISHED"` \| `"CANCELLED"` | [packages/sdk/src/client/types.gen.ts:2880](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2880) |
+| `query.query`? | `string` | [packages/sdk/src/client/types.gen.ts:2881](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2881) |
+| `query.type`? | \| `"CONTENT"` \| `"NEWS"` \| `"NEWSLIST"` \| `"EVENTLIST"` \| `"PROFILELIST"` \| `"PRODUCTLIST"` \| `"LINK"` | [packages/sdk/src/client/types.gen.ts:2882](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2882) |

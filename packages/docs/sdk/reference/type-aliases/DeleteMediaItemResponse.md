@@ -8,10 +8,10 @@
 type DeleteMediaItemResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2346](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2346)
+Defined in: [packages/sdk/src/client/types.gen.ts:2621](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2621)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="success"></a> `success` | `boolean` | [packages/sdk/src/client/types.gen.ts:2347](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2347) |
+| <a id="success"></a> `success` | `boolean` | [packages/sdk/src/client/types.gen.ts:2622](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2622) |

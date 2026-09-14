@@ -8,12 +8,12 @@
 type CreateTagResponse = Tag & object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2646](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2646)
+Defined in: [packages/sdk/dist/index.d.mts:2879](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2879)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/dist/index.d.mts:2647](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2647) |
-| `siteId` | `string` | [packages/sdk/dist/index.d.mts:2649](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2649) |
-| `title` | `string` | [packages/sdk/dist/index.d.mts:2648](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2648) |
+| `id` | `string` | [packages/sdk/dist/index.d.mts:2880](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2880) |
+| `siteId` | `string` | [packages/sdk/dist/index.d.mts:2882](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2882) |
+| `title` | `string` | [packages/sdk/dist/index.d.mts:2881](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2881) |

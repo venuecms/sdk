@@ -8,12 +8,12 @@
 type GetMembershipTierData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:4141](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4141)
+Defined in: [packages/sdk/src/client/types.gen.ts:4549](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4549)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4142](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4142) |
-| `path.id` | `string` | [packages/sdk/src/client/types.gen.ts:4143](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4143) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4144](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4144) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4550](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4550) |
+| `path.id` | `string` | [packages/sdk/src/client/types.gen.ts:4551](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4551) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4552](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4552) |

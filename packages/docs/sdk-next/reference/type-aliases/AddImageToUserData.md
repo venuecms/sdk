@@ -8,13 +8,13 @@
 type AddImageToUserData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3205](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3205)
+Defined in: [packages/sdk/dist/index.d.mts:3528](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3528)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`AddImageToUserInput`](AddImageToUserInput.md) | [packages/sdk/dist/index.d.mts:3206](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3206) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3207](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3207) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3208](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3208) |
-| `path.userId` | `string` | [packages/sdk/dist/index.d.mts:3209](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3209) |
+| <a id="body"></a> `body`? | [`AddImageToUserInput`](AddImageToUserInput.md) | [packages/sdk/dist/index.d.mts:3529](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3529) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3530](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3530) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3531](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3531) |
+| `path.userId` | `string` | [packages/sdk/dist/index.d.mts:3532](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3532) |

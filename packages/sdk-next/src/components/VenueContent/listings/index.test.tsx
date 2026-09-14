@@ -206,7 +206,7 @@ describe("listing blocks", () => {
     expect(getEvents).toHaveBeenCalledWith(
       expect.objectContaining({
         limit: 3,
-        upcoming: "true",
+        upcoming: true,
         tags: ["jazz", "live"],
       }),
     );

@@ -8,13 +8,13 @@
 type AddImageToPageData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2346](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2346)
+Defined in: [packages/sdk/dist/index.d.mts:2570](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2570)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`PageMediaItemUpload`](PageMediaItemUpload.md) | [packages/sdk/dist/index.d.mts:2347](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2347) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2348](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2348) |
-| `path.pageId` | `string` | [packages/sdk/dist/index.d.mts:2349](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2349) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2350](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2350) |
+| <a id="body"></a> `body`? | [`PageMediaItemUpload`](PageMediaItemUpload.md) | [packages/sdk/dist/index.d.mts:2571](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2571) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2572](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2572) |
+| `path.pageId` | `string` | [packages/sdk/dist/index.d.mts:2573](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2573) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2574](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2574) |

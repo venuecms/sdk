@@ -8,10 +8,11 @@
 type UpdateUserInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1236](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1236)
+Defined in: [packages/sdk/dist/index.d.mts:1408](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1408)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="name"></a> `name`? | `string` | [packages/sdk/dist/index.d.mts:1237](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1237) |
+| <a id="marketingemailoptin"></a> `marketingEmailOptIn`? | `boolean` | [packages/sdk/dist/index.d.mts:1410](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1410) |
+| <a id="name"></a> `name`? | `string` | [packages/sdk/dist/index.d.mts:1409](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1409) |

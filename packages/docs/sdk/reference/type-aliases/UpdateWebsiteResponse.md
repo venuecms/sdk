@@ -8,4 +8,4 @@
 type UpdateWebsiteResponse = Website;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:4241](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4241)
+Defined in: [packages/sdk/src/client/types.gen.ts:4655](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4655)

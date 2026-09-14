@@ -8,11 +8,11 @@
 type AddRoleToPageResponse = Page & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2744](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2744)
+Defined in: [packages/sdk/src/client/types.gen.ts:3019](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3019)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/src/client/types.gen.ts:2745](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2745) |
-| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:2746](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2746) |
+| `id` | `string` | [packages/sdk/src/client/types.gen.ts:3020](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3020) |
+| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:3021](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3021) |

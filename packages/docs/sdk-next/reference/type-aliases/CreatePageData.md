@@ -8,12 +8,12 @@
 type CreatePageData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2164](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2164)
+Defined in: [packages/sdk/dist/index.d.mts:2388](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2388)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`CreatePageInput`](CreatePageInput.md) | [packages/sdk/dist/index.d.mts:2165](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2165) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2166](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2166) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2167](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2167) |
+| <a id="body"></a> `body`? | [`CreatePageInput`](CreatePageInput.md) | [packages/sdk/dist/index.d.mts:2389](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2389) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2390](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2390) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2391](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2391) |

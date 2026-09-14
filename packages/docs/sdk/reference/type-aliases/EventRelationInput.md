@@ -8,12 +8,12 @@
 type EventRelationInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:493](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L493)
+Defined in: [packages/sdk/src/client/types.gen.ts:567](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L567)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="relationtype"></a> `relationType` | `"CHILD_OF"` | [packages/sdk/src/client/types.gen.ts:494](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L494) |
-| <a id="sourceid"></a> `sourceId`? | `string` | [packages/sdk/src/client/types.gen.ts:495](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L495) |
-| <a id="targetid"></a> `targetId`? | `string` | [packages/sdk/src/client/types.gen.ts:496](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L496) |
+| <a id="relationtype"></a> `relationType` | `"CHILD_OF"` | [packages/sdk/src/client/types.gen.ts:568](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L568) |
+| <a id="sourceid"></a> `sourceId`? | `string` | [packages/sdk/src/client/types.gen.ts:569](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L569) |
+| <a id="targetid"></a> `targetId`? | `string` | [packages/sdk/src/client/types.gen.ts:570](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L570) |

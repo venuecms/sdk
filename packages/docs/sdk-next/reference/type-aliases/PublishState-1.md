@@ -8,10 +8,10 @@
 type PublishState = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:852](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L852)
+Defined in: [packages/sdk/dist/index.d.mts:955](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L955)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="publishstate"></a> `publishState`? | `unknown` | [packages/sdk/dist/index.d.mts:853](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L853) |
+| <a id="publishstate"></a> `publishState`? | `unknown` | [packages/sdk/dist/index.d.mts:956](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L956) |

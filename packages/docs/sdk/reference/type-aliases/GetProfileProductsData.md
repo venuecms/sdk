@@ -8,18 +8,18 @@
 type GetProfileProductsData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1778](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1778)
+Defined in: [packages/sdk/src/client/types.gen.ts:2031](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2031)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1779](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1779) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1780](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1780) |
-| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:1781](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1781) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:1783](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1783) |
-| `query.dir`? | `"asc"` \| `"desc"` | [packages/sdk/src/client/types.gen.ts:1784](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1784) |
-| `query.featured`? | `"true"` \| `"false"` | [packages/sdk/src/client/types.gen.ts:1785](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1785) |
-| `query.limit`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:1786](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1786) |
-| `query.orderBy`? | `string` | [packages/sdk/src/client/types.gen.ts:1787](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1787) |
-| `query.page`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:1788](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1788) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2032](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2032) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2033](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2033) |
+| `path.slug` | `string` | [packages/sdk/src/client/types.gen.ts:2034](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2034) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:2036](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2036) |
+| `query.dir`? | `"asc"` \| `"desc"` | [packages/sdk/src/client/types.gen.ts:2037](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2037) |
+| `query.featured`? | `"true"` \| `"false"` | [packages/sdk/src/client/types.gen.ts:2038](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2038) |
+| `query.limit`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:2039](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2039) |
+| `query.orderBy`? | `string` | [packages/sdk/src/client/types.gen.ts:2040](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2040) |
+| `query.page`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:2041](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2041) |

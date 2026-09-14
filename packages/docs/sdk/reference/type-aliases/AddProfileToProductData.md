@@ -8,13 +8,13 @@
 type AddProfileToProductData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3831](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3831)
+Defined in: [packages/sdk/src/client/types.gen.ts:4213](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4213)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`AddProfileToProductInput`](AddProfileToProductInput.md) | [packages/sdk/src/client/types.gen.ts:3832](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3832) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3833](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3833) |
-| `path.productId` | `string` | [packages/sdk/src/client/types.gen.ts:3834](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3834) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3835](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3835) |
+| <a id="body"></a> `body`? | [`AddProfileToProductInput`](AddProfileToProductInput.md) | [packages/sdk/src/client/types.gen.ts:4214](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4214) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4215](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4215) |
+| `path.productId` | `string` | [packages/sdk/src/client/types.gen.ts:4216](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4216) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4217](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4217) |

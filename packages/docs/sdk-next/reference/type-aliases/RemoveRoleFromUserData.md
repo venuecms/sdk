@@ -8,13 +8,13 @@
 type RemoveRoleFromUserData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:3223](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3223)
+Defined in: [packages/sdk/dist/index.d.mts:3546](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3546)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3224](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3224) |
-| `path.roleId` | `string` | [packages/sdk/dist/index.d.mts:3225](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3225) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3226](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3226) |
-| `path.userId` | `string` | [packages/sdk/dist/index.d.mts:3227](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L3227) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:3547](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3547) |
+| `path.roleId` | `string` | [packages/sdk/dist/index.d.mts:3548](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3548) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:3549](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3549) |
+| `path.userId` | `string` | [packages/sdk/dist/index.d.mts:3550](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L3550) |

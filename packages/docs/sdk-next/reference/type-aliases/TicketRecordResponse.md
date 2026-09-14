@@ -8,10 +8,10 @@
 type TicketRecordResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1105](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1105)
+Defined in: [packages/sdk/dist/index.d.mts:1257](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1257)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="records"></a> `records` | [`Ticket`](Ticket.md) | [packages/sdk/dist/index.d.mts:1106](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L1106) |
+| <a id="records"></a> `records` | [`Ticket`](Ticket.md) | [packages/sdk/dist/index.d.mts:1258](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L1258) |

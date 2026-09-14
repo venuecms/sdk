@@ -8,12 +8,12 @@
 type ListTagRelationsData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3287](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3287)
+Defined in: [packages/sdk/src/client/types.gen.ts:3574](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3574)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3288](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3288) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3289](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3289) |
-| `path.tagId` | `string` | [packages/sdk/src/client/types.gen.ts:3290](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3290) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:3575](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3575) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:3576](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3576) |
+| `path.tagId` | `string` | [packages/sdk/src/client/types.gen.ts:3577](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3577) |

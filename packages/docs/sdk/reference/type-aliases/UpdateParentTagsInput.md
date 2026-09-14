@@ -8,10 +8,10 @@
 type UpdateParentTagsInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1391](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1391)
+Defined in: [packages/sdk/src/client/types.gen.ts:1590](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1590)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="parenttagids"></a> `parentTagIds` | `string`[] | [packages/sdk/src/client/types.gen.ts:1392](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1392) |
+| <a id="parenttagids"></a> `parentTagIds` | `string`[] | [packages/sdk/src/client/types.gen.ts:1591](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1591) |

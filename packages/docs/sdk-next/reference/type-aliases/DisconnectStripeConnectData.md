@@ -8,11 +8,11 @@
 type DisconnectStripeConnectData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2747](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2747)
+Defined in: [packages/sdk/dist/index.d.mts:2980](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2980)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2748](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2748) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2749](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2749) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2981](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2981) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2982](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2982) |

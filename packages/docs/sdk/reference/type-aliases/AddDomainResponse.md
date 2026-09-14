@@ -8,11 +8,11 @@
 type AddDomainResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:12](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L12)
+Defined in: [packages/sdk/src/client/types.gen.ts:16](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L16)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="domain"></a> `domain` | `string` | [packages/sdk/src/client/types.gen.ts:13](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L13) |
-| <a id="records"></a> `records` | [`DnsRecord`](DnsRecord.md)[] | [packages/sdk/src/client/types.gen.ts:14](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L14) |
+| <a id="domain"></a> `domain` | `string` | [packages/sdk/src/client/types.gen.ts:17](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L17) |
+| <a id="records"></a> `records` | [`DnsRecord`](DnsRecord.md)[] | [packages/sdk/src/client/types.gen.ts:18](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L18) |

@@ -8,10 +8,10 @@
 type UpdateLocationTagsInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1340](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1340)
+Defined in: [packages/sdk/src/client/types.gen.ts:1539](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1539)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="tags"></a> `tags` | `string`[] | [packages/sdk/src/client/types.gen.ts:1341](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L1341) |
+| <a id="tags"></a> `tags` | `string`[] | [packages/sdk/src/client/types.gen.ts:1540](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L1540) |

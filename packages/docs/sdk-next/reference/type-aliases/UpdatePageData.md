@@ -8,13 +8,13 @@
 type UpdatePageData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2217](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2217)
+Defined in: [packages/sdk/dist/index.d.mts:2441](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2441)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdatePageInput`](UpdatePageInput.md) | [packages/sdk/dist/index.d.mts:2218](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2218) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2219](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2219) |
-| `path.pageId` | `string` | [packages/sdk/dist/index.d.mts:2220](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2220) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2221](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2221) |
+| <a id="body"></a> `body`? | [`UpdatePageInput`](UpdatePageInput.md) | [packages/sdk/dist/index.d.mts:2442](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2442) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2443](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2443) |
+| `path.pageId` | `string` | [packages/sdk/dist/index.d.mts:2444](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2444) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2445](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2445) |

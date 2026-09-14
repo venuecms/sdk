@@ -8,11 +8,11 @@
 type RemoveUserFromProfileResponse = Profile & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3103](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3103)
+Defined in: [packages/sdk/src/client/types.gen.ts:3393](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3393)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/src/client/types.gen.ts:3104](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3104) |
-| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:3105](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3105) |
+| `id` | `string` | [packages/sdk/src/client/types.gen.ts:3394](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3394) |
+| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:3395](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L3395) |

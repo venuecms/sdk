@@ -8,10 +8,10 @@
 type AttachprofilesToTagInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:131](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L131)
+Defined in: [packages/sdk/dist/index.d.mts:155](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L155)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="profileid"></a> `profileId` | `string` | [packages/sdk/dist/index.d.mts:132](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L132) |
+| <a id="profileid"></a> `profileId` | `string` | [packages/sdk/dist/index.d.mts:156](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L156) |

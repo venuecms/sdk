@@ -8,11 +8,11 @@
 type CreateProductResponse = Product & object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:3636](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3636)
+Defined in: [packages/sdk/src/client/types.gen.ts:4018](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4018)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `id` | `string` | [packages/sdk/src/client/types.gen.ts:3637](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3637) |
-| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:3638](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L3638) |
+| `id` | `string` | [packages/sdk/src/client/types.gen.ts:4019](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4019) |
+| `siteId` | `string` | [packages/sdk/src/client/types.gen.ts:4020](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4020) |

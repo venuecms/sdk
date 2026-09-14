@@ -107,9 +107,9 @@ describe("buildEventListingQuery", () => {
   it("asks for upcoming events by default", () => {
     expect(
       buildEventListingQuery(parseEventListingAttributes({}), NOW),
-      // The endpoint types its flags as raw query values, so a set flag goes
-      // over the wire as "true" rather than as a boolean.
-    ).toEqual({ upcoming: "true" });
+      // The endpoint documents its flags as booleans, so a set flag is a
+      // boolean here and the client serializes it.
+    ).toEqual({ upcoming: true });
   });
 
   it("windows a past listing to before now", () => {
@@ -173,8 +173,8 @@ describe("buildEventListingQuery", () => {
       page: 2,
       orderBy: "startDate",
       dir: "desc",
-      featured: "true",
-      rootOnly: "true",
+      featured: true,
+      rootOnly: true,
       tags: ["jazz"],
       query: "trio",
       gt: 456,
@@ -266,7 +266,7 @@ describe("page listing", () => {
     ).toEqual({
       orderBy: "updatedAt",
       dir: "desc",
-      featured: "true",
+      featured: true,
       tags: ["about"],
     });
   });

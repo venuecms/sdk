@@ -8,11 +8,11 @@
 type AtprotoOauthStatusData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:4034](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4034)
+Defined in: [packages/sdk/src/client/types.gen.ts:4442](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4442)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4035](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4035) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4036](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L4036) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4443](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4443) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4444](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L4444) |

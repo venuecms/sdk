@@ -8,11 +8,11 @@
 type ListMfaFactorsData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:2352](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2352)
+Defined in: [packages/sdk/src/client/types.gen.ts:2627](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2627)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2353](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2353) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2354](https://github.com/venuecms/sdk/blob/aa185319e7ab804b356ca3caf78ab8ee4b646c47/packages/sdk/src/client/types.gen.ts#L2354) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2628](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2628) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2629](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/src/client/types.gen.ts#L2629) |

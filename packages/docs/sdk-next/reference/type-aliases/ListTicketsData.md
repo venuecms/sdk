@@ -8,14 +8,14 @@
 type ListTicketsData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:2754](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2754)
+Defined in: [packages/sdk/dist/index.d.mts:2987](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2987)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2755](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2755) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2756](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2756) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/dist/index.d.mts:2758](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2758) |
-| `query.limit`? | `number` \| `null` | [packages/sdk/dist/index.d.mts:2759](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2759) |
-| `query.page`? | `number` \| `null` | [packages/sdk/dist/index.d.mts:2760](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L2760) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2988](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2988) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2989](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2989) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/dist/index.d.mts:2991](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2991) |
+| `query.limit`? | `number` \| `null` | [packages/sdk/dist/index.d.mts:2992](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2992) |
+| `query.page`? | `number` \| `null` | [packages/sdk/dist/index.d.mts:2993](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L2993) |

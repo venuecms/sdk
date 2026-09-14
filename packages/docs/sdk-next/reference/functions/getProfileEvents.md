@@ -5,18 +5,14 @@
 # Function: getProfileEvents()
 
 ```ts
-function getProfileEvents(params): Promise<
-  | {
-  data: undefined;
+function getProfileEvents(params): Promise<{
+  data:   | undefined
+     | GetProfileEventsResponse;
   error: unknown;
- }
-  | {
-  data: GetProfileEventsResponse;
-  error: undefined;
-} & object>
+}>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:108](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk-next/src/lib/api/index.ts#L108)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:110](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk-next/src/lib/api/index.ts#L110)
 
 Get a listing of events for a profile (cached)
 
@@ -28,12 +24,8 @@ Get a listing of events for a profile (cached)
 
 ## Returns
 
-`Promise`\<
-  \| \{
-  `data`: `undefined`;
+`Promise`\<\{
+  `data`:   \| `undefined`
+     \| [`GetProfileEventsResponse`](../type-aliases/GetProfileEventsResponse.md);
   `error`: `unknown`;
- \}
-  \| \{
-  `data`: [`GetProfileEventsResponse`](../type-aliases/GetProfileEventsResponse.md);
-  `error`: `undefined`;
- \} & `object`\>
+ \}\>

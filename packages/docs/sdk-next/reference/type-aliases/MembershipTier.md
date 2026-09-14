@@ -8,11 +8,11 @@
 type MembershipTier = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:596](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L596)
+Defined in: [packages/sdk/dist/index.d.mts:687](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L687)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:597](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L597) |
-| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:598](https://github.com/venuecms/sdk/blob/52a170b94961883aa6efb382ae765b76c72e1f24/packages/sdk/dist/index.d.mts#L598) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/dist/index.d.mts:688](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L688) |
+| <a id="siteid"></a> `siteId` | `string` | [packages/sdk/dist/index.d.mts:689](https://github.com/venuecms/sdk/blob/f128cd64889c85395a45aac3e35805d327908fc7/packages/sdk/dist/index.d.mts#L689) |

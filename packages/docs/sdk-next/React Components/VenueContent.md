@@ -30,3 +30,5 @@ export const Event = ({ event, locale }: { event: VenueEvent; locale: 'en' | 'sv
   );
 }
 ```
+
+Content may also contain listings of events, news, pages, products, or profiles that an author placed in the editor. `VenueContent` fetches those for you and hands the records to a component you put on the same `contentStyles` map — see [Listing Blocks](<Listing Blocks.md>) for rendering and paginating them.

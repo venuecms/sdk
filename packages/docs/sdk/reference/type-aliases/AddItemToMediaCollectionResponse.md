@@ -8,4 +8,4 @@
 type AddItemToMediaCollectionResponse = MediaCollection;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1580](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1580)
+Defined in: [packages/sdk/src/client/types.gen.ts:2739](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2739)

@@ -5,18 +5,14 @@
 # Function: getProfileProducts()
 
 ```ts
-function getProfileProducts(params): Promise<
-  | {
-  data: undefined;
+function getProfileProducts(params): Promise<{
+  data:   | undefined
+     | GetProfileProductsResponse;
   error: unknown;
- }
-  | {
-  data: GetProfileProductsResponse;
-  error: undefined;
-} & object>
+}>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:119](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk-next/src/lib/api/index.ts#L119)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:120](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/lib/api/index.ts#L120)
 
 Get a listing of products for a profile (cached)
 
@@ -28,12 +24,8 @@ Get a listing of products for a profile (cached)
 
 ## Returns
 
-`Promise`\<
-  \| \{
-  `data`: `undefined`;
+`Promise`\<\{
+  `data`:   \| `undefined`
+     \| [`GetProfileProductsResponse`](../type-aliases/GetProfileProductsResponse.md);
   `error`: `unknown`;
- \}
-  \| \{
-  `data`: [`GetProfileProductsResponse`](../type-aliases/GetProfileProductsResponse.md);
-  `error`: `undefined`;
- \} & `object`\>
+ \}\>

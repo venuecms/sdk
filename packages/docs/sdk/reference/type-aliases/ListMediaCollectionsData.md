@@ -8,14 +8,14 @@
 type ListMediaCollectionsData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1511](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1511)
+Defined in: [packages/sdk/src/client/types.gen.ts:2670](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2670)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1512](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1512) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1513](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1513) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:1515](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1515) |
-| `query.entityId`? | `string` | [packages/sdk/src/client/types.gen.ts:1516](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1516) |
-| `query.entityType`? | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | [packages/sdk/src/client/types.gen.ts:1517](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1517) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2671](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2671) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2672](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2672) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:2674](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2674) |
+| `query.entityId`? | `string` | [packages/sdk/src/client/types.gen.ts:2675](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2675) |
+| `query.entityType`? | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | [packages/sdk/src/client/types.gen.ts:2676](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2676) |

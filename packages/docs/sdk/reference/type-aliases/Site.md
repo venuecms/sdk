@@ -8,17 +8,17 @@
 type Site = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:627](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L627)
+Defined in: [packages/sdk/src/client/types.gen.ts:1300](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1300)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="defaultlocale"></a> `defaultLocale`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:631](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L631) |
-| <a id="description"></a> `description`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:630](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L630) |
-| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:628](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L628) |
-| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) | [packages/sdk/src/client/types.gen.ts:633](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L633) |
-| <a id="name"></a> `name`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:629](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L629) |
-| <a id="settings"></a> `settings` | [`SiteSettings`](SiteSettings.md) | [packages/sdk/src/client/types.gen.ts:634](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L634) |
-| <a id="timezone"></a> `timeZone`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:632](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L632) |
-| <a id="websites"></a> `webSites`? | [`WebSite`](WebSite.md)[] | [packages/sdk/src/client/types.gen.ts:635](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L635) |
+| <a id="defaultlocale"></a> `defaultLocale`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:1304](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1304) |
+| <a id="description"></a> `description`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:1303](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1303) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:1301](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1301) |
+| <a id="image"></a> `image`? | [`MediaItem`](MediaItem.md) | [packages/sdk/src/client/types.gen.ts:1306](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1306) |
+| <a id="name"></a> `name`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:1302](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1302) |
+| <a id="settings"></a> `settings` | [`SiteSettings`](SiteSettings.md) | [packages/sdk/src/client/types.gen.ts:1307](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1307) |
+| <a id="timezone"></a> `timeZone`? | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:1305](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1305) |
+| <a id="websites"></a> `webSites`? | [`WebSite`](WebSite-1.md)[] | [packages/sdk/src/client/types.gen.ts:1308](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1308) |

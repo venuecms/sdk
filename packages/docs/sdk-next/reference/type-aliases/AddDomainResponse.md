@@ -8,11 +8,11 @@
 type AddDomainResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:6](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L6)
+Defined in: [packages/sdk/dist/index.d.mts:13](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L13)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="domain"></a> `domain` | `string` | [packages/sdk/dist/index.d.mts:7](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L7) |
-| <a id="records"></a> `records` | [`DnsRecord`](DnsRecord.md)[] | [packages/sdk/dist/index.d.mts:8](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L8) |
+| <a id="domain"></a> `domain` | `string` | [packages/sdk/dist/index.d.mts:14](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L14) |
+| <a id="records"></a> `records` | [`DnsRecord`](DnsRecord.md)[] | [packages/sdk/dist/index.d.mts:15](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L15) |

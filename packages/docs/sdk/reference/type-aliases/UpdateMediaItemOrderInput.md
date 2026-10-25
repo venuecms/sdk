@@ -8,13 +8,13 @@
 type UpdateMediaItemOrderInput = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:757](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L757)
+Defined in: [packages/sdk/src/client/types.gen.ts:1558](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1558)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="entityid"></a> `entityId` | `string` | [packages/sdk/src/client/types.gen.ts:759](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L759) |
-| <a id="entitytype"></a> `entityType` | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | [packages/sdk/src/client/types.gen.ts:758](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L758) |
-| <a id="mediaitemid"></a> `mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:760](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L760) |
-| <a id="upperneighbor"></a> `upperNeighbor` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:761](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L761) |
+| <a id="entityid"></a> `entityId` | `string` | [packages/sdk/src/client/types.gen.ts:1560](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1560) |
+| <a id="entitytype"></a> `entityType` | `"event"` \| `"profile"` \| `"page"` \| `"location"` \| `"product"` | [packages/sdk/src/client/types.gen.ts:1559](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1559) |
+| <a id="mediaitemid"></a> `mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:1561](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1561) |
+| <a id="upperneighbor"></a> `upperNeighbor` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:1562](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1562) |

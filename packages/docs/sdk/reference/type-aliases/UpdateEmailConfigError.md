@@ -8,4 +8,4 @@
 type UpdateEmailConfigError = unknown;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1263](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1263)
+Defined in: [packages/sdk/src/client/types.gen.ts:2335](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2335)

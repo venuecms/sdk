@@ -8,13 +8,13 @@
 type PublicSignUpResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:743](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L743)
+Defined in: [packages/sdk/dist/index.d.mts:1528](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1528)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="confirmemail"></a> `confirmEmail` | `boolean` | [packages/sdk/dist/index.d.mts:748](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L748) |
-| <a id="user"></a> `user` | `object` | [packages/sdk/dist/index.d.mts:744](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L744) |
-| `user.email`? | `string` | [packages/sdk/dist/index.d.mts:746](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L746) |
-| `user.id` | `string` | [packages/sdk/dist/index.d.mts:745](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L745) |
+| <a id="confirmemail"></a> `confirmEmail` | `boolean` | [packages/sdk/dist/index.d.mts:1533](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1533) |
+| <a id="user"></a> `user` | `object` | [packages/sdk/dist/index.d.mts:1529](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1529) |
+| `user.email`? | `string` | [packages/sdk/dist/index.d.mts:1531](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1531) |
+| `user.id` | `string` | [packages/sdk/dist/index.d.mts:1530](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1530) |

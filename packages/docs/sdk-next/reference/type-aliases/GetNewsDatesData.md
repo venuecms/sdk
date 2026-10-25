@@ -8,15 +8,15 @@
 type GetNewsDatesData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:831](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L831)
+Defined in: [packages/sdk/dist/index.d.mts:1616](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1616)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:832](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L832) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:833](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L833) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/dist/index.d.mts:835](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L835) |
-| `query.gt`? | `number` \| `null` | [packages/sdk/dist/index.d.mts:836](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L836) |
-| `query.interval`? | `"day"` \| `"month"` \| `"year"` | [packages/sdk/dist/index.d.mts:837](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L837) |
-| `query.lt`? | `number` \| `null` | [packages/sdk/dist/index.d.mts:838](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L838) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1617](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1617) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1618](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1618) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/dist/index.d.mts:1620](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1620) |
+| `query.gt`? | `number` \| `null` | [packages/sdk/dist/index.d.mts:1621](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1621) |
+| `query.interval`? | `"day"` \| `"month"` \| `"year"` | [packages/sdk/dist/index.d.mts:1622](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1622) |
+| `query.lt`? | `number` \| `null` | [packages/sdk/dist/index.d.mts:1623](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1623) |

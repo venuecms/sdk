@@ -5,7 +5,14 @@
 # Type Alias: type
 
 ```ts
-type type = "CONTENT" | "NEWS" | "NEWSLIST" | "LINK";
+type type = 
+  | "CONTENT"
+  | "NEWS"
+  | "NEWSLIST"
+  | "EVENTLIST"
+  | "PROFILELIST"
+  | "PRODUCTLIST"
+  | "LINK";
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:457](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L457)
+Defined in: [packages/sdk/src/client/types.gen.ts:292](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L292)

@@ -8,15 +8,15 @@
 type GetNewsDatesData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:936](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L936)
+Defined in: [packages/sdk/src/client/types.gen.ts:1899](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1899)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:937](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L937) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:938](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L938) |
-| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:940](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L940) |
-| `query.gt`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:941](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L941) |
-| `query.interval`? | `"day"` \| `"month"` \| `"year"` | [packages/sdk/src/client/types.gen.ts:942](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L942) |
-| `query.lt`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:943](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L943) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1900](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1900) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1901](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1901) |
+| <a id="query"></a> `query`? | `object` | [packages/sdk/src/client/types.gen.ts:1903](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1903) |
+| `query.gt`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:1904](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1904) |
+| `query.interval`? | `"day"` \| `"month"` \| `"year"` | [packages/sdk/src/client/types.gen.ts:1905](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1905) |
+| `query.lt`? | `number` \| `null` | [packages/sdk/src/client/types.gen.ts:1906](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L1906) |

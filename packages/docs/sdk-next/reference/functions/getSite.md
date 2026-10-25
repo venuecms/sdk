@@ -5,29 +5,19 @@
 # Function: getSite()
 
 ```ts
-function getSite(): Promise<
-  | {
-  data: Site;
-  error: undefined;
- }
-  | {
-  data: undefined;
+function getSite(): Promise<{
+  data: undefined | Site;
   error: unknown;
-} & object>
+}>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:36](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk-next/src/lib/api/index.ts#L36)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:47](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/lib/api/index.ts#L47)
 
 Get the site configured via the siteKey (cached)
 
 ## Returns
 
-`Promise`\<
-  \| \{
-  `data`: [`Site`](../type-aliases/Site.md);
-  `error`: `undefined`;
- \}
-  \| \{
-  `data`: `undefined`;
+`Promise`\<\{
+  `data`: `undefined` \| [`Site`](../type-aliases/Site.md);
   `error`: `unknown`;
- \} & `object`\>
+ \}\>

@@ -1,0 +1,20 @@
+[**@venuecms/sdk**](../Index.md)
+
+***
+
+# Type Alias: AddImageToNoteData
+
+```ts
+type AddImageToNoteData = object;
+```
+
+Defined in: [packages/sdk/src/client/types.gen.ts:2859](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2859)
+
+## Type declaration
+
+| Name | Type | Defined in |
+| ------ | ------ | ------ |
+| <a id="body"></a> `body`? | [`AddImageToNoteInput`](AddImageToNoteInput.md) | [packages/sdk/src/client/types.gen.ts:2860](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2860) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2861](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2861) |
+| `path.noteId` | `string` | [packages/sdk/src/client/types.gen.ts:2862](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2862) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2863](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2863) |

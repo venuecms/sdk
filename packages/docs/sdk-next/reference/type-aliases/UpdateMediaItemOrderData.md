@@ -8,12 +8,12 @@
 type UpdateMediaItemOrderData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1236](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1236)
+Defined in: [packages/sdk/dist/index.d.mts:2100](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L2100)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | [`UpdateMediaItemOrderInput`](UpdateMediaItemOrderInput.md) | [packages/sdk/dist/index.d.mts:1237](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1237) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1238](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1238) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1239](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1239) |
+| <a id="body"></a> `body`? | [`UpdateMediaItemOrderInput`](UpdateMediaItemOrderInput.md) | [packages/sdk/dist/index.d.mts:2101](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L2101) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:2102](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L2102) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:2103](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L2103) |

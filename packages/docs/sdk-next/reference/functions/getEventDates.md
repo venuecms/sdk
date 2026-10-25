@@ -16,13 +16,13 @@ function getEventDates(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1639](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1639)
+Defined in: [packages/sdk/dist/index.d.mts:4402](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L4402)
 
 ## Parameters
 
 | Parameter | Type |
 | ------ | ------ |
-| `params` | \| `undefined` \| \{ `gt`: `null` \| `number`; `interval`: `"day"` \| `"month"` \| `"year"`; `lt`: `null` \| `number`; `upcoming`: `null` \| `boolean`; \} |
+| `params` | \| `undefined` \| \{ `gt`: `null` \| `number`; `interval`: `"day"` \| `"month"` \| `"year"`; `lt`: `null` \| `number`; `upcoming`: `boolean`; \} |
 
 ## Returns
 

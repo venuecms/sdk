@@ -8,13 +8,13 @@
 type GetPublicLinkPreviewData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1191](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1191)
+Defined in: [packages/sdk/src/client/types.gen.ts:2154](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2154)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1192](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1192) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1193](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1193) |
-| <a id="query"></a> `query` | `object` | [packages/sdk/src/client/types.gen.ts:1195](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1195) |
-| `query.url` | `string` | [packages/sdk/src/client/types.gen.ts:1196](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1196) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2155](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2155) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2156](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2156) |
+| <a id="query"></a> `query` | `object` | [packages/sdk/src/client/types.gen.ts:2158](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2158) |
+| `query.url` | `string` | [packages/sdk/src/client/types.gen.ts:2159](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2159) |

@@ -5,18 +5,14 @@
 # Function: getNewsArticle()
 
 ```ts
-function getNewsArticle(params): Promise<
-  | {
-  data: undefined;
+function getNewsArticle(params): Promise<{
+  data:   | undefined
+     | GetNewsArticleResponse;
   error: unknown;
- }
-  | {
-  data: GetNewsArticleResponse;
-  error: undefined;
-} & object>
+}>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:83](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk-next/src/lib/api/index.ts#L83)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:88](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/lib/api/index.ts#L88)
 
 Get a single news item using the slug (cached)
 
@@ -28,12 +24,8 @@ Get a single news item using the slug (cached)
 
 ## Returns
 
-`Promise`\<
-  \| \{
-  `data`: `undefined`;
+`Promise`\<\{
+  `data`:   \| `undefined`
+     \| [`GetNewsArticleResponse`](../type-aliases/GetNewsArticleResponse.md);
   `error`: `unknown`;
- \}
-  \| \{
-  `data`: [`GetNewsArticleResponse`](../type-aliases/GetNewsArticleResponse.md);
-  `error`: `undefined`;
- \} & `object`\>
+ \}\>

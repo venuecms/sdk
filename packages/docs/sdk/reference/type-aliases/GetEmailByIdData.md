@@ -8,12 +8,12 @@
 type GetEmailByIdData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1340](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1340)
+Defined in: [packages/sdk/src/client/types.gen.ts:2412](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2412)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1341](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1341) |
-| `path.emailId` | `string` | [packages/sdk/src/client/types.gen.ts:1342](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1342) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1343](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1343) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2413](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2413) |
+| `path.emailId` | `string` | [packages/sdk/src/client/types.gen.ts:2414](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2414) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2415](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2415) |

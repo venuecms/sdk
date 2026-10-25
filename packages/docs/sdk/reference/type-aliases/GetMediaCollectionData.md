@@ -8,12 +8,12 @@
 type GetMediaCollectionData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1536](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1536)
+Defined in: [packages/sdk/src/client/types.gen.ts:2695](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2695)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1537](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1537) |
-| `path.collectionId` | `string` | [packages/sdk/src/client/types.gen.ts:1538](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1538) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1539](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1539) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2696](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2696) |
+| `path.collectionId` | `string` | [packages/sdk/src/client/types.gen.ts:2697](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2697) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2698](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2698) |

@@ -8,11 +8,11 @@
 type EventRelations = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:264](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L264)
+Defined in: [packages/sdk/src/client/types.gen.ts:575](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L575)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="children"></a> `children`? | [`EventReference`](EventReference.md)[] | [packages/sdk/src/client/types.gen.ts:266](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L266) |
-| <a id="parents"></a> `parents`? | [`EventReference`](EventReference.md)[] | [packages/sdk/src/client/types.gen.ts:265](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L265) |
+| <a id="children"></a> `children`? | [`EventReference`](EventReference.md)[] | [packages/sdk/src/client/types.gen.ts:577](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L577) |
+| <a id="parents"></a> `parents`? | [`EventReference`](EventReference.md)[] | [packages/sdk/src/client/types.gen.ts:576](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L576) |

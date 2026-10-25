@@ -16,9 +16,10 @@ function searchSite(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk-next/src/lib/api/index.ts:146](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk-next/src/lib/api/index.ts#L146)
+Defined in: [packages/sdk-next/src/lib/api/index.ts:146](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk-next/src/lib/api/index.ts#L146)
 
-Search a site for all content types (cached)
+Search a site for all content types (deduped per render, not cached across
+requests: the key is visitor input, so entries would be unbounded)
 
 ## Parameters
 

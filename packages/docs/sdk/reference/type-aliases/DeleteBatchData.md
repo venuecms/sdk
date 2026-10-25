@@ -8,12 +8,12 @@
 type DeleteBatchData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1405](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1405)
+Defined in: [packages/sdk/src/client/types.gen.ts:2477](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2477)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1406](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1406) |
-| `path.batchId` | `string` | [packages/sdk/src/client/types.gen.ts:1407](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1407) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1408](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1408) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:2478](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2478) |
+| `path.batchId` | `string` | [packages/sdk/src/client/types.gen.ts:2479](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2479) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:2480](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2480) |

@@ -8,13 +8,13 @@
 type SearchSiteResults = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:514](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L514)
+Defined in: [packages/sdk/dist/index.d.mts:1047](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1047)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="events"></a> `events` | `object`[] | [packages/sdk/dist/index.d.mts:515](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L515) |
-| <a id="pages"></a> `pages` | `object`[] | [packages/sdk/dist/index.d.mts:527](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L527) |
-| <a id="products"></a> `products` | `object`[] | [packages/sdk/dist/index.d.mts:551](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L551) |
-| <a id="profiles"></a> `profiles` | `object`[] | [packages/sdk/dist/index.d.mts:539](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L539) |
+| <a id="events"></a> `events` | `object`[] | [packages/sdk/dist/index.d.mts:1048](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1048) |
+| <a id="pages"></a> `pages` | `object`[] | [packages/sdk/dist/index.d.mts:1060](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1060) |
+| <a id="products"></a> `products` | `object`[] | [packages/sdk/dist/index.d.mts:1084](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1084) |
+| <a id="profiles"></a> `profiles` | `object`[] | [packages/sdk/dist/index.d.mts:1072](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1072) |

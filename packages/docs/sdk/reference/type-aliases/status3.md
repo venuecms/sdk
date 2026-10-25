@@ -8,4 +8,4 @@
 type status3 = "DRAFT";
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:130](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L130)
+Defined in: [packages/sdk/src/client/types.gen.ts:384](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L384)

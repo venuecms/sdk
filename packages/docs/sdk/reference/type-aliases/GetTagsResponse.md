@@ -8,11 +8,11 @@
 type GetTagsResponse = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1184](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1184)
+Defined in: [packages/sdk/src/client/types.gen.ts:2147](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2147)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="count"></a> `count`? | `number` | [packages/sdk/src/client/types.gen.ts:1186](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1186) |
-| <a id="records"></a> `records` | [`TagListItem`](TagListItem.md)[] | [packages/sdk/src/client/types.gen.ts:1185](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1185) |
+| <a id="count"></a> `count`? | `number` | [packages/sdk/src/client/types.gen.ts:2149](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2149) |
+| <a id="records"></a> `records` | [`TagListItem`](TagListItem.md)[] | [packages/sdk/src/client/types.gen.ts:2148](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L2148) |

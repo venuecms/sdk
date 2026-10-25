@@ -8,10 +8,10 @@
 type AddRoleToMediaCollectionInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:13](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L13)
+Defined in: [packages/sdk/dist/index.d.mts:94](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L94)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="roleid"></a> `roleId` | `string` | [packages/sdk/dist/index.d.mts:14](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L14) |
+| <a id="roleid"></a> `roleId` | `string` | [packages/sdk/dist/index.d.mts:95](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L95) |

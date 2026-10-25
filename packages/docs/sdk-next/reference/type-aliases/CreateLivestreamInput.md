@@ -8,11 +8,11 @@
 type CreateLivestreamInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:75](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L75)
+Defined in: [packages/sdk/dist/index.d.mts:217](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L217)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="roleids"></a> `roleIds`? | `string`[] | [packages/sdk/dist/index.d.mts:77](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L77) |
-| <a id="title"></a> `title`? | `string` | [packages/sdk/dist/index.d.mts:76](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L76) |
+| <a id="roleids"></a> `roleIds`? | `string`[] | [packages/sdk/dist/index.d.mts:219](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L219) |
+| <a id="title"></a> `title`? | `string` | [packages/sdk/dist/index.d.mts:218](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L218) |

@@ -8,16 +8,16 @@
 type BatchEmail = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:47](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L47)
+Defined in: [packages/sdk/src/client/types.gen.ts:209](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L209)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="createdat"></a> `createdAt` | `string` | [packages/sdk/src/client/types.gen.ts:52](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L52) |
-| <a id="errormsg"></a> `errorMsg` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:54](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L54) |
-| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:48](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L48) |
-| <a id="sentat"></a> `sentAt` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:53](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L53) |
-| <a id="status"></a> `status` | `"PENDING"` \| `"SENT"` \| `"DELIVERED"` \| `"BOUNCED"` \| `"FAILED"` | [packages/sdk/src/client/types.gen.ts:51](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L51) |
-| <a id="subject"></a> `subject` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:50](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L50) |
-| <a id="to"></a> `to` | `string` | [packages/sdk/src/client/types.gen.ts:49](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L49) |
+| <a id="createdat"></a> `createdAt` | `string` | [packages/sdk/src/client/types.gen.ts:214](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L214) |
+| <a id="errormsg"></a> `errorMsg` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:216](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L216) |
+| <a id="id"></a> `id` | `string` | [packages/sdk/src/client/types.gen.ts:210](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L210) |
+| <a id="sentat"></a> `sentAt` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:215](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L215) |
+| <a id="status"></a> `status` | `"PENDING"` \| `"SENT"` \| `"DELIVERED"` \| `"BOUNCED"` \| `"FAILED"` | [packages/sdk/src/client/types.gen.ts:213](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L213) |
+| <a id="subject"></a> `subject` | `string` \| `null` | [packages/sdk/src/client/types.gen.ts:212](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L212) |
+| <a id="to"></a> `to` | `string` | [packages/sdk/src/client/types.gen.ts:211](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L211) |

@@ -8,10 +8,10 @@
 type DeleteMediaCollectionResponse = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:1331](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1331)
+Defined in: [packages/sdk/dist/index.d.mts:2258](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L2258)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="ok"></a> `ok` | `boolean` | [packages/sdk/dist/index.d.mts:1332](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L1332) |
+| <a id="ok"></a> `ok` | `boolean` | [packages/sdk/dist/index.d.mts:2259](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L2259) |

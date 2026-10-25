@@ -16,7 +16,7 @@ function getNewsArticle(params): Promise<
 } & object>
 ```
 
-Defined in: [packages/sdk/src/main.ts:204](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/main.ts#L204)
+Defined in: [packages/sdk/src/main.ts:244](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/main.ts#L244)
 
 Get a single news item using the slug
 

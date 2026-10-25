@@ -8,12 +8,12 @@
 type EmailConfigInput = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:161](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L161)
+Defined in: [packages/sdk/dist/index.d.mts:365](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L365)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="fromemail"></a> `fromEmail`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:162](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L162) |
-| <a id="fromname"></a> `fromName`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:163](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L163) |
-| <a id="replytoemail"></a> `replyToEmail`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:164](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L164) |
+| <a id="fromemail"></a> `fromEmail`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:366](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L366) |
+| <a id="fromname"></a> `fromName`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:367](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L367) |
+| <a id="replytoemail"></a> `replyToEmail`? | `string` \| `null` | [packages/sdk/dist/index.d.mts:368](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L368) |

@@ -4,6 +4,7 @@
 * [Next.js SDK](sdk-next/README.md)
   * [React Components](sdk-next/react-components/README.md)
     * [VenueContent](<sdk-next/React Components/VenueContent.md>)
+    * [Listing Blocks](<sdk-next/React Components/Listing Blocks.md>)
     * [VenueImage](<sdk-next/React Components/VenueImage.md>)
   * [reference](sdk-next/reference/README.md)
     * [Index](sdk-next/reference/Index.md)

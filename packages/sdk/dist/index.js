@@ -36,11 +36,13 @@ __export(index_exports, {
   getProfileProducts: () => getProfileProducts2,
   getProfiles: () => getProfiles2,
   getSite: () => getSite2,
+  getSiteKey: () => getSiteKey,
   getSiteKeyByDomain: () => getSiteKeyByDomain,
   getTags: () => getTags2,
   listSiteDomains: () => listSiteDomains2,
   searchSite: () => searchSite2,
-  setConfig: () => setConfig
+  setConfig: () => setConfig,
+  withSiteKey: () => withSiteKey
 });
 module.exports = __toCommonJS(index_exports);
 
@@ -227,6 +229,16 @@ var setConfig = (params) => {
   siteKey = params.siteKey;
   client.setConfig({ ...defaultOptions, ...params.options });
 };
+var getSiteKey = () => siteKey;
+var withSiteKey = (key, fn) => {
+  const configured = siteKey;
+  siteKey = key;
+  try {
+    return fn();
+  } finally {
+    siteKey = configured;
+  }
+};
 var getSite2 = () => {
   return getSite({
     path: {
@@ -403,9 +415,11 @@ var searchSite2 = (params) => {
   getProfileProducts,
   getProfiles,
   getSite,
+  getSiteKey,
   getSiteKeyByDomain,
   getTags,
   listSiteDomains,
   searchSite,
-  setConfig
+  setConfig,
+  withSiteKey
 });

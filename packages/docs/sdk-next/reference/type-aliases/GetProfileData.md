@@ -8,12 +8,12 @@
 type GetProfileData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:909](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L909)
+Defined in: [packages/sdk/dist/index.d.mts:1694](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1694)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:910](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L910) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:911](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L911) |
-| `path.slug` | `string` | [packages/sdk/dist/index.d.mts:912](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L912) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1695](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1695) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1696](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1696) |
+| `path.slug` | `string` | [packages/sdk/dist/index.d.mts:1697](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1697) |

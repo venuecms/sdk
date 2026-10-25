@@ -8,12 +8,12 @@
 type GetEventLivestreamData = object;
 ```
 
-Defined in: [packages/sdk/src/client/types.gen.ts:1746](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1746)
+Defined in: [packages/sdk/src/client/types.gen.ts:4753](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L4753)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:1747](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1747) |
-| `path.mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:1748](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1748) |
-| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:1749](https://github.com/venuecms/sdk/blob/bb1137b16c817ba8d33cf05998a0f270a24c5cbe/packages/sdk/src/client/types.gen.ts#L1749) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/src/client/types.gen.ts:4754](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L4754) |
+| `path.mediaItemId` | `string` | [packages/sdk/src/client/types.gen.ts:4755](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L4755) |
+| `path.siteKey` | `string` | [packages/sdk/src/client/types.gen.ts:4756](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/src/client/types.gen.ts#L4756) |

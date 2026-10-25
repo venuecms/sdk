@@ -8,15 +8,15 @@
 type PublicSignInData = object;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:699](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L699)
+Defined in: [packages/sdk/dist/index.d.mts:1483](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1483)
 
 ## Type declaration
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="body"></a> `body`? | `object` | [packages/sdk/dist/index.d.mts:700](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L700) |
-| `body.captchaToken`? | `string` | [packages/sdk/dist/index.d.mts:703](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L703) |
-| `body.email` | `string` | [packages/sdk/dist/index.d.mts:701](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L701) |
-| `body.password` | `string` | [packages/sdk/dist/index.d.mts:702](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L702) |
-| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:705](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L705) |
-| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:706](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L706) |
+| <a id="body"></a> `body`? | `object` | [packages/sdk/dist/index.d.mts:1484](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1484) |
+| `body.captchaToken`? | `string` | [packages/sdk/dist/index.d.mts:1487](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1487) |
+| `body.email` | `string` | [packages/sdk/dist/index.d.mts:1485](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1485) |
+| `body.password` | `string` | [packages/sdk/dist/index.d.mts:1486](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1486) |
+| <a id="path"></a> `path` | `object` | [packages/sdk/dist/index.d.mts:1489](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1489) |
+| `path.siteKey` | `string` | [packages/sdk/dist/index.d.mts:1490](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L1490) |

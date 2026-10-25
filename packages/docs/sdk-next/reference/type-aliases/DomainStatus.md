@@ -14,4 +14,4 @@ type DomainStatus =
   | null;
 ```
 
-Defined in: [packages/sdk/dist/index.d.mts:98](https://github.com/venuecms/sdk/blob/480e497146161f350eebc6bb389830dfa2b4e437/packages/sdk/dist/index.d.mts#L98)
+Defined in: [packages/sdk/dist/index.d.mts:302](https://github.com/venuecms/sdk/blob/cfed6bdc583cc0d277b4fe1af72727ff7219484d/packages/sdk/dist/index.d.mts#L302)
